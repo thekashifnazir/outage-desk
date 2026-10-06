@@ -11,6 +11,7 @@
 
 # Outage Desk
 
+- Use compact independently scrolling desk columns and an always-visible draft footer; provenance and copy controls must remain reachable at the reference desktop size.
 - Keep replay records in typed local stage modules, separate from presentation; this makes staged evidence and exact reference drafts auditable.
 - Share replay state and navigation across Desk and Analysis through a React context in the root layout; this preserves stage selection without any backend calls.
 - Derive new/changed/expanded UI state in components and keep added actions in React state only; reference records remain immutable and reload resets additions.
