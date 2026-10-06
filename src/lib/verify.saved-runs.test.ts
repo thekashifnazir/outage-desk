@@ -2,7 +2,7 @@ import { readdirSync, readFileSync } from "node:fs";
 import { resolve, relative } from "node:path";
 import { describe, expect, it } from "vitest";
 import { z } from "zod";
-import type { Change, Claim, Draft, Estimate, Sentence } from "../data/replay/types";
+import type { Change, Claim, Draft, Estimate, Evidence, Sentence } from "../data/replay/types";
 import { stages } from "../data/replay";
 import { applyPolicy, filterEvidenceAt } from "./policy";
 import { verifyDraft } from "./verify";
@@ -140,6 +140,7 @@ const runSchema = z.object({
     z.object({
       pass: z.boolean(),
       status: z.enum(["complete", "failed"]),
+      reason: z.string().min(1).optional(),
       verifier_sha256: z.string().regex(/^[a-f0-9]{64}$/),
       audiences: z.array(verifiedAudienceSchema).min(3).max(4),
     }),
@@ -149,6 +150,10 @@ const runSchema = z.object({
       reason: z.string().min(1),
     }),
   ]),
+  golden_check: z.object({
+    pass: z.boolean(), claim_id: z.string(), expected_class: claimClass,
+    actual_class: claimClass, at: z.string(),
+  }).optional(),
   timings: timingsSchema,
   error: z.string().nullable(),
 });
@@ -160,6 +165,53 @@ const extractSchema = z.object({
   timings: timingsSchema,
   schema_valid: z.literal(true),
 });
+// The live capture is a ledger-only artifact, not a numbered replay stage.
+const evidenceSchema: z.ZodType<Evidence> = z.object({
+  id: z.string().min(1), at: z.string().min(1),
+  kind: z.enum(["provider_official", "internal", "downstream_company", "community", "monitor", "press", "private_channel"]),
+  origin: z.string(), provider: z.string().nullable(),
+  channel: z.enum(["status_page", "social", "support", "blog", "report"]).nullable(),
+  excerpt: z.string(), url: z.string().url().nullable(),
+  arrived_via: z.enum(["replay", "api", "archive", "manual"]), fictional: z.boolean(),
+});
+const liveSchema = z.object({
+  segment: z.literal("live-asos"), snapshot: z.literal(2),
+  model: z.literal("gpt-6-astra"), source: z.literal("astra_saved"),
+  generated_at: timestamp, captured_at: timestamp,
+  evidence: z.array(evidenceSchema).length(14), initial_ledger: z.array(claimSchema).length(0),
+  extract: z.object({ claims: z.array(candidateSchema).min(1) }),
+  reconcile: z.object({ claims: z.array(claimSchema).min(1), changes: z.array(changeSchema) }),
+  capped_ledger: z.array(claimSchema).min(1), status: z.literal("complete"),
+  draft: z.never().optional(), drafts: z.never().optional(),
+  timings: z.array(z.object({
+    step: z.enum(["EXTRACT", "RECONCILE", "POLICY"]), stage: z.literal("live-asos"),
+    seconds, tokens: z.object({ input_tokens: count, output_tokens: count, total_tokens: count }).nullable(),
+  })).min(3),
+  total_tokens: count,
+});
+function checkLiveRun(input: unknown) {
+  const run = liveSchema.parse(input);
+  const allowed = new Set(run.evidence.map(e => e.id));
+  expect([...allowed].sort()).toEqual(Array.from({ length: 14 }, (_, i) => `A-${String(i + 1).padStart(2, "0")}`));
+  const checkRefs = (refs: string[]) => expect(refs.filter(id => !allowed.has(id))).toEqual([]);
+  for (const claim of [...run.extract.claims, ...run.reconcile.claims, ...run.capped_ledger]) {
+    checkRefs([...claim.source_ids, ...(claim.estimate ? [claim.estimate.source_id] : [])]);
+  }
+  for (const ledger of [run.reconcile.claims, run.capped_ledger]) {
+    const ids = new Set(ledger.map(c => c.id));
+    expect(ids.size).toBe(ledger.length);
+    for (const claim of ledger) {
+      if (claim.superseded_by) expect(ids.has(claim.superseded_by)).toBe(true);
+      claim.history.forEach(h => checkRefs(h.because));
+      claim.contradiction_sides?.forEach(side => checkRefs(side.source_ids));
+    }
+  }
+  run.reconcile.changes.forEach(c => checkRefs(c.because));
+  // Approximate live timestamps are not June-2025 replay timestamps.
+  expect(run.capped_ledger).toEqual(applyPolicy(run.reconcile.claims, run.evidence));
+  expect(run.total_tokens).toBe(run.timings.reduce((sum, t) => sum + (t.tokens?.total_tokens ?? 0), 0));
+  expect(new Set(run.timings.map(t => t.step))).toEqual(new Set(["EXTRACT", "RECONCILE", "POLICY"]));
+}
 const summarySchema = z.object({
   generated_at: timestamp,
   total_tokens: count,
@@ -344,6 +396,18 @@ function checkRunVerify(input: unknown) {
       }
     }
   }
+  if (run.golden_check?.pass === false) {
+    expect(run.verify).toMatchObject({ status: "failed", pass: false });
+    expect(run.golden_check.actual_class).not.toBe(run.golden_check.expected_class);
+    expect(stage.claims.find(c => c.id === run.golden_check!.claim_id)?.class).toBe(run.golden_check.expected_class);
+    expect(run.capped_ledger.find(c => c.id === run.golden_check!.claim_id)?.class).toBe(run.golden_check.actual_class);
+  }
+  if (run.verify.status === "failed") {
+    // Failed artifacts are retained for fallback; their failures must not become passes.
+    expect(run.verify.pass).toBe(false);
+    expect(failures.length > 0 || !!run.verify.reason, "Failed run needs a diagnostic").toBe(true);
+    return;
+  }
   expect(failures, "Saved sentences must pass code and stored support verification").toEqual([]);
   if (!fallback) expect(run.verify).toMatchObject({ status: "complete", pass: true });
 }
@@ -358,7 +422,8 @@ describe("Every saved-run artifact", () => {
       const step0 = name.startsWith("step-0-");
       it("matches its typed artifact contract", () => {
         const data = read(file);
-        if (name === "summary.json") summarySchema.parse(data);
+        if (name === "live-asos.json") liveSchema.parse(data);
+        else if (name === "summary.json") summarySchema.parse(data);
         else {
           expect(match, "Unrecognized saved-run artifact").not.toBeNull();
           const run = (step0 ? extractSchema : runSchema).parse(data);
@@ -367,7 +432,9 @@ describe("Every saved-run artifact", () => {
       });
       it("passes current policy and evidence provenance", () => {
         const data = read(file);
-        if (name === "summary.json") {
+        if (name === "live-asos.json") {
+          checkLiveRun(data);
+        } else if (name === "summary.json") {
           const summary = summarySchema.parse(data);
           expect(new Set(summary.stages.map((s) => s.stage)).size).toBe(summary.stages.length);
           expect(summary.stages.map((s) => s.stage).sort()).toEqual(
@@ -397,9 +464,11 @@ describe("Every saved-run artifact", () => {
           capped.forEach((c) => claimSchema.parse(c));
         } else checkRunPolicy(data);
       });
-      it("passes verification wherever drafts are stored", () => {
+      it("validates verification status or ledger-only data", () => {
         const data = read(file);
-        if (name === "summary.json") {
+        if (name === "live-asos.json") {
+          checkLiveRun(data);
+        } else if (name === "summary.json") {
           const summary = summarySchema.parse(data);
           for (const row of summary.stages) {
             const input = read(resolve(directory, `stage-${row.stage}.json`));
@@ -457,5 +526,49 @@ describe("Saved-run rejection controls", () => {
     input.verify.audiences[0]!.support.results[0]!.supported = false;
     input.verify.audiences[0]!.support.results[0]!.problem = "Unsupported sentence";
     expect(() => checkRunVerify(input)).toThrow();
+  });
+});
+
+
+describe("Failed and ledger-only artifact controls", () => {
+  it.each([1, 3, 7])("accepts stage %i when explicitly marked failed", n => {
+    const input = read(resolve(directory, `stage-${n}.json`));
+    checkRunPolicy(input);
+    checkRunVerify(input);
+  });
+  it("rejects failed status with a forged true pass", () => {
+    const input = read(resolve(directory, "stage-3.json")) as z.infer<typeof runSchema>;
+    input.verify.pass = true;
+    expect(() => checkRunVerify(input)).toThrow();
+  });
+  it("rejects a golden mismatch relabelled complete", () => {
+    const input = read(resolve(directory, "stage-3.json")) as z.infer<typeof runSchema>;
+    input.verify.status = "complete";
+    input.verify.pass = true;
+    expect(() => checkRunVerify(input)).toThrow();
+  });
+  it("rejects an unexplained failure", () => {
+    const input = read(resolve(directory, "stage-2.json")) as z.infer<typeof runSchema>;
+    input.verify.status = "failed";
+    input.verify.pass = false;
+    expect(() => checkRunVerify(input)).toThrow();
+  });
+  it("accepts the ASOS ledger without drafts", () => {
+    checkLiveRun(read(resolve(directory, "live-asos.json")));
+  });
+  it("rejects drafts injected into ASOS", () => {
+    const input = read(resolve(directory, "live-asos.json")) as Record<string, unknown>;
+    input.drafts = (read(resolve(directory, "stage-2.json")) as z.infer<typeof runSchema>).drafts;
+    expect(() => checkLiveRun(input)).toThrow();
+  });
+  it("rejects unknown ASOS evidence citations", () => {
+    const input = read(resolve(directory, "live-asos.json")) as z.infer<typeof liveSchema>;
+    input.capped_ledger[0]!.source_ids = ["A-MISSING"];
+    expect(() => checkLiveRun(input)).toThrow();
+  });
+  it("rejects an ASOS class that bypasses policy", () => {
+    const input = read(resolve(directory, "live-asos.json")) as z.infer<typeof liveSchema>;
+    input.capped_ledger.find(c => c.class === "UNCONFIRMED")!.class = "CONFIRMED";
+    expect(() => checkLiveRun(input)).toThrow();
   });
 });
