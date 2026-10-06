@@ -5,3 +5,5 @@
 - [x] Build compact desk, replay controls, drawers, updates and action dialog.
 - [x] Build Analysis and post-incident placeholder views.
 - [x] Verify replay, citations, copy, actions, compaction and existing routing tests.
+
+- [x] Live GPT-6 Astra run (extract, reconcile, policy, communicate, verify) wired to Analysis

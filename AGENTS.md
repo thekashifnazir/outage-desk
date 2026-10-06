@@ -13,9 +13,9 @@
 
 - Use compact independently scrolling desk columns and an always-visible draft footer; provenance and copy controls must remain reachable at the reference desktop size.
 - Keep replay records in typed local stage modules, separate from presentation; this makes staged evidence and exact reference drafts auditable.
+- Live GPT-6 Astra steps live in `src/astra/` as four server functions orchestrated by the replay context, importing policy/verify rules from `src/lib/` unchanged; live runs stay in memory and only replace the shown run after verify passes, so saved runs in `src/data/saved-runs/` remain the only persisted runs.
 - Share replay state and navigation across Desk and Analysis through a React context in the root layout; this preserves stage selection without any backend calls.
 - Derive new/changed/expanded UI state in components and keep added actions in React state only; reference records remain immutable and reload resets additions.
-- Keep the existing Astra test server modules untouched and disconnected from replay UI until the user requests live AI; this build is frontend-only.
 
 Incident comms desk built at the GPT-6 Astra Hackathon London (6 Oct 2026). React +
 TypeScript + Tailwind on Lovable. GPT-6 Astra powers the evidence → claim → comms →
