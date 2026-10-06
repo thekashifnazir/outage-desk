@@ -19,6 +19,8 @@
 - Keep the real-organisation Live desk separate from replay state via a read-only presentation adapter; share evidence, ledger and provenance controls, disable drafts and AI runs for that desk, and preserve replay selection when switching.
 - Render post-incident panels from existing stage records and sentence verification flags; presentation never mutates or re-verifies reference evidence.
 - Derive draft key facts from unique sentence claim citations in the shared presentation component; replay and post-incident drafts stay consistent without altering source records.
+- Keep Desk as a two-panel ledger/updates layout with evidence in an on-demand panel and navigation in a collapsible sidebar; presentation state never changes replay records.
+- Rank collapsed ledger rows only for presentation, prioritizing capped claims, current-stage changes, then draft citations; show two per certainty group without mutating the ledger.
 
 Incident comms desk built at the GPT-6 Astra Hackathon London (6 Oct 2026). React +
 TypeScript + Tailwind on Lovable. GPT-6 Astra powers the evidence → claim → comms →

@@ -558,7 +558,7 @@ describe("Failed and ledger-only artifact controls", () => {
   });
   it("rejects drafts injected into ASOS", () => {
     const input = read(resolve(directory, "live-asos.json")) as Record<string, unknown>;
-    input.drafts = (read(resolve(directory, "stage-2.json")) as z.infer<typeof runSchema>).drafts;
+    input['drafts'] = (read(resolve(directory, "stage-2.json")) as z.infer<typeof runSchema>).drafts;
     expect(() => checkLiveRun(input)).toThrow();
   });
   it("rejects unknown ASOS evidence citations", () => {

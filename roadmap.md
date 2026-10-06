@@ -12,3 +12,5 @@
 - [x] Verify stage 9 and Live switching, provenance and copy controls.
 - [x] Improve incident header, replay card, numbered columns and tinted certainty groups without data or logic changes.
 - [x] Add cited key facts under replay and post-incident drafts; verify desktop fit, Live mode and unchanged controls.
+- [x] Add slim sidebar and two-panel Desk with evidence on demand and two priority claims per group.
+- [x] Verify sidebar navigation, evidence and provenance panels, group expansion and 1440×900 fit.
