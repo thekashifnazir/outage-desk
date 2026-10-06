@@ -10,5 +10,5 @@
 - [x] Render stage 9 provider summary, story changes, statement checks and post-incident drafts.
 - [x] Add separate ASOS Live desk with existing evidence and saved ledger, no drafts or replay changes.
 - [x] Verify stage 9 and Live switching, provenance and copy controls.
-- [ ] Improve incident header, replay card, numbered columns and tinted certainty groups without data or logic changes.
-- [ ] Add cited key facts under replay and post-incident drafts; verify desktop fit, Live mode and unchanged controls.
+- [x] Improve incident header, replay card, numbered columns and tinted certainty groups without data or logic changes.
+- [x] Add cited key facts under replay and post-incident drafts; verify desktop fit, Live mode and unchanged controls.
