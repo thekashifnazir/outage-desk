@@ -14,7 +14,7 @@ export const testAstraJson = createServerFn({ method: "POST" }).handler(
   async (): Promise<AstraTestResult> => {
     const text = await askAstraForClaimsJson();
     try {
-      return { ok: true, json: JSON.parse(text) };
+      return { ok: true, json: JSON.parse(text) as AstraClaimsJson };
     } catch {
       return { ok: false, raw: text.slice(0, 200) };
     }
