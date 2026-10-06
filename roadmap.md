@@ -7,3 +7,6 @@
 - [x] Verify replay, citations, copy, actions, compaction and existing routing tests.
 
 - [x] Live GPT-6 Astra run (extract, reconcile, policy, communicate, verify) wired to Analysis
+- [x] Render stage 9 provider summary, story changes, statement checks and post-incident drafts.
+- [x] Add separate ASOS Live desk with existing evidence and saved ledger, no drafts or replay changes.
+- [x] Verify stage 9 and Live switching, provenance and copy controls.
