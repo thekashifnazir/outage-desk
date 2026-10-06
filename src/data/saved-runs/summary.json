@@ -1,17 +1,251 @@
 {
-  "generated_at": "2026-10-06T17:59:57.956Z",
-  "total_tokens": 356538,
-  "timing_note": "Communication and verification timings show slowest audience call; extraction/reconciliation sum attempts. These are API call times, not end-to-end wall time.",
+  "generated_at": "2026-10-06T18:13:01.325Z",
+  "claim_match_method": "Conservative exact content match after case/whitespace/curly-apostrophe normalization: statement, subject, class and unknown_kind must agree. IDs may differ. One generated claim can match at most one reference claim. Superseded claims are excluded from both active-ledger counts. Paraphrases, splits and merges count as nonmatches; this is not a semantic accuracy score. Same-ID/class counts are separate diagnostics and are not claim matches.",
+  "total_tokens": 376135,
+  "replay_total_tokens": 356538,
+  "live_total_tokens": 19597,
+  "timing_note": "Communication and verification timings show slowest audience call; extraction/reconciliation sum attempts. Full per-call timings are included. Policy timing was not recorded for the earlier replay run (null). Step-zero usage is already included in stage 4 and is not counted twice.",
   "stages": [
     {
       "stage": 1,
       "status": "failed",
       "pass": false,
+      "claims_matching_reference": 0,
+      "reference_claim_count": 5,
+      "generated_claim_count": 9,
+      "same_id_class_match_count": 2,
+      "reference_retired_count": 0,
+      "generated_retired_count": 0,
+      "unmatched_generated_ids": [
+        "C-001",
+        "C-002",
+        "C-003",
+        "C-004",
+        "C-005",
+        "C-006",
+        "C-007",
+        "C-008",
+        "C-009"
+      ],
+      "rows": [
+        {
+          "reference_id": "C-001",
+          "reference_statement": "Since 17:51 UTC customers can't reliably log in or use our API",
+          "reference_class": "CONFIRMED",
+          "matches": false,
+          "matched_generated_id": null,
+          "same_id_class_matches": true,
+          "same_id_generated_statement": "Northwind monitoring observed a login-api 5xx rate of 38% in us-central1, against a baseline of 0.2%.",
+          "same_id_generated_class": "CONFIRMED"
+        },
+        {
+          "reference_id": "C-002",
+          "reference_statement": "Google Cloud may be having problems (GCP console, us-east1)",
+          "reference_class": "UNCONFIRMED",
+          "matches": false,
+          "matched_generated_id": null,
+          "same_id_class_matches": false,
+          "same_id_generated_statement": "Northwind monitoring observed that the login-api 5xx rate in us-central1 had been rising since 17:51.",
+          "same_id_generated_class": "CONFIRMED"
+        },
+        {
+          "reference_id": "C-003",
+          "reference_statement": "Root cause",
+          "reference_class": "UNKNOWN",
+          "matches": false,
+          "matched_generated_id": null,
+          "same_id_class_matches": false,
+          "same_id_generated_statement": "A single community post questions whether the Google Cloud console is experiencing problems.",
+          "same_id_generated_class": "UNCONFIRMED"
+        },
+        {
+          "reference_id": "C-004",
+          "reference_statement": "When our service will recover",
+          "reference_class": "UNKNOWN",
+          "matches": false,
+          "matched_generated_id": null,
+          "same_id_class_matches": false,
+          "same_id_generated_statement": "A single community post questions whether Google Cloud is experiencing problems in us-east1.",
+          "same_id_generated_class": "UNCONFIRMED"
+        },
+        {
+          "reference_id": "C-005",
+          "reference_statement": "Google Cloud's status page shows no incident",
+          "reference_class": "CONFIRMED",
+          "matches": false,
+          "matched_generated_id": null,
+          "same_id_class_matches": true,
+          "same_id_generated_statement": "Google Cloud's status page reports no major incidents as of 17:56.",
+          "same_id_generated_class": "CONFIRMED"
+        }
+      ],
+      "reference_ledger_sha256": "c1a856836c027e8a51def7edc471ef997a1da85c2b5871edaa2cdf3d93ed3642",
       "extract_seconds": 21.085105708000004,
       "reconcile_seconds": 25.777956166,
+      "policy_seconds": null,
       "communicate_parallel_seconds": 8.911143166,
       "verify_parallel_seconds": 4.806503167,
       "tokens": 23180,
+      "timings": [
+        {
+          "step": "EXTRACT",
+          "stage": 1,
+          "audience": null,
+          "attempt": 1,
+          "seconds": 21.085105708000004,
+          "tokens": {
+            "input_tokens": 1356,
+            "input_tokens_details": {
+              "cache_write_tokens": 1353,
+              "cached_tokens": 0
+            },
+            "output_tokens": 1333,
+            "output_tokens_details": {
+              "reasoning_tokens": 47
+            },
+            "total_tokens": 2689
+          }
+        },
+        {
+          "step": "RECONCILE",
+          "stage": 1,
+          "audience": null,
+          "attempt": 1,
+          "seconds": 25.777956166,
+          "tokens": {
+            "input_tokens": 2386,
+            "input_tokens_details": {
+              "cache_write_tokens": 2383,
+              "cached_tokens": 0
+            },
+            "output_tokens": 1582,
+            "output_tokens_details": {
+              "reasoning_tokens": 28
+            },
+            "total_tokens": 3968
+          }
+        },
+        {
+          "step": "COMMUNICATE",
+          "stage": 1,
+          "audience": "customer",
+          "attempt": 1,
+          "seconds": 4.983713416,
+          "tokens": {
+            "input_tokens": 2619,
+            "input_tokens_details": {
+              "cache_write_tokens": 2616,
+              "cached_tokens": 0
+            },
+            "output_tokens": 170,
+            "output_tokens_details": {
+              "reasoning_tokens": 0
+            },
+            "total_tokens": 2789
+          }
+        },
+        {
+          "step": "COMMUNICATE",
+          "stage": 1,
+          "audience": "executive",
+          "attempt": 1,
+          "seconds": 7.135358834,
+          "tokens": {
+            "input_tokens": 2619,
+            "input_tokens_details": {
+              "cache_write_tokens": 2616,
+              "cached_tokens": 0
+            },
+            "output_tokens": 426,
+            "output_tokens_details": {
+              "reasoning_tokens": 0
+            },
+            "total_tokens": 3045
+          }
+        },
+        {
+          "step": "COMMUNICATE",
+          "stage": 1,
+          "audience": "engineering",
+          "attempt": 1,
+          "seconds": 8.911143166,
+          "tokens": {
+            "input_tokens": 2619,
+            "input_tokens_details": {
+              "cache_write_tokens": 2616,
+              "cached_tokens": 0
+            },
+            "output_tokens": 432,
+            "output_tokens_details": {
+              "reasoning_tokens": 0
+            },
+            "total_tokens": 3051
+          }
+        },
+        {
+          "step": "VERIFY_CODE",
+          "stage": 1,
+          "seconds": 0.0009979169999999868,
+          "tokens": null
+        },
+        {
+          "step": "VERIFY",
+          "stage": 1,
+          "audience": "executive",
+          "attempt": 1,
+          "seconds": 3.301695875,
+          "tokens": {
+            "input_tokens": 2520,
+            "input_tokens_details": {
+              "cache_write_tokens": 2517,
+              "cached_tokens": 0
+            },
+            "output_tokens": 116,
+            "output_tokens_details": {
+              "reasoning_tokens": 0
+            },
+            "total_tokens": 2636
+          }
+        },
+        {
+          "step": "VERIFY",
+          "stage": 1,
+          "audience": "engineering",
+          "attempt": 1,
+          "seconds": 3.821587292,
+          "tokens": {
+            "input_tokens": 2525,
+            "input_tokens_details": {
+              "cache_write_tokens": 2522,
+              "cached_tokens": 0
+            },
+            "output_tokens": 145,
+            "output_tokens_details": {
+              "reasoning_tokens": 0
+            },
+            "total_tokens": 2670
+          }
+        },
+        {
+          "step": "VERIFY",
+          "stage": 1,
+          "audience": "customer",
+          "attempt": 1,
+          "seconds": 4.806503167,
+          "tokens": {
+            "input_tokens": 2220,
+            "input_tokens_details": {
+              "cache_write_tokens": 2217,
+              "cached_tokens": 0
+            },
+            "output_tokens": 112,
+            "output_tokens_details": {
+              "reasoning_tokens": 16
+            },
+            "total_tokens": 2332
+          }
+        }
+      ],
       "failures": [
         "engineering: Astra: C-003 and C-004 support that the community speculation is unverified, but do not support the instruction that it should not be acted on. — Community speculation about Google Cloud console and us-east1 problems is unverified and should not be acted on [C-003] [C-004].",
         "customer: Astra: C-001 supports elevated login-api errors only in us-central1; the sentence omits that regional limit and broadens the scope to login requests generally. — We're sorry that login requests are experiencing elevated errors [C-001]."
@@ -21,33 +255,885 @@
       "stage": 2,
       "status": "complete",
       "pass": true,
+      "claims_matching_reference": 5,
+      "reference_claim_count": 6,
+      "generated_claim_count": 9,
+      "same_id_class_match_count": 6,
+      "reference_retired_count": 0,
+      "generated_retired_count": 0,
+      "unmatched_generated_ids": [
+        "C-006",
+        "C-007",
+        "C-008",
+        "C-009"
+      ],
+      "rows": [
+        {
+          "reference_id": "C-001",
+          "reference_statement": "Since 17:51 UTC customers can't reliably log in or use our API",
+          "reference_class": "CONFIRMED",
+          "matches": true,
+          "matched_generated_id": "C-001",
+          "same_id_class_matches": true,
+          "same_id_generated_statement": "Since 17:51 UTC customers can't reliably log in or use our API",
+          "same_id_generated_class": "CONFIRMED"
+        },
+        {
+          "reference_id": "C-002",
+          "reference_statement": "Google Cloud may be having problems (GCP console, us-east1)",
+          "reference_class": "UNCONFIRMED",
+          "matches": true,
+          "matched_generated_id": "C-002",
+          "same_id_class_matches": true,
+          "same_id_generated_statement": "Google Cloud may be having problems (GCP console, us-east1)",
+          "same_id_generated_class": "UNCONFIRMED"
+        },
+        {
+          "reference_id": "C-003",
+          "reference_statement": "Root cause",
+          "reference_class": "UNKNOWN",
+          "matches": true,
+          "matched_generated_id": "C-003",
+          "same_id_class_matches": true,
+          "same_id_generated_statement": "Root cause",
+          "same_id_generated_class": "UNKNOWN"
+        },
+        {
+          "reference_id": "C-004",
+          "reference_statement": "When our service will recover",
+          "reference_class": "UNKNOWN",
+          "matches": true,
+          "matched_generated_id": "C-004",
+          "same_id_class_matches": true,
+          "same_id_generated_statement": "When our service will recover",
+          "same_id_generated_class": "UNKNOWN"
+        },
+        {
+          "reference_id": "C-005",
+          "reference_statement": "Google Cloud's status page shows no incident",
+          "reference_class": "CONFIRMED",
+          "matches": true,
+          "matched_generated_id": "C-005",
+          "same_id_class_matches": true,
+          "same_id_generated_statement": "Google Cloud's status page shows no incident",
+          "same_id_generated_class": "CONFIRMED"
+        },
+        {
+          "reference_id": "C-006",
+          "reference_statement": "Our failing requests are Google Cloud API calls (Firestore, Firebase Auth) returning 503",
+          "reference_class": "CONFIRMED",
+          "matches": false,
+          "matched_generated_id": null,
+          "same_id_class_matches": true,
+          "same_id_generated_statement": "Northwind logs in us-central1 show requests to Google Cloud's Firestore and Firebase Auth APIs returning HTTP 503.",
+          "same_id_generated_class": "CONFIRMED"
+        }
+      ],
+      "reference_ledger_sha256": "940b8b66dea466fabe8466fee67a7c644b27e283a7c0edb9672a8b6f0298a167",
       "extract_seconds": 17.264727667,
       "reconcile_seconds": 30.145448583,
+      "policy_seconds": null,
       "communicate_parallel_seconds": 10.709124040999999,
       "verify_parallel_seconds": 4.084214749999999,
       "tokens": 25694,
+      "timings": [
+        {
+          "step": "EXTRACT",
+          "stage": 2,
+          "audience": null,
+          "attempt": 1,
+          "seconds": 17.264727667,
+          "tokens": {
+            "input_tokens": 1334,
+            "input_tokens_details": {
+              "cache_write_tokens": 1331,
+              "cached_tokens": 0
+            },
+            "output_tokens": 1068,
+            "output_tokens_details": {
+              "reasoning_tokens": 67
+            },
+            "total_tokens": 2402
+          }
+        },
+        {
+          "step": "RECONCILE",
+          "stage": 2,
+          "audience": null,
+          "attempt": 1,
+          "seconds": 30.145448583,
+          "tokens": {
+            "input_tokens": 2784,
+            "input_tokens_details": {
+              "cache_write_tokens": 2781,
+              "cached_tokens": 0
+            },
+            "output_tokens": 1853,
+            "output_tokens_details": {
+              "reasoning_tokens": 50
+            },
+            "total_tokens": 4637
+          }
+        },
+        {
+          "step": "COMMUNICATE",
+          "stage": 2,
+          "audience": "customer",
+          "attempt": 1,
+          "seconds": 4.917759125000001,
+          "tokens": {
+            "input_tokens": 2991,
+            "input_tokens_details": {
+              "cache_write_tokens": 2988,
+              "cached_tokens": 0
+            },
+            "output_tokens": 179,
+            "output_tokens_details": {
+              "reasoning_tokens": 0
+            },
+            "total_tokens": 3170
+          }
+        },
+        {
+          "step": "COMMUNICATE",
+          "stage": 2,
+          "audience": "engineering",
+          "attempt": 1,
+          "seconds": 6.496844166,
+          "tokens": {
+            "input_tokens": 2991,
+            "input_tokens_details": {
+              "cache_write_tokens": 2988,
+              "cached_tokens": 0
+            },
+            "output_tokens": 387,
+            "output_tokens_details": {
+              "reasoning_tokens": 0
+            },
+            "total_tokens": 3378
+          }
+        },
+        {
+          "step": "COMMUNICATE",
+          "stage": 2,
+          "audience": "executive",
+          "attempt": 1,
+          "seconds": 10.709124040999999,
+          "tokens": {
+            "input_tokens": 2991,
+            "input_tokens_details": {
+              "cache_write_tokens": 2988,
+              "cached_tokens": 0
+            },
+            "output_tokens": 467,
+            "output_tokens_details": {
+              "reasoning_tokens": 31
+            },
+            "total_tokens": 3458
+          }
+        },
+        {
+          "step": "VERIFY_CODE",
+          "stage": 2,
+          "seconds": 0.00007141599999999926,
+          "tokens": null
+        },
+        {
+          "step": "VERIFY",
+          "stage": 2,
+          "audience": "executive",
+          "attempt": 1,
+          "seconds": 3.26085025,
+          "tokens": {
+            "input_tokens": 2900,
+            "input_tokens_details": {
+              "cache_write_tokens": 2897,
+              "cached_tokens": 0
+            },
+            "output_tokens": 116,
+            "output_tokens_details": {
+              "reasoning_tokens": 0
+            },
+            "total_tokens": 3016
+          }
+        },
+        {
+          "step": "VERIFY",
+          "stage": 2,
+          "audience": "customer",
+          "attempt": 1,
+          "seconds": 3.7438870840000003,
+          "tokens": {
+            "input_tokens": 2601,
+            "input_tokens_details": {
+              "cache_write_tokens": 2598,
+              "cached_tokens": 0
+            },
+            "output_tokens": 64,
+            "output_tokens_details": {
+              "reasoning_tokens": 0
+            },
+            "total_tokens": 2665
+          }
+        },
+        {
+          "step": "VERIFY",
+          "stage": 2,
+          "audience": "engineering",
+          "attempt": 1,
+          "seconds": 4.084214749999999,
+          "tokens": {
+            "input_tokens": 2852,
+            "input_tokens_details": {
+              "cache_write_tokens": 2849,
+              "cached_tokens": 0
+            },
+            "output_tokens": 116,
+            "output_tokens_details": {
+              "reasoning_tokens": 0
+            },
+            "total_tokens": 2968
+          }
+        }
+      ],
       "failures": []
     },
     {
       "stage": 3,
       "status": "complete",
       "pass": true,
+      "claims_matching_reference": 4,
+      "reference_claim_count": 10,
+      "generated_claim_count": 16,
+      "same_id_class_match_count": 9,
+      "reference_retired_count": 0,
+      "generated_retired_count": 0,
+      "unmatched_generated_ids": [
+        "C-002",
+        "C-005",
+        "C-007",
+        "C-008",
+        "C-009",
+        "C-010",
+        "C-011",
+        "C-012",
+        "C-013",
+        "C-014",
+        "C-015",
+        "C-016"
+      ],
+      "rows": [
+        {
+          "reference_id": "C-001",
+          "reference_statement": "Since 17:51 UTC customers can't reliably log in or use our API",
+          "reference_class": "CONFIRMED",
+          "matches": true,
+          "matched_generated_id": "C-001",
+          "same_id_class_matches": true,
+          "same_id_generated_statement": "Since 17:51 UTC customers can't reliably log in or use our API",
+          "same_id_generated_class": "CONFIRMED"
+        },
+        {
+          "reference_id": "C-002",
+          "reference_statement": "Google Cloud APIs are returning errors for many customers worldwide",
+          "reference_class": "REPORTED",
+          "matches": false,
+          "matched_generated_id": null,
+          "same_id_class_matches": true,
+          "same_id_generated_statement": "Google Cloud console access is failing for Northwind engineers. Community reports also describe Firebase database 503 errors, inaccessible projects and broader Google Cloud 503 errors; Expo describes a possible Google Cloud outage. The broader service impact remains unconfirmed.",
+          "same_id_generated_class": "REPORTED"
+        },
+        {
+          "reference_id": "C-003",
+          "reference_statement": "Root cause",
+          "reference_class": "UNKNOWN",
+          "matches": true,
+          "matched_generated_id": "C-003",
+          "same_id_class_matches": true,
+          "same_id_generated_statement": "Root cause",
+          "same_id_generated_class": "UNKNOWN"
+        },
+        {
+          "reference_id": "C-004",
+          "reference_statement": "When our service will recover",
+          "reference_class": "UNKNOWN",
+          "matches": true,
+          "matched_generated_id": "C-004",
+          "same_id_class_matches": true,
+          "same_id_generated_statement": "When our service will recover",
+          "same_id_generated_class": "UNKNOWN"
+        },
+        {
+          "reference_id": "C-005",
+          "reference_statement": "Google Cloud incident: the status page still shows none, but widespread reports say otherwise",
+          "reference_class": "CONFLICTING",
+          "matches": false,
+          "matched_generated_id": null,
+          "same_id_class_matches": false,
+          "same_id_generated_statement": "Google Cloud's status page shows no incident",
+          "same_id_generated_class": "CONFIRMED"
+        },
+        {
+          "reference_id": "C-006",
+          "reference_statement": "Our failing requests are Google Cloud API calls (Firestore, Firebase Auth) returning 503",
+          "reference_class": "CONFIRMED",
+          "matches": true,
+          "matched_generated_id": "C-006",
+          "same_id_class_matches": true,
+          "same_id_generated_statement": "Our failing requests are Google Cloud API calls (Firestore, Firebase Auth) returning 503",
+          "same_id_generated_class": "CONFIRMED"
+        },
+        {
+          "reference_id": "C-007",
+          "reference_statement": "No Northwind deploys since 14:00, so not caused by our change",
+          "reference_class": "CONFIRMED",
+          "matches": false,
+          "matched_generated_id": null,
+          "same_id_class_matches": true,
+          "same_id_generated_statement": "Northwind has made no deploys since 14:00.",
+          "same_id_generated_class": "CONFIRMED"
+        },
+        {
+          "reference_id": "C-008",
+          "reference_statement": "The GCP console won't load for our engineers",
+          "reference_class": "CONFIRMED",
+          "matches": false,
+          "matched_generated_id": null,
+          "same_id_class_matches": true,
+          "same_id_generated_statement": "Northwind's customer app uses Cloud Run.",
+          "same_id_generated_class": "CONFIRMED"
+        },
+        {
+          "reference_id": "C-009",
+          "reference_statement": "Northwind runs only in Google Cloud us-central1, with no second region",
+          "reference_class": "CONFIRMED",
+          "matches": false,
+          "matched_generated_id": null,
+          "same_id_class_matches": true,
+          "same_id_generated_statement": "Northwind's customer app uses Firestore.",
+          "same_id_generated_class": "CONFIRMED"
+        },
+        {
+          "reference_id": "C-010",
+          "reference_statement": "Northwind staff reach internal tools through Cloudflare Access",
+          "reference_class": "CONFIRMED",
+          "matches": false,
+          "matched_generated_id": null,
+          "same_id_class_matches": true,
+          "same_id_generated_statement": "Northwind's customer app uses Firebase Auth.",
+          "same_id_generated_class": "CONFIRMED"
+        }
+      ],
+      "reference_ledger_sha256": "eb27ca566998604622bebec43f7385a40da2f96d49b24f70ac0588c05969367e",
       "extract_seconds": 27.729158792,
       "reconcile_seconds": 40.500095625,
+      "policy_seconds": null,
       "communicate_parallel_seconds": 7.775984375,
       "verify_parallel_seconds": 6.237460916999999,
       "tokens": 36923,
+      "timings": [
+        {
+          "step": "EXTRACT",
+          "stage": 3,
+          "audience": null,
+          "attempt": 1,
+          "seconds": 27.729158792,
+          "tokens": {
+            "input_tokens": 1476,
+            "input_tokens_details": {
+              "cache_write_tokens": 1473,
+              "cached_tokens": 0
+            },
+            "output_tokens": 1803,
+            "output_tokens_details": {
+              "reasoning_tokens": 104
+            },
+            "total_tokens": 3279
+          }
+        },
+        {
+          "step": "RECONCILE",
+          "stage": 3,
+          "audience": null,
+          "attempt": 1,
+          "seconds": 40.500095625,
+          "tokens": {
+            "input_tokens": 3953,
+            "input_tokens_details": {
+              "cache_write_tokens": 3950,
+              "cached_tokens": 0
+            },
+            "output_tokens": 3633,
+            "output_tokens_details": {
+              "reasoning_tokens": 75
+            },
+            "total_tokens": 7586
+          }
+        },
+        {
+          "step": "COMMUNICATE",
+          "stage": 3,
+          "audience": "customer",
+          "attempt": 1,
+          "seconds": 5.3309950839999996,
+          "tokens": {
+            "input_tokens": 4224,
+            "input_tokens_details": {
+              "cache_write_tokens": 4221,
+              "cached_tokens": 0
+            },
+            "output_tokens": 216,
+            "output_tokens_details": {
+              "reasoning_tokens": 37
+            },
+            "total_tokens": 4440
+          }
+        },
+        {
+          "step": "COMMUNICATE",
+          "stage": 3,
+          "audience": "executive",
+          "attempt": 1,
+          "seconds": 7.491398083,
+          "tokens": {
+            "input_tokens": 4224,
+            "input_tokens_details": {
+              "cache_write_tokens": 4221,
+              "cached_tokens": 0
+            },
+            "output_tokens": 395,
+            "output_tokens_details": {
+              "reasoning_tokens": 0
+            },
+            "total_tokens": 4619
+          }
+        },
+        {
+          "step": "COMMUNICATE",
+          "stage": 3,
+          "audience": "engineering",
+          "attempt": 1,
+          "seconds": 7.775984375,
+          "tokens": {
+            "input_tokens": 4224,
+            "input_tokens_details": {
+              "cache_write_tokens": 4221,
+              "cached_tokens": 0
+            },
+            "output_tokens": 417,
+            "output_tokens_details": {
+              "reasoning_tokens": 0
+            },
+            "total_tokens": 4641
+          }
+        },
+        {
+          "step": "VERIFY_CODE",
+          "stage": 3,
+          "seconds": 0.0002460829999999987,
+          "tokens": null
+        },
+        {
+          "step": "VERIFY",
+          "stage": 3,
+          "audience": "customer",
+          "attempt": 1,
+          "seconds": 2.5692417499999998,
+          "tokens": {
+            "input_tokens": 3832,
+            "input_tokens_details": {
+              "cache_write_tokens": 3829,
+              "cached_tokens": 0
+            },
+            "output_tokens": 64,
+            "output_tokens_details": {
+              "reasoning_tokens": 0
+            },
+            "total_tokens": 3896
+          }
+        },
+        {
+          "step": "VERIFY",
+          "stage": 3,
+          "audience": "engineering",
+          "attempt": 1,
+          "seconds": 3.3007982920000005,
+          "tokens": {
+            "input_tokens": 4104,
+            "input_tokens_details": {
+              "cache_write_tokens": 4101,
+              "cached_tokens": 0
+            },
+            "output_tokens": 103,
+            "output_tokens_details": {
+              "reasoning_tokens": 0
+            },
+            "total_tokens": 4207
+          }
+        },
+        {
+          "step": "VERIFY",
+          "stage": 3,
+          "audience": "executive",
+          "attempt": 1,
+          "seconds": 6.237460916999999,
+          "tokens": {
+            "input_tokens": 4083,
+            "input_tokens_details": {
+              "cache_write_tokens": 4080,
+              "cached_tokens": 0
+            },
+            "output_tokens": 172,
+            "output_tokens_details": {
+              "reasoning_tokens": 67
+            },
+            "total_tokens": 4255
+          }
+        }
+      ],
       "failures": []
     },
     {
       "stage": 4,
       "status": "failed",
       "pass": false,
+      "claims_matching_reference": 8,
+      "reference_claim_count": 15,
+      "generated_claim_count": 19,
+      "same_id_class_match_count": 12,
+      "reference_retired_count": 1,
+      "generated_retired_count": 0,
+      "unmatched_generated_ids": [
+        "C-005",
+        "C-011",
+        "C-012",
+        "C-013",
+        "C-014",
+        "C-015",
+        "C-016",
+        "C-017",
+        "C-018",
+        "C-019",
+        "C-020"
+      ],
+      "rows": [
+        {
+          "reference_id": "C-005",
+          "reference_statement": "Google Cloud has an incident affecting multiple products since 17:51 UTC",
+          "reference_class": "CONFIRMED",
+          "matches": false,
+          "matched_generated_id": null,
+          "same_id_class_matches": true,
+          "same_id_generated_statement": "Google Cloud's status page confirms service issues affecting multiple GCP products beginning June 12, 2025, at 17:51 UTC (10:51 PDT); customer reports describe API errors and console access problems.",
+          "same_id_generated_class": "CONFIRMED"
+        },
+        {
+          "reference_id": "C-011",
+          "reference_statement": "Cloudflare has an outage: Access authentication failing, WARP impacted, Workers KV and Durable Objects among impacted services",
+          "reference_class": "CONFIRMED",
+          "matches": false,
+          "matched_generated_id": null,
+          "same_id_class_matches": true,
+          "same_id_generated_statement": "Cloudflare reports Access authentication failures and impacted Zero Trust WARP connectivity; its 18:48 update lists Access, WARP, Durable Objects (SQLite-backed only), Workers KV, Realtime, Workers AI, Stream, and parts of the Cloudflare dashboard as impacted.",
+          "same_id_generated_class": "CONFIRMED"
+        },
+        {
+          "reference_id": "C-001",
+          "reference_statement": "Since 17:51 UTC customers can't reliably log in or use our API",
+          "reference_class": "CONFIRMED",
+          "matches": true,
+          "matched_generated_id": "C-001",
+          "same_id_class_matches": true,
+          "same_id_generated_statement": "Since 17:51 UTC customers can't reliably log in or use our API",
+          "same_id_generated_class": "CONFIRMED"
+        },
+        {
+          "reference_id": "C-006",
+          "reference_statement": "Our failing requests are Google Cloud API calls (Firestore, Firebase Auth) returning 503",
+          "reference_class": "CONFIRMED",
+          "matches": true,
+          "matched_generated_id": "C-006",
+          "same_id_class_matches": true,
+          "same_id_generated_statement": "Our failing requests are Google Cloud API calls (Firestore, Firebase Auth) returning 503",
+          "same_id_generated_class": "CONFIRMED"
+        },
+        {
+          "reference_id": "C-007",
+          "reference_statement": "No Northwind deploys since 14:00, so not caused by our change",
+          "reference_class": "CONFIRMED",
+          "matches": true,
+          "matched_generated_id": "C-007",
+          "same_id_class_matches": true,
+          "same_id_generated_statement": "No Northwind deploys since 14:00, so not caused by our change",
+          "same_id_generated_class": "CONFIRMED"
+        },
+        {
+          "reference_id": "C-008",
+          "reference_statement": "The GCP console won't load for our engineers",
+          "reference_class": "CONFIRMED",
+          "matches": true,
+          "matched_generated_id": "C-008",
+          "same_id_class_matches": true,
+          "same_id_generated_statement": "The GCP console won't load for our engineers",
+          "same_id_generated_class": "CONFIRMED"
+        },
+        {
+          "reference_id": "C-009",
+          "reference_statement": "Northwind runs only in Google Cloud us-central1, with no second region",
+          "reference_class": "CONFIRMED",
+          "matches": true,
+          "matched_generated_id": "C-009",
+          "same_id_class_matches": true,
+          "same_id_generated_statement": "Northwind runs only in Google Cloud us-central1, with no second region",
+          "same_id_generated_class": "CONFIRMED"
+        },
+        {
+          "reference_id": "C-010",
+          "reference_statement": "Northwind staff reach internal tools through Cloudflare Access",
+          "reference_class": "CONFIRMED",
+          "matches": true,
+          "matched_generated_id": "C-010",
+          "same_id_class_matches": true,
+          "same_id_generated_statement": "Northwind staff reach internal tools through Cloudflare Access",
+          "same_id_generated_class": "CONFIRMED"
+        },
+        {
+          "reference_id": "C-015",
+          "reference_statement": "Downdetector: Google Cloud problem reports peaked at 14,695 (18:31); Cloudflare at 3,071 (18:49)",
+          "reference_class": "REPORTED",
+          "matches": false,
+          "matched_generated_id": null,
+          "same_id_class_matches": false,
+          "same_id_generated_statement": "A single community post alleges Azure is having serious issues.",
+          "same_id_generated_class": "UNCONFIRMED"
+        },
+        {
+          "reference_id": "C-012",
+          "reference_statement": "Cloudflare's outage is caused by Google Cloud's outage",
+          "reference_class": "UNCONFIRMED",
+          "matches": false,
+          "matched_generated_id": null,
+          "same_id_class_matches": false,
+          "same_id_generated_statement": "Supabase reports connectivity issues on its own status page.",
+          "same_id_generated_class": "CONFIRMED"
+        },
+        {
+          "reference_id": "C-013",
+          "reference_statement": "AWS and Azure are also down",
+          "reference_class": "UNCONFIRMED",
+          "matches": false,
+          "matched_generated_id": null,
+          "same_id_class_matches": true,
+          "same_id_generated_statement": "Supabase believes its connectivity issues result from a broad outage at an unnamed upstream provider; that cause is not established.",
+          "same_id_generated_class": "UNCONFIRMED"
+        },
+        {
+          "reference_id": "C-014",
+          "reference_statement": "A BGP routing failure is behind the outages",
+          "reference_class": "UNCONFIRMED",
+          "matches": false,
+          "matched_generated_id": null,
+          "same_id_class_matches": true,
+          "same_id_generated_statement": "A single community post alleges AWS is having serious issues.",
+          "same_id_generated_class": "UNCONFIRMED"
+        },
+        {
+          "reference_id": "C-003",
+          "reference_statement": "Root cause",
+          "reference_class": "UNKNOWN",
+          "matches": true,
+          "matched_generated_id": "C-003",
+          "same_id_class_matches": true,
+          "same_id_generated_statement": "Root cause",
+          "same_id_generated_class": "UNKNOWN"
+        },
+        {
+          "reference_id": "C-004",
+          "reference_statement": "When our service will recover",
+          "reference_class": "UNKNOWN",
+          "matches": true,
+          "matched_generated_id": "C-004",
+          "same_id_class_matches": true,
+          "same_id_generated_statement": "When our service will recover",
+          "same_id_generated_class": "UNKNOWN"
+        },
+        {
+          "reference_id": "C-016",
+          "reference_statement": "Which Google Cloud regions are affected",
+          "reference_class": "UNKNOWN",
+          "matches": false,
+          "matched_generated_id": null,
+          "same_id_class_matches": false,
+          "same_id_generated_statement": "The Downdetector snapshot records a Google Cloud report-count peak of 14,695 at 18:31 UTC.",
+          "same_id_generated_class": "REPORTED"
+        }
+      ],
+      "reference_ledger_sha256": "fae2d3f81a19cfadced47b76a640007dead32ee6551bf667ad78909623fd0291",
       "extract_seconds": 31.703646874999997,
       "reconcile_seconds": 49.966455625,
+      "policy_seconds": null,
       "communicate_parallel_seconds": 9.529546416,
       "verify_parallel_seconds": 5.9253227079999995,
       "tokens": 43818,
+      "timings": [
+        {
+          "step": "EXTRACT",
+          "stage": 4,
+          "attempt": 1,
+          "seconds": 31.703646874999997,
+          "tokens": {
+            "input_tokens": 785,
+            "input_tokens_details": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0
+            },
+            "output_tokens": 2009,
+            "output_tokens_details": {
+              "reasoning_tokens": 95
+            },
+            "total_tokens": 2794
+          }
+        },
+        {
+          "step": "RECONCILE",
+          "stage": 4,
+          "audience": null,
+          "attempt": 1,
+          "seconds": 49.966455625,
+          "tokens": {
+            "input_tokens": 4311,
+            "input_tokens_details": {
+              "cache_write_tokens": 4308,
+              "cached_tokens": 0
+            },
+            "output_tokens": 4368,
+            "output_tokens_details": {
+              "reasoning_tokens": 76
+            },
+            "total_tokens": 8679
+          }
+        },
+        {
+          "step": "COMMUNICATE",
+          "stage": 4,
+          "audience": "customer",
+          "attempt": 1,
+          "seconds": 5.0737145,
+          "tokens": {
+            "input_tokens": 5215,
+            "input_tokens_details": {
+              "cache_write_tokens": 5212,
+              "cached_tokens": 0
+            },
+            "output_tokens": 207,
+            "output_tokens_details": {
+              "reasoning_tokens": 0
+            },
+            "total_tokens": 5422
+          }
+        },
+        {
+          "step": "COMMUNICATE",
+          "stage": 4,
+          "audience": "engineering",
+          "attempt": 1,
+          "seconds": 8.947174792,
+          "tokens": {
+            "input_tokens": 5215,
+            "input_tokens_details": {
+              "cache_write_tokens": 5212,
+              "cached_tokens": 0
+            },
+            "output_tokens": 477,
+            "output_tokens_details": {
+              "reasoning_tokens": 0
+            },
+            "total_tokens": 5692
+          }
+        },
+        {
+          "step": "COMMUNICATE",
+          "stage": 4,
+          "audience": "executive",
+          "attempt": 1,
+          "seconds": 9.529546416,
+          "tokens": {
+            "input_tokens": 5215,
+            "input_tokens_details": {
+              "cache_write_tokens": 5212,
+              "cached_tokens": 0
+            },
+            "output_tokens": 494,
+            "output_tokens_details": {
+              "reasoning_tokens": 28
+            },
+            "total_tokens": 5709
+          }
+        },
+        {
+          "step": "VERIFY_CODE",
+          "stage": 4,
+          "seconds": 0.00015495900000000518,
+          "tokens": null
+        },
+        {
+          "step": "VERIFY",
+          "stage": 4,
+          "audience": "customer",
+          "attempt": 1,
+          "seconds": 3.060333625,
+          "tokens": {
+            "input_tokens": 4865,
+            "input_tokens_details": {
+              "cache_write_tokens": 4862,
+              "cached_tokens": 0
+            },
+            "output_tokens": 77,
+            "output_tokens_details": {
+              "reasoning_tokens": 0
+            },
+            "total_tokens": 4942
+          }
+        },
+        {
+          "step": "VERIFY",
+          "stage": 4,
+          "audience": "engineering",
+          "attempt": 1,
+          "seconds": 3.682394625,
+          "tokens": {
+            "input_tokens": 5167,
+            "input_tokens_details": {
+              "cache_write_tokens": 5164,
+              "cached_tokens": 0
+            },
+            "output_tokens": 142,
+            "output_tokens_details": {
+              "reasoning_tokens": 0
+            },
+            "total_tokens": 5309
+          }
+        },
+        {
+          "step": "VERIFY",
+          "stage": 4,
+          "audience": "executive",
+          "attempt": 1,
+          "seconds": 5.9253227079999995,
+          "tokens": {
+            "input_tokens": 5155,
+            "input_tokens_details": {
+              "cache_write_tokens": 5152,
+              "cached_tokens": 0
+            },
+            "output_tokens": 116,
+            "output_tokens_details": {
+              "reasoning_tokens": 0
+            },
+            "total_tokens": 5271
+          }
+        }
+      ],
       "failures": [
         "engineering: Astra: C-018 supports that the alleged causal link is unverified, but does not support the instruction that it should not be acted on. — Claims Google caused Cloudflare's outage are unverified and should not be acted on [C-018]."
       ]
@@ -56,11 +1142,393 @@
       "stage": 5,
       "status": "failed",
       "pass": false,
+      "claims_matching_reference": 13,
+      "reference_claim_count": 20,
+      "generated_claim_count": 23,
+      "same_id_class_match_count": 16,
+      "reference_retired_count": 2,
+      "generated_retired_count": 0,
+      "unmatched_generated_ids": [
+        "C-004",
+        "C-016",
+        "C-017",
+        "C-018",
+        "C-019",
+        "C-020",
+        "C-021",
+        "C-022",
+        "C-023",
+        "C-024"
+      ],
+      "rows": [
+        {
+          "reference_id": "C-001",
+          "reference_statement": "Since 17:51 UTC customers can't reliably log in or use our API",
+          "reference_class": "CONFIRMED",
+          "matches": true,
+          "matched_generated_id": "C-001",
+          "same_id_class_matches": true,
+          "same_id_generated_statement": "Since 17:51 UTC customers can't reliably log in or use our API",
+          "same_id_generated_class": "CONFIRMED"
+        },
+        {
+          "reference_id": "C-003",
+          "reference_statement": "Root cause",
+          "reference_class": "UNKNOWN",
+          "matches": true,
+          "matched_generated_id": "C-003",
+          "same_id_class_matches": true,
+          "same_id_generated_statement": "Root cause",
+          "same_id_generated_class": "UNKNOWN"
+        },
+        {
+          "reference_id": "C-004",
+          "reference_statement": "When our service will recover",
+          "reference_class": "UNKNOWN",
+          "matches": false,
+          "matched_generated_id": null,
+          "same_id_class_matches": true,
+          "same_id_generated_statement": "When our service will recover remains unknown; Google Cloud says it has no ETA for full service recovery.",
+          "same_id_generated_class": "UNKNOWN"
+        },
+        {
+          "reference_id": "C-005",
+          "reference_statement": "Google Cloud has an incident affecting multiple products since 17:51 UTC",
+          "reference_class": "CONFIRMED",
+          "matches": true,
+          "matched_generated_id": "C-005",
+          "same_id_class_matches": true,
+          "same_id_generated_statement": "Google Cloud has an incident affecting multiple products since 17:51 UTC",
+          "same_id_generated_class": "CONFIRMED"
+        },
+        {
+          "reference_id": "C-006",
+          "reference_statement": "Our failing requests are Google Cloud API calls (Firestore, Firebase Auth) returning 503",
+          "reference_class": "CONFIRMED",
+          "matches": true,
+          "matched_generated_id": "C-006",
+          "same_id_class_matches": true,
+          "same_id_generated_statement": "Our failing requests are Google Cloud API calls (Firestore, Firebase Auth) returning 503",
+          "same_id_generated_class": "CONFIRMED"
+        },
+        {
+          "reference_id": "C-007",
+          "reference_statement": "No Northwind deploys since 14:00, so not caused by our change",
+          "reference_class": "CONFIRMED",
+          "matches": true,
+          "matched_generated_id": "C-007",
+          "same_id_class_matches": true,
+          "same_id_generated_statement": "No Northwind deploys since 14:00, so not caused by our change",
+          "same_id_generated_class": "CONFIRMED"
+        },
+        {
+          "reference_id": "C-008",
+          "reference_statement": "The GCP console won't load for our engineers",
+          "reference_class": "CONFIRMED",
+          "matches": true,
+          "matched_generated_id": "C-008",
+          "same_id_class_matches": true,
+          "same_id_generated_statement": "The GCP console won't load for our engineers",
+          "same_id_generated_class": "CONFIRMED"
+        },
+        {
+          "reference_id": "C-009",
+          "reference_statement": "Northwind runs only in Google Cloud us-central1, with no second region",
+          "reference_class": "CONFIRMED",
+          "matches": true,
+          "matched_generated_id": "C-009",
+          "same_id_class_matches": true,
+          "same_id_generated_statement": "Northwind runs only in Google Cloud us-central1, with no second region",
+          "same_id_generated_class": "CONFIRMED"
+        },
+        {
+          "reference_id": "C-010",
+          "reference_statement": "Northwind staff reach internal tools through Cloudflare Access",
+          "reference_class": "CONFIRMED",
+          "matches": true,
+          "matched_generated_id": "C-010",
+          "same_id_class_matches": true,
+          "same_id_generated_statement": "Northwind staff reach internal tools through Cloudflare Access",
+          "same_id_generated_class": "CONFIRMED"
+        },
+        {
+          "reference_id": "C-011",
+          "reference_statement": "Cloudflare has an outage: Access authentication failing, WARP impacted, Workers KV and Durable Objects among impacted services",
+          "reference_class": "CONFIRMED",
+          "matches": true,
+          "matched_generated_id": "C-011",
+          "same_id_class_matches": true,
+          "same_id_generated_statement": "Cloudflare has an outage: Access authentication failing, WARP impacted, Workers KV and Durable Objects among impacted services",
+          "same_id_generated_class": "CONFIRMED"
+        },
+        {
+          "reference_id": "C-012",
+          "reference_statement": "Cloudflare's outage is caused by Google Cloud's outage",
+          "reference_class": "UNCONFIRMED",
+          "matches": true,
+          "matched_generated_id": "C-012",
+          "same_id_class_matches": true,
+          "same_id_generated_statement": "Cloudflare's outage is caused by Google Cloud's outage",
+          "same_id_generated_class": "UNCONFIRMED"
+        },
+        {
+          "reference_id": "C-013",
+          "reference_statement": "AWS and Azure are also down",
+          "reference_class": "UNCONFIRMED",
+          "matches": true,
+          "matched_generated_id": "C-013",
+          "same_id_class_matches": true,
+          "same_id_generated_statement": "AWS and Azure are also down",
+          "same_id_generated_class": "UNCONFIRMED"
+        },
+        {
+          "reference_id": "C-014",
+          "reference_statement": "A BGP routing failure is behind the outages",
+          "reference_class": "UNCONFIRMED",
+          "matches": true,
+          "matched_generated_id": "C-014",
+          "same_id_class_matches": true,
+          "same_id_generated_statement": "A BGP routing failure is behind the outages",
+          "same_id_generated_class": "UNCONFIRMED"
+        },
+        {
+          "reference_id": "C-015",
+          "reference_statement": "Downdetector: Google Cloud problem reports peaked at 14,695 (18:31); Cloudflare at 3,071 (18:49)",
+          "reference_class": "REPORTED",
+          "matches": true,
+          "matched_generated_id": "C-015",
+          "same_id_class_matches": true,
+          "same_id_generated_statement": "Downdetector: Google Cloud problem reports peaked at 14,695 (18:31); Cloudflare at 3,071 (18:49)",
+          "same_id_generated_class": "REPORTED"
+        },
+        {
+          "reference_id": "C-017",
+          "reference_statement": "Google has identified the root cause and applied mitigations, without disclosing the cause",
+          "reference_class": "CONFIRMED",
+          "matches": false,
+          "matched_generated_id": null,
+          "same_id_class_matches": true,
+          "same_id_generated_statement": "Cloudflare reports that its services are starting to recover.",
+          "same_id_generated_class": "CONFIRMED"
+        },
+        {
+          "reference_id": "C-018",
+          "reference_statement": "All Google Cloud locations except us-central1 have fully recovered",
+          "reference_class": "CONFIRMED",
+          "matches": false,
+          "matched_generated_id": null,
+          "same_id_class_matches": true,
+          "same_id_generated_statement": "Cloudflare expects intermittent errors to continue.",
+          "same_id_generated_class": "CONFIRMED"
+        },
+        {
+          "reference_id": "C-019",
+          "reference_statement": "us-central1, our region, is still affected (\"mostly recovered\")",
+          "reference_class": "CONFIRMED",
+          "matches": false,
+          "matched_generated_id": null,
+          "same_id_class_matches": false,
+          "same_id_generated_statement": "Google's consumer-support account reports no known service disruptions, without specifying services or regions; this contradicts the provider's status page, which reports incomplete Google Cloud recovery.",
+          "same_id_generated_class": "CONFLICTING"
+        },
+        {
+          "reference_id": "C-020",
+          "reference_statement": "Cloudflare services are starting to recover",
+          "reference_class": "CONFIRMED",
+          "matches": false,
+          "matched_generated_id": null,
+          "same_id_class_matches": false,
+          "same_id_generated_statement": "A single r/sysadmin post alleges that the incident is a direct result of a ConnectWise compromise.",
+          "same_id_generated_class": "UNCONFIRMED"
+        },
+        {
+          "reference_id": "C-021",
+          "reference_statement": "Google's support account on X says there are no known service disruptions (contradicts the status page)",
+          "reference_class": "CONFLICTING",
+          "matches": false,
+          "matched_generated_id": null,
+          "same_id_class_matches": false,
+          "same_id_generated_statement": "Google Cloud reports that its engineers have identified the root cause, but the supplied statement does not disclose the specific cause.",
+          "same_id_generated_class": "CONFIRMED"
+        },
+        {
+          "reference_id": "C-022",
+          "reference_statement": "The outage is a result of the ConnectWise compromise",
+          "reference_class": "UNCONFIRMED",
+          "matches": false,
+          "matched_generated_id": null,
+          "same_id_class_matches": false,
+          "same_id_generated_statement": "Google Cloud reports that its engineers have applied mitigations.",
+          "same_id_generated_class": "CONFIRMED"
+        }
+      ],
+      "reference_ledger_sha256": "b0e41d68410b1983c2f3d9eb1786251f8ed7bbeef056e9d8cea399055f1d54c2",
       "extract_seconds": 26.261994082999998,
       "reconcile_seconds": 57.01213224999999,
+      "policy_seconds": null,
       "communicate_parallel_seconds": 15.808274292,
       "verify_parallel_seconds": 6.133092334,
       "tokens": 48785,
+      "timings": [
+        {
+          "step": "EXTRACT",
+          "stage": 5,
+          "audience": null,
+          "attempt": 1,
+          "seconds": 26.261994082999998,
+          "tokens": {
+            "input_tokens": 1438,
+            "input_tokens_details": {
+              "cache_write_tokens": 1435,
+              "cached_tokens": 0
+            },
+            "output_tokens": 1751,
+            "output_tokens_details": {
+              "reasoning_tokens": 70
+            },
+            "total_tokens": 3189
+          }
+        },
+        {
+          "step": "RECONCILE",
+          "stage": 5,
+          "audience": null,
+          "attempt": 1,
+          "seconds": 57.01213224999999,
+          "tokens": {
+            "input_tokens": 5402,
+            "input_tokens_details": {
+              "cache_write_tokens": 5399,
+              "cached_tokens": 0
+            },
+            "output_tokens": 3910,
+            "output_tokens_details": {
+              "reasoning_tokens": 174
+            },
+            "total_tokens": 9312
+          }
+        },
+        {
+          "step": "COMMUNICATE",
+          "stage": 5,
+          "audience": "customer",
+          "attempt": 1,
+          "seconds": 6.294968667,
+          "tokens": {
+            "input_tokens": 5838,
+            "input_tokens_details": {
+              "cache_write_tokens": 5835,
+              "cached_tokens": 0
+            },
+            "output_tokens": 255,
+            "output_tokens_details": {
+              "reasoning_tokens": 29
+            },
+            "total_tokens": 6093
+          }
+        },
+        {
+          "step": "COMMUNICATE",
+          "stage": 5,
+          "audience": "engineering",
+          "attempt": 1,
+          "seconds": 9.123458375,
+          "tokens": {
+            "input_tokens": 5838,
+            "input_tokens_details": {
+              "cache_write_tokens": 5835,
+              "cached_tokens": 0
+            },
+            "output_tokens": 479,
+            "output_tokens_details": {
+              "reasoning_tokens": 0
+            },
+            "total_tokens": 6317
+          }
+        },
+        {
+          "step": "COMMUNICATE",
+          "stage": 5,
+          "audience": "executive",
+          "attempt": 1,
+          "seconds": 15.808274292,
+          "tokens": {
+            "input_tokens": 5838,
+            "input_tokens_details": {
+              "cache_write_tokens": 5835,
+              "cached_tokens": 0
+            },
+            "output_tokens": 481,
+            "output_tokens_details": {
+              "reasoning_tokens": 56
+            },
+            "total_tokens": 6319
+          }
+        },
+        {
+          "step": "VERIFY_CODE",
+          "stage": 5,
+          "seconds": 0.0011667079999999998,
+          "tokens": null
+        },
+        {
+          "step": "VERIFY",
+          "stage": 5,
+          "audience": "customer",
+          "attempt": 1,
+          "seconds": 3.047006708,
+          "tokens": {
+            "input_tokens": 5504,
+            "input_tokens_details": {
+              "cache_write_tokens": 5501,
+              "cached_tokens": 0
+            },
+            "output_tokens": 77,
+            "output_tokens_details": {
+              "reasoning_tokens": 0
+            },
+            "total_tokens": 5581
+          }
+        },
+        {
+          "step": "VERIFY",
+          "stage": 5,
+          "audience": "executive",
+          "attempt": 1,
+          "seconds": 5.716834207999999,
+          "tokens": {
+            "input_tokens": 5736,
+            "input_tokens_details": {
+              "cache_write_tokens": 5733,
+              "cached_tokens": 0
+            },
+            "output_tokens": 203,
+            "output_tokens_details": {
+              "reasoning_tokens": 55
+            },
+            "total_tokens": 5939
+          }
+        },
+        {
+          "step": "VERIFY",
+          "stage": 5,
+          "audience": "engineering",
+          "attempt": 1,
+          "seconds": 6.133092334,
+          "tokens": {
+            "input_tokens": 5791,
+            "input_tokens_details": {
+              "cache_write_tokens": 5788,
+              "cached_tokens": 0
+            },
+            "output_tokens": 244,
+            "output_tokens_details": {
+              "reasoning_tokens": 67
+            },
+            "total_tokens": 6035
+          }
+        }
+      ],
       "failures": [
         "executive: Astra: C-019 says consumer support reports no known service disruptions, with services and regions unspecified. 'Reports no disruptions' drops the knowledge qualifier and increases certainty. — Evidence conflicts: Google consumer support reports no disruptions; Cloud status reports incomplete recovery [C-019].",
         "engineering: Astra: The cited claims establish a Google Cloud incident and Northwind's Google API 503 errors separately, but do not explicitly establish that those errors are part of that incident. — Google Cloud’s multi-product incident includes Firestore/Firebase Auth 503s in Northwind; our sole region, us-central1, is mostly recovered [C-005][C-006][C-009][C-016].",
@@ -71,11 +1539,397 @@
       "stage": 6,
       "status": "failed",
       "pass": false,
+      "claims_matching_reference": 18,
+      "reference_claim_count": 21,
+      "generated_claim_count": 22,
+      "same_id_class_match_count": 21,
+      "reference_retired_count": 2,
+      "generated_retired_count": 1,
+      "unmatched_generated_ids": [
+        "C-004",
+        "C-011",
+        "C-023",
+        "C-024"
+      ],
+      "rows": [
+        {
+          "reference_id": "C-001",
+          "reference_statement": "Since 17:51 UTC customers can't reliably log in or use our API",
+          "reference_class": "CONFIRMED",
+          "matches": true,
+          "matched_generated_id": "C-001",
+          "same_id_class_matches": true,
+          "same_id_generated_statement": "Since 17:51 UTC customers can't reliably log in or use our API",
+          "same_id_generated_class": "CONFIRMED"
+        },
+        {
+          "reference_id": "C-003",
+          "reference_statement": "Root cause",
+          "reference_class": "UNKNOWN",
+          "matches": true,
+          "matched_generated_id": "C-003",
+          "same_id_class_matches": true,
+          "same_id_generated_statement": "Root cause",
+          "same_id_generated_class": "UNKNOWN"
+        },
+        {
+          "reference_id": "C-004",
+          "reference_statement": "When our service will recover",
+          "reference_class": "UNKNOWN",
+          "matches": false,
+          "matched_generated_id": null,
+          "same_id_class_matches": true,
+          "same_id_generated_statement": "When our service will recover remains unknown; Google Cloud has provided no ETA for full service recovery.",
+          "same_id_generated_class": "UNKNOWN"
+        },
+        {
+          "reference_id": "C-005",
+          "reference_statement": "Google Cloud has an incident affecting multiple products since 17:51 UTC",
+          "reference_class": "CONFIRMED",
+          "matches": true,
+          "matched_generated_id": "C-005",
+          "same_id_class_matches": true,
+          "same_id_generated_statement": "Google Cloud has an incident affecting multiple products since 17:51 UTC",
+          "same_id_generated_class": "CONFIRMED"
+        },
+        {
+          "reference_id": "C-006",
+          "reference_statement": "Our failing requests are Google Cloud API calls (Firestore, Firebase Auth) returning 503",
+          "reference_class": "CONFIRMED",
+          "matches": true,
+          "matched_generated_id": "C-006",
+          "same_id_class_matches": true,
+          "same_id_generated_statement": "Our failing requests are Google Cloud API calls (Firestore, Firebase Auth) returning 503",
+          "same_id_generated_class": "CONFIRMED"
+        },
+        {
+          "reference_id": "C-007",
+          "reference_statement": "No Northwind deploys since 14:00, so not caused by our change",
+          "reference_class": "CONFIRMED",
+          "matches": true,
+          "matched_generated_id": "C-007",
+          "same_id_class_matches": true,
+          "same_id_generated_statement": "No Northwind deploys since 14:00, so not caused by our change",
+          "same_id_generated_class": "CONFIRMED"
+        },
+        {
+          "reference_id": "C-008",
+          "reference_statement": "The GCP console won't load for our engineers",
+          "reference_class": "CONFIRMED",
+          "matches": true,
+          "matched_generated_id": "C-008",
+          "same_id_class_matches": true,
+          "same_id_generated_statement": "The GCP console won't load for our engineers",
+          "same_id_generated_class": "CONFIRMED"
+        },
+        {
+          "reference_id": "C-009",
+          "reference_statement": "Northwind runs only in Google Cloud us-central1, with no second region",
+          "reference_class": "CONFIRMED",
+          "matches": true,
+          "matched_generated_id": "C-009",
+          "same_id_class_matches": true,
+          "same_id_generated_statement": "Northwind runs only in Google Cloud us-central1, with no second region",
+          "same_id_generated_class": "CONFIRMED"
+        },
+        {
+          "reference_id": "C-010",
+          "reference_statement": "Northwind staff reach internal tools through Cloudflare Access",
+          "reference_class": "CONFIRMED",
+          "matches": true,
+          "matched_generated_id": "C-010",
+          "same_id_class_matches": true,
+          "same_id_generated_statement": "Northwind staff reach internal tools through Cloudflare Access",
+          "same_id_generated_class": "CONFIRMED"
+        },
+        {
+          "reference_id": "C-011",
+          "reference_statement": "Cloudflare has an outage: Access authentication failing, WARP impacted, Workers KV and Durable Objects among impacted services",
+          "reference_class": "CONFIRMED",
+          "matches": false,
+          "matched_generated_id": null,
+          "same_id_class_matches": true,
+          "same_id_generated_statement": "Cloudflare has an outage: Access authentication failing, WARP impacted, Workers KV went offline, and Durable Objects is among impacted services.",
+          "same_id_generated_class": "CONFIRMED"
+        },
+        {
+          "reference_id": "C-012",
+          "reference_statement": "Cloudflare's outage is caused by Google Cloud's outage",
+          "reference_class": "UNCONFIRMED",
+          "matches": true,
+          "matched_generated_id": "C-012",
+          "same_id_class_matches": true,
+          "same_id_generated_statement": "Cloudflare's outage is caused by Google Cloud's outage",
+          "same_id_generated_class": "UNCONFIRMED"
+        },
+        {
+          "reference_id": "C-013",
+          "reference_statement": "AWS and Azure are also down",
+          "reference_class": "UNCONFIRMED",
+          "matches": true,
+          "matched_generated_id": "C-013",
+          "same_id_class_matches": true,
+          "same_id_generated_statement": "AWS and Azure are also down",
+          "same_id_generated_class": "UNCONFIRMED"
+        },
+        {
+          "reference_id": "C-014",
+          "reference_statement": "A BGP routing failure is behind the outages",
+          "reference_class": "UNCONFIRMED",
+          "matches": true,
+          "matched_generated_id": "C-014",
+          "same_id_class_matches": true,
+          "same_id_generated_statement": "A BGP routing failure is behind the outages",
+          "same_id_generated_class": "UNCONFIRMED"
+        },
+        {
+          "reference_id": "C-015",
+          "reference_statement": "Downdetector: Google Cloud problem reports peaked at 14,695 (18:31); Cloudflare at 3,071 (18:49)",
+          "reference_class": "REPORTED",
+          "matches": true,
+          "matched_generated_id": "C-015",
+          "same_id_class_matches": true,
+          "same_id_generated_statement": "Downdetector: Google Cloud problem reports peaked at 14,695 (18:31); Cloudflare at 3,071 (18:49)",
+          "same_id_generated_class": "REPORTED"
+        },
+        {
+          "reference_id": "C-017",
+          "reference_statement": "Google has identified the root cause and applied mitigations, without disclosing the cause",
+          "reference_class": "CONFIRMED",
+          "matches": true,
+          "matched_generated_id": "C-017",
+          "same_id_class_matches": true,
+          "same_id_generated_statement": "Google has identified the root cause and applied mitigations, without disclosing the cause",
+          "same_id_generated_class": "CONFIRMED"
+        },
+        {
+          "reference_id": "C-018",
+          "reference_statement": "All Google Cloud locations except us-central1 have fully recovered",
+          "reference_class": "CONFIRMED",
+          "matches": true,
+          "matched_generated_id": "C-018",
+          "same_id_class_matches": true,
+          "same_id_generated_statement": "All Google Cloud locations except us-central1 have fully recovered",
+          "same_id_generated_class": "CONFIRMED"
+        },
+        {
+          "reference_id": "C-019",
+          "reference_statement": "us-central1, our region, is still affected (\"mostly recovered\")",
+          "reference_class": "CONFIRMED",
+          "matches": true,
+          "matched_generated_id": "C-019",
+          "same_id_class_matches": true,
+          "same_id_generated_statement": "us-central1, our region, is still affected (\"mostly recovered\")",
+          "same_id_generated_class": "CONFIRMED"
+        },
+        {
+          "reference_id": "C-020",
+          "reference_statement": "Cloudflare services are starting to recover",
+          "reference_class": "CONFIRMED",
+          "matches": true,
+          "matched_generated_id": "C-020",
+          "same_id_class_matches": true,
+          "same_id_generated_statement": "Cloudflare services are starting to recover",
+          "same_id_generated_class": "CONFIRMED"
+        },
+        {
+          "reference_id": "C-021",
+          "reference_statement": "Google's support account on X says there are no known service disruptions (contradicts the status page)",
+          "reference_class": "CONFLICTING",
+          "matches": true,
+          "matched_generated_id": "C-021",
+          "same_id_class_matches": true,
+          "same_id_generated_statement": "Google's support account on X says there are no known service disruptions (contradicts the status page)",
+          "same_id_generated_class": "CONFLICTING"
+        },
+        {
+          "reference_id": "C-022",
+          "reference_statement": "The outage is a result of the ConnectWise compromise",
+          "reference_class": "UNCONFIRMED",
+          "matches": true,
+          "matched_generated_id": "C-022",
+          "same_id_class_matches": true,
+          "same_id_generated_statement": "The outage is a result of the ConnectWise compromise",
+          "same_id_generated_class": "UNCONFIRMED"
+        },
+        {
+          "reference_id": "C-023",
+          "reference_statement": "Cloudflare's Workers KV outage was caused by the failure of a third-party service it depends on (not named)",
+          "reference_class": "CONFIRMED",
+          "matches": false,
+          "matched_generated_id": null,
+          "same_id_class_matches": true,
+          "same_id_generated_statement": "Cloudflare attributed the Workers KV outage to an outage of a third-party service that is a key dependency; it did not identify that service.",
+          "same_id_generated_class": "CONFIRMED"
+        }
+      ],
+      "reference_ledger_sha256": "80f767a671b34c2e3dcfaa9525cd2fc2dacd2e79eca77a99f0b5bb622fdc04d9",
       "extract_seconds": 14.689695167,
       "reconcile_seconds": 50.488732916000004,
+      "policy_seconds": null,
       "communicate_parallel_seconds": 10.211004208,
       "verify_parallel_seconds": 8.0845965,
       "tokens": 48083,
+      "timings": [
+        {
+          "step": "EXTRACT",
+          "stage": 6,
+          "audience": null,
+          "attempt": 1,
+          "seconds": 14.689695167,
+          "tokens": {
+            "input_tokens": 1313,
+            "input_tokens_details": {
+              "cache_write_tokens": 1310,
+              "cached_tokens": 0
+            },
+            "output_tokens": 930,
+            "output_tokens_details": {
+              "reasoning_tokens": 48
+            },
+            "total_tokens": 2243
+          }
+        },
+        {
+          "step": "RECONCILE",
+          "stage": 6,
+          "audience": null,
+          "attempt": 1,
+          "seconds": 50.488732916000004,
+          "tokens": {
+            "input_tokens": 5287,
+            "input_tokens_details": {
+              "cache_write_tokens": 5284,
+              "cached_tokens": 0
+            },
+            "output_tokens": 3694,
+            "output_tokens_details": {
+              "reasoning_tokens": 60
+            },
+            "total_tokens": 8981
+          }
+        },
+        {
+          "step": "COMMUNICATE",
+          "stage": 6,
+          "audience": "customer",
+          "attempt": 1,
+          "seconds": 5.264950125,
+          "tokens": {
+            "input_tokens": 5971,
+            "input_tokens_details": {
+              "cache_write_tokens": 5968,
+              "cached_tokens": 0
+            },
+            "output_tokens": 220,
+            "output_tokens_details": {
+              "reasoning_tokens": 0
+            },
+            "total_tokens": 6191
+          }
+        },
+        {
+          "step": "COMMUNICATE",
+          "stage": 6,
+          "audience": "engineering",
+          "attempt": 1,
+          "seconds": 7.849696333,
+          "tokens": {
+            "input_tokens": 5971,
+            "input_tokens_details": {
+              "cache_write_tokens": 5968,
+              "cached_tokens": 0
+            },
+            "output_tokens": 438,
+            "output_tokens_details": {
+              "reasoning_tokens": 0
+            },
+            "total_tokens": 6409
+          }
+        },
+        {
+          "step": "COMMUNICATE",
+          "stage": 6,
+          "audience": "executive",
+          "attempt": 1,
+          "seconds": 10.211004208,
+          "tokens": {
+            "input_tokens": 5971,
+            "input_tokens_details": {
+              "cache_write_tokens": 5968,
+              "cached_tokens": 0
+            },
+            "output_tokens": 472,
+            "output_tokens_details": {
+              "reasoning_tokens": 28
+            },
+            "total_tokens": 6443
+          }
+        },
+        {
+          "step": "VERIFY_CODE",
+          "stage": 6,
+          "seconds": 0.00004954200000000242,
+          "tokens": null
+        },
+        {
+          "step": "VERIFY",
+          "stage": 6,
+          "audience": "customer",
+          "attempt": 1,
+          "seconds": 2.726210625,
+          "tokens": {
+            "input_tokens": 5633,
+            "input_tokens_details": {
+              "cache_write_tokens": 5630,
+              "cached_tokens": 0
+            },
+            "output_tokens": 77,
+            "output_tokens_details": {
+              "reasoning_tokens": 0
+            },
+            "total_tokens": 5710
+          }
+        },
+        {
+          "step": "VERIFY",
+          "stage": 6,
+          "audience": "engineering",
+          "attempt": 1,
+          "seconds": 3.320407,
+          "tokens": {
+            "input_tokens": 5872,
+            "input_tokens_details": {
+              "cache_write_tokens": 5869,
+              "cached_tokens": 0
+            },
+            "output_tokens": 132,
+            "output_tokens_details": {
+              "reasoning_tokens": 0
+            },
+            "total_tokens": 6004
+          }
+        },
+        {
+          "step": "VERIFY",
+          "stage": 6,
+          "audience": "executive",
+          "attempt": 1,
+          "seconds": 8.0845965,
+          "tokens": {
+            "input_tokens": 5899,
+            "input_tokens_details": {
+              "cache_write_tokens": 5896,
+              "cached_tokens": 0
+            },
+            "output_tokens": 203,
+            "output_tokens_details": {
+              "reasoning_tokens": 38
+            },
+            "total_tokens": 6102
+          }
+        }
+      ],
       "failures": [
         "executive: Astra: C-010 establishes that staff use Cloudflare Access, and C-011 establishes an Access outage, but neither confirms that the outage affected Northwind staff's internal-tool access. — Cloudflare's Access outage affects staff's internal-tool access [C-010][C-011].",
         "engineering: Astra: C-014 and C-022 support that these explanations are unverified, but do not support the added instruction that they should not be acted on. — BGP and ConnectWise explanations are unverified and should not be acted on [C-014] [C-022]."
@@ -85,11 +1939,412 @@
       "stage": 7,
       "status": "failed",
       "pass": false,
+      "claims_matching_reference": 14,
+      "reference_claim_count": 22,
+      "generated_claim_count": 23,
+      "same_id_class_match_count": 20,
+      "reference_retired_count": 4,
+      "generated_retired_count": 1,
+      "unmatched_generated_ids": [
+        "C-001",
+        "C-004",
+        "C-011",
+        "C-017",
+        "C-018",
+        "C-019",
+        "C-020",
+        "C-024",
+        "C-025"
+      ],
+      "rows": [
+        {
+          "reference_id": "C-001",
+          "reference_statement": "Since 17:51 UTC customers can't reliably log in or use our API",
+          "reference_class": "CONFIRMED",
+          "matches": false,
+          "matched_generated_id": null,
+          "same_id_class_matches": true,
+          "same_id_generated_statement": "Since 17:51 UTC customers can't reliably log in or use our API. At 21:00, Northwind's login-api 5xx rate was 12% and falling, down from a peak of 38%.",
+          "same_id_generated_class": "CONFIRMED"
+        },
+        {
+          "reference_id": "C-003",
+          "reference_statement": "Root cause",
+          "reference_class": "UNKNOWN",
+          "matches": true,
+          "matched_generated_id": "C-003",
+          "same_id_class_matches": true,
+          "same_id_generated_statement": "Root cause",
+          "same_id_generated_class": "UNKNOWN"
+        },
+        {
+          "reference_id": "C-004",
+          "reference_statement": "When our service will recover",
+          "reference_class": "UNKNOWN",
+          "matches": false,
+          "matched_generated_id": null,
+          "same_id_class_matches": true,
+          "same_id_generated_statement": "When our service will fully recover remains unknown; Google Cloud's recovery estimate does not establish Northwind's recovery time.",
+          "same_id_generated_class": "UNKNOWN"
+        },
+        {
+          "reference_id": "C-005",
+          "reference_statement": "Google Cloud has an incident affecting multiple products since 17:51 UTC",
+          "reference_class": "CONFIRMED",
+          "matches": true,
+          "matched_generated_id": "C-005",
+          "same_id_class_matches": true,
+          "same_id_generated_statement": "Google Cloud has an incident affecting multiple products since 17:51 UTC",
+          "same_id_generated_class": "CONFIRMED"
+        },
+        {
+          "reference_id": "C-006",
+          "reference_statement": "Our failing requests are Google Cloud API calls (Firestore, Firebase Auth) returning 503",
+          "reference_class": "CONFIRMED",
+          "matches": true,
+          "matched_generated_id": "C-006",
+          "same_id_class_matches": true,
+          "same_id_generated_statement": "Our failing requests are Google Cloud API calls (Firestore, Firebase Auth) returning 503",
+          "same_id_generated_class": "CONFIRMED"
+        },
+        {
+          "reference_id": "C-007",
+          "reference_statement": "No Northwind deploys since 14:00, so not caused by our change",
+          "reference_class": "CONFIRMED",
+          "matches": true,
+          "matched_generated_id": "C-007",
+          "same_id_class_matches": true,
+          "same_id_generated_statement": "No Northwind deploys since 14:00, so not caused by our change",
+          "same_id_generated_class": "CONFIRMED"
+        },
+        {
+          "reference_id": "C-008",
+          "reference_statement": "The GCP console won't load for our engineers",
+          "reference_class": "CONFIRMED",
+          "matches": true,
+          "matched_generated_id": "C-008",
+          "same_id_class_matches": true,
+          "same_id_generated_statement": "The GCP console won't load for our engineers",
+          "same_id_generated_class": "CONFIRMED"
+        },
+        {
+          "reference_id": "C-009",
+          "reference_statement": "Northwind runs only in Google Cloud us-central1, with no second region",
+          "reference_class": "CONFIRMED",
+          "matches": true,
+          "matched_generated_id": "C-009",
+          "same_id_class_matches": true,
+          "same_id_generated_statement": "Northwind runs only in Google Cloud us-central1, with no second region",
+          "same_id_generated_class": "CONFIRMED"
+        },
+        {
+          "reference_id": "C-010",
+          "reference_statement": "Northwind staff reach internal tools through Cloudflare Access",
+          "reference_class": "CONFIRMED",
+          "matches": true,
+          "matched_generated_id": "C-010",
+          "same_id_class_matches": true,
+          "same_id_generated_statement": "Northwind staff reach internal tools through Cloudflare Access",
+          "same_id_generated_class": "CONFIRMED"
+        },
+        {
+          "reference_id": "C-012",
+          "reference_statement": "Cloudflare's outage is caused by Google Cloud's outage",
+          "reference_class": "UNCONFIRMED",
+          "matches": true,
+          "matched_generated_id": "C-012",
+          "same_id_class_matches": true,
+          "same_id_generated_statement": "Cloudflare's outage is caused by Google Cloud's outage",
+          "same_id_generated_class": "UNCONFIRMED"
+        },
+        {
+          "reference_id": "C-013",
+          "reference_statement": "AWS and Azure are also down",
+          "reference_class": "UNCONFIRMED",
+          "matches": true,
+          "matched_generated_id": "C-013",
+          "same_id_class_matches": true,
+          "same_id_generated_statement": "AWS and Azure are also down",
+          "same_id_generated_class": "UNCONFIRMED"
+        },
+        {
+          "reference_id": "C-014",
+          "reference_statement": "A BGP routing failure is behind the outages",
+          "reference_class": "UNCONFIRMED",
+          "matches": true,
+          "matched_generated_id": "C-014",
+          "same_id_class_matches": true,
+          "same_id_generated_statement": "A BGP routing failure is behind the outages",
+          "same_id_generated_class": "UNCONFIRMED"
+        },
+        {
+          "reference_id": "C-015",
+          "reference_statement": "Downdetector: Google Cloud problem reports peaked at 14,695 (18:31); Cloudflare at 3,071 (18:49)",
+          "reference_class": "REPORTED",
+          "matches": true,
+          "matched_generated_id": "C-015",
+          "same_id_class_matches": true,
+          "same_id_generated_statement": "Downdetector: Google Cloud problem reports peaked at 14,695 (18:31); Cloudflare at 3,071 (18:49)",
+          "same_id_generated_class": "REPORTED"
+        },
+        {
+          "reference_id": "C-017",
+          "reference_statement": "Google has identified the root cause and applied mitigations, without disclosing the cause",
+          "reference_class": "CONFIRMED",
+          "matches": false,
+          "matched_generated_id": null,
+          "same_id_class_matches": true,
+          "same_id_generated_statement": "Google Cloud has identified the root cause without disclosing it and applied mitigations; at 21:00 it reported mitigation implemented for us-central1 and multi-region/us.",
+          "same_id_generated_class": "CONFIRMED"
+        },
+        {
+          "reference_id": "C-018",
+          "reference_statement": "All Google Cloud locations except us-central1 have fully recovered",
+          "reference_class": "CONFIRMED",
+          "matches": false,
+          "matched_generated_id": null,
+          "same_id_class_matches": true,
+          "same_id_generated_statement": "At 19:30, Google Cloud reported all locations except us-central1 fully recovered; its 21:00 update identifies us-central1 and multi-region/us as recovering.",
+          "same_id_generated_class": "CONFIRMED"
+        },
+        {
+          "reference_id": "C-019",
+          "reference_statement": "us-central1, our region, is still affected (\"mostly recovered\")",
+          "reference_class": "CONFIRMED",
+          "matches": false,
+          "matched_generated_id": null,
+          "same_id_class_matches": true,
+          "same_id_generated_statement": "Google Cloud reports signs of recovery in us-central1, Northwind's region, and multi-region/us at 21:00; full recovery has not been declared.",
+          "same_id_generated_class": "CONFIRMED"
+        },
+        {
+          "reference_id": "C-021",
+          "reference_statement": "Google's support account on X says there are no known service disruptions (contradicts the status page)",
+          "reference_class": "CONFLICTING",
+          "matches": true,
+          "matched_generated_id": "C-021",
+          "same_id_class_matches": true,
+          "same_id_generated_statement": "Google's support account on X says there are no known service disruptions (contradicts the status page)",
+          "same_id_generated_class": "CONFLICTING"
+        },
+        {
+          "reference_id": "C-022",
+          "reference_statement": "The outage is a result of the ConnectWise compromise",
+          "reference_class": "UNCONFIRMED",
+          "matches": true,
+          "matched_generated_id": "C-022",
+          "same_id_class_matches": true,
+          "same_id_generated_statement": "The outage is a result of the ConnectWise compromise",
+          "same_id_generated_class": "UNCONFIRMED"
+        },
+        {
+          "reference_id": "C-023",
+          "reference_statement": "Cloudflare's Workers KV outage was caused by the failure of a third-party service it depends on (not named)",
+          "reference_class": "CONFIRMED",
+          "matches": true,
+          "matched_generated_id": "C-023",
+          "same_id_class_matches": true,
+          "same_id_generated_statement": "Cloudflare's Workers KV outage was caused by the failure of a third-party service it depends on (not named)",
+          "same_id_generated_class": "CONFIRMED"
+        },
+        {
+          "reference_id": "C-024",
+          "reference_statement": "Google has applied a mitigation in us-central1",
+          "reference_class": "CONFIRMED",
+          "matches": false,
+          "matched_generated_id": null,
+          "same_id_class_matches": true,
+          "same_id_generated_statement": "At 21:00, Google Cloud estimated recovery in us-central1 and multi-region/us would complete in less than an hour; this is an estimate, not confirmation of recovery.",
+          "same_id_generated_class": "CONFIRMED"
+        },
+        {
+          "reference_id": "C-025",
+          "reference_statement": "Our error rate is falling: 12%, down from a 38% peak",
+          "reference_class": "CONFIRMED",
+          "matches": false,
+          "matched_generated_id": null,
+          "same_id_class_matches": false,
+          "same_id_generated_statement": "Whether Northwind data has been affected is unknown.",
+          "same_id_generated_class": "UNKNOWN"
+        },
+        {
+          "reference_id": "C-026",
+          "reference_statement": "All Cloudflare services have been restored",
+          "reference_class": "CONFIRMED",
+          "matches": false,
+          "matched_generated_id": null,
+          "same_id_class_matches": false,
+          "same_id_generated_statement": null,
+          "same_id_generated_class": null
+        }
+      ],
+      "reference_ledger_sha256": "41443316fee8ecec322dd5dc8c7f808d2d882c82e748b9b94e9168491dd60a0a",
       "extract_seconds": 26.615650249999998,
       "reconcile_seconds": 61.982288166,
+      "policy_seconds": null,
       "communicate_parallel_seconds": 9.26872725,
       "verify_parallel_seconds": 5.515935625,
       "tokens": 55999,
+      "timings": [
+        {
+          "step": "EXTRACT",
+          "stage": 7,
+          "audience": null,
+          "attempt": 1,
+          "seconds": 26.615650249999998,
+          "tokens": {
+            "input_tokens": 1382,
+            "input_tokens_details": {
+              "cache_write_tokens": 1379,
+              "cached_tokens": 0
+            },
+            "output_tokens": 1757,
+            "output_tokens_details": {
+              "reasoning_tokens": 66
+            },
+            "total_tokens": 3139
+          }
+        },
+        {
+          "step": "RECONCILE",
+          "stage": 7,
+          "audience": null,
+          "attempt": 1,
+          "seconds": 61.982288166,
+          "tokens": {
+            "input_tokens": 6043,
+            "input_tokens_details": {
+              "cache_write_tokens": 6040,
+              "cached_tokens": 0
+            },
+            "output_tokens": 5472,
+            "output_tokens_details": {
+              "reasoning_tokens": 73
+            },
+            "total_tokens": 11515
+          }
+        },
+        {
+          "step": "COMMUNICATE",
+          "stage": 7,
+          "audience": "customer",
+          "attempt": 1,
+          "seconds": 6.049396541999999,
+          "tokens": {
+            "input_tokens": 6697,
+            "input_tokens_details": {
+              "cache_write_tokens": 6694,
+              "cached_tokens": 0
+            },
+            "output_tokens": 210,
+            "output_tokens_details": {
+              "reasoning_tokens": 0
+            },
+            "total_tokens": 6907
+          }
+        },
+        {
+          "step": "COMMUNICATE",
+          "stage": 7,
+          "audience": "engineering",
+          "attempt": 1,
+          "seconds": 8.372151125,
+          "tokens": {
+            "input_tokens": 6697,
+            "input_tokens_details": {
+              "cache_write_tokens": 6694,
+              "cached_tokens": 0
+            },
+            "output_tokens": 469,
+            "output_tokens_details": {
+              "reasoning_tokens": 0
+            },
+            "total_tokens": 7166
+          }
+        },
+        {
+          "step": "COMMUNICATE",
+          "stage": 7,
+          "audience": "executive",
+          "attempt": 1,
+          "seconds": 9.26872725,
+          "tokens": {
+            "input_tokens": 6697,
+            "input_tokens_details": {
+              "cache_write_tokens": 6694,
+              "cached_tokens": 0
+            },
+            "output_tokens": 452,
+            "output_tokens_details": {
+              "reasoning_tokens": 26
+            },
+            "total_tokens": 7149
+          }
+        },
+        {
+          "step": "VERIFY_CODE",
+          "stage": 7,
+          "seconds": 0.00005150000000000432,
+          "tokens": null
+        },
+        {
+          "step": "VERIFY",
+          "stage": 7,
+          "audience": "customer",
+          "attempt": 1,
+          "seconds": 4.350025666,
+          "tokens": {
+            "input_tokens": 6349,
+            "input_tokens_details": {
+              "cache_write_tokens": 6346,
+              "cached_tokens": 0
+            },
+            "output_tokens": 77,
+            "output_tokens_details": {
+              "reasoning_tokens": 0
+            },
+            "total_tokens": 6426
+          }
+        },
+        {
+          "step": "VERIFY",
+          "stage": 7,
+          "audience": "engineering",
+          "attempt": 1,
+          "seconds": 4.843551959,
+          "tokens": {
+            "input_tokens": 6651,
+            "input_tokens_details": {
+              "cache_write_tokens": 6648,
+              "cached_tokens": 0
+            },
+            "output_tokens": 216,
+            "output_tokens_details": {
+              "reasoning_tokens": 27
+            },
+            "total_tokens": 6867
+          }
+        },
+        {
+          "step": "VERIFY",
+          "stage": 7,
+          "audience": "executive",
+          "attempt": 1,
+          "seconds": 5.515935625,
+          "tokens": {
+            "input_tokens": 6596,
+            "input_tokens_details": {
+              "cache_write_tokens": 6593,
+              "cached_tokens": 0
+            },
+            "output_tokens": 234,
+            "output_tokens_details": {
+              "reasoning_tokens": 45
+            },
+            "total_tokens": 6830
+          }
+        }
+      ],
       "failures": [
         "executive: Astra: C-019 says Google Cloud reports signs of recovery and has not declared full recovery; 'not resolved' states unresolved status with greater certainty. — Google Cloud's outage is recovering in Northwind's region, not resolved [C-005][C-019].",
         "executive: Astra: C-010 establishes that staff use Cloudflare Access, not that their authentication was affected. C-011 reports provider-wide Access impact and attributes restoration to Cloudflare; the sentence asserts staff-specific impact and restoration without that qualification. — Cloudflare's outage affected staff Access authentication; services were restored at 20:57 [C-010][C-011].",
@@ -101,11 +2356,391 @@
       "stage": 8,
       "status": "failed",
       "pass": false,
+      "claims_matching_reference": 17,
+      "reference_claim_count": 20,
+      "generated_claim_count": 25,
+      "same_id_class_match_count": 19,
+      "reference_retired_count": 8,
+      "generated_retired_count": 2,
+      "unmatched_generated_ids": [
+        "C-001",
+        "C-004",
+        "C-016",
+        "C-019",
+        "C-025",
+        "C-026",
+        "C-027",
+        "C-028"
+      ],
+      "rows": [
+        {
+          "reference_id": "C-003",
+          "reference_statement": "Root cause",
+          "reference_class": "UNKNOWN",
+          "matches": true,
+          "matched_generated_id": "C-003",
+          "same_id_class_matches": true,
+          "same_id_generated_statement": "Root cause",
+          "same_id_generated_class": "UNKNOWN"
+        },
+        {
+          "reference_id": "C-005",
+          "reference_statement": "Google Cloud has an incident affecting multiple products since 17:51 UTC",
+          "reference_class": "CONFIRMED",
+          "matches": true,
+          "matched_generated_id": "C-005",
+          "same_id_class_matches": true,
+          "same_id_generated_statement": "Google Cloud has an incident affecting multiple products since 17:51 UTC",
+          "same_id_generated_class": "CONFIRMED"
+        },
+        {
+          "reference_id": "C-006",
+          "reference_statement": "Our failing requests are Google Cloud API calls (Firestore, Firebase Auth) returning 503",
+          "reference_class": "CONFIRMED",
+          "matches": true,
+          "matched_generated_id": "C-006",
+          "same_id_class_matches": true,
+          "same_id_generated_statement": "Our failing requests are Google Cloud API calls (Firestore, Firebase Auth) returning 503",
+          "same_id_generated_class": "CONFIRMED"
+        },
+        {
+          "reference_id": "C-007",
+          "reference_statement": "No Northwind deploys since 14:00, so not caused by our change",
+          "reference_class": "CONFIRMED",
+          "matches": true,
+          "matched_generated_id": "C-007",
+          "same_id_class_matches": true,
+          "same_id_generated_statement": "No Northwind deploys since 14:00, so not caused by our change",
+          "same_id_generated_class": "CONFIRMED"
+        },
+        {
+          "reference_id": "C-008",
+          "reference_statement": "The GCP console won't load for our engineers",
+          "reference_class": "CONFIRMED",
+          "matches": true,
+          "matched_generated_id": "C-008",
+          "same_id_class_matches": true,
+          "same_id_generated_statement": "The GCP console won't load for our engineers",
+          "same_id_generated_class": "CONFIRMED"
+        },
+        {
+          "reference_id": "C-009",
+          "reference_statement": "Northwind runs only in Google Cloud us-central1, with no second region",
+          "reference_class": "CONFIRMED",
+          "matches": true,
+          "matched_generated_id": "C-009",
+          "same_id_class_matches": true,
+          "same_id_generated_statement": "Northwind runs only in Google Cloud us-central1, with no second region",
+          "same_id_generated_class": "CONFIRMED"
+        },
+        {
+          "reference_id": "C-010",
+          "reference_statement": "Northwind staff reach internal tools through Cloudflare Access",
+          "reference_class": "CONFIRMED",
+          "matches": true,
+          "matched_generated_id": "C-010",
+          "same_id_class_matches": true,
+          "same_id_generated_statement": "Northwind staff reach internal tools through Cloudflare Access",
+          "same_id_generated_class": "CONFIRMED"
+        },
+        {
+          "reference_id": "C-012",
+          "reference_statement": "Cloudflare's outage is caused by Google Cloud's outage",
+          "reference_class": "UNCONFIRMED",
+          "matches": true,
+          "matched_generated_id": "C-012",
+          "same_id_class_matches": true,
+          "same_id_generated_statement": "Cloudflare's outage is caused by Google Cloud's outage",
+          "same_id_generated_class": "UNCONFIRMED"
+        },
+        {
+          "reference_id": "C-013",
+          "reference_statement": "AWS and Azure are also down",
+          "reference_class": "UNCONFIRMED",
+          "matches": true,
+          "matched_generated_id": "C-013",
+          "same_id_class_matches": true,
+          "same_id_generated_statement": "AWS and Azure are also down",
+          "same_id_generated_class": "UNCONFIRMED"
+        },
+        {
+          "reference_id": "C-014",
+          "reference_statement": "A BGP routing failure is behind the outages",
+          "reference_class": "UNCONFIRMED",
+          "matches": true,
+          "matched_generated_id": "C-014",
+          "same_id_class_matches": true,
+          "same_id_generated_statement": "A BGP routing failure is behind the outages",
+          "same_id_generated_class": "UNCONFIRMED"
+        },
+        {
+          "reference_id": "C-015",
+          "reference_statement": "Downdetector: Google Cloud problem reports peaked at 14,695 (18:31); Cloudflare at 3,071 (18:49)",
+          "reference_class": "REPORTED",
+          "matches": true,
+          "matched_generated_id": "C-015",
+          "same_id_class_matches": true,
+          "same_id_generated_statement": "Downdetector: Google Cloud problem reports peaked at 14,695 (18:31); Cloudflare at 3,071 (18:49)",
+          "same_id_generated_class": "REPORTED"
+        },
+        {
+          "reference_id": "C-017",
+          "reference_statement": "Google has identified the root cause and applied mitigations, without disclosing the cause",
+          "reference_class": "CONFIRMED",
+          "matches": true,
+          "matched_generated_id": "C-017",
+          "same_id_class_matches": true,
+          "same_id_generated_statement": "Google has identified the root cause and applied mitigations, without disclosing the cause",
+          "same_id_generated_class": "CONFIRMED"
+        },
+        {
+          "reference_id": "C-018",
+          "reference_statement": "All Google Cloud locations except us-central1 have fully recovered",
+          "reference_class": "CONFIRMED",
+          "matches": true,
+          "matched_generated_id": "C-018",
+          "same_id_class_matches": true,
+          "same_id_generated_statement": "All Google Cloud locations except us-central1 have fully recovered",
+          "same_id_generated_class": "CONFIRMED"
+        },
+        {
+          "reference_id": "C-021",
+          "reference_statement": "Google's support account on X says there are no known service disruptions (contradicts the status page)",
+          "reference_class": "CONFLICTING",
+          "matches": true,
+          "matched_generated_id": "C-021",
+          "same_id_class_matches": true,
+          "same_id_generated_statement": "Google's support account on X says there are no known service disruptions (contradicts the status page)",
+          "same_id_generated_class": "CONFLICTING"
+        },
+        {
+          "reference_id": "C-022",
+          "reference_statement": "The outage is a result of the ConnectWise compromise",
+          "reference_class": "UNCONFIRMED",
+          "matches": true,
+          "matched_generated_id": "C-022",
+          "same_id_class_matches": true,
+          "same_id_generated_statement": "The outage is a result of the ConnectWise compromise",
+          "same_id_generated_class": "UNCONFIRMED"
+        },
+        {
+          "reference_id": "C-023",
+          "reference_statement": "Cloudflare's Workers KV outage was caused by the failure of a third-party service it depends on (not named)",
+          "reference_class": "CONFIRMED",
+          "matches": true,
+          "matched_generated_id": "C-023",
+          "same_id_class_matches": true,
+          "same_id_generated_statement": "Cloudflare's Workers KV outage was caused by the failure of a third-party service it depends on (not named)",
+          "same_id_generated_class": "CONFIRMED"
+        },
+        {
+          "reference_id": "C-024",
+          "reference_statement": "Google has applied a mitigation in us-central1",
+          "reference_class": "CONFIRMED",
+          "matches": true,
+          "matched_generated_id": "C-024",
+          "same_id_class_matches": true,
+          "same_id_generated_statement": "Google has applied a mitigation in us-central1",
+          "same_id_generated_class": "CONFIRMED"
+        },
+        {
+          "reference_id": "C-026",
+          "reference_statement": "All Cloudflare services have been restored",
+          "reference_class": "CONFIRMED",
+          "matches": false,
+          "matched_generated_id": null,
+          "same_id_class_matches": true,
+          "same_id_generated_statement": "All Cloudflare services have been restored; Cloudflare declared the incident resolved at 21:31.",
+          "same_id_generated_class": "CONFIRMED"
+        },
+        {
+          "reference_id": "C-027",
+          "reference_statement": "Most Google Cloud products have fully recovered; a few still see residual impact",
+          "reference_class": "CONFIRMED",
+          "matches": false,
+          "matched_generated_id": null,
+          "same_id_class_matches": true,
+          "same_id_generated_statement": "At 21:23 Google Cloud reported full service recovery for most products, with a few services still seeing residual impact.",
+          "same_id_generated_class": "CONFIRMED"
+        },
+        {
+          "reference_id": "C-028",
+          "reference_statement": "Customer impact ran 17:51–21:10 UTC (3 h 19 min): errors from 17:51, alert 17:52, baseline 21:10",
+          "reference_class": "CONFIRMED",
+          "matches": false,
+          "matched_generated_id": null,
+          "same_id_class_matches": false,
+          "same_id_generated_statement": "Whether Northwind experienced any data impact is unknown.",
+          "same_id_generated_class": "UNKNOWN"
+        }
+      ],
+      "reference_ledger_sha256": "0e7fe48a33ef31ad29547cea698d0781c474dffd9193da733a68eb3ef53d1b03",
       "extract_seconds": 20.523199124999998,
       "reconcile_seconds": 76.737389417,
+      "policy_seconds": null,
       "communicate_parallel_seconds": 9.418659500000002,
       "verify_parallel_seconds": 7.057848292,
       "tokens": 57826,
+      "timings": [
+        {
+          "step": "EXTRACT",
+          "stage": 8,
+          "audience": null,
+          "attempt": 1,
+          "seconds": 20.523199124999998,
+          "tokens": {
+            "input_tokens": 1366,
+            "input_tokens_details": {
+              "cache_write_tokens": 1363,
+              "cached_tokens": 0
+            },
+            "output_tokens": 1205,
+            "output_tokens_details": {
+              "reasoning_tokens": 44
+            },
+            "total_tokens": 2571
+          }
+        },
+        {
+          "step": "RECONCILE",
+          "stage": 8,
+          "audience": null,
+          "attempt": 1,
+          "seconds": 76.737389417,
+          "tokens": {
+            "input_tokens": 6113,
+            "input_tokens_details": {
+              "cache_write_tokens": 6110,
+              "cached_tokens": 0
+            },
+            "output_tokens": 5942,
+            "output_tokens_details": {
+              "reasoning_tokens": 78
+            },
+            "total_tokens": 12055
+          }
+        },
+        {
+          "step": "COMMUNICATE",
+          "stage": 8,
+          "audience": "customer",
+          "attempt": 1,
+          "seconds": 9.219686083000001,
+          "tokens": {
+            "input_tokens": 6951,
+            "input_tokens_details": {
+              "cache_write_tokens": 6948,
+              "cached_tokens": 0
+            },
+            "output_tokens": 347,
+            "output_tokens_details": {
+              "reasoning_tokens": 107
+            },
+            "total_tokens": 7298
+          }
+        },
+        {
+          "step": "COMMUNICATE",
+          "stage": 8,
+          "audience": "engineering",
+          "attempt": 1,
+          "seconds": 9.296863,
+          "tokens": {
+            "input_tokens": 6951,
+            "input_tokens_details": {
+              "cache_write_tokens": 6948,
+              "cached_tokens": 0
+            },
+            "output_tokens": 449,
+            "output_tokens_details": {
+              "reasoning_tokens": 0
+            },
+            "total_tokens": 7400
+          }
+        },
+        {
+          "step": "COMMUNICATE",
+          "stage": 8,
+          "audience": "executive",
+          "attempt": 1,
+          "seconds": 9.418659500000002,
+          "tokens": {
+            "input_tokens": 6951,
+            "input_tokens_details": {
+              "cache_write_tokens": 6948,
+              "cached_tokens": 0
+            },
+            "output_tokens": 470,
+            "output_tokens_details": {
+              "reasoning_tokens": 52
+            },
+            "total_tokens": 7421
+          }
+        },
+        {
+          "step": "VERIFY_CODE",
+          "stage": 8,
+          "seconds": 0.00021729199999998626,
+          "tokens": null
+        },
+        {
+          "step": "VERIFY",
+          "stage": 8,
+          "audience": "engineering",
+          "attempt": 1,
+          "seconds": 4.788423542,
+          "tokens": {
+            "input_tokens": 6884,
+            "input_tokens_details": {
+              "cache_write_tokens": 6881,
+              "cached_tokens": 0
+            },
+            "output_tokens": 204,
+            "output_tokens_details": {
+              "reasoning_tokens": 26
+            },
+            "total_tokens": 7088
+          }
+        },
+        {
+          "step": "VERIFY",
+          "stage": 8,
+          "audience": "customer",
+          "attempt": 1,
+          "seconds": 5.201124208,
+          "tokens": {
+            "input_tokens": 6642,
+            "input_tokens_details": {
+              "cache_write_tokens": 6639,
+              "cached_tokens": 0
+            },
+            "output_tokens": 219,
+            "output_tokens_details": {
+              "reasoning_tokens": 67
+            },
+            "total_tokens": 6861
+          }
+        },
+        {
+          "step": "VERIFY",
+          "stage": 8,
+          "audience": "executive",
+          "attempt": 1,
+          "seconds": 7.057848292,
+          "tokens": {
+            "input_tokens": 6842,
+            "input_tokens_details": {
+              "cache_write_tokens": 6839,
+              "cached_tokens": 0
+            },
+            "output_tokens": 290,
+            "output_tokens_details": {
+              "reasoning_tokens": 71
+            },
+            "total_tokens": 7132
+          }
+        }
+      ],
       "failures": [
         "executive: Astra: C-010 establishes that staff use Cloudflare Access, not that staff access experienced an outage. C-026 confirms Cloudflare restoration but does not establish that specific impact. — Google Cloud retains residual impact; Cloudflare's staff-access outage is resolved [C-027] [C-010] [C-026].",
         "executive: Astra: R-12 restricts naming in live updates and permits naming in the incident report; it does not say Google may appear only in the incident report across all communications. — Naming decision settled: Google appears only in the incident report [R-12].",
@@ -121,12 +2756,1248 @@
       "stage": 9,
       "status": "not_applicable",
       "pass": false,
+      "claims_matching_reference": 14,
+      "reference_claim_count": 22,
+      "generated_claim_count": 26,
+      "same_id_class_match_count": 21,
+      "reference_retired_count": 11,
+      "generated_retired_count": 8,
+      "unmatched_generated_ids": [
+        "C-003",
+        "C-014",
+        "C-017",
+        "C-022",
+        "C-023",
+        "C-027",
+        "C-029",
+        "C-030",
+        "C-031",
+        "C-032",
+        "C-033",
+        "C-034"
+      ],
+      "rows": [
+        {
+          "reference_id": "C-003",
+          "reference_statement": "Root cause: a new Service Control quota-policy feature had no error handling and no feature flag; a policy change with blank fields crashed it globally",
+          "reference_class": "CONFIRMED",
+          "matches": false,
+          "matched_generated_id": null,
+          "same_id_class_matches": true,
+          "same_id_generated_statement": "Google Cloud attributed the issue to an invalid automated quota update to its API management system.",
+          "same_id_generated_class": "CONFIRMED"
+        },
+        {
+          "reference_id": "C-005",
+          "reference_statement": "Google Cloud has an incident affecting multiple products since 17:51 UTC",
+          "reference_class": "CONFIRMED",
+          "matches": true,
+          "matched_generated_id": "C-005",
+          "same_id_class_matches": true,
+          "same_id_generated_statement": "Google Cloud has an incident affecting multiple products since 17:51 UTC",
+          "same_id_generated_class": "CONFIRMED"
+        },
+        {
+          "reference_id": "C-006",
+          "reference_statement": "Our failing requests are Google Cloud API calls (Firestore, Firebase Auth) returning 503",
+          "reference_class": "CONFIRMED",
+          "matches": true,
+          "matched_generated_id": "C-006",
+          "same_id_class_matches": true,
+          "same_id_generated_statement": "Our failing requests are Google Cloud API calls (Firestore, Firebase Auth) returning 503",
+          "same_id_generated_class": "CONFIRMED"
+        },
+        {
+          "reference_id": "C-007",
+          "reference_statement": "No Northwind deploys since 14:00, so not caused by our change",
+          "reference_class": "CONFIRMED",
+          "matches": true,
+          "matched_generated_id": "C-007",
+          "same_id_class_matches": true,
+          "same_id_generated_statement": "No Northwind deploys since 14:00, so not caused by our change",
+          "same_id_generated_class": "CONFIRMED"
+        },
+        {
+          "reference_id": "C-008",
+          "reference_statement": "The GCP console won't load for our engineers",
+          "reference_class": "CONFIRMED",
+          "matches": true,
+          "matched_generated_id": "C-008",
+          "same_id_class_matches": true,
+          "same_id_generated_statement": "The GCP console won't load for our engineers",
+          "same_id_generated_class": "CONFIRMED"
+        },
+        {
+          "reference_id": "C-009",
+          "reference_statement": "Northwind runs only in Google Cloud us-central1, with no second region",
+          "reference_class": "CONFIRMED",
+          "matches": true,
+          "matched_generated_id": "C-009",
+          "same_id_class_matches": true,
+          "same_id_generated_statement": "Northwind runs only in Google Cloud us-central1, with no second region",
+          "same_id_generated_class": "CONFIRMED"
+        },
+        {
+          "reference_id": "C-010",
+          "reference_statement": "Northwind staff reach internal tools through Cloudflare Access",
+          "reference_class": "CONFIRMED",
+          "matches": true,
+          "matched_generated_id": "C-010",
+          "same_id_class_matches": true,
+          "same_id_generated_statement": "Northwind staff reach internal tools through Cloudflare Access",
+          "same_id_generated_class": "CONFIRMED"
+        },
+        {
+          "reference_id": "C-012",
+          "reference_statement": "Cloudflare's outage is caused by Google Cloud's outage",
+          "reference_class": "UNCONFIRMED",
+          "matches": true,
+          "matched_generated_id": "C-012",
+          "same_id_class_matches": true,
+          "same_id_generated_statement": "Cloudflare's outage is caused by Google Cloud's outage",
+          "same_id_generated_class": "UNCONFIRMED"
+        },
+        {
+          "reference_id": "C-013",
+          "reference_statement": "AWS and Azure are also down",
+          "reference_class": "UNCONFIRMED",
+          "matches": true,
+          "matched_generated_id": "C-013",
+          "same_id_class_matches": true,
+          "same_id_generated_statement": "AWS and Azure are also down",
+          "same_id_generated_class": "UNCONFIRMED"
+        },
+        {
+          "reference_id": "C-015",
+          "reference_statement": "Downdetector: Google Cloud problem reports peaked at 14,695 (18:31); Cloudflare at 3,071 (18:49)",
+          "reference_class": "REPORTED",
+          "matches": true,
+          "matched_generated_id": "C-015",
+          "same_id_class_matches": true,
+          "same_id_generated_statement": "Downdetector: Google Cloud problem reports peaked at 14,695 (18:31); Cloudflare at 3,071 (18:49)",
+          "same_id_generated_class": "REPORTED"
+        },
+        {
+          "reference_id": "C-018",
+          "reference_statement": "All Google Cloud locations except us-central1 have fully recovered",
+          "reference_class": "CONFIRMED",
+          "matches": true,
+          "matched_generated_id": "C-018",
+          "same_id_class_matches": true,
+          "same_id_generated_statement": "All Google Cloud locations except us-central1 have fully recovered",
+          "same_id_generated_class": "CONFIRMED"
+        },
+        {
+          "reference_id": "C-021",
+          "reference_statement": "Google's support account on X says there are no known service disruptions (contradicts the status page)",
+          "reference_class": "CONFLICTING",
+          "matches": true,
+          "matched_generated_id": "C-021",
+          "same_id_class_matches": true,
+          "same_id_generated_statement": "Google's support account on X says there are no known service disruptions (contradicts the status page)",
+          "same_id_generated_class": "CONFLICTING"
+        },
+        {
+          "reference_id": "C-023",
+          "reference_statement": "Cloudflare's Workers KV outage was caused by the failure of a third-party service it depends on (not named)",
+          "reference_class": "CONFIRMED",
+          "matches": false,
+          "matched_generated_id": null,
+          "same_id_class_matches": true,
+          "same_id_generated_statement": "Cloudflare's Workers KV outage was caused by an outage of an unnamed third-party cloud provider backing part of its infrastructure.",
+          "same_id_generated_class": "CONFIRMED"
+        },
+        {
+          "reference_id": "C-024",
+          "reference_statement": "Google has applied a mitigation in us-central1",
+          "reference_class": "CONFIRMED",
+          "matches": true,
+          "matched_generated_id": "C-024",
+          "same_id_class_matches": true,
+          "same_id_generated_statement": "Google has applied a mitigation in us-central1",
+          "same_id_generated_class": "CONFIRMED"
+        },
+        {
+          "reference_id": "C-026",
+          "reference_statement": "All Cloudflare services have been restored",
+          "reference_class": "CONFIRMED",
+          "matches": true,
+          "matched_generated_id": "C-026",
+          "same_id_class_matches": true,
+          "same_id_generated_statement": "All Cloudflare services have been restored",
+          "same_id_generated_class": "CONFIRMED"
+        },
+        {
+          "reference_id": "C-027",
+          "reference_statement": "Most Google Cloud products have fully recovered; a few still see residual impact",
+          "reference_class": "CONFIRMED",
+          "matches": false,
+          "matched_generated_id": null,
+          "same_id_class_matches": true,
+          "same_id_generated_statement": "Google Cloud reported all affected services fully recovered, with Vertex AI Online Prediction fully recovered as of 12 Jun 18:18 PDT.",
+          "same_id_generated_class": "CONFIRMED"
+        },
+        {
+          "reference_id": "C-028",
+          "reference_statement": "Customer impact ran 17:51–21:10 UTC (3 h 19 min): errors from 17:51, alert 17:52, baseline 21:10",
+          "reference_class": "CONFIRMED",
+          "matches": true,
+          "matched_generated_id": "C-028",
+          "same_id_class_matches": true,
+          "same_id_generated_statement": "Customer impact ran 17:51–21:10 UTC (3 h 19 min): errors from 17:51, alert 17:52, baseline 21:10",
+          "same_id_generated_class": "CONFIRMED"
+        },
+        {
+          "reference_id": "C-029",
+          "reference_statement": "Google's mini report states the duration as 3 hours",
+          "reference_class": "CONFIRMED",
+          "matches": false,
+          "matched_generated_id": null,
+          "same_id_class_matches": true,
+          "same_id_generated_statement": "Cloudflare accepted responsibility for its chosen dependencies in the outage.",
+          "same_id_generated_class": "CONFIRMED"
+        },
+        {
+          "reference_id": "C-030",
+          "reference_statement": "All Google Cloud products recovered by 01:27 UTC on 13 June (Vertex AI last)",
+          "reference_class": "CONFIRMED",
+          "matches": false,
+          "matched_generated_id": null,
+          "same_id_class_matches": true,
+          "same_id_generated_statement": "Cloudflare said its outage was not the result of an attack or other security event.",
+          "same_id_generated_class": "CONFIRMED"
+        },
+        {
+          "reference_id": "C-031",
+          "reference_statement": "Google: some customers' monitoring on Google Cloud also failed, leaving them without a signal",
+          "reference_class": "CONFIRMED",
+          "matches": false,
+          "matched_generated_id": null,
+          "same_id_class_matches": false,
+          "same_id_generated_statement": "An unnamed third-party cloud provider used by Cloudflare reportedly experienced an outage on 12 Jun.",
+          "same_id_generated_class": "REPORTED"
+        },
+        {
+          "reference_id": "C-032",
+          "reference_statement": "Cloudflare: its outage was not the result of an attack",
+          "reference_class": "CONFIRMED",
+          "matches": false,
+          "matched_generated_id": null,
+          "same_id_class_matches": true,
+          "same_id_generated_statement": "Google Cloud's invalid automated quota update was distributed globally.",
+          "same_id_generated_class": "CONFIRMED"
+        },
+        {
+          "reference_id": "C-033",
+          "reference_statement": "Google's fixes: fail open, audit globally replicated data, feature-flag critical changes, enforce backoff, improve external communications",
+          "reference_class": "CONFIRMED",
+          "matches": false,
+          "matched_generated_id": null,
+          "same_id_class_matches": true,
+          "same_id_generated_statement": "Google Cloud reported an incident duration of three hours.",
+          "same_id_generated_class": "CONFIRMED"
+        }
+      ],
+      "reference_ledger_sha256": "187cd5c45a1017f97c83cac33863efb3340fd35412ed707a152f5c57469def26",
       "extract_seconds": 29.221256250000003,
       "reconcile_seconds": 75.800551375,
+      "policy_seconds": null,
       "communicate_parallel_seconds": 0,
       "verify_parallel_seconds": 0,
       "tokens": 16230,
+      "timings": [
+        {
+          "step": "EXTRACT",
+          "stage": 9,
+          "audience": null,
+          "attempt": 1,
+          "seconds": 29.221256250000003,
+          "tokens": {
+            "input_tokens": 1491,
+            "input_tokens_details": {
+              "cache_write_tokens": 1488,
+              "cached_tokens": 0
+            },
+            "output_tokens": 2029,
+            "output_tokens_details": {
+              "reasoning_tokens": 103
+            },
+            "total_tokens": 3520
+          }
+        },
+        {
+          "step": "RECONCILE",
+          "stage": 9,
+          "audience": null,
+          "attempt": 1,
+          "seconds": 75.800551375,
+          "tokens": {
+            "input_tokens": 7049,
+            "input_tokens_details": {
+              "cache_write_tokens": 7046,
+              "cached_tokens": 0
+            },
+            "output_tokens": 5661,
+            "output_tokens_details": {
+              "reasoning_tokens": 134
+            },
+            "total_tokens": 12710
+          }
+        }
+      ],
       "failures": []
     }
-  ]
+  ],
+  "live_asos": {
+    "segment": "live-asos",
+    "snapshot": 2,
+    "status": "complete",
+    "extract_seconds": 83.38754162500001,
+    "reconcile_seconds": 90.365211291,
+    "policy_seconds": 0.0010460000000020954,
+    "communicate_parallel_seconds": 0,
+    "verify_parallel_seconds": 0,
+    "tokens": 19597,
+    "timings": [
+      {
+        "step": "EXTRACT",
+        "stage": "live-asos",
+        "audience": null,
+        "attempt": 1,
+        "seconds": 83.38754162500001,
+        "tokens": {
+          "input_tokens": 2215,
+          "input_tokens_details": {
+            "cache_write_tokens": 2212,
+            "cached_tokens": 0
+          },
+          "output_tokens": 6296,
+          "output_tokens_details": {
+            "reasoning_tokens": 145
+          },
+          "total_tokens": 8511
+        }
+      },
+      {
+        "step": "RECONCILE",
+        "stage": "live-asos",
+        "audience": null,
+        "attempt": 1,
+        "seconds": 90.365211291,
+        "tokens": {
+          "input_tokens": 6000,
+          "input_tokens_details": {
+            "cache_write_tokens": 5997,
+            "cached_tokens": 0
+          },
+          "output_tokens": 5086,
+          "output_tokens_details": {
+            "reasoning_tokens": 204
+          },
+          "total_tokens": 11086
+        }
+      },
+      {
+        "step": "POLICY",
+        "stage": "live-asos",
+        "seconds": 0.0010460000000020954,
+        "tokens": null
+      }
+    ],
+    "comparison": {
+      "snapshot": 2,
+      "method": "Semantic review against all 12 expected snapshot-2 propositions, allowing splits and paraphrases while requiring attribution, modality and class. Review is bound to the exact ledger SHA-256.",
+      "reviewed_ledger_sha256": "798ce6e16a78cc9e51be5ce469881c7d21b881a783033387b96ef33c6acd05f3",
+      "expected_claim_count": 12,
+      "matched_expected_claim_count": 11,
+      "rows": [
+        {
+          "expected_row": 1,
+          "expected_statement": "An unauthorised notification was sent to ASOS customers at around 10am",
+          "expected_class": "CONFIRMED",
+          "generated_ids": [
+            "C-004"
+          ],
+          "generated_claims": [
+            {
+              "id": "C-004",
+              "statement": "ASOS confirms that an unauthorised customer notification was sent to customers at around 10am on 6 October. ITV, RTÉ, STV and PinkNews reported customers receiving a phone alert claiming the retailer was hacked.",
+              "subject": "ASOS",
+              "unknown_kind": null,
+              "class": "CONFIRMED",
+              "proposed_class": "CONFIRMED",
+              "source_ids": [
+                "A-03",
+                "A-11"
+              ],
+              "provider_wording": "ASOS can confirm that, at around 10am today, an unauthorised customer notification was sent to ASOS customers.",
+              "settled_by": "A-11",
+              "estimate": null,
+              "first_seen": null,
+              "superseded_by": null,
+              "contradiction_sides": null,
+              "history": []
+            }
+          ],
+          "matches": true,
+          "note": "Same underlying assertion, attribution and class; wording may differ."
+        },
+        {
+          "expected_row": 2,
+          "expected_statement": "ASOS is investigating unauthorised activity on third-party platforms it uses to communicate with customers, and has restricted access to them",
+          "expected_class": "CONFIRMED",
+          "generated_ids": [
+            "C-011",
+            "C-021"
+          ],
+          "generated_claims": [
+            {
+              "id": "C-011",
+              "statement": "ASOS says it is investigating unauthorised activity involving third-party platforms used to communicate with customers, confirming earlier reports that it was investigating the incident.",
+              "subject": "ASOS",
+              "unknown_kind": null,
+              "class": "CONFIRMED",
+              "proposed_class": "CONFIRMED",
+              "source_ids": [
+                "A-06",
+                "A-11"
+              ],
+              "provider_wording": "We are investigating unauthorised activity involving third-party platforms that we use to communicate with customers.",
+              "settled_by": "A-11",
+              "estimate": null,
+              "first_seen": null,
+              "superseded_by": null,
+              "contradiction_sides": null,
+              "history": []
+            },
+            {
+              "id": "C-021",
+              "statement": "ASOS says it took immediate action to restrict access to the notification platforms.",
+              "subject": "ASOS",
+              "unknown_kind": null,
+              "class": "CONFIRMED",
+              "proposed_class": "CONFIRMED",
+              "source_ids": [
+                "A-11"
+              ],
+              "provider_wording": "We took immediate action to restrict access to the notification platforms and are working with our internal and external specialist advisers, as well as all relevant authorities.",
+              "settled_by": null,
+              "estimate": null,
+              "first_seen": null,
+              "superseded_by": null,
+              "contradiction_sides": null,
+              "history": []
+            }
+          ],
+          "matches": true,
+          "note": "Equivalent content and class, split into investigating (C-011) and restricted access (C-021)."
+        },
+        {
+          "expected_row": 3,
+          "expected_statement": "Basic personal information (name, contact details) may have been accessed",
+          "expected_class": "CONFIRMED",
+          "generated_ids": [
+            "C-023"
+          ],
+          "generated_claims": [
+            {
+              "id": "C-023",
+              "statement": "ASOS says basic personal information, including names and contact details, may have been accessed.",
+              "subject": "ASOS",
+              "unknown_kind": null,
+              "class": "CONFIRMED",
+              "proposed_class": "CONFIRMED",
+              "source_ids": [
+                "A-11"
+              ],
+              "provider_wording": "Basic personal information including name and contact details may have been accessed.",
+              "settled_by": null,
+              "estimate": null,
+              "first_seen": null,
+              "superseded_by": null,
+              "contradiction_sides": null,
+              "history": []
+            }
+          ],
+          "matches": true,
+          "note": "Same underlying assertion, attribution and class; wording may differ."
+        },
+        {
+          "expected_row": 4,
+          "expected_statement": "ASOS does not believe payment-card information or account passwords were impacted",
+          "expected_class": "CONFIRMED",
+          "generated_ids": [
+            "C-024",
+            "C-025"
+          ],
+          "generated_claims": [
+            {
+              "id": "C-024",
+              "statement": "ASOS says it does not believe payment-card information was impacted.",
+              "subject": "ASOS",
+              "unknown_kind": null,
+              "class": "CONFIRMED",
+              "proposed_class": "CONFIRMED",
+              "source_ids": [
+                "A-11"
+              ],
+              "provider_wording": "We do not believe that payment-card information or account passwords, were impacted.",
+              "settled_by": null,
+              "estimate": null,
+              "first_seen": null,
+              "superseded_by": null,
+              "contradiction_sides": null,
+              "history": []
+            },
+            {
+              "id": "C-025",
+              "statement": "ASOS says it does not believe account passwords were impacted.",
+              "subject": "ASOS",
+              "unknown_kind": null,
+              "class": "CONFIRMED",
+              "proposed_class": "CONFIRMED",
+              "source_ids": [
+                "A-11"
+              ],
+              "provider_wording": "We do not believe that payment-card information or account passwords, were impacted.",
+              "settled_by": null,
+              "estimate": null,
+              "first_seen": null,
+              "superseded_by": null,
+              "contradiction_sides": null,
+              "history": []
+            }
+          ],
+          "matches": true,
+          "note": "Equivalent content and class, split into payment cards (C-024) and passwords (C-025); both retain ASOS does not believe."
+        },
+        {
+          "expected_row": 5,
+          "expected_statement": "ASOS website and app are operating normally",
+          "expected_class": "CONFIRMED",
+          "generated_ids": [
+            "C-005"
+          ],
+          "generated_claims": [
+            {
+              "id": "C-005",
+              "statement": "ASOS says its website and app are operating normally, with no current disruption to any aspect of its operations, at its approximately 15:00 announcement. Earlier press reports said the website and app appeared to keep working during the morning.",
+              "subject": "ASOS",
+              "unknown_kind": null,
+              "class": "CONFIRMED",
+              "proposed_class": "CONFIRMED",
+              "source_ids": [
+                "A-03",
+                "A-11"
+              ],
+              "provider_wording": "Our website and app are operating as normal, with no current disruption to any aspects of our operations.",
+              "settled_by": "A-11",
+              "estimate": null,
+              "first_seen": null,
+              "superseded_by": null,
+              "contradiction_sides": null,
+              "history": []
+            }
+          ],
+          "matches": true,
+          "note": "Same underlying assertion, attribution and class; wording may differ."
+        },
+        {
+          "expected_row": 6,
+          "expected_statement": "Snowflake's platform was not compromised",
+          "expected_class": "REPORTED",
+          "generated_ids": [
+            "C-027"
+          ],
+          "generated_claims": [
+            {
+              "id": "C-027",
+              "statement": "Infosecurity Magazine and PA report that a Snowflake spokesperson said Snowflake found no compromise of its platform.",
+              "subject": "Snowflake",
+              "unknown_kind": null,
+              "class": "REPORTED",
+              "proposed_class": "REPORTED",
+              "source_ids": [
+                "A-12"
+              ],
+              "provider_wording": "found no compromise",
+              "settled_by": null,
+              "estimate": null,
+              "first_seen": null,
+              "superseded_by": null,
+              "contradiction_sides": null,
+              "history": []
+            }
+          ],
+          "matches": true,
+          "note": "Same underlying assertion, attribution and class; wording may differ."
+        },
+        {
+          "expected_row": 7,
+          "expected_statement": "The ASOS Snowflake instance has been \"fully compromised\" (attacker's claim)",
+          "expected_class": "UNCONFIRMED",
+          "generated_ids": [
+            "C-001"
+          ],
+          "generated_claims": [
+            {
+              "id": "C-001",
+              "statement": "The sender signing as xuanyewengateway claims in the ASOS notification to have fully compromised the Snowflake instance used by ASOS.",
+              "subject": "ASOS",
+              "unknown_kind": null,
+              "class": "UNCONFIRMED",
+              "proposed_class": "UNCONFIRMED",
+              "source_ids": [
+                "A-01"
+              ],
+              "provider_wording": null,
+              "settled_by": null,
+              "estimate": null,
+              "first_seen": null,
+              "superseded_by": null,
+              "contradiction_sides": null,
+              "history": []
+            }
+          ],
+          "matches": true,
+          "note": "Same underlying assertion, attribution and class; wording may differ."
+        },
+        {
+          "expected_row": 8,
+          "expected_statement": "Payment information unaffected (attacker's claim)",
+          "expected_class": "UNCONFIRMED",
+          "generated_ids": [
+            "C-029"
+          ],
+          "generated_claims": [
+            {
+              "id": "C-029",
+              "statement": "The Xuanye Group Telegram administrator claims ASOS payment information was unaffected, as relayed by Infosecurity Magazine.",
+              "subject": "ASOS",
+              "unknown_kind": null,
+              "class": "UNCONFIRMED",
+              "proposed_class": "UNCONFIRMED",
+              "source_ids": [
+                "A-13"
+              ],
+              "provider_wording": null,
+              "settled_by": null,
+              "estimate": null,
+              "first_seen": null,
+              "superseded_by": null,
+              "contradiction_sides": null,
+              "history": []
+            }
+          ],
+          "matches": true,
+          "note": "Same underlying assertion, attribution and class; wording may differ."
+        },
+        {
+          "expected_row": 9,
+          "expected_statement": "Attackers controlled the app's push-notification system",
+          "expected_class": "UNCONFIRMED",
+          "generated_ids": [
+            "C-017"
+          ],
+          "generated_claims": [
+            {
+              "id": "C-017",
+              "statement": "Cypro and Infosecurity Magazine speculate that delivery through the official ASOS app may indicate attacker access to systems controlling app notifications.",
+              "subject": "ASOS",
+              "unknown_kind": null,
+              "class": "UNCONFIRMED",
+              "proposed_class": "UNCONFIRMED",
+              "source_ids": [
+                "A-09"
+              ],
+              "provider_wording": null,
+              "settled_by": null,
+              "estimate": null,
+              "first_seen": null,
+              "superseded_by": null,
+              "contradiction_sides": null,
+              "history": []
+            }
+          ],
+          "matches": true,
+          "note": "Same underlying assertion, attribution and class; wording may differ."
+        },
+        {
+          "expected_row": 10,
+          "expected_statement": "Whether customer data was actually taken",
+          "expected_class": "UNKNOWN",
+          "generated_ids": [
+            "C-033"
+          ],
+          "generated_claims": [
+            {
+              "id": "C-033",
+              "statement": "The supplied evidence does not establish whether data was exfiltrated from ASOS in the current incident or how many customers' personal information was actually accessed.",
+              "subject": "ASOS",
+              "unknown_kind": "data",
+              "class": "UNKNOWN",
+              "proposed_class": "UNKNOWN",
+              "source_ids": [],
+              "provider_wording": null,
+              "settled_by": null,
+              "estimate": null,
+              "first_seen": null,
+              "superseded_by": null,
+              "contradiction_sides": null,
+              "history": []
+            }
+          ],
+          "matches": true,
+          "note": "Same underlying assertion, attribution and class; wording may differ."
+        },
+        {
+          "expected_row": 11,
+          "expected_statement": "Impact on trading",
+          "expected_class": "UNKNOWN",
+          "generated_ids": [
+            "C-026"
+          ],
+          "generated_claims": [
+            {
+              "id": "C-026",
+              "statement": "ASOS says it is too early to quantify any potential impact on trading.",
+              "subject": "ASOS",
+              "unknown_kind": null,
+              "class": "CONFIRMED",
+              "proposed_class": "CONFIRMED",
+              "source_ids": [
+                "A-11"
+              ],
+              "provider_wording": "It is too early to quantify any potential impact on trading.",
+              "settled_by": null,
+              "estimate": null,
+              "first_seen": null,
+              "superseded_by": null,
+              "contradiction_sides": null,
+              "history": []
+            }
+          ],
+          "matches": false,
+          "note": "Class/formulation mismatch: C-026 is CONFIRMED that ASOS says it is too early to quantify trading impact. The golden ledger instead requires an UNKNOWN trading-impact row, which is absent."
+        },
+        {
+          "expected_row": 12,
+          "expected_statement": "ASOS shares fell as much as ~13% intraday",
+          "expected_class": "REPORTED",
+          "generated_ids": [
+            "C-007"
+          ],
+          "generated_claims": [
+            {
+              "id": "C-007",
+              "statement": "Irish Times / Bloomberg report that ASOS shares fell as much as 13% intraday.",
+              "subject": "ASOS",
+              "unknown_kind": null,
+              "class": "REPORTED",
+              "proposed_class": "REPORTED",
+              "source_ids": [
+                "A-04"
+              ],
+              "provider_wording": null,
+              "settled_by": null,
+              "estimate": null,
+              "first_seen": null,
+              "superseded_by": null,
+              "contradiction_sides": null,
+              "history": []
+            }
+          ],
+          "matches": true,
+          "note": "Same underlying assertion, attribution and class; wording may differ."
+        }
+      ],
+      "differences": [
+        {
+          "expected_row": 11,
+          "expected_statement": "Impact on trading",
+          "expected_class": "UNKNOWN",
+          "generated_ids": [
+            "C-026"
+          ],
+          "generated_claims": [
+            {
+              "id": "C-026",
+              "statement": "ASOS says it is too early to quantify any potential impact on trading.",
+              "subject": "ASOS",
+              "unknown_kind": null,
+              "class": "CONFIRMED",
+              "proposed_class": "CONFIRMED",
+              "source_ids": [
+                "A-11"
+              ],
+              "provider_wording": "It is too early to quantify any potential impact on trading.",
+              "settled_by": null,
+              "estimate": null,
+              "first_seen": null,
+              "superseded_by": null,
+              "contradiction_sides": null,
+              "history": []
+            }
+          ],
+          "matches": false,
+          "note": "Class/formulation mismatch: C-026 is CONFIRMED that ASOS says it is too early to quantify trading impact. The golden ledger instead requires an UNKNOWN trading-impact row, which is absent."
+        }
+      ],
+      "additional_claims": [
+        {
+          "id": "C-002",
+          "statement": "The sender signing as xuanyewengateway threatens in the ASOS notification to leak the allegedly compromised material unless ASOS engages.",
+          "subject": "ASOS",
+          "unknown_kind": null,
+          "class": "UNCONFIRMED",
+          "proposed_class": "UNCONFIRMED",
+          "source_ids": [
+            "A-01"
+          ],
+          "provider_wording": null,
+          "settled_by": null,
+          "estimate": null,
+          "first_seen": null,
+          "superseded_by": null,
+          "contradiction_sides": null,
+          "history": []
+        },
+        {
+          "id": "C-003",
+          "statement": "Many ASOS app users on X report receiving the notification in the UK, US, Germany and Australia.",
+          "subject": "ASOS",
+          "unknown_kind": null,
+          "class": "UNCONFIRMED",
+          "proposed_class": "REPORTED",
+          "source_ids": [
+            "A-02"
+          ],
+          "provider_wording": null,
+          "settled_by": null,
+          "estimate": null,
+          "first_seen": null,
+          "superseded_by": null,
+          "contradiction_sides": null,
+          "history": []
+        },
+        {
+          "id": "C-006",
+          "statement": "Irish Times / Bloomberg report that an ASOS spokesperson declined to confirm or elaborate on the reports during the morning.",
+          "subject": "ASOS",
+          "unknown_kind": null,
+          "class": "REPORTED",
+          "proposed_class": "REPORTED",
+          "source_ids": [
+            "A-04"
+          ],
+          "provider_wording": null,
+          "settled_by": null,
+          "estimate": null,
+          "first_seen": null,
+          "superseded_by": null,
+          "contradiction_sides": null,
+          "history": []
+        },
+        {
+          "id": "C-008",
+          "statement": "Irish Times / Bloomberg describe the ASOS intraday share decline as its largest since September 2025.",
+          "subject": "ASOS",
+          "unknown_kind": null,
+          "class": "REPORTED",
+          "proposed_class": "REPORTED",
+          "source_ids": [
+            "A-04"
+          ],
+          "provider_wording": null,
+          "settled_by": null,
+          "estimate": null,
+          "first_seen": null,
+          "superseded_by": null,
+          "contradiction_sides": null,
+          "history": []
+        },
+        {
+          "id": "C-009",
+          "statement": "Irish Times / Bloomberg report that ASOS shares subsequently pared their intraday losses.",
+          "subject": "ASOS",
+          "unknown_kind": null,
+          "class": "REPORTED",
+          "proposed_class": "REPORTED",
+          "source_ids": [
+            "A-04"
+          ],
+          "provider_wording": null,
+          "settled_by": null,
+          "estimate": null,
+          "first_seen": null,
+          "superseded_by": null,
+          "contradiction_sides": null,
+          "history": []
+        },
+        {
+          "id": "C-010",
+          "statement": "City AM and Global Banking & Finance report ASOS shares down about 11–12% during the morning.",
+          "subject": "ASOS",
+          "unknown_kind": null,
+          "class": "REPORTED",
+          "proposed_class": "REPORTED",
+          "source_ids": [
+            "A-05"
+          ],
+          "provider_wording": null,
+          "settled_by": null,
+          "estimate": null,
+          "first_seen": null,
+          "superseded_by": null,
+          "contradiction_sides": null,
+          "history": []
+        },
+        {
+          "id": "C-012",
+          "statement": "Morning reporting summarized by TechRadar says ASOS had not confirmed a breach at that time.",
+          "subject": "ASOS",
+          "unknown_kind": null,
+          "class": "REPORTED",
+          "proposed_class": "REPORTED",
+          "source_ids": [
+            "A-06"
+          ],
+          "provider_wording": null,
+          "settled_by": null,
+          "estimate": null,
+          "first_seen": null,
+          "superseded_by": null,
+          "contradiction_sides": null,
+          "history": []
+        },
+        {
+          "id": "C-013",
+          "statement": "Morning reporting summarized by TechRadar says there was no confirmation at that time that personal or payment data had been taken from ASOS.",
+          "subject": "ASOS",
+          "unknown_kind": null,
+          "class": "REPORTED",
+          "proposed_class": "REPORTED",
+          "source_ids": [
+            "A-06"
+          ],
+          "provider_wording": null,
+          "settled_by": null,
+          "estimate": null,
+          "first_seen": null,
+          "superseded_by": null,
+          "contradiction_sides": null,
+          "history": []
+        },
+        {
+          "id": "C-014",
+          "statement": "Irish Times / Bloomberg report Snowflake shares down as much as 3.2% in New York pre-market trading.",
+          "subject": "Snowflake",
+          "unknown_kind": null,
+          "class": "REPORTED",
+          "proposed_class": "REPORTED",
+          "source_ids": [
+            "A-07"
+          ],
+          "provider_wording": null,
+          "settled_by": null,
+          "estimate": null,
+          "first_seen": null,
+          "superseded_by": null,
+          "contradiction_sides": null,
+          "history": []
+        },
+        {
+          "id": "C-015",
+          "statement": "GB News and tech-insider.org report that the Telegram group calls itself Xuanye Group or Xuanye Gateway.",
+          "subject": "Xuanye Group",
+          "unknown_kind": null,
+          "class": "REPORTED",
+          "proposed_class": "REPORTED",
+          "source_ids": [
+            "A-08"
+          ],
+          "provider_wording": null,
+          "settled_by": null,
+          "estimate": null,
+          "first_seen": null,
+          "superseded_by": null,
+          "contradiction_sides": null,
+          "history": []
+        },
+        {
+          "id": "C-016",
+          "statement": "GB News and tech-insider.org report no link between Xuanye Group and any earlier breach claim.",
+          "subject": "Xuanye Group",
+          "unknown_kind": null,
+          "class": "REPORTED",
+          "proposed_class": "REPORTED",
+          "source_ids": [
+            "A-08"
+          ],
+          "provider_wording": null,
+          "settled_by": null,
+          "estimate": null,
+          "first_seen": null,
+          "superseded_by": null,
+          "contradiction_sides": null,
+          "history": []
+        },
+        {
+          "id": "C-018",
+          "statement": "ASOS's August breach-notification letters concern a separate credential-stuffing incident beginning on 28 July 2026, not the current October incident.",
+          "subject": "ASOS",
+          "unknown_kind": null,
+          "class": "CONFIRMED",
+          "proposed_class": "CONFIRMED",
+          "source_ids": [
+            "A-10"
+          ],
+          "provider_wording": null,
+          "settled_by": null,
+          "estimate": null,
+          "first_seen": null,
+          "superseded_by": null,
+          "contradiction_sides": null,
+          "history": []
+        },
+        {
+          "id": "C-019",
+          "statement": "CyberInsider and eSecurity Planet report that the separate July 2026 ASOS credential-stuffing incident affected approximately 138,828 US accounts.",
+          "subject": "ASOS",
+          "unknown_kind": null,
+          "class": "REPORTED",
+          "proposed_class": "REPORTED",
+          "source_ids": [
+            "A-10"
+          ],
+          "provider_wording": null,
+          "settled_by": null,
+          "estimate": null,
+          "first_seen": null,
+          "superseded_by": null,
+          "contradiction_sides": null,
+          "history": []
+        },
+        {
+          "id": "C-020",
+          "statement": "ASOS says in its August breach-notification letters that credentials used in the separate July incident came from outside ASOS; the capture supplies a paraphrase rather than the letters' verbatim wording.",
+          "subject": "ASOS",
+          "unknown_kind": null,
+          "class": "CONFIRMED",
+          "proposed_class": "CONFIRMED",
+          "source_ids": [
+            "A-10"
+          ],
+          "provider_wording": null,
+          "settled_by": null,
+          "estimate": null,
+          "first_seen": null,
+          "superseded_by": null,
+          "contradiction_sides": null,
+          "history": []
+        },
+        {
+          "id": "C-022",
+          "statement": "ASOS says it is working with internal and external specialist advisers and all relevant authorities.",
+          "subject": "ASOS",
+          "unknown_kind": null,
+          "class": "CONFIRMED",
+          "proposed_class": "CONFIRMED",
+          "source_ids": [
+            "A-11"
+          ],
+          "provider_wording": "We took immediate action to restrict access to the notification platforms and are working with our internal and external specialist advisers, as well as all relevant authorities.",
+          "settled_by": null,
+          "estimate": null,
+          "first_seen": null,
+          "superseded_by": null,
+          "contradiction_sides": null,
+          "history": []
+        },
+        {
+          "id": "C-028",
+          "statement": "Infosecurity Magazine and PA quote a Snowflake spokesperson saying its investigation is ongoing and it will provide further updates as soon as more information becomes available.",
+          "subject": "Snowflake",
+          "unknown_kind": null,
+          "class": "REPORTED",
+          "proposed_class": "REPORTED",
+          "source_ids": [
+            "A-12"
+          ],
+          "provider_wording": "The investigation is ongoing and we will provide further updates as soon as more information becomes available.",
+          "settled_by": null,
+          "estimate": null,
+          "first_seen": null,
+          "superseded_by": null,
+          "contradiction_sides": null,
+          "history": []
+        },
+        {
+          "id": "C-030",
+          "statement": "LBC reports that Downdetector showed ASOS website issues from approximately 09:41.",
+          "subject": "ASOS",
+          "unknown_kind": null,
+          "class": "REPORTED",
+          "proposed_class": "REPORTED",
+          "source_ids": [
+            "A-14"
+          ],
+          "provider_wording": null,
+          "settled_by": null,
+          "estimate": null,
+          "first_seen": null,
+          "superseded_by": null,
+          "contradiction_sides": null,
+          "history": []
+        },
+        {
+          "id": "C-031",
+          "statement": "LBC reports ASOS shares down approximately 5% within 30 minutes of the first reports.",
+          "subject": "ASOS",
+          "unknown_kind": null,
+          "class": "REPORTED",
+          "proposed_class": "REPORTED",
+          "source_ids": [
+            "A-14"
+          ],
+          "provider_wording": null,
+          "settled_by": null,
+          "estimate": null,
+          "first_seen": null,
+          "superseded_by": null,
+          "contradiction_sides": null,
+          "history": []
+        },
+        {
+          "id": "C-032",
+          "statement": "The supplied evidence does not establish how the unauthorised access described by ASOS was obtained.",
+          "subject": "ASOS",
+          "unknown_kind": "cause",
+          "class": "UNKNOWN",
+          "proposed_class": "UNKNOWN",
+          "source_ids": [],
+          "provider_wording": null,
+          "settled_by": null,
+          "estimate": null,
+          "first_seen": null,
+          "superseded_by": null,
+          "contradiction_sides": null,
+          "history": []
+        },
+        {
+          "id": "C-034",
+          "statement": "The identities of the third-party platforms under investigation by ASOS are not established by its supplied announcement.",
+          "subject": "ASOS",
+          "unknown_kind": "scope",
+          "class": "UNKNOWN",
+          "proposed_class": "UNKNOWN",
+          "source_ids": [],
+          "provider_wording": null,
+          "settled_by": null,
+          "estimate": null,
+          "first_seen": null,
+          "superseded_by": null,
+          "contradiction_sides": null,
+          "history": []
+        },
+        {
+          "id": "C-035",
+          "statement": "The time for completing remediation of the unauthorised activity remains unknown: ASOS supplies no estimate in its announcement. Snowflake's promise of further investigation updates also supplies no timed ETA and does not resolve this question.",
+          "subject": "ASOS",
+          "unknown_kind": "recovery",
+          "class": "UNKNOWN",
+          "proposed_class": "UNKNOWN",
+          "source_ids": [],
+          "provider_wording": null,
+          "settled_by": null,
+          "estimate": null,
+          "first_seen": null,
+          "superseded_by": null,
+          "contradiction_sides": null,
+          "history": []
+        }
+      ],
+      "policy_changes": [
+        {
+          "claim_id": "C-003",
+          "from": "REPORTED",
+          "to": "UNCONFIRMED",
+          "statement": "Many ASOS app users on X report receiving the notification in the UK, US, Germany and Australia."
+        }
+      ],
+      "traps": [
+        {
+          "trap": 1,
+          "hit": false,
+          "claim_ids": [
+            "C-001"
+          ],
+          "finding": "Attacker claim stays about ASOS’s Snowflake instance, subject ASOS, UNCONFIRMED. Snowflake platform claims cite press A-12 and describe its denial."
+        },
+        {
+          "trap": 2,
+          "hit": false,
+          "claim_ids": [
+            "C-018",
+            "C-019",
+            "C-020"
+          ],
+          "finding": "A-10 appears only on three explicitly separate July-incident context rows; it supports no October claim."
+        },
+        {
+          "trap": 3,
+          "hit": false,
+          "claim_ids": [
+            "C-001",
+            "C-004"
+          ],
+          "finding": "A-01 is community evidence and C-001 remains UNCONFIRMED. Confirmed notification row C-004 cites ASOS announcement A-11, not the official-app delivery as authority."
+        },
+        {
+          "trap": 4,
+          "hit": false,
+          "claim_ids": [
+            "C-007",
+            "C-008",
+            "C-009",
+            "C-010",
+            "C-014",
+            "C-031"
+          ],
+          "finding": "Market-movement rows stay REPORTED and are not used as breach proof."
+        },
+        {
+          "trap": 5,
+          "hit": false,
+          "claim_ids": [
+            "C-001"
+          ],
+          "finding": "The compromise allegation cites A-01 only; no relaying press is counted as independent support."
+        },
+        {
+          "trap": 6,
+          "hit": false,
+          "claim_ids": [
+            "C-001",
+            "C-027",
+            "C-028"
+          ],
+          "finding": "No Snowflake assertion cites A-11. ASOS’s statement remains about unnamed third-party platforms."
+        },
+        {
+          "trap": 7,
+          "hit": false,
+          "claim_ids": [
+            "C-023",
+            "C-024",
+            "C-025",
+            "C-029"
+          ],
+          "finding": "ASOS may-have wording and does-not-believe wording remain intact. Attacker payment assurance is separately UNCONFIRMED and attributed."
+        }
+      ],
+      "traps_pass": true,
+      "golden_pass": false
+    }
+  }
 }

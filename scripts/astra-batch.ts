@@ -14,7 +14,7 @@ const classes = ['CONFIRMED', 'REPORTED', 'CONFLICTING', 'UNCONFIRMED', 'UNKNOWN
 const check = (ok: unknown, message: string) => { if (!ok) throw new Error(message); };
 const str = (v: unknown) => typeof v === 'string';
 const nullable = (v: unknown) => v === null || str(v);
-function candidate(c: any, evidence: Set<string>) {
+export function candidate(c: any, evidence: Set<string>) {
   check(c && str(c.statement) && c.statement.length && nullable(c.subject), 'Invalid statement/subject');
   check([null, 'cause', 'recovery', 'scope', 'data'].includes(c.unknown_kind), 'Invalid unknown_kind');
   check(classes.includes(c.proposed_class), 'Invalid proposed_class');
@@ -22,7 +22,7 @@ function candidate(c: any, evidence: Set<string>) {
   check(nullable(c.provider_wording) && nullable(c.settled_by), 'Invalid wording/settled_by');
   check(c.estimate === null || (c.estimate && ['speaker', 'said', 'at', 'source_id'].every(k => str(c.estimate[k])) && evidence.has(c.estimate.source_id)), 'Invalid estimate');
 }
-function reconcile(value: any, evidence: Set<string>) {
+export function reconcile(value: any, evidence: Set<string>) {
   check(value && Array.isArray(value.claims) && Array.isArray(value.changes), 'Expected claims and changes');
   const seen = new Set<string>();
   for (const c of value.claims) {
@@ -60,7 +60,7 @@ export async function stage4Input(): Promise<Stage> {
     return s;
   }
 }
-export async function call(step: number, stage: number, params: Record<string, string>, validate: (v: any) => void, timings: any[]) {
+export async function call(step: number, stage: number | string, params: Record<string, string>, validate: (v: any) => void, timings: any[]) {
   let issue = '';
   for (let attempt = 1; attempt <= 2; attempt++) {
     const start = performance.now();

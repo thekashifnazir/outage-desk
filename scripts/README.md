@@ -38,3 +38,22 @@ phases separately. Verification always runs `src/lib/verify.ts` first, followed 
 Astra for every sentence, and combines both checks. Any failing audience makes the
 whole stage `verify.pass: false`. Consumers must fall back to reference drafts.
 The verifier source hash is recorded for reproducibility.
+
+## ASOS snapshot 2
+
+```sh
+node --env-file=.env.local scripts/astra-asos.ts
+node --env-file=.env.local scripts/summarize-astra.ts
+```
+
+The live runner reads A-01–A-14 directly from `$PREP/replay/asos-2026-10-06.md`,
+extracts and reconciles from an empty ledger, then applies the shared policy cap.
+It generates no drafts. Approximate BST source timestamps stay as captured; policy
+runs on the complete supplied snapshot without the June-2025 replay date parser.
+The expected ledger and traps are withheld from generation and used for review.
+
+The summary counts exact normalized content matches among active claims (statement,
+subject, class, unknown-kind); IDs may differ. Paraphrases and split/merged claims
+are conservatively nonmatches. Same-ID/class counts are separate diagnostics,
+not semantic correctness. Full per-call timings and separate replay/live token
+totals are retained. Step-zero usage is included only once, through stage 4.

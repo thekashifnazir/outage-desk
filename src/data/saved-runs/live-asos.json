@@ -1,0 +1,3485 @@
+{
+  "segment": "live-asos",
+  "snapshot": 2,
+  "model": "gpt-6-astra",
+  "source": "astra_saved",
+  "generated_at": "2026-10-06T18:09:00.629Z",
+  "captured_at": "2026-10-06T17:00:00+01:00",
+  "captured_at_precision": "approximate, per prep document",
+  "source_document": "replay/asos-2026-10-06.md",
+  "source_sha256": "8fa37fc1b7c051b8893dc31cf90ec76c45e88659ca2c8977edba04c500fc1886",
+  "evidence": [
+    {
+      "id": "A-01",
+      "at": "~10:01",
+      "kind": "community",
+      "origin": "ASOS app push notification (screenshots via press and social; time per LBC / Yahoo News UK / Quartz summaries)",
+      "excerpt": "Title \"ASOS HACKED\": \"Dear Asos DPO and IT, we have fully compromised the Snowflake instance. Engage with us, or we will leak it.\" Signed \"xuanyewengateway\", links to a Telegram chat. One version quotes \"the Snowflake $SNOW instance\"",
+      "provider": null,
+      "channel": null,
+      "url": null,
+      "arrived_via": "manual",
+      "fictional": false
+    },
+    {
+      "id": "A-02",
+      "at": "morning",
+      "kind": "community",
+      "origin": "Many app users on X (X trending: \"ASOS App Sends Hack Alerts to UK Customers' Phones\")",
+      "excerpt": "Received the notification; reports from the UK, US, Germany and Australia",
+      "provider": null,
+      "channel": null,
+      "url": null,
+      "arrived_via": "manual",
+      "fictional": false
+    },
+    {
+      "id": "A-03",
+      "at": "morning",
+      "kind": "press",
+      "origin": "ITV, RTÉ, STV, PinkNews",
+      "excerpt": "Customers told the retailer was \"hacked\" in a phone alert. Site and app appeared to keep working",
+      "provider": null,
+      "channel": null,
+      "url": null,
+      "arrived_via": "manual",
+      "fictional": false
+    },
+    {
+      "id": "A-04",
+      "at": "morning",
+      "kind": "press",
+      "origin": "Irish Times / Bloomberg",
+      "excerpt": "An ASOS spokesperson had seen the reports but declined to confirm or elaborate (per summary). Shares fell as much as 13% intraday, the largest since Sep 2025, then pared",
+      "provider": null,
+      "channel": null,
+      "url": null,
+      "arrived_via": "manual",
+      "fictional": false
+    },
+    {
+      "id": "A-05",
+      "at": "morning",
+      "kind": "press",
+      "origin": "City AM, Global Banking & Finance",
+      "excerpt": "Shares \"crater\", down about 11–12%",
+      "provider": null,
+      "channel": null,
+      "url": null,
+      "arrived_via": "manual",
+      "fictional": false
+    },
+    {
+      "id": "A-06",
+      "at": "morning",
+      "kind": "press",
+      "origin": "multiple (TechRadar summary)",
+      "excerpt": "ASOS hasn't confirmed a breach. Reporting says ASOS is understood to be investigating; this is the press's understanding, not an ASOS quote. No confirmation that personal or payment data was taken",
+      "provider": null,
+      "channel": null,
+      "url": null,
+      "arrived_via": "manual",
+      "fictional": false
+    },
+    {
+      "id": "A-07",
+      "at": "pre-market NY",
+      "kind": "press",
+      "origin": "Irish Times / Bloomberg",
+      "excerpt": "Snowflake shares fell as much as 3.2% pre-market",
+      "provider": null,
+      "channel": null,
+      "url": null,
+      "arrived_via": "manual",
+      "fictional": false
+    },
+    {
+      "id": "A-08",
+      "at": "day",
+      "kind": "press",
+      "origin": "GB News, tech-insider.org",
+      "excerpt": "The Telegram group calls itself \"Xuanye Group\" / \"Xuanye Gateway\". It isn't linked to any earlier breach claim",
+      "provider": null,
+      "channel": null,
+      "url": null,
+      "arrived_via": "manual",
+      "fictional": false
+    },
+    {
+      "id": "A-09",
+      "at": "day",
+      "kind": "community",
+      "origin": "Cypro (security consultancy bulletin); Infosecurity Magazine says the same",
+      "excerpt": "Delivery through the official app \"may indicate\" the attackers reached the systems that control the app's notifications",
+      "provider": null,
+      "channel": null,
+      "url": null,
+      "arrived_via": "manual",
+      "fictional": false
+    },
+    {
+      "id": "A-10",
+      "at": "Aug 2026",
+      "kind": "provider_official",
+      "origin": "ASOS US breach notification letters (dated 21 Aug 2026), via CyberInsider and eSecurity Planet",
+      "excerpt": "**A separate, earlier incident:** credential stuffing from 28 Jul 2026 affected ~138,828 US accounts (per press). The letters say the credentials came from outside ASOS",
+      "provider": "ASOS",
+      "channel": "report",
+      "url": null,
+      "arrived_via": "manual",
+      "fictional": false
+    },
+    {
+      "id": "A-11",
+      "at": "~15:00",
+      "kind": "provider_official",
+      "origin": "**ASOS plc stock-exchange announcement (RNS 8604X, \"Update regarding cyber incident\")**, read verbatim via TradingView/Reuters; time per Drapers (\"shortly after 3pm\")",
+      "excerpt": "\"ASOS can confirm that, at around 10am today, an unauthorised customer notification was sent to ASOS customers. We are investigating unauthorised activity involving third-party platforms that we use to communicate with customers. We took immediate action to restrict access to the notification platforms and are working with our internal and external specialist advisers, as well as all relevant authorities. Basic personal information including name and contact details may have been accessed. We do not believe that payment-card information or account passwords, were impacted. Our website and app are operating as normal, with no current disruption to any aspects of our operations. … It is too early to quantify any potential impact on trading.\"",
+      "provider": "ASOS",
+      "channel": "report",
+      "url": "https://www.tradingview.com/news/reuters.com,2026-10-06:newsml_RSF8604Xa:0-reg-asos-plc-update-regarding-cyber-incident/",
+      "arrived_via": "manual",
+      "fictional": false
+    },
+    {
+      "id": "A-12",
+      "at": "afternoon",
+      "kind": "press",
+      "origin": "Snowflake spokesperson, via Infosecurity Magazine and PA (Newham Recorder)",
+      "excerpt": "Snowflake \"found no compromise\" of its platform; \"The investigation is ongoing and we will provide further updates as soon as more information becomes available.\"",
+      "provider": null,
+      "channel": null,
+      "url": null,
+      "arrived_via": "manual",
+      "fictional": false
+    },
+    {
+      "id": "A-13",
+      "at": "afternoon",
+      "kind": "community",
+      "origin": "The Telegram channel's administrator (\"Xuanye Group\"), via Infosecurity Magazine",
+      "excerpt": "Says payment information was unaffected. **The attacker's word**, so it supports nothing on its own",
+      "provider": null,
+      "channel": null,
+      "url": null,
+      "arrived_via": "manual",
+      "fictional": false
+    },
+    {
+      "id": "A-14",
+      "at": "~09:41–10:30",
+      "kind": "press",
+      "origin": "LBC (published 10:11, updated later)",
+      "excerpt": "Downdetector showed ASOS website issues from ~09:41; shares down ~5% within 30 minutes of the first reports",
+      "provider": null,
+      "channel": null,
+      "url": null,
+      "arrived_via": "manual",
+      "fictional": false
+    }
+  ],
+  "initial_ledger": [],
+  "extract": {
+    "claims": [
+      {
+        "id": "C-01",
+        "statement": "The sender signing as xuanyewengateway claims in the ASOS notification to have fully compromised the Snowflake instance used by ASOS.",
+        "subject": "ASOS",
+        "unknown_kind": null,
+        "region": null,
+        "class": "UNCONFIRMED",
+        "proposed_class": "UNCONFIRMED",
+        "source_ids": [
+          "A-01"
+        ],
+        "provider_wording": null,
+        "settled_by": null,
+        "estimate": null,
+        "first_seen": null,
+        "superseded_by": null,
+        "contradiction_sides": null,
+        "history": []
+      },
+      {
+        "id": "C-02",
+        "statement": "The sender signing as xuanyewengateway threatens in the ASOS notification to leak the allegedly compromised material unless ASOS engages.",
+        "subject": "ASOS",
+        "unknown_kind": null,
+        "region": null,
+        "class": "UNCONFIRMED",
+        "proposed_class": "UNCONFIRMED",
+        "source_ids": [
+          "A-01"
+        ],
+        "provider_wording": null,
+        "settled_by": null,
+        "estimate": null,
+        "first_seen": null,
+        "superseded_by": null,
+        "contradiction_sides": null,
+        "history": []
+      },
+      {
+        "id": "C-03",
+        "statement": "Many ASOS app users on X report receiving the notification in the UK, US, Germany and Australia.",
+        "subject": "ASOS",
+        "unknown_kind": null,
+        "region": "UK, US, Germany, Australia",
+        "class": "REPORTED",
+        "proposed_class": "REPORTED",
+        "source_ids": [
+          "A-02"
+        ],
+        "provider_wording": null,
+        "settled_by": null,
+        "estimate": null,
+        "first_seen": null,
+        "superseded_by": null,
+        "contradiction_sides": null,
+        "history": []
+      },
+      {
+        "id": "C-04",
+        "statement": "ITV, RTÉ, STV and PinkNews report that ASOS customers received a phone alert saying the retailer was hacked.",
+        "subject": "ASOS",
+        "unknown_kind": null,
+        "region": null,
+        "class": "REPORTED",
+        "proposed_class": "REPORTED",
+        "source_ids": [
+          "A-03"
+        ],
+        "provider_wording": null,
+        "settled_by": null,
+        "estimate": null,
+        "first_seen": null,
+        "superseded_by": null,
+        "contradiction_sides": null,
+        "history": []
+      },
+      {
+        "id": "C-05",
+        "statement": "ITV, RTÉ, STV and PinkNews report that the ASOS website and app appeared to keep working during the morning.",
+        "subject": "ASOS",
+        "unknown_kind": null,
+        "region": null,
+        "class": "REPORTED",
+        "proposed_class": "REPORTED",
+        "source_ids": [
+          "A-03"
+        ],
+        "provider_wording": null,
+        "settled_by": null,
+        "estimate": null,
+        "first_seen": null,
+        "superseded_by": null,
+        "contradiction_sides": null,
+        "history": []
+      },
+      {
+        "id": "C-06",
+        "statement": "Irish Times / Bloomberg report that an ASOS spokesperson declined to confirm or elaborate on the reports during the morning.",
+        "subject": "ASOS",
+        "unknown_kind": null,
+        "region": null,
+        "class": "REPORTED",
+        "proposed_class": "REPORTED",
+        "source_ids": [
+          "A-04"
+        ],
+        "provider_wording": null,
+        "settled_by": null,
+        "estimate": null,
+        "first_seen": null,
+        "superseded_by": null,
+        "contradiction_sides": null,
+        "history": []
+      },
+      {
+        "id": "C-07",
+        "statement": "Irish Times / Bloomberg report that ASOS shares fell as much as 13% intraday.",
+        "subject": "ASOS",
+        "unknown_kind": null,
+        "region": null,
+        "class": "REPORTED",
+        "proposed_class": "REPORTED",
+        "source_ids": [
+          "A-04"
+        ],
+        "provider_wording": null,
+        "settled_by": null,
+        "estimate": null,
+        "first_seen": null,
+        "superseded_by": null,
+        "contradiction_sides": null,
+        "history": []
+      },
+      {
+        "id": "C-08",
+        "statement": "Irish Times / Bloomberg describe the ASOS intraday share decline as its largest since September 2025.",
+        "subject": "ASOS",
+        "unknown_kind": null,
+        "region": null,
+        "class": "REPORTED",
+        "proposed_class": "REPORTED",
+        "source_ids": [
+          "A-04"
+        ],
+        "provider_wording": null,
+        "settled_by": null,
+        "estimate": null,
+        "first_seen": null,
+        "superseded_by": null,
+        "contradiction_sides": null,
+        "history": []
+      },
+      {
+        "id": "C-09",
+        "statement": "Irish Times / Bloomberg report that ASOS shares subsequently pared their intraday losses.",
+        "subject": "ASOS",
+        "unknown_kind": null,
+        "region": null,
+        "class": "REPORTED",
+        "proposed_class": "REPORTED",
+        "source_ids": [
+          "A-04"
+        ],
+        "provider_wording": null,
+        "settled_by": null,
+        "estimate": null,
+        "first_seen": null,
+        "superseded_by": null,
+        "contradiction_sides": null,
+        "history": []
+      },
+      {
+        "id": "C-10",
+        "statement": "City AM and Global Banking & Finance report ASOS shares down about 11–12% during the morning.",
+        "subject": "ASOS",
+        "unknown_kind": null,
+        "region": null,
+        "class": "REPORTED",
+        "proposed_class": "REPORTED",
+        "source_ids": [
+          "A-05"
+        ],
+        "provider_wording": null,
+        "settled_by": null,
+        "estimate": null,
+        "first_seen": null,
+        "superseded_by": null,
+        "contradiction_sides": null,
+        "history": []
+      },
+      {
+        "id": "C-11",
+        "statement": "Morning reporting summarized by TechRadar says ASOS was understood to be investigating the incident.",
+        "subject": "ASOS",
+        "unknown_kind": null,
+        "region": null,
+        "class": "REPORTED",
+        "proposed_class": "REPORTED",
+        "source_ids": [
+          "A-06"
+        ],
+        "provider_wording": null,
+        "settled_by": "A-11",
+        "estimate": null,
+        "first_seen": null,
+        "superseded_by": "C-22",
+        "contradiction_sides": null,
+        "history": []
+      },
+      {
+        "id": "C-12",
+        "statement": "Morning reporting summarized by TechRadar says ASOS had not confirmed a breach at that time.",
+        "subject": "ASOS",
+        "unknown_kind": null,
+        "region": null,
+        "class": "REPORTED",
+        "proposed_class": "REPORTED",
+        "source_ids": [
+          "A-06"
+        ],
+        "provider_wording": null,
+        "settled_by": null,
+        "estimate": null,
+        "first_seen": null,
+        "superseded_by": null,
+        "contradiction_sides": null,
+        "history": []
+      },
+      {
+        "id": "C-13",
+        "statement": "Morning reporting summarized by TechRadar says there was no confirmation that personal or payment data had been taken from ASOS.",
+        "subject": "ASOS",
+        "unknown_kind": null,
+        "region": null,
+        "class": "REPORTED",
+        "proposed_class": "REPORTED",
+        "source_ids": [
+          "A-06"
+        ],
+        "provider_wording": null,
+        "settled_by": null,
+        "estimate": null,
+        "first_seen": null,
+        "superseded_by": null,
+        "contradiction_sides": null,
+        "history": []
+      },
+      {
+        "id": "C-14",
+        "statement": "Irish Times / Bloomberg report Snowflake shares down as much as 3.2% in New York pre-market trading.",
+        "subject": "Snowflake",
+        "unknown_kind": null,
+        "region": "US",
+        "class": "REPORTED",
+        "proposed_class": "REPORTED",
+        "source_ids": [
+          "A-07"
+        ],
+        "provider_wording": null,
+        "settled_by": null,
+        "estimate": null,
+        "first_seen": null,
+        "superseded_by": null,
+        "contradiction_sides": null,
+        "history": []
+      },
+      {
+        "id": "C-15",
+        "statement": "GB News and tech-insider.org report that the Telegram group calls itself Xuanye Group or Xuanye Gateway.",
+        "subject": "Xuanye Group",
+        "unknown_kind": null,
+        "region": null,
+        "class": "REPORTED",
+        "proposed_class": "REPORTED",
+        "source_ids": [
+          "A-08"
+        ],
+        "provider_wording": null,
+        "settled_by": null,
+        "estimate": null,
+        "first_seen": null,
+        "superseded_by": null,
+        "contradiction_sides": null,
+        "history": []
+      },
+      {
+        "id": "C-16",
+        "statement": "GB News and tech-insider.org report no link between Xuanye Group and any earlier breach claim.",
+        "subject": "Xuanye Group",
+        "unknown_kind": null,
+        "region": null,
+        "class": "REPORTED",
+        "proposed_class": "REPORTED",
+        "source_ids": [
+          "A-08"
+        ],
+        "provider_wording": null,
+        "settled_by": null,
+        "estimate": null,
+        "first_seen": null,
+        "superseded_by": null,
+        "contradiction_sides": null,
+        "history": []
+      },
+      {
+        "id": "C-17",
+        "statement": "Cypro and Infosecurity Magazine speculate that delivery through the official ASOS app may indicate attacker access to systems controlling app notifications.",
+        "subject": "ASOS",
+        "unknown_kind": null,
+        "region": null,
+        "class": "UNCONFIRMED",
+        "proposed_class": "UNCONFIRMED",
+        "source_ids": [
+          "A-09"
+        ],
+        "provider_wording": null,
+        "settled_by": null,
+        "estimate": null,
+        "first_seen": null,
+        "superseded_by": null,
+        "contradiction_sides": null,
+        "history": []
+      },
+      {
+        "id": "C-18",
+        "statement": "ASOS's August breach-notification letters concern a separate credential-stuffing incident beginning on 28 July 2026, not the current October incident.",
+        "subject": "ASOS",
+        "unknown_kind": null,
+        "region": "US",
+        "class": "CONFIRMED",
+        "proposed_class": "CONFIRMED",
+        "source_ids": [
+          "A-10"
+        ],
+        "provider_wording": null,
+        "settled_by": null,
+        "estimate": null,
+        "first_seen": null,
+        "superseded_by": null,
+        "contradiction_sides": null,
+        "history": []
+      },
+      {
+        "id": "C-19",
+        "statement": "CyberInsider and eSecurity Planet report that the separate July 2026 ASOS credential-stuffing incident affected approximately 138,828 US accounts.",
+        "subject": "ASOS",
+        "unknown_kind": null,
+        "region": "US",
+        "class": "REPORTED",
+        "proposed_class": "REPORTED",
+        "source_ids": [
+          "A-10"
+        ],
+        "provider_wording": null,
+        "settled_by": null,
+        "estimate": null,
+        "first_seen": null,
+        "superseded_by": null,
+        "contradiction_sides": null,
+        "history": []
+      },
+      {
+        "id": "C-20",
+        "statement": "ASOS says in its August breach-notification letters that credentials used in the separate July incident came from outside ASOS; the capture supplies a paraphrase rather than the letters' verbatim wording.",
+        "subject": "ASOS",
+        "unknown_kind": null,
+        "region": "US",
+        "class": "CONFIRMED",
+        "proposed_class": "CONFIRMED",
+        "source_ids": [
+          "A-10"
+        ],
+        "provider_wording": null,
+        "settled_by": null,
+        "estimate": null,
+        "first_seen": null,
+        "superseded_by": null,
+        "contradiction_sides": null,
+        "history": []
+      },
+      {
+        "id": "C-21",
+        "statement": "ASOS confirms that an unauthorised customer notification was sent to ASOS customers at around 10am on 6 October.",
+        "subject": "ASOS",
+        "unknown_kind": null,
+        "region": null,
+        "class": "CONFIRMED",
+        "proposed_class": "CONFIRMED",
+        "source_ids": [
+          "A-11"
+        ],
+        "provider_wording": "ASOS can confirm that, at around 10am today, an unauthorised customer notification was sent to ASOS customers.",
+        "settled_by": null,
+        "estimate": null,
+        "first_seen": null,
+        "superseded_by": null,
+        "contradiction_sides": null,
+        "history": []
+      },
+      {
+        "id": "C-22",
+        "statement": "ASOS says it is investigating unauthorised activity involving third-party platforms used to communicate with customers.",
+        "subject": "ASOS",
+        "unknown_kind": null,
+        "region": null,
+        "class": "CONFIRMED",
+        "proposed_class": "CONFIRMED",
+        "source_ids": [
+          "A-11"
+        ],
+        "provider_wording": "We are investigating unauthorised activity involving third-party platforms that we use to communicate with customers.",
+        "settled_by": null,
+        "estimate": null,
+        "first_seen": null,
+        "superseded_by": null,
+        "contradiction_sides": null,
+        "history": []
+      },
+      {
+        "id": "C-23",
+        "statement": "ASOS says it took immediate action to restrict access to the notification platforms.",
+        "subject": "ASOS",
+        "unknown_kind": null,
+        "region": null,
+        "class": "CONFIRMED",
+        "proposed_class": "CONFIRMED",
+        "source_ids": [
+          "A-11"
+        ],
+        "provider_wording": "We took immediate action to restrict access to the notification platforms and are working with our internal and external specialist advisers, as well as all relevant authorities.",
+        "settled_by": null,
+        "estimate": null,
+        "first_seen": null,
+        "superseded_by": null,
+        "contradiction_sides": null,
+        "history": []
+      },
+      {
+        "id": "C-24",
+        "statement": "ASOS says it is working with internal and external specialist advisers and all relevant authorities.",
+        "subject": "ASOS",
+        "unknown_kind": null,
+        "region": null,
+        "class": "CONFIRMED",
+        "proposed_class": "CONFIRMED",
+        "source_ids": [
+          "A-11"
+        ],
+        "provider_wording": "We took immediate action to restrict access to the notification platforms and are working with our internal and external specialist advisers, as well as all relevant authorities.",
+        "settled_by": null,
+        "estimate": null,
+        "first_seen": null,
+        "superseded_by": null,
+        "contradiction_sides": null,
+        "history": []
+      },
+      {
+        "id": "C-25",
+        "statement": "ASOS says basic personal information, including names and contact details, may have been accessed.",
+        "subject": "ASOS",
+        "unknown_kind": null,
+        "region": null,
+        "class": "CONFIRMED",
+        "proposed_class": "CONFIRMED",
+        "source_ids": [
+          "A-11"
+        ],
+        "provider_wording": "Basic personal information including name and contact details may have been accessed.",
+        "settled_by": null,
+        "estimate": null,
+        "first_seen": null,
+        "superseded_by": null,
+        "contradiction_sides": null,
+        "history": []
+      },
+      {
+        "id": "C-26",
+        "statement": "ASOS says it does not believe payment-card information was impacted.",
+        "subject": "ASOS",
+        "unknown_kind": null,
+        "region": null,
+        "class": "CONFIRMED",
+        "proposed_class": "CONFIRMED",
+        "source_ids": [
+          "A-11"
+        ],
+        "provider_wording": "We do not believe that payment-card information or account passwords, were impacted.",
+        "settled_by": null,
+        "estimate": null,
+        "first_seen": null,
+        "superseded_by": null,
+        "contradiction_sides": null,
+        "history": []
+      },
+      {
+        "id": "C-27",
+        "statement": "ASOS says it does not believe account passwords were impacted.",
+        "subject": "ASOS",
+        "unknown_kind": null,
+        "region": null,
+        "class": "CONFIRMED",
+        "proposed_class": "CONFIRMED",
+        "source_ids": [
+          "A-11"
+        ],
+        "provider_wording": "We do not believe that payment-card information or account passwords, were impacted.",
+        "settled_by": null,
+        "estimate": null,
+        "first_seen": null,
+        "superseded_by": null,
+        "contradiction_sides": null,
+        "history": []
+      },
+      {
+        "id": "C-28",
+        "statement": "ASOS says its website and app are operating normally at the time of its approximately 15:00 announcement.",
+        "subject": "ASOS",
+        "unknown_kind": null,
+        "region": null,
+        "class": "CONFIRMED",
+        "proposed_class": "CONFIRMED",
+        "source_ids": [
+          "A-11"
+        ],
+        "provider_wording": "Our website and app are operating as normal, with no current disruption to any aspects of our operations.",
+        "settled_by": null,
+        "estimate": null,
+        "first_seen": null,
+        "superseded_by": null,
+        "contradiction_sides": null,
+        "history": []
+      },
+      {
+        "id": "C-29",
+        "statement": "ASOS says there is no current disruption to any aspect of its operations at the time of its approximately 15:00 announcement.",
+        "subject": "ASOS",
+        "unknown_kind": null,
+        "region": null,
+        "class": "CONFIRMED",
+        "proposed_class": "CONFIRMED",
+        "source_ids": [
+          "A-11"
+        ],
+        "provider_wording": "Our website and app are operating as normal, with no current disruption to any aspects of our operations.",
+        "settled_by": null,
+        "estimate": null,
+        "first_seen": null,
+        "superseded_by": null,
+        "contradiction_sides": null,
+        "history": []
+      },
+      {
+        "id": "C-30",
+        "statement": "ASOS says it is too early to quantify any potential impact on trading.",
+        "subject": "ASOS",
+        "unknown_kind": null,
+        "region": null,
+        "class": "CONFIRMED",
+        "proposed_class": "CONFIRMED",
+        "source_ids": [
+          "A-11"
+        ],
+        "provider_wording": "It is too early to quantify any potential impact on trading.",
+        "settled_by": null,
+        "estimate": null,
+        "first_seen": null,
+        "superseded_by": null,
+        "contradiction_sides": null,
+        "history": []
+      },
+      {
+        "id": "C-31",
+        "statement": "Infosecurity Magazine and PA report that a Snowflake spokesperson said Snowflake found no compromise of its platform.",
+        "subject": "Snowflake",
+        "unknown_kind": null,
+        "region": null,
+        "class": "REPORTED",
+        "proposed_class": "REPORTED",
+        "source_ids": [
+          "A-12"
+        ],
+        "provider_wording": "found no compromise",
+        "settled_by": null,
+        "estimate": null,
+        "first_seen": null,
+        "superseded_by": null,
+        "contradiction_sides": null,
+        "history": []
+      },
+      {
+        "id": "C-32",
+        "statement": "Infosecurity Magazine and PA quote a Snowflake spokesperson saying its investigation is ongoing.",
+        "subject": "Snowflake",
+        "unknown_kind": null,
+        "region": null,
+        "class": "REPORTED",
+        "proposed_class": "REPORTED",
+        "source_ids": [
+          "A-12"
+        ],
+        "provider_wording": "The investigation is ongoing and we will provide further updates as soon as more information becomes available.",
+        "settled_by": null,
+        "estimate": null,
+        "first_seen": null,
+        "superseded_by": null,
+        "contradiction_sides": null,
+        "history": []
+      },
+      {
+        "id": "C-33",
+        "statement": "Infosecurity Magazine and PA quote a Snowflake spokesperson promising further updates as soon as more information becomes available, without a timed ETA.",
+        "subject": "Snowflake",
+        "unknown_kind": null,
+        "region": null,
+        "class": "REPORTED",
+        "proposed_class": "REPORTED",
+        "source_ids": [
+          "A-12"
+        ],
+        "provider_wording": "The investigation is ongoing and we will provide further updates as soon as more information becomes available.",
+        "settled_by": null,
+        "estimate": null,
+        "first_seen": null,
+        "superseded_by": null,
+        "contradiction_sides": null,
+        "history": []
+      },
+      {
+        "id": "C-34",
+        "statement": "The Xuanye Group Telegram administrator claims ASOS payment information was unaffected, as relayed by Infosecurity Magazine.",
+        "subject": "ASOS",
+        "unknown_kind": null,
+        "region": null,
+        "class": "UNCONFIRMED",
+        "proposed_class": "UNCONFIRMED",
+        "source_ids": [
+          "A-13"
+        ],
+        "provider_wording": null,
+        "settled_by": null,
+        "estimate": null,
+        "first_seen": null,
+        "superseded_by": null,
+        "contradiction_sides": null,
+        "history": []
+      },
+      {
+        "id": "C-35",
+        "statement": "LBC reports that Downdetector showed ASOS website issues from approximately 09:41.",
+        "subject": "ASOS",
+        "unknown_kind": null,
+        "region": null,
+        "class": "REPORTED",
+        "proposed_class": "REPORTED",
+        "source_ids": [
+          "A-14"
+        ],
+        "provider_wording": null,
+        "settled_by": null,
+        "estimate": null,
+        "first_seen": null,
+        "superseded_by": null,
+        "contradiction_sides": null,
+        "history": []
+      },
+      {
+        "id": "C-36",
+        "statement": "LBC reports ASOS shares down approximately 5% within 30 minutes of the first reports.",
+        "subject": "ASOS",
+        "unknown_kind": null,
+        "region": null,
+        "class": "REPORTED",
+        "proposed_class": "REPORTED",
+        "source_ids": [
+          "A-14"
+        ],
+        "provider_wording": null,
+        "settled_by": null,
+        "estimate": null,
+        "first_seen": null,
+        "superseded_by": null,
+        "contradiction_sides": null,
+        "history": []
+      },
+      {
+        "id": "C-37",
+        "statement": "The supplied evidence does not establish how the unauthorised access described by ASOS was obtained.",
+        "subject": "ASOS",
+        "unknown_kind": "cause",
+        "region": null,
+        "class": "UNKNOWN",
+        "proposed_class": "UNKNOWN",
+        "source_ids": [
+          "A-01",
+          "A-09",
+          "A-11",
+          "A-12"
+        ],
+        "provider_wording": null,
+        "settled_by": null,
+        "estimate": null,
+        "first_seen": null,
+        "superseded_by": null,
+        "contradiction_sides": null,
+        "history": []
+      },
+      {
+        "id": "C-38",
+        "statement": "The supplied evidence does not establish the number of ASOS customers whose personal information was actually accessed in the current incident.",
+        "subject": "ASOS",
+        "unknown_kind": "data",
+        "region": null,
+        "class": "UNKNOWN",
+        "proposed_class": "UNKNOWN",
+        "source_ids": [
+          "A-11"
+        ],
+        "provider_wording": null,
+        "settled_by": null,
+        "estimate": null,
+        "first_seen": null,
+        "superseded_by": null,
+        "contradiction_sides": null,
+        "history": []
+      },
+      {
+        "id": "C-39",
+        "statement": "The supplied evidence does not establish whether data was exfiltrated from ASOS in the current incident.",
+        "subject": "ASOS",
+        "unknown_kind": "data",
+        "region": null,
+        "class": "UNKNOWN",
+        "proposed_class": "UNKNOWN",
+        "source_ids": [
+          "A-01",
+          "A-06",
+          "A-11"
+        ],
+        "provider_wording": null,
+        "settled_by": null,
+        "estimate": null,
+        "first_seen": null,
+        "superseded_by": null,
+        "contradiction_sides": null,
+        "history": []
+      },
+      {
+        "id": "C-40",
+        "statement": "ASOS does not identify the third-party platforms under investigation in its supplied announcement.",
+        "subject": "ASOS",
+        "unknown_kind": "scope",
+        "region": null,
+        "class": "UNKNOWN",
+        "proposed_class": "UNKNOWN",
+        "source_ids": [
+          "A-11"
+        ],
+        "provider_wording": "We are investigating unauthorised activity involving third-party platforms that we use to communicate with customers.",
+        "settled_by": null,
+        "estimate": null,
+        "first_seen": null,
+        "superseded_by": null,
+        "contradiction_sides": null,
+        "history": []
+      },
+      {
+        "id": "C-41",
+        "statement": "ASOS supplies no time estimate for completing remediation of the unauthorised activity in its announcement.",
+        "subject": "ASOS",
+        "unknown_kind": "recovery",
+        "region": null,
+        "class": "UNKNOWN",
+        "proposed_class": "UNKNOWN",
+        "source_ids": [
+          "A-11"
+        ],
+        "provider_wording": null,
+        "settled_by": null,
+        "estimate": null,
+        "first_seen": null,
+        "superseded_by": null,
+        "contradiction_sides": null,
+        "history": []
+      }
+    ]
+  },
+  "reconcile": {
+    "claims": [
+      {
+        "id": "C-001",
+        "statement": "The sender signing as xuanyewengateway claims in the ASOS notification to have fully compromised the Snowflake instance used by ASOS.",
+        "subject": "ASOS",
+        "unknown_kind": null,
+        "class": "UNCONFIRMED",
+        "proposed_class": "UNCONFIRMED",
+        "source_ids": [
+          "A-01"
+        ],
+        "provider_wording": null,
+        "settled_by": null,
+        "estimate": null,
+        "first_seen": null,
+        "superseded_by": null,
+        "contradiction_sides": null,
+        "history": []
+      },
+      {
+        "id": "C-002",
+        "statement": "The sender signing as xuanyewengateway threatens in the ASOS notification to leak the allegedly compromised material unless ASOS engages.",
+        "subject": "ASOS",
+        "unknown_kind": null,
+        "class": "UNCONFIRMED",
+        "proposed_class": "UNCONFIRMED",
+        "source_ids": [
+          "A-01"
+        ],
+        "provider_wording": null,
+        "settled_by": null,
+        "estimate": null,
+        "first_seen": null,
+        "superseded_by": null,
+        "contradiction_sides": null,
+        "history": []
+      },
+      {
+        "id": "C-003",
+        "statement": "Many ASOS app users on X report receiving the notification in the UK, US, Germany and Australia.",
+        "subject": "ASOS",
+        "unknown_kind": null,
+        "class": "REPORTED",
+        "proposed_class": "REPORTED",
+        "source_ids": [
+          "A-02"
+        ],
+        "provider_wording": null,
+        "settled_by": null,
+        "estimate": null,
+        "first_seen": null,
+        "superseded_by": null,
+        "contradiction_sides": null,
+        "history": []
+      },
+      {
+        "id": "C-004",
+        "statement": "ASOS confirms that an unauthorised customer notification was sent to customers at around 10am on 6 October. ITV, RTÉ, STV and PinkNews reported customers receiving a phone alert claiming the retailer was hacked.",
+        "subject": "ASOS",
+        "unknown_kind": null,
+        "class": "CONFIRMED",
+        "proposed_class": "CONFIRMED",
+        "source_ids": [
+          "A-03",
+          "A-11"
+        ],
+        "provider_wording": "ASOS can confirm that, at around 10am today, an unauthorised customer notification was sent to ASOS customers.",
+        "settled_by": "A-11",
+        "estimate": null,
+        "first_seen": null,
+        "superseded_by": null,
+        "contradiction_sides": null,
+        "history": []
+      },
+      {
+        "id": "C-005",
+        "statement": "ASOS says its website and app are operating normally, with no current disruption to any aspect of its operations, at its approximately 15:00 announcement. Earlier press reports said the website and app appeared to keep working during the morning.",
+        "subject": "ASOS",
+        "unknown_kind": null,
+        "class": "CONFIRMED",
+        "proposed_class": "CONFIRMED",
+        "source_ids": [
+          "A-03",
+          "A-11"
+        ],
+        "provider_wording": "Our website and app are operating as normal, with no current disruption to any aspects of our operations.",
+        "settled_by": "A-11",
+        "estimate": null,
+        "first_seen": null,
+        "superseded_by": null,
+        "contradiction_sides": null,
+        "history": []
+      },
+      {
+        "id": "C-006",
+        "statement": "Irish Times / Bloomberg report that an ASOS spokesperson declined to confirm or elaborate on the reports during the morning.",
+        "subject": "ASOS",
+        "unknown_kind": null,
+        "class": "REPORTED",
+        "proposed_class": "REPORTED",
+        "source_ids": [
+          "A-04"
+        ],
+        "provider_wording": null,
+        "settled_by": null,
+        "estimate": null,
+        "first_seen": null,
+        "superseded_by": null,
+        "contradiction_sides": null,
+        "history": []
+      },
+      {
+        "id": "C-007",
+        "statement": "Irish Times / Bloomberg report that ASOS shares fell as much as 13% intraday.",
+        "subject": "ASOS",
+        "unknown_kind": null,
+        "class": "REPORTED",
+        "proposed_class": "REPORTED",
+        "source_ids": [
+          "A-04"
+        ],
+        "provider_wording": null,
+        "settled_by": null,
+        "estimate": null,
+        "first_seen": null,
+        "superseded_by": null,
+        "contradiction_sides": null,
+        "history": []
+      },
+      {
+        "id": "C-008",
+        "statement": "Irish Times / Bloomberg describe the ASOS intraday share decline as its largest since September 2025.",
+        "subject": "ASOS",
+        "unknown_kind": null,
+        "class": "REPORTED",
+        "proposed_class": "REPORTED",
+        "source_ids": [
+          "A-04"
+        ],
+        "provider_wording": null,
+        "settled_by": null,
+        "estimate": null,
+        "first_seen": null,
+        "superseded_by": null,
+        "contradiction_sides": null,
+        "history": []
+      },
+      {
+        "id": "C-009",
+        "statement": "Irish Times / Bloomberg report that ASOS shares subsequently pared their intraday losses.",
+        "subject": "ASOS",
+        "unknown_kind": null,
+        "class": "REPORTED",
+        "proposed_class": "REPORTED",
+        "source_ids": [
+          "A-04"
+        ],
+        "provider_wording": null,
+        "settled_by": null,
+        "estimate": null,
+        "first_seen": null,
+        "superseded_by": null,
+        "contradiction_sides": null,
+        "history": []
+      },
+      {
+        "id": "C-010",
+        "statement": "City AM and Global Banking & Finance report ASOS shares down about 11–12% during the morning.",
+        "subject": "ASOS",
+        "unknown_kind": null,
+        "class": "REPORTED",
+        "proposed_class": "REPORTED",
+        "source_ids": [
+          "A-05"
+        ],
+        "provider_wording": null,
+        "settled_by": null,
+        "estimate": null,
+        "first_seen": null,
+        "superseded_by": null,
+        "contradiction_sides": null,
+        "history": []
+      },
+      {
+        "id": "C-011",
+        "statement": "ASOS says it is investigating unauthorised activity involving third-party platforms used to communicate with customers, confirming earlier reports that it was investigating the incident.",
+        "subject": "ASOS",
+        "unknown_kind": null,
+        "class": "CONFIRMED",
+        "proposed_class": "CONFIRMED",
+        "source_ids": [
+          "A-06",
+          "A-11"
+        ],
+        "provider_wording": "We are investigating unauthorised activity involving third-party platforms that we use to communicate with customers.",
+        "settled_by": "A-11",
+        "estimate": null,
+        "first_seen": null,
+        "superseded_by": null,
+        "contradiction_sides": null,
+        "history": []
+      },
+      {
+        "id": "C-012",
+        "statement": "Morning reporting summarized by TechRadar says ASOS had not confirmed a breach at that time.",
+        "subject": "ASOS",
+        "unknown_kind": null,
+        "class": "REPORTED",
+        "proposed_class": "REPORTED",
+        "source_ids": [
+          "A-06"
+        ],
+        "provider_wording": null,
+        "settled_by": null,
+        "estimate": null,
+        "first_seen": null,
+        "superseded_by": null,
+        "contradiction_sides": null,
+        "history": []
+      },
+      {
+        "id": "C-013",
+        "statement": "Morning reporting summarized by TechRadar says there was no confirmation at that time that personal or payment data had been taken from ASOS.",
+        "subject": "ASOS",
+        "unknown_kind": null,
+        "class": "REPORTED",
+        "proposed_class": "REPORTED",
+        "source_ids": [
+          "A-06"
+        ],
+        "provider_wording": null,
+        "settled_by": null,
+        "estimate": null,
+        "first_seen": null,
+        "superseded_by": null,
+        "contradiction_sides": null,
+        "history": []
+      },
+      {
+        "id": "C-014",
+        "statement": "Irish Times / Bloomberg report Snowflake shares down as much as 3.2% in New York pre-market trading.",
+        "subject": "Snowflake",
+        "unknown_kind": null,
+        "class": "REPORTED",
+        "proposed_class": "REPORTED",
+        "source_ids": [
+          "A-07"
+        ],
+        "provider_wording": null,
+        "settled_by": null,
+        "estimate": null,
+        "first_seen": null,
+        "superseded_by": null,
+        "contradiction_sides": null,
+        "history": []
+      },
+      {
+        "id": "C-015",
+        "statement": "GB News and tech-insider.org report that the Telegram group calls itself Xuanye Group or Xuanye Gateway.",
+        "subject": "Xuanye Group",
+        "unknown_kind": null,
+        "class": "REPORTED",
+        "proposed_class": "REPORTED",
+        "source_ids": [
+          "A-08"
+        ],
+        "provider_wording": null,
+        "settled_by": null,
+        "estimate": null,
+        "first_seen": null,
+        "superseded_by": null,
+        "contradiction_sides": null,
+        "history": []
+      },
+      {
+        "id": "C-016",
+        "statement": "GB News and tech-insider.org report no link between Xuanye Group and any earlier breach claim.",
+        "subject": "Xuanye Group",
+        "unknown_kind": null,
+        "class": "REPORTED",
+        "proposed_class": "REPORTED",
+        "source_ids": [
+          "A-08"
+        ],
+        "provider_wording": null,
+        "settled_by": null,
+        "estimate": null,
+        "first_seen": null,
+        "superseded_by": null,
+        "contradiction_sides": null,
+        "history": []
+      },
+      {
+        "id": "C-017",
+        "statement": "Cypro and Infosecurity Magazine speculate that delivery through the official ASOS app may indicate attacker access to systems controlling app notifications.",
+        "subject": "ASOS",
+        "unknown_kind": null,
+        "class": "UNCONFIRMED",
+        "proposed_class": "UNCONFIRMED",
+        "source_ids": [
+          "A-09"
+        ],
+        "provider_wording": null,
+        "settled_by": null,
+        "estimate": null,
+        "first_seen": null,
+        "superseded_by": null,
+        "contradiction_sides": null,
+        "history": []
+      },
+      {
+        "id": "C-018",
+        "statement": "ASOS's August breach-notification letters concern a separate credential-stuffing incident beginning on 28 July 2026, not the current October incident.",
+        "subject": "ASOS",
+        "unknown_kind": null,
+        "class": "CONFIRMED",
+        "proposed_class": "CONFIRMED",
+        "source_ids": [
+          "A-10"
+        ],
+        "provider_wording": null,
+        "settled_by": null,
+        "estimate": null,
+        "first_seen": null,
+        "superseded_by": null,
+        "contradiction_sides": null,
+        "history": []
+      },
+      {
+        "id": "C-019",
+        "statement": "CyberInsider and eSecurity Planet report that the separate July 2026 ASOS credential-stuffing incident affected approximately 138,828 US accounts.",
+        "subject": "ASOS",
+        "unknown_kind": null,
+        "class": "REPORTED",
+        "proposed_class": "REPORTED",
+        "source_ids": [
+          "A-10"
+        ],
+        "provider_wording": null,
+        "settled_by": null,
+        "estimate": null,
+        "first_seen": null,
+        "superseded_by": null,
+        "contradiction_sides": null,
+        "history": []
+      },
+      {
+        "id": "C-020",
+        "statement": "ASOS says in its August breach-notification letters that credentials used in the separate July incident came from outside ASOS; the capture supplies a paraphrase rather than the letters' verbatim wording.",
+        "subject": "ASOS",
+        "unknown_kind": null,
+        "class": "CONFIRMED",
+        "proposed_class": "CONFIRMED",
+        "source_ids": [
+          "A-10"
+        ],
+        "provider_wording": null,
+        "settled_by": null,
+        "estimate": null,
+        "first_seen": null,
+        "superseded_by": null,
+        "contradiction_sides": null,
+        "history": []
+      },
+      {
+        "id": "C-021",
+        "statement": "ASOS says it took immediate action to restrict access to the notification platforms.",
+        "subject": "ASOS",
+        "unknown_kind": null,
+        "class": "CONFIRMED",
+        "proposed_class": "CONFIRMED",
+        "source_ids": [
+          "A-11"
+        ],
+        "provider_wording": "We took immediate action to restrict access to the notification platforms and are working with our internal and external specialist advisers, as well as all relevant authorities.",
+        "settled_by": null,
+        "estimate": null,
+        "first_seen": null,
+        "superseded_by": null,
+        "contradiction_sides": null,
+        "history": []
+      },
+      {
+        "id": "C-022",
+        "statement": "ASOS says it is working with internal and external specialist advisers and all relevant authorities.",
+        "subject": "ASOS",
+        "unknown_kind": null,
+        "class": "CONFIRMED",
+        "proposed_class": "CONFIRMED",
+        "source_ids": [
+          "A-11"
+        ],
+        "provider_wording": "We took immediate action to restrict access to the notification platforms and are working with our internal and external specialist advisers, as well as all relevant authorities.",
+        "settled_by": null,
+        "estimate": null,
+        "first_seen": null,
+        "superseded_by": null,
+        "contradiction_sides": null,
+        "history": []
+      },
+      {
+        "id": "C-023",
+        "statement": "ASOS says basic personal information, including names and contact details, may have been accessed.",
+        "subject": "ASOS",
+        "unknown_kind": null,
+        "class": "CONFIRMED",
+        "proposed_class": "CONFIRMED",
+        "source_ids": [
+          "A-11"
+        ],
+        "provider_wording": "Basic personal information including name and contact details may have been accessed.",
+        "settled_by": null,
+        "estimate": null,
+        "first_seen": null,
+        "superseded_by": null,
+        "contradiction_sides": null,
+        "history": []
+      },
+      {
+        "id": "C-024",
+        "statement": "ASOS says it does not believe payment-card information was impacted.",
+        "subject": "ASOS",
+        "unknown_kind": null,
+        "class": "CONFIRMED",
+        "proposed_class": "CONFIRMED",
+        "source_ids": [
+          "A-11"
+        ],
+        "provider_wording": "We do not believe that payment-card information or account passwords, were impacted.",
+        "settled_by": null,
+        "estimate": null,
+        "first_seen": null,
+        "superseded_by": null,
+        "contradiction_sides": null,
+        "history": []
+      },
+      {
+        "id": "C-025",
+        "statement": "ASOS says it does not believe account passwords were impacted.",
+        "subject": "ASOS",
+        "unknown_kind": null,
+        "class": "CONFIRMED",
+        "proposed_class": "CONFIRMED",
+        "source_ids": [
+          "A-11"
+        ],
+        "provider_wording": "We do not believe that payment-card information or account passwords, were impacted.",
+        "settled_by": null,
+        "estimate": null,
+        "first_seen": null,
+        "superseded_by": null,
+        "contradiction_sides": null,
+        "history": []
+      },
+      {
+        "id": "C-026",
+        "statement": "ASOS says it is too early to quantify any potential impact on trading.",
+        "subject": "ASOS",
+        "unknown_kind": null,
+        "class": "CONFIRMED",
+        "proposed_class": "CONFIRMED",
+        "source_ids": [
+          "A-11"
+        ],
+        "provider_wording": "It is too early to quantify any potential impact on trading.",
+        "settled_by": null,
+        "estimate": null,
+        "first_seen": null,
+        "superseded_by": null,
+        "contradiction_sides": null,
+        "history": []
+      },
+      {
+        "id": "C-027",
+        "statement": "Infosecurity Magazine and PA report that a Snowflake spokesperson said Snowflake found no compromise of its platform.",
+        "subject": "Snowflake",
+        "unknown_kind": null,
+        "class": "REPORTED",
+        "proposed_class": "REPORTED",
+        "source_ids": [
+          "A-12"
+        ],
+        "provider_wording": "found no compromise",
+        "settled_by": null,
+        "estimate": null,
+        "first_seen": null,
+        "superseded_by": null,
+        "contradiction_sides": null,
+        "history": []
+      },
+      {
+        "id": "C-028",
+        "statement": "Infosecurity Magazine and PA quote a Snowflake spokesperson saying its investigation is ongoing and it will provide further updates as soon as more information becomes available.",
+        "subject": "Snowflake",
+        "unknown_kind": null,
+        "class": "REPORTED",
+        "proposed_class": "REPORTED",
+        "source_ids": [
+          "A-12"
+        ],
+        "provider_wording": "The investigation is ongoing and we will provide further updates as soon as more information becomes available.",
+        "settled_by": null,
+        "estimate": null,
+        "first_seen": null,
+        "superseded_by": null,
+        "contradiction_sides": null,
+        "history": []
+      },
+      {
+        "id": "C-029",
+        "statement": "The Xuanye Group Telegram administrator claims ASOS payment information was unaffected, as relayed by Infosecurity Magazine.",
+        "subject": "ASOS",
+        "unknown_kind": null,
+        "class": "UNCONFIRMED",
+        "proposed_class": "UNCONFIRMED",
+        "source_ids": [
+          "A-13"
+        ],
+        "provider_wording": null,
+        "settled_by": null,
+        "estimate": null,
+        "first_seen": null,
+        "superseded_by": null,
+        "contradiction_sides": null,
+        "history": []
+      },
+      {
+        "id": "C-030",
+        "statement": "LBC reports that Downdetector showed ASOS website issues from approximately 09:41.",
+        "subject": "ASOS",
+        "unknown_kind": null,
+        "class": "REPORTED",
+        "proposed_class": "REPORTED",
+        "source_ids": [
+          "A-14"
+        ],
+        "provider_wording": null,
+        "settled_by": null,
+        "estimate": null,
+        "first_seen": null,
+        "superseded_by": null,
+        "contradiction_sides": null,
+        "history": []
+      },
+      {
+        "id": "C-031",
+        "statement": "LBC reports ASOS shares down approximately 5% within 30 minutes of the first reports.",
+        "subject": "ASOS",
+        "unknown_kind": null,
+        "class": "REPORTED",
+        "proposed_class": "REPORTED",
+        "source_ids": [
+          "A-14"
+        ],
+        "provider_wording": null,
+        "settled_by": null,
+        "estimate": null,
+        "first_seen": null,
+        "superseded_by": null,
+        "contradiction_sides": null,
+        "history": []
+      },
+      {
+        "id": "C-032",
+        "statement": "The supplied evidence does not establish how the unauthorised access described by ASOS was obtained.",
+        "subject": "ASOS",
+        "unknown_kind": "cause",
+        "class": "UNKNOWN",
+        "proposed_class": "UNKNOWN",
+        "source_ids": [],
+        "provider_wording": null,
+        "settled_by": null,
+        "estimate": null,
+        "first_seen": null,
+        "superseded_by": null,
+        "contradiction_sides": null,
+        "history": []
+      },
+      {
+        "id": "C-033",
+        "statement": "The supplied evidence does not establish whether data was exfiltrated from ASOS in the current incident or how many customers' personal information was actually accessed.",
+        "subject": "ASOS",
+        "unknown_kind": "data",
+        "class": "UNKNOWN",
+        "proposed_class": "UNKNOWN",
+        "source_ids": [],
+        "provider_wording": null,
+        "settled_by": null,
+        "estimate": null,
+        "first_seen": null,
+        "superseded_by": null,
+        "contradiction_sides": null,
+        "history": []
+      },
+      {
+        "id": "C-034",
+        "statement": "The identities of the third-party platforms under investigation by ASOS are not established by its supplied announcement.",
+        "subject": "ASOS",
+        "unknown_kind": "scope",
+        "class": "UNKNOWN",
+        "proposed_class": "UNKNOWN",
+        "source_ids": [],
+        "provider_wording": null,
+        "settled_by": null,
+        "estimate": null,
+        "first_seen": null,
+        "superseded_by": null,
+        "contradiction_sides": null,
+        "history": []
+      },
+      {
+        "id": "C-035",
+        "statement": "The time for completing remediation of the unauthorised activity remains unknown: ASOS supplies no estimate in its announcement. Snowflake's promise of further investigation updates also supplies no timed ETA and does not resolve this question.",
+        "subject": "ASOS",
+        "unknown_kind": "recovery",
+        "class": "UNKNOWN",
+        "proposed_class": "UNKNOWN",
+        "source_ids": [],
+        "provider_wording": null,
+        "settled_by": null,
+        "estimate": null,
+        "first_seen": null,
+        "superseded_by": null,
+        "contradiction_sides": null,
+        "history": []
+      }
+    ],
+    "changes": [
+      {
+        "claim_id": "C-001",
+        "change": "NEW",
+        "from": null,
+        "to": "UNCONFIRMED",
+        "because": [
+          "A-01"
+        ]
+      },
+      {
+        "claim_id": "C-002",
+        "change": "NEW",
+        "from": null,
+        "to": "UNCONFIRMED",
+        "because": [
+          "A-01"
+        ]
+      },
+      {
+        "claim_id": "C-003",
+        "change": "NEW",
+        "from": null,
+        "to": "REPORTED",
+        "because": [
+          "A-02"
+        ]
+      },
+      {
+        "claim_id": "C-004",
+        "change": "NEW",
+        "from": null,
+        "to": "CONFIRMED",
+        "because": [
+          "A-03",
+          "A-11"
+        ]
+      },
+      {
+        "claim_id": "C-005",
+        "change": "NEW",
+        "from": null,
+        "to": "CONFIRMED",
+        "because": [
+          "A-03",
+          "A-11"
+        ]
+      },
+      {
+        "claim_id": "C-006",
+        "change": "NEW",
+        "from": null,
+        "to": "REPORTED",
+        "because": [
+          "A-04"
+        ]
+      },
+      {
+        "claim_id": "C-007",
+        "change": "NEW",
+        "from": null,
+        "to": "REPORTED",
+        "because": [
+          "A-04"
+        ]
+      },
+      {
+        "claim_id": "C-008",
+        "change": "NEW",
+        "from": null,
+        "to": "REPORTED",
+        "because": [
+          "A-04"
+        ]
+      },
+      {
+        "claim_id": "C-009",
+        "change": "NEW",
+        "from": null,
+        "to": "REPORTED",
+        "because": [
+          "A-04"
+        ]
+      },
+      {
+        "claim_id": "C-010",
+        "change": "NEW",
+        "from": null,
+        "to": "REPORTED",
+        "because": [
+          "A-05"
+        ]
+      },
+      {
+        "claim_id": "C-011",
+        "change": "NEW",
+        "from": null,
+        "to": "CONFIRMED",
+        "because": [
+          "A-06",
+          "A-11"
+        ]
+      },
+      {
+        "claim_id": "C-012",
+        "change": "NEW",
+        "from": null,
+        "to": "REPORTED",
+        "because": [
+          "A-06"
+        ]
+      },
+      {
+        "claim_id": "C-013",
+        "change": "NEW",
+        "from": null,
+        "to": "REPORTED",
+        "because": [
+          "A-06"
+        ]
+      },
+      {
+        "claim_id": "C-014",
+        "change": "NEW",
+        "from": null,
+        "to": "REPORTED",
+        "because": [
+          "A-07"
+        ]
+      },
+      {
+        "claim_id": "C-015",
+        "change": "NEW",
+        "from": null,
+        "to": "REPORTED",
+        "because": [
+          "A-08"
+        ]
+      },
+      {
+        "claim_id": "C-016",
+        "change": "NEW",
+        "from": null,
+        "to": "REPORTED",
+        "because": [
+          "A-08"
+        ]
+      },
+      {
+        "claim_id": "C-017",
+        "change": "NEW",
+        "from": null,
+        "to": "UNCONFIRMED",
+        "because": [
+          "A-09"
+        ]
+      },
+      {
+        "claim_id": "C-018",
+        "change": "NEW",
+        "from": null,
+        "to": "CONFIRMED",
+        "because": [
+          "A-10"
+        ]
+      },
+      {
+        "claim_id": "C-019",
+        "change": "NEW",
+        "from": null,
+        "to": "REPORTED",
+        "because": [
+          "A-10"
+        ]
+      },
+      {
+        "claim_id": "C-020",
+        "change": "NEW",
+        "from": null,
+        "to": "CONFIRMED",
+        "because": [
+          "A-10"
+        ]
+      },
+      {
+        "claim_id": "C-021",
+        "change": "NEW",
+        "from": null,
+        "to": "CONFIRMED",
+        "because": [
+          "A-11"
+        ]
+      },
+      {
+        "claim_id": "C-022",
+        "change": "NEW",
+        "from": null,
+        "to": "CONFIRMED",
+        "because": [
+          "A-11"
+        ]
+      },
+      {
+        "claim_id": "C-023",
+        "change": "NEW",
+        "from": null,
+        "to": "CONFIRMED",
+        "because": [
+          "A-11"
+        ]
+      },
+      {
+        "claim_id": "C-024",
+        "change": "NEW",
+        "from": null,
+        "to": "CONFIRMED",
+        "because": [
+          "A-11"
+        ]
+      },
+      {
+        "claim_id": "C-025",
+        "change": "NEW",
+        "from": null,
+        "to": "CONFIRMED",
+        "because": [
+          "A-11"
+        ]
+      },
+      {
+        "claim_id": "C-026",
+        "change": "NEW",
+        "from": null,
+        "to": "CONFIRMED",
+        "because": [
+          "A-11"
+        ]
+      },
+      {
+        "claim_id": "C-027",
+        "change": "NEW",
+        "from": null,
+        "to": "REPORTED",
+        "because": [
+          "A-12"
+        ]
+      },
+      {
+        "claim_id": "C-028",
+        "change": "NEW",
+        "from": null,
+        "to": "REPORTED",
+        "because": [
+          "A-12"
+        ]
+      },
+      {
+        "claim_id": "C-029",
+        "change": "NEW",
+        "from": null,
+        "to": "UNCONFIRMED",
+        "because": [
+          "A-13"
+        ]
+      },
+      {
+        "claim_id": "C-030",
+        "change": "NEW",
+        "from": null,
+        "to": "REPORTED",
+        "because": [
+          "A-14"
+        ]
+      },
+      {
+        "claim_id": "C-031",
+        "change": "NEW",
+        "from": null,
+        "to": "REPORTED",
+        "because": [
+          "A-14"
+        ]
+      },
+      {
+        "claim_id": "C-032",
+        "change": "NEW",
+        "from": null,
+        "to": "UNKNOWN",
+        "because": []
+      },
+      {
+        "claim_id": "C-033",
+        "change": "NEW",
+        "from": null,
+        "to": "UNKNOWN",
+        "because": []
+      },
+      {
+        "claim_id": "C-034",
+        "change": "NEW",
+        "from": null,
+        "to": "UNKNOWN",
+        "because": []
+      },
+      {
+        "claim_id": "C-035",
+        "change": "NEW",
+        "from": null,
+        "to": "UNKNOWN",
+        "because": []
+      }
+    ]
+  },
+  "capped_ledger": [
+    {
+      "id": "C-001",
+      "statement": "The sender signing as xuanyewengateway claims in the ASOS notification to have fully compromised the Snowflake instance used by ASOS.",
+      "subject": "ASOS",
+      "unknown_kind": null,
+      "class": "UNCONFIRMED",
+      "proposed_class": "UNCONFIRMED",
+      "source_ids": [
+        "A-01"
+      ],
+      "provider_wording": null,
+      "settled_by": null,
+      "estimate": null,
+      "first_seen": null,
+      "superseded_by": null,
+      "contradiction_sides": null,
+      "history": []
+    },
+    {
+      "id": "C-002",
+      "statement": "The sender signing as xuanyewengateway threatens in the ASOS notification to leak the allegedly compromised material unless ASOS engages.",
+      "subject": "ASOS",
+      "unknown_kind": null,
+      "class": "UNCONFIRMED",
+      "proposed_class": "UNCONFIRMED",
+      "source_ids": [
+        "A-01"
+      ],
+      "provider_wording": null,
+      "settled_by": null,
+      "estimate": null,
+      "first_seen": null,
+      "superseded_by": null,
+      "contradiction_sides": null,
+      "history": []
+    },
+    {
+      "id": "C-003",
+      "statement": "Many ASOS app users on X report receiving the notification in the UK, US, Germany and Australia.",
+      "subject": "ASOS",
+      "unknown_kind": null,
+      "class": "UNCONFIRMED",
+      "proposed_class": "REPORTED",
+      "source_ids": [
+        "A-02"
+      ],
+      "provider_wording": null,
+      "settled_by": null,
+      "estimate": null,
+      "first_seen": null,
+      "superseded_by": null,
+      "contradiction_sides": null,
+      "history": []
+    },
+    {
+      "id": "C-004",
+      "statement": "ASOS confirms that an unauthorised customer notification was sent to customers at around 10am on 6 October. ITV, RTÉ, STV and PinkNews reported customers receiving a phone alert claiming the retailer was hacked.",
+      "subject": "ASOS",
+      "unknown_kind": null,
+      "class": "CONFIRMED",
+      "proposed_class": "CONFIRMED",
+      "source_ids": [
+        "A-03",
+        "A-11"
+      ],
+      "provider_wording": "ASOS can confirm that, at around 10am today, an unauthorised customer notification was sent to ASOS customers.",
+      "settled_by": "A-11",
+      "estimate": null,
+      "first_seen": null,
+      "superseded_by": null,
+      "contradiction_sides": null,
+      "history": []
+    },
+    {
+      "id": "C-005",
+      "statement": "ASOS says its website and app are operating normally, with no current disruption to any aspect of its operations, at its approximately 15:00 announcement. Earlier press reports said the website and app appeared to keep working during the morning.",
+      "subject": "ASOS",
+      "unknown_kind": null,
+      "class": "CONFIRMED",
+      "proposed_class": "CONFIRMED",
+      "source_ids": [
+        "A-03",
+        "A-11"
+      ],
+      "provider_wording": "Our website and app are operating as normal, with no current disruption to any aspects of our operations.",
+      "settled_by": "A-11",
+      "estimate": null,
+      "first_seen": null,
+      "superseded_by": null,
+      "contradiction_sides": null,
+      "history": []
+    },
+    {
+      "id": "C-006",
+      "statement": "Irish Times / Bloomberg report that an ASOS spokesperson declined to confirm or elaborate on the reports during the morning.",
+      "subject": "ASOS",
+      "unknown_kind": null,
+      "class": "REPORTED",
+      "proposed_class": "REPORTED",
+      "source_ids": [
+        "A-04"
+      ],
+      "provider_wording": null,
+      "settled_by": null,
+      "estimate": null,
+      "first_seen": null,
+      "superseded_by": null,
+      "contradiction_sides": null,
+      "history": []
+    },
+    {
+      "id": "C-007",
+      "statement": "Irish Times / Bloomberg report that ASOS shares fell as much as 13% intraday.",
+      "subject": "ASOS",
+      "unknown_kind": null,
+      "class": "REPORTED",
+      "proposed_class": "REPORTED",
+      "source_ids": [
+        "A-04"
+      ],
+      "provider_wording": null,
+      "settled_by": null,
+      "estimate": null,
+      "first_seen": null,
+      "superseded_by": null,
+      "contradiction_sides": null,
+      "history": []
+    },
+    {
+      "id": "C-008",
+      "statement": "Irish Times / Bloomberg describe the ASOS intraday share decline as its largest since September 2025.",
+      "subject": "ASOS",
+      "unknown_kind": null,
+      "class": "REPORTED",
+      "proposed_class": "REPORTED",
+      "source_ids": [
+        "A-04"
+      ],
+      "provider_wording": null,
+      "settled_by": null,
+      "estimate": null,
+      "first_seen": null,
+      "superseded_by": null,
+      "contradiction_sides": null,
+      "history": []
+    },
+    {
+      "id": "C-009",
+      "statement": "Irish Times / Bloomberg report that ASOS shares subsequently pared their intraday losses.",
+      "subject": "ASOS",
+      "unknown_kind": null,
+      "class": "REPORTED",
+      "proposed_class": "REPORTED",
+      "source_ids": [
+        "A-04"
+      ],
+      "provider_wording": null,
+      "settled_by": null,
+      "estimate": null,
+      "first_seen": null,
+      "superseded_by": null,
+      "contradiction_sides": null,
+      "history": []
+    },
+    {
+      "id": "C-010",
+      "statement": "City AM and Global Banking & Finance report ASOS shares down about 11–12% during the morning.",
+      "subject": "ASOS",
+      "unknown_kind": null,
+      "class": "REPORTED",
+      "proposed_class": "REPORTED",
+      "source_ids": [
+        "A-05"
+      ],
+      "provider_wording": null,
+      "settled_by": null,
+      "estimate": null,
+      "first_seen": null,
+      "superseded_by": null,
+      "contradiction_sides": null,
+      "history": []
+    },
+    {
+      "id": "C-011",
+      "statement": "ASOS says it is investigating unauthorised activity involving third-party platforms used to communicate with customers, confirming earlier reports that it was investigating the incident.",
+      "subject": "ASOS",
+      "unknown_kind": null,
+      "class": "CONFIRMED",
+      "proposed_class": "CONFIRMED",
+      "source_ids": [
+        "A-06",
+        "A-11"
+      ],
+      "provider_wording": "We are investigating unauthorised activity involving third-party platforms that we use to communicate with customers.",
+      "settled_by": "A-11",
+      "estimate": null,
+      "first_seen": null,
+      "superseded_by": null,
+      "contradiction_sides": null,
+      "history": []
+    },
+    {
+      "id": "C-012",
+      "statement": "Morning reporting summarized by TechRadar says ASOS had not confirmed a breach at that time.",
+      "subject": "ASOS",
+      "unknown_kind": null,
+      "class": "REPORTED",
+      "proposed_class": "REPORTED",
+      "source_ids": [
+        "A-06"
+      ],
+      "provider_wording": null,
+      "settled_by": null,
+      "estimate": null,
+      "first_seen": null,
+      "superseded_by": null,
+      "contradiction_sides": null,
+      "history": []
+    },
+    {
+      "id": "C-013",
+      "statement": "Morning reporting summarized by TechRadar says there was no confirmation at that time that personal or payment data had been taken from ASOS.",
+      "subject": "ASOS",
+      "unknown_kind": null,
+      "class": "REPORTED",
+      "proposed_class": "REPORTED",
+      "source_ids": [
+        "A-06"
+      ],
+      "provider_wording": null,
+      "settled_by": null,
+      "estimate": null,
+      "first_seen": null,
+      "superseded_by": null,
+      "contradiction_sides": null,
+      "history": []
+    },
+    {
+      "id": "C-014",
+      "statement": "Irish Times / Bloomberg report Snowflake shares down as much as 3.2% in New York pre-market trading.",
+      "subject": "Snowflake",
+      "unknown_kind": null,
+      "class": "REPORTED",
+      "proposed_class": "REPORTED",
+      "source_ids": [
+        "A-07"
+      ],
+      "provider_wording": null,
+      "settled_by": null,
+      "estimate": null,
+      "first_seen": null,
+      "superseded_by": null,
+      "contradiction_sides": null,
+      "history": []
+    },
+    {
+      "id": "C-015",
+      "statement": "GB News and tech-insider.org report that the Telegram group calls itself Xuanye Group or Xuanye Gateway.",
+      "subject": "Xuanye Group",
+      "unknown_kind": null,
+      "class": "REPORTED",
+      "proposed_class": "REPORTED",
+      "source_ids": [
+        "A-08"
+      ],
+      "provider_wording": null,
+      "settled_by": null,
+      "estimate": null,
+      "first_seen": null,
+      "superseded_by": null,
+      "contradiction_sides": null,
+      "history": []
+    },
+    {
+      "id": "C-016",
+      "statement": "GB News and tech-insider.org report no link between Xuanye Group and any earlier breach claim.",
+      "subject": "Xuanye Group",
+      "unknown_kind": null,
+      "class": "REPORTED",
+      "proposed_class": "REPORTED",
+      "source_ids": [
+        "A-08"
+      ],
+      "provider_wording": null,
+      "settled_by": null,
+      "estimate": null,
+      "first_seen": null,
+      "superseded_by": null,
+      "contradiction_sides": null,
+      "history": []
+    },
+    {
+      "id": "C-017",
+      "statement": "Cypro and Infosecurity Magazine speculate that delivery through the official ASOS app may indicate attacker access to systems controlling app notifications.",
+      "subject": "ASOS",
+      "unknown_kind": null,
+      "class": "UNCONFIRMED",
+      "proposed_class": "UNCONFIRMED",
+      "source_ids": [
+        "A-09"
+      ],
+      "provider_wording": null,
+      "settled_by": null,
+      "estimate": null,
+      "first_seen": null,
+      "superseded_by": null,
+      "contradiction_sides": null,
+      "history": []
+    },
+    {
+      "id": "C-018",
+      "statement": "ASOS's August breach-notification letters concern a separate credential-stuffing incident beginning on 28 July 2026, not the current October incident.",
+      "subject": "ASOS",
+      "unknown_kind": null,
+      "class": "CONFIRMED",
+      "proposed_class": "CONFIRMED",
+      "source_ids": [
+        "A-10"
+      ],
+      "provider_wording": null,
+      "settled_by": null,
+      "estimate": null,
+      "first_seen": null,
+      "superseded_by": null,
+      "contradiction_sides": null,
+      "history": []
+    },
+    {
+      "id": "C-019",
+      "statement": "CyberInsider and eSecurity Planet report that the separate July 2026 ASOS credential-stuffing incident affected approximately 138,828 US accounts.",
+      "subject": "ASOS",
+      "unknown_kind": null,
+      "class": "REPORTED",
+      "proposed_class": "REPORTED",
+      "source_ids": [
+        "A-10"
+      ],
+      "provider_wording": null,
+      "settled_by": null,
+      "estimate": null,
+      "first_seen": null,
+      "superseded_by": null,
+      "contradiction_sides": null,
+      "history": []
+    },
+    {
+      "id": "C-020",
+      "statement": "ASOS says in its August breach-notification letters that credentials used in the separate July incident came from outside ASOS; the capture supplies a paraphrase rather than the letters' verbatim wording.",
+      "subject": "ASOS",
+      "unknown_kind": null,
+      "class": "CONFIRMED",
+      "proposed_class": "CONFIRMED",
+      "source_ids": [
+        "A-10"
+      ],
+      "provider_wording": null,
+      "settled_by": null,
+      "estimate": null,
+      "first_seen": null,
+      "superseded_by": null,
+      "contradiction_sides": null,
+      "history": []
+    },
+    {
+      "id": "C-021",
+      "statement": "ASOS says it took immediate action to restrict access to the notification platforms.",
+      "subject": "ASOS",
+      "unknown_kind": null,
+      "class": "CONFIRMED",
+      "proposed_class": "CONFIRMED",
+      "source_ids": [
+        "A-11"
+      ],
+      "provider_wording": "We took immediate action to restrict access to the notification platforms and are working with our internal and external specialist advisers, as well as all relevant authorities.",
+      "settled_by": null,
+      "estimate": null,
+      "first_seen": null,
+      "superseded_by": null,
+      "contradiction_sides": null,
+      "history": []
+    },
+    {
+      "id": "C-022",
+      "statement": "ASOS says it is working with internal and external specialist advisers and all relevant authorities.",
+      "subject": "ASOS",
+      "unknown_kind": null,
+      "class": "CONFIRMED",
+      "proposed_class": "CONFIRMED",
+      "source_ids": [
+        "A-11"
+      ],
+      "provider_wording": "We took immediate action to restrict access to the notification platforms and are working with our internal and external specialist advisers, as well as all relevant authorities.",
+      "settled_by": null,
+      "estimate": null,
+      "first_seen": null,
+      "superseded_by": null,
+      "contradiction_sides": null,
+      "history": []
+    },
+    {
+      "id": "C-023",
+      "statement": "ASOS says basic personal information, including names and contact details, may have been accessed.",
+      "subject": "ASOS",
+      "unknown_kind": null,
+      "class": "CONFIRMED",
+      "proposed_class": "CONFIRMED",
+      "source_ids": [
+        "A-11"
+      ],
+      "provider_wording": "Basic personal information including name and contact details may have been accessed.",
+      "settled_by": null,
+      "estimate": null,
+      "first_seen": null,
+      "superseded_by": null,
+      "contradiction_sides": null,
+      "history": []
+    },
+    {
+      "id": "C-024",
+      "statement": "ASOS says it does not believe payment-card information was impacted.",
+      "subject": "ASOS",
+      "unknown_kind": null,
+      "class": "CONFIRMED",
+      "proposed_class": "CONFIRMED",
+      "source_ids": [
+        "A-11"
+      ],
+      "provider_wording": "We do not believe that payment-card information or account passwords, were impacted.",
+      "settled_by": null,
+      "estimate": null,
+      "first_seen": null,
+      "superseded_by": null,
+      "contradiction_sides": null,
+      "history": []
+    },
+    {
+      "id": "C-025",
+      "statement": "ASOS says it does not believe account passwords were impacted.",
+      "subject": "ASOS",
+      "unknown_kind": null,
+      "class": "CONFIRMED",
+      "proposed_class": "CONFIRMED",
+      "source_ids": [
+        "A-11"
+      ],
+      "provider_wording": "We do not believe that payment-card information or account passwords, were impacted.",
+      "settled_by": null,
+      "estimate": null,
+      "first_seen": null,
+      "superseded_by": null,
+      "contradiction_sides": null,
+      "history": []
+    },
+    {
+      "id": "C-026",
+      "statement": "ASOS says it is too early to quantify any potential impact on trading.",
+      "subject": "ASOS",
+      "unknown_kind": null,
+      "class": "CONFIRMED",
+      "proposed_class": "CONFIRMED",
+      "source_ids": [
+        "A-11"
+      ],
+      "provider_wording": "It is too early to quantify any potential impact on trading.",
+      "settled_by": null,
+      "estimate": null,
+      "first_seen": null,
+      "superseded_by": null,
+      "contradiction_sides": null,
+      "history": []
+    },
+    {
+      "id": "C-027",
+      "statement": "Infosecurity Magazine and PA report that a Snowflake spokesperson said Snowflake found no compromise of its platform.",
+      "subject": "Snowflake",
+      "unknown_kind": null,
+      "class": "REPORTED",
+      "proposed_class": "REPORTED",
+      "source_ids": [
+        "A-12"
+      ],
+      "provider_wording": "found no compromise",
+      "settled_by": null,
+      "estimate": null,
+      "first_seen": null,
+      "superseded_by": null,
+      "contradiction_sides": null,
+      "history": []
+    },
+    {
+      "id": "C-028",
+      "statement": "Infosecurity Magazine and PA quote a Snowflake spokesperson saying its investigation is ongoing and it will provide further updates as soon as more information becomes available.",
+      "subject": "Snowflake",
+      "unknown_kind": null,
+      "class": "REPORTED",
+      "proposed_class": "REPORTED",
+      "source_ids": [
+        "A-12"
+      ],
+      "provider_wording": "The investigation is ongoing and we will provide further updates as soon as more information becomes available.",
+      "settled_by": null,
+      "estimate": null,
+      "first_seen": null,
+      "superseded_by": null,
+      "contradiction_sides": null,
+      "history": []
+    },
+    {
+      "id": "C-029",
+      "statement": "The Xuanye Group Telegram administrator claims ASOS payment information was unaffected, as relayed by Infosecurity Magazine.",
+      "subject": "ASOS",
+      "unknown_kind": null,
+      "class": "UNCONFIRMED",
+      "proposed_class": "UNCONFIRMED",
+      "source_ids": [
+        "A-13"
+      ],
+      "provider_wording": null,
+      "settled_by": null,
+      "estimate": null,
+      "first_seen": null,
+      "superseded_by": null,
+      "contradiction_sides": null,
+      "history": []
+    },
+    {
+      "id": "C-030",
+      "statement": "LBC reports that Downdetector showed ASOS website issues from approximately 09:41.",
+      "subject": "ASOS",
+      "unknown_kind": null,
+      "class": "REPORTED",
+      "proposed_class": "REPORTED",
+      "source_ids": [
+        "A-14"
+      ],
+      "provider_wording": null,
+      "settled_by": null,
+      "estimate": null,
+      "first_seen": null,
+      "superseded_by": null,
+      "contradiction_sides": null,
+      "history": []
+    },
+    {
+      "id": "C-031",
+      "statement": "LBC reports ASOS shares down approximately 5% within 30 minutes of the first reports.",
+      "subject": "ASOS",
+      "unknown_kind": null,
+      "class": "REPORTED",
+      "proposed_class": "REPORTED",
+      "source_ids": [
+        "A-14"
+      ],
+      "provider_wording": null,
+      "settled_by": null,
+      "estimate": null,
+      "first_seen": null,
+      "superseded_by": null,
+      "contradiction_sides": null,
+      "history": []
+    },
+    {
+      "id": "C-032",
+      "statement": "The supplied evidence does not establish how the unauthorised access described by ASOS was obtained.",
+      "subject": "ASOS",
+      "unknown_kind": "cause",
+      "class": "UNKNOWN",
+      "proposed_class": "UNKNOWN",
+      "source_ids": [],
+      "provider_wording": null,
+      "settled_by": null,
+      "estimate": null,
+      "first_seen": null,
+      "superseded_by": null,
+      "contradiction_sides": null,
+      "history": []
+    },
+    {
+      "id": "C-033",
+      "statement": "The supplied evidence does not establish whether data was exfiltrated from ASOS in the current incident or how many customers' personal information was actually accessed.",
+      "subject": "ASOS",
+      "unknown_kind": "data",
+      "class": "UNKNOWN",
+      "proposed_class": "UNKNOWN",
+      "source_ids": [],
+      "provider_wording": null,
+      "settled_by": null,
+      "estimate": null,
+      "first_seen": null,
+      "superseded_by": null,
+      "contradiction_sides": null,
+      "history": []
+    },
+    {
+      "id": "C-034",
+      "statement": "The identities of the third-party platforms under investigation by ASOS are not established by its supplied announcement.",
+      "subject": "ASOS",
+      "unknown_kind": "scope",
+      "class": "UNKNOWN",
+      "proposed_class": "UNKNOWN",
+      "source_ids": [],
+      "provider_wording": null,
+      "settled_by": null,
+      "estimate": null,
+      "first_seen": null,
+      "superseded_by": null,
+      "contradiction_sides": null,
+      "history": []
+    },
+    {
+      "id": "C-035",
+      "statement": "The time for completing remediation of the unauthorised activity remains unknown: ASOS supplies no estimate in its announcement. Snowflake's promise of further investigation updates also supplies no timed ETA and does not resolve this question.",
+      "subject": "ASOS",
+      "unknown_kind": "recovery",
+      "class": "UNKNOWN",
+      "proposed_class": "UNKNOWN",
+      "source_ids": [],
+      "provider_wording": null,
+      "settled_by": null,
+      "estimate": null,
+      "first_seen": null,
+      "superseded_by": null,
+      "contradiction_sides": null,
+      "history": []
+    }
+  ],
+  "timings": [
+    {
+      "step": "EXTRACT",
+      "stage": "live-asos",
+      "audience": null,
+      "attempt": 1,
+      "seconds": 83.38754162500001,
+      "tokens": {
+        "input_tokens": 2215,
+        "input_tokens_details": {
+          "cache_write_tokens": 2212,
+          "cached_tokens": 0
+        },
+        "output_tokens": 6296,
+        "output_tokens_details": {
+          "reasoning_tokens": 145
+        },
+        "total_tokens": 8511
+      }
+    },
+    {
+      "step": "RECONCILE",
+      "stage": "live-asos",
+      "audience": null,
+      "attempt": 1,
+      "seconds": 90.365211291,
+      "tokens": {
+        "input_tokens": 6000,
+        "input_tokens_details": {
+          "cache_write_tokens": 5997,
+          "cached_tokens": 0
+        },
+        "output_tokens": 5086,
+        "output_tokens_details": {
+          "reasoning_tokens": 204
+        },
+        "total_tokens": 11086
+      }
+    },
+    {
+      "step": "POLICY",
+      "stage": "live-asos",
+      "seconds": 0.0010460000000020954,
+      "tokens": null
+    }
+  ],
+  "status": "complete",
+  "policy_note": "All 14 items belong to captured snapshot 2. Approximate source times are preserved; no replay-date filtering is applied. This avoids interpreting morning/day/August as June 2025.",
+  "total_tokens": 19597,
+  "comparison": {
+    "snapshot": 2,
+    "method": "Semantic review against all 12 expected snapshot-2 propositions, allowing splits and paraphrases while requiring attribution, modality and class. Review is bound to the exact ledger SHA-256.",
+    "reviewed_ledger_sha256": "798ce6e16a78cc9e51be5ce469881c7d21b881a783033387b96ef33c6acd05f3",
+    "expected_claim_count": 12,
+    "matched_expected_claim_count": 11,
+    "rows": [
+      {
+        "expected_row": 1,
+        "expected_statement": "An unauthorised notification was sent to ASOS customers at around 10am",
+        "expected_class": "CONFIRMED",
+        "generated_ids": [
+          "C-004"
+        ],
+        "generated_claims": [
+          {
+            "id": "C-004",
+            "statement": "ASOS confirms that an unauthorised customer notification was sent to customers at around 10am on 6 October. ITV, RTÉ, STV and PinkNews reported customers receiving a phone alert claiming the retailer was hacked.",
+            "subject": "ASOS",
+            "unknown_kind": null,
+            "class": "CONFIRMED",
+            "proposed_class": "CONFIRMED",
+            "source_ids": [
+              "A-03",
+              "A-11"
+            ],
+            "provider_wording": "ASOS can confirm that, at around 10am today, an unauthorised customer notification was sent to ASOS customers.",
+            "settled_by": "A-11",
+            "estimate": null,
+            "first_seen": null,
+            "superseded_by": null,
+            "contradiction_sides": null,
+            "history": []
+          }
+        ],
+        "matches": true,
+        "note": "Same underlying assertion, attribution and class; wording may differ."
+      },
+      {
+        "expected_row": 2,
+        "expected_statement": "ASOS is investigating unauthorised activity on third-party platforms it uses to communicate with customers, and has restricted access to them",
+        "expected_class": "CONFIRMED",
+        "generated_ids": [
+          "C-011",
+          "C-021"
+        ],
+        "generated_claims": [
+          {
+            "id": "C-011",
+            "statement": "ASOS says it is investigating unauthorised activity involving third-party platforms used to communicate with customers, confirming earlier reports that it was investigating the incident.",
+            "subject": "ASOS",
+            "unknown_kind": null,
+            "class": "CONFIRMED",
+            "proposed_class": "CONFIRMED",
+            "source_ids": [
+              "A-06",
+              "A-11"
+            ],
+            "provider_wording": "We are investigating unauthorised activity involving third-party platforms that we use to communicate with customers.",
+            "settled_by": "A-11",
+            "estimate": null,
+            "first_seen": null,
+            "superseded_by": null,
+            "contradiction_sides": null,
+            "history": []
+          },
+          {
+            "id": "C-021",
+            "statement": "ASOS says it took immediate action to restrict access to the notification platforms.",
+            "subject": "ASOS",
+            "unknown_kind": null,
+            "class": "CONFIRMED",
+            "proposed_class": "CONFIRMED",
+            "source_ids": [
+              "A-11"
+            ],
+            "provider_wording": "We took immediate action to restrict access to the notification platforms and are working with our internal and external specialist advisers, as well as all relevant authorities.",
+            "settled_by": null,
+            "estimate": null,
+            "first_seen": null,
+            "superseded_by": null,
+            "contradiction_sides": null,
+            "history": []
+          }
+        ],
+        "matches": true,
+        "note": "Equivalent content and class, split into investigating (C-011) and restricted access (C-021)."
+      },
+      {
+        "expected_row": 3,
+        "expected_statement": "Basic personal information (name, contact details) may have been accessed",
+        "expected_class": "CONFIRMED",
+        "generated_ids": [
+          "C-023"
+        ],
+        "generated_claims": [
+          {
+            "id": "C-023",
+            "statement": "ASOS says basic personal information, including names and contact details, may have been accessed.",
+            "subject": "ASOS",
+            "unknown_kind": null,
+            "class": "CONFIRMED",
+            "proposed_class": "CONFIRMED",
+            "source_ids": [
+              "A-11"
+            ],
+            "provider_wording": "Basic personal information including name and contact details may have been accessed.",
+            "settled_by": null,
+            "estimate": null,
+            "first_seen": null,
+            "superseded_by": null,
+            "contradiction_sides": null,
+            "history": []
+          }
+        ],
+        "matches": true,
+        "note": "Same underlying assertion, attribution and class; wording may differ."
+      },
+      {
+        "expected_row": 4,
+        "expected_statement": "ASOS does not believe payment-card information or account passwords were impacted",
+        "expected_class": "CONFIRMED",
+        "generated_ids": [
+          "C-024",
+          "C-025"
+        ],
+        "generated_claims": [
+          {
+            "id": "C-024",
+            "statement": "ASOS says it does not believe payment-card information was impacted.",
+            "subject": "ASOS",
+            "unknown_kind": null,
+            "class": "CONFIRMED",
+            "proposed_class": "CONFIRMED",
+            "source_ids": [
+              "A-11"
+            ],
+            "provider_wording": "We do not believe that payment-card information or account passwords, were impacted.",
+            "settled_by": null,
+            "estimate": null,
+            "first_seen": null,
+            "superseded_by": null,
+            "contradiction_sides": null,
+            "history": []
+          },
+          {
+            "id": "C-025",
+            "statement": "ASOS says it does not believe account passwords were impacted.",
+            "subject": "ASOS",
+            "unknown_kind": null,
+            "class": "CONFIRMED",
+            "proposed_class": "CONFIRMED",
+            "source_ids": [
+              "A-11"
+            ],
+            "provider_wording": "We do not believe that payment-card information or account passwords, were impacted.",
+            "settled_by": null,
+            "estimate": null,
+            "first_seen": null,
+            "superseded_by": null,
+            "contradiction_sides": null,
+            "history": []
+          }
+        ],
+        "matches": true,
+        "note": "Equivalent content and class, split into payment cards (C-024) and passwords (C-025); both retain ASOS does not believe."
+      },
+      {
+        "expected_row": 5,
+        "expected_statement": "ASOS website and app are operating normally",
+        "expected_class": "CONFIRMED",
+        "generated_ids": [
+          "C-005"
+        ],
+        "generated_claims": [
+          {
+            "id": "C-005",
+            "statement": "ASOS says its website and app are operating normally, with no current disruption to any aspect of its operations, at its approximately 15:00 announcement. Earlier press reports said the website and app appeared to keep working during the morning.",
+            "subject": "ASOS",
+            "unknown_kind": null,
+            "class": "CONFIRMED",
+            "proposed_class": "CONFIRMED",
+            "source_ids": [
+              "A-03",
+              "A-11"
+            ],
+            "provider_wording": "Our website and app are operating as normal, with no current disruption to any aspects of our operations.",
+            "settled_by": "A-11",
+            "estimate": null,
+            "first_seen": null,
+            "superseded_by": null,
+            "contradiction_sides": null,
+            "history": []
+          }
+        ],
+        "matches": true,
+        "note": "Same underlying assertion, attribution and class; wording may differ."
+      },
+      {
+        "expected_row": 6,
+        "expected_statement": "Snowflake's platform was not compromised",
+        "expected_class": "REPORTED",
+        "generated_ids": [
+          "C-027"
+        ],
+        "generated_claims": [
+          {
+            "id": "C-027",
+            "statement": "Infosecurity Magazine and PA report that a Snowflake spokesperson said Snowflake found no compromise of its platform.",
+            "subject": "Snowflake",
+            "unknown_kind": null,
+            "class": "REPORTED",
+            "proposed_class": "REPORTED",
+            "source_ids": [
+              "A-12"
+            ],
+            "provider_wording": "found no compromise",
+            "settled_by": null,
+            "estimate": null,
+            "first_seen": null,
+            "superseded_by": null,
+            "contradiction_sides": null,
+            "history": []
+          }
+        ],
+        "matches": true,
+        "note": "Same underlying assertion, attribution and class; wording may differ."
+      },
+      {
+        "expected_row": 7,
+        "expected_statement": "The ASOS Snowflake instance has been \"fully compromised\" (attacker's claim)",
+        "expected_class": "UNCONFIRMED",
+        "generated_ids": [
+          "C-001"
+        ],
+        "generated_claims": [
+          {
+            "id": "C-001",
+            "statement": "The sender signing as xuanyewengateway claims in the ASOS notification to have fully compromised the Snowflake instance used by ASOS.",
+            "subject": "ASOS",
+            "unknown_kind": null,
+            "class": "UNCONFIRMED",
+            "proposed_class": "UNCONFIRMED",
+            "source_ids": [
+              "A-01"
+            ],
+            "provider_wording": null,
+            "settled_by": null,
+            "estimate": null,
+            "first_seen": null,
+            "superseded_by": null,
+            "contradiction_sides": null,
+            "history": []
+          }
+        ],
+        "matches": true,
+        "note": "Same underlying assertion, attribution and class; wording may differ."
+      },
+      {
+        "expected_row": 8,
+        "expected_statement": "Payment information unaffected (attacker's claim)",
+        "expected_class": "UNCONFIRMED",
+        "generated_ids": [
+          "C-029"
+        ],
+        "generated_claims": [
+          {
+            "id": "C-029",
+            "statement": "The Xuanye Group Telegram administrator claims ASOS payment information was unaffected, as relayed by Infosecurity Magazine.",
+            "subject": "ASOS",
+            "unknown_kind": null,
+            "class": "UNCONFIRMED",
+            "proposed_class": "UNCONFIRMED",
+            "source_ids": [
+              "A-13"
+            ],
+            "provider_wording": null,
+            "settled_by": null,
+            "estimate": null,
+            "first_seen": null,
+            "superseded_by": null,
+            "contradiction_sides": null,
+            "history": []
+          }
+        ],
+        "matches": true,
+        "note": "Same underlying assertion, attribution and class; wording may differ."
+      },
+      {
+        "expected_row": 9,
+        "expected_statement": "Attackers controlled the app's push-notification system",
+        "expected_class": "UNCONFIRMED",
+        "generated_ids": [
+          "C-017"
+        ],
+        "generated_claims": [
+          {
+            "id": "C-017",
+            "statement": "Cypro and Infosecurity Magazine speculate that delivery through the official ASOS app may indicate attacker access to systems controlling app notifications.",
+            "subject": "ASOS",
+            "unknown_kind": null,
+            "class": "UNCONFIRMED",
+            "proposed_class": "UNCONFIRMED",
+            "source_ids": [
+              "A-09"
+            ],
+            "provider_wording": null,
+            "settled_by": null,
+            "estimate": null,
+            "first_seen": null,
+            "superseded_by": null,
+            "contradiction_sides": null,
+            "history": []
+          }
+        ],
+        "matches": true,
+        "note": "Same underlying assertion, attribution and class; wording may differ."
+      },
+      {
+        "expected_row": 10,
+        "expected_statement": "Whether customer data was actually taken",
+        "expected_class": "UNKNOWN",
+        "generated_ids": [
+          "C-033"
+        ],
+        "generated_claims": [
+          {
+            "id": "C-033",
+            "statement": "The supplied evidence does not establish whether data was exfiltrated from ASOS in the current incident or how many customers' personal information was actually accessed.",
+            "subject": "ASOS",
+            "unknown_kind": "data",
+            "class": "UNKNOWN",
+            "proposed_class": "UNKNOWN",
+            "source_ids": [],
+            "provider_wording": null,
+            "settled_by": null,
+            "estimate": null,
+            "first_seen": null,
+            "superseded_by": null,
+            "contradiction_sides": null,
+            "history": []
+          }
+        ],
+        "matches": true,
+        "note": "Same underlying assertion, attribution and class; wording may differ."
+      },
+      {
+        "expected_row": 11,
+        "expected_statement": "Impact on trading",
+        "expected_class": "UNKNOWN",
+        "generated_ids": [
+          "C-026"
+        ],
+        "generated_claims": [
+          {
+            "id": "C-026",
+            "statement": "ASOS says it is too early to quantify any potential impact on trading.",
+            "subject": "ASOS",
+            "unknown_kind": null,
+            "class": "CONFIRMED",
+            "proposed_class": "CONFIRMED",
+            "source_ids": [
+              "A-11"
+            ],
+            "provider_wording": "It is too early to quantify any potential impact on trading.",
+            "settled_by": null,
+            "estimate": null,
+            "first_seen": null,
+            "superseded_by": null,
+            "contradiction_sides": null,
+            "history": []
+          }
+        ],
+        "matches": false,
+        "note": "Class/formulation mismatch: C-026 is CONFIRMED that ASOS says it is too early to quantify trading impact. The golden ledger instead requires an UNKNOWN trading-impact row, which is absent."
+      },
+      {
+        "expected_row": 12,
+        "expected_statement": "ASOS shares fell as much as ~13% intraday",
+        "expected_class": "REPORTED",
+        "generated_ids": [
+          "C-007"
+        ],
+        "generated_claims": [
+          {
+            "id": "C-007",
+            "statement": "Irish Times / Bloomberg report that ASOS shares fell as much as 13% intraday.",
+            "subject": "ASOS",
+            "unknown_kind": null,
+            "class": "REPORTED",
+            "proposed_class": "REPORTED",
+            "source_ids": [
+              "A-04"
+            ],
+            "provider_wording": null,
+            "settled_by": null,
+            "estimate": null,
+            "first_seen": null,
+            "superseded_by": null,
+            "contradiction_sides": null,
+            "history": []
+          }
+        ],
+        "matches": true,
+        "note": "Same underlying assertion, attribution and class; wording may differ."
+      }
+    ],
+    "differences": [
+      {
+        "expected_row": 11,
+        "expected_statement": "Impact on trading",
+        "expected_class": "UNKNOWN",
+        "generated_ids": [
+          "C-026"
+        ],
+        "generated_claims": [
+          {
+            "id": "C-026",
+            "statement": "ASOS says it is too early to quantify any potential impact on trading.",
+            "subject": "ASOS",
+            "unknown_kind": null,
+            "class": "CONFIRMED",
+            "proposed_class": "CONFIRMED",
+            "source_ids": [
+              "A-11"
+            ],
+            "provider_wording": "It is too early to quantify any potential impact on trading.",
+            "settled_by": null,
+            "estimate": null,
+            "first_seen": null,
+            "superseded_by": null,
+            "contradiction_sides": null,
+            "history": []
+          }
+        ],
+        "matches": false,
+        "note": "Class/formulation mismatch: C-026 is CONFIRMED that ASOS says it is too early to quantify trading impact. The golden ledger instead requires an UNKNOWN trading-impact row, which is absent."
+      }
+    ],
+    "additional_claims": [
+      {
+        "id": "C-002",
+        "statement": "The sender signing as xuanyewengateway threatens in the ASOS notification to leak the allegedly compromised material unless ASOS engages.",
+        "subject": "ASOS",
+        "unknown_kind": null,
+        "class": "UNCONFIRMED",
+        "proposed_class": "UNCONFIRMED",
+        "source_ids": [
+          "A-01"
+        ],
+        "provider_wording": null,
+        "settled_by": null,
+        "estimate": null,
+        "first_seen": null,
+        "superseded_by": null,
+        "contradiction_sides": null,
+        "history": []
+      },
+      {
+        "id": "C-003",
+        "statement": "Many ASOS app users on X report receiving the notification in the UK, US, Germany and Australia.",
+        "subject": "ASOS",
+        "unknown_kind": null,
+        "class": "UNCONFIRMED",
+        "proposed_class": "REPORTED",
+        "source_ids": [
+          "A-02"
+        ],
+        "provider_wording": null,
+        "settled_by": null,
+        "estimate": null,
+        "first_seen": null,
+        "superseded_by": null,
+        "contradiction_sides": null,
+        "history": []
+      },
+      {
+        "id": "C-006",
+        "statement": "Irish Times / Bloomberg report that an ASOS spokesperson declined to confirm or elaborate on the reports during the morning.",
+        "subject": "ASOS",
+        "unknown_kind": null,
+        "class": "REPORTED",
+        "proposed_class": "REPORTED",
+        "source_ids": [
+          "A-04"
+        ],
+        "provider_wording": null,
+        "settled_by": null,
+        "estimate": null,
+        "first_seen": null,
+        "superseded_by": null,
+        "contradiction_sides": null,
+        "history": []
+      },
+      {
+        "id": "C-008",
+        "statement": "Irish Times / Bloomberg describe the ASOS intraday share decline as its largest since September 2025.",
+        "subject": "ASOS",
+        "unknown_kind": null,
+        "class": "REPORTED",
+        "proposed_class": "REPORTED",
+        "source_ids": [
+          "A-04"
+        ],
+        "provider_wording": null,
+        "settled_by": null,
+        "estimate": null,
+        "first_seen": null,
+        "superseded_by": null,
+        "contradiction_sides": null,
+        "history": []
+      },
+      {
+        "id": "C-009",
+        "statement": "Irish Times / Bloomberg report that ASOS shares subsequently pared their intraday losses.",
+        "subject": "ASOS",
+        "unknown_kind": null,
+        "class": "REPORTED",
+        "proposed_class": "REPORTED",
+        "source_ids": [
+          "A-04"
+        ],
+        "provider_wording": null,
+        "settled_by": null,
+        "estimate": null,
+        "first_seen": null,
+        "superseded_by": null,
+        "contradiction_sides": null,
+        "history": []
+      },
+      {
+        "id": "C-010",
+        "statement": "City AM and Global Banking & Finance report ASOS shares down about 11–12% during the morning.",
+        "subject": "ASOS",
+        "unknown_kind": null,
+        "class": "REPORTED",
+        "proposed_class": "REPORTED",
+        "source_ids": [
+          "A-05"
+        ],
+        "provider_wording": null,
+        "settled_by": null,
+        "estimate": null,
+        "first_seen": null,
+        "superseded_by": null,
+        "contradiction_sides": null,
+        "history": []
+      },
+      {
+        "id": "C-012",
+        "statement": "Morning reporting summarized by TechRadar says ASOS had not confirmed a breach at that time.",
+        "subject": "ASOS",
+        "unknown_kind": null,
+        "class": "REPORTED",
+        "proposed_class": "REPORTED",
+        "source_ids": [
+          "A-06"
+        ],
+        "provider_wording": null,
+        "settled_by": null,
+        "estimate": null,
+        "first_seen": null,
+        "superseded_by": null,
+        "contradiction_sides": null,
+        "history": []
+      },
+      {
+        "id": "C-013",
+        "statement": "Morning reporting summarized by TechRadar says there was no confirmation at that time that personal or payment data had been taken from ASOS.",
+        "subject": "ASOS",
+        "unknown_kind": null,
+        "class": "REPORTED",
+        "proposed_class": "REPORTED",
+        "source_ids": [
+          "A-06"
+        ],
+        "provider_wording": null,
+        "settled_by": null,
+        "estimate": null,
+        "first_seen": null,
+        "superseded_by": null,
+        "contradiction_sides": null,
+        "history": []
+      },
+      {
+        "id": "C-014",
+        "statement": "Irish Times / Bloomberg report Snowflake shares down as much as 3.2% in New York pre-market trading.",
+        "subject": "Snowflake",
+        "unknown_kind": null,
+        "class": "REPORTED",
+        "proposed_class": "REPORTED",
+        "source_ids": [
+          "A-07"
+        ],
+        "provider_wording": null,
+        "settled_by": null,
+        "estimate": null,
+        "first_seen": null,
+        "superseded_by": null,
+        "contradiction_sides": null,
+        "history": []
+      },
+      {
+        "id": "C-015",
+        "statement": "GB News and tech-insider.org report that the Telegram group calls itself Xuanye Group or Xuanye Gateway.",
+        "subject": "Xuanye Group",
+        "unknown_kind": null,
+        "class": "REPORTED",
+        "proposed_class": "REPORTED",
+        "source_ids": [
+          "A-08"
+        ],
+        "provider_wording": null,
+        "settled_by": null,
+        "estimate": null,
+        "first_seen": null,
+        "superseded_by": null,
+        "contradiction_sides": null,
+        "history": []
+      },
+      {
+        "id": "C-016",
+        "statement": "GB News and tech-insider.org report no link between Xuanye Group and any earlier breach claim.",
+        "subject": "Xuanye Group",
+        "unknown_kind": null,
+        "class": "REPORTED",
+        "proposed_class": "REPORTED",
+        "source_ids": [
+          "A-08"
+        ],
+        "provider_wording": null,
+        "settled_by": null,
+        "estimate": null,
+        "first_seen": null,
+        "superseded_by": null,
+        "contradiction_sides": null,
+        "history": []
+      },
+      {
+        "id": "C-018",
+        "statement": "ASOS's August breach-notification letters concern a separate credential-stuffing incident beginning on 28 July 2026, not the current October incident.",
+        "subject": "ASOS",
+        "unknown_kind": null,
+        "class": "CONFIRMED",
+        "proposed_class": "CONFIRMED",
+        "source_ids": [
+          "A-10"
+        ],
+        "provider_wording": null,
+        "settled_by": null,
+        "estimate": null,
+        "first_seen": null,
+        "superseded_by": null,
+        "contradiction_sides": null,
+        "history": []
+      },
+      {
+        "id": "C-019",
+        "statement": "CyberInsider and eSecurity Planet report that the separate July 2026 ASOS credential-stuffing incident affected approximately 138,828 US accounts.",
+        "subject": "ASOS",
+        "unknown_kind": null,
+        "class": "REPORTED",
+        "proposed_class": "REPORTED",
+        "source_ids": [
+          "A-10"
+        ],
+        "provider_wording": null,
+        "settled_by": null,
+        "estimate": null,
+        "first_seen": null,
+        "superseded_by": null,
+        "contradiction_sides": null,
+        "history": []
+      },
+      {
+        "id": "C-020",
+        "statement": "ASOS says in its August breach-notification letters that credentials used in the separate July incident came from outside ASOS; the capture supplies a paraphrase rather than the letters' verbatim wording.",
+        "subject": "ASOS",
+        "unknown_kind": null,
+        "class": "CONFIRMED",
+        "proposed_class": "CONFIRMED",
+        "source_ids": [
+          "A-10"
+        ],
+        "provider_wording": null,
+        "settled_by": null,
+        "estimate": null,
+        "first_seen": null,
+        "superseded_by": null,
+        "contradiction_sides": null,
+        "history": []
+      },
+      {
+        "id": "C-022",
+        "statement": "ASOS says it is working with internal and external specialist advisers and all relevant authorities.",
+        "subject": "ASOS",
+        "unknown_kind": null,
+        "class": "CONFIRMED",
+        "proposed_class": "CONFIRMED",
+        "source_ids": [
+          "A-11"
+        ],
+        "provider_wording": "We took immediate action to restrict access to the notification platforms and are working with our internal and external specialist advisers, as well as all relevant authorities.",
+        "settled_by": null,
+        "estimate": null,
+        "first_seen": null,
+        "superseded_by": null,
+        "contradiction_sides": null,
+        "history": []
+      },
+      {
+        "id": "C-028",
+        "statement": "Infosecurity Magazine and PA quote a Snowflake spokesperson saying its investigation is ongoing and it will provide further updates as soon as more information becomes available.",
+        "subject": "Snowflake",
+        "unknown_kind": null,
+        "class": "REPORTED",
+        "proposed_class": "REPORTED",
+        "source_ids": [
+          "A-12"
+        ],
+        "provider_wording": "The investigation is ongoing and we will provide further updates as soon as more information becomes available.",
+        "settled_by": null,
+        "estimate": null,
+        "first_seen": null,
+        "superseded_by": null,
+        "contradiction_sides": null,
+        "history": []
+      },
+      {
+        "id": "C-030",
+        "statement": "LBC reports that Downdetector showed ASOS website issues from approximately 09:41.",
+        "subject": "ASOS",
+        "unknown_kind": null,
+        "class": "REPORTED",
+        "proposed_class": "REPORTED",
+        "source_ids": [
+          "A-14"
+        ],
+        "provider_wording": null,
+        "settled_by": null,
+        "estimate": null,
+        "first_seen": null,
+        "superseded_by": null,
+        "contradiction_sides": null,
+        "history": []
+      },
+      {
+        "id": "C-031",
+        "statement": "LBC reports ASOS shares down approximately 5% within 30 minutes of the first reports.",
+        "subject": "ASOS",
+        "unknown_kind": null,
+        "class": "REPORTED",
+        "proposed_class": "REPORTED",
+        "source_ids": [
+          "A-14"
+        ],
+        "provider_wording": null,
+        "settled_by": null,
+        "estimate": null,
+        "first_seen": null,
+        "superseded_by": null,
+        "contradiction_sides": null,
+        "history": []
+      },
+      {
+        "id": "C-032",
+        "statement": "The supplied evidence does not establish how the unauthorised access described by ASOS was obtained.",
+        "subject": "ASOS",
+        "unknown_kind": "cause",
+        "class": "UNKNOWN",
+        "proposed_class": "UNKNOWN",
+        "source_ids": [],
+        "provider_wording": null,
+        "settled_by": null,
+        "estimate": null,
+        "first_seen": null,
+        "superseded_by": null,
+        "contradiction_sides": null,
+        "history": []
+      },
+      {
+        "id": "C-034",
+        "statement": "The identities of the third-party platforms under investigation by ASOS are not established by its supplied announcement.",
+        "subject": "ASOS",
+        "unknown_kind": "scope",
+        "class": "UNKNOWN",
+        "proposed_class": "UNKNOWN",
+        "source_ids": [],
+        "provider_wording": null,
+        "settled_by": null,
+        "estimate": null,
+        "first_seen": null,
+        "superseded_by": null,
+        "contradiction_sides": null,
+        "history": []
+      },
+      {
+        "id": "C-035",
+        "statement": "The time for completing remediation of the unauthorised activity remains unknown: ASOS supplies no estimate in its announcement. Snowflake's promise of further investigation updates also supplies no timed ETA and does not resolve this question.",
+        "subject": "ASOS",
+        "unknown_kind": "recovery",
+        "class": "UNKNOWN",
+        "proposed_class": "UNKNOWN",
+        "source_ids": [],
+        "provider_wording": null,
+        "settled_by": null,
+        "estimate": null,
+        "first_seen": null,
+        "superseded_by": null,
+        "contradiction_sides": null,
+        "history": []
+      }
+    ],
+    "policy_changes": [
+      {
+        "claim_id": "C-003",
+        "from": "REPORTED",
+        "to": "UNCONFIRMED",
+        "statement": "Many ASOS app users on X report receiving the notification in the UK, US, Germany and Australia."
+      }
+    ],
+    "traps": [
+      {
+        "trap": 1,
+        "hit": false,
+        "claim_ids": [
+          "C-001"
+        ],
+        "finding": "Attacker claim stays about ASOS’s Snowflake instance, subject ASOS, UNCONFIRMED. Snowflake platform claims cite press A-12 and describe its denial."
+      },
+      {
+        "trap": 2,
+        "hit": false,
+        "claim_ids": [
+          "C-018",
+          "C-019",
+          "C-020"
+        ],
+        "finding": "A-10 appears only on three explicitly separate July-incident context rows; it supports no October claim."
+      },
+      {
+        "trap": 3,
+        "hit": false,
+        "claim_ids": [
+          "C-001",
+          "C-004"
+        ],
+        "finding": "A-01 is community evidence and C-001 remains UNCONFIRMED. Confirmed notification row C-004 cites ASOS announcement A-11, not the official-app delivery as authority."
+      },
+      {
+        "trap": 4,
+        "hit": false,
+        "claim_ids": [
+          "C-007",
+          "C-008",
+          "C-009",
+          "C-010",
+          "C-014",
+          "C-031"
+        ],
+        "finding": "Market-movement rows stay REPORTED and are not used as breach proof."
+      },
+      {
+        "trap": 5,
+        "hit": false,
+        "claim_ids": [
+          "C-001"
+        ],
+        "finding": "The compromise allegation cites A-01 only; no relaying press is counted as independent support."
+      },
+      {
+        "trap": 6,
+        "hit": false,
+        "claim_ids": [
+          "C-001",
+          "C-027",
+          "C-028"
+        ],
+        "finding": "No Snowflake assertion cites A-11. ASOS’s statement remains about unnamed third-party platforms."
+      },
+      {
+        "trap": 7,
+        "hit": false,
+        "claim_ids": [
+          "C-023",
+          "C-024",
+          "C-025",
+          "C-029"
+        ],
+        "finding": "ASOS may-have wording and does-not-believe wording remain intact. Attacker payment assurance is separately UNCONFIRMED and attributed."
+      }
+    ],
+    "traps_pass": true,
+    "golden_pass": false
+  },
+  "generation_notes": [
+    "The initial EXTRACT context accidentally included A-14 in the earlier-summary group while also saying A-11–A-14 were read as described. The evidence row itself is verbatim and both A-14 claims remain REPORTED. The runner context is corrected for future runs."
+  ]
+}
