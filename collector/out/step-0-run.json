@@ -1,0 +1,17 @@
+{
+  "model": "gpt-6-astra",
+  "started_at": "2026-10-06T18:13:40.214Z",
+  "urls": [],
+  "status": "failed",
+  "session_id": "sess_0f8a08af208902fe006ac53a55c37c819aa7d38d4688c81225",
+  "turn_id": "turn_0f8a08af208902fe006ac53a5ed704819ab20861ac35ee09b5",
+  "error": {
+    "message": "Evidence validation failed: Unexpected field error; Invalid kind",
+    "status": null,
+    "code": null,
+    "type": null,
+    "request_id": null
+  },
+  "cleanup": "deleted",
+  "elapsed_seconds": 67.334
+}

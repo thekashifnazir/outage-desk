@@ -1,0 +1,6 @@
+{
+  "name": "outage-desk-collector",
+  "private": true,
+  "type": "module",
+  "dependencies": { "openai": "7.15.0" }
+}
