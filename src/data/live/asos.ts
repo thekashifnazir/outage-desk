@@ -6,6 +6,10 @@ import type { Evidence } from "../replay/types";
 //
 // `at` is the time the source gives. Where it gives only "morning" or "afternoon",
 // `at` is the latest time that wording allows and `time_note` keeps the wording.
+// The UI shows `time_note` in place of the time, so keep it short. Sources for the
+// times: A-01 per LBC, Yahoo News UK and Quartz; A-07 NY pre-market ends 14:30 BST;
+// A-08 and A-09 placed before ASOS's 15:00 announcement, as in the prep ledger;
+// A-11 "shortly after 3pm" per Drapers; A-14 LBC, published 10:11.
 
 // Latest capture of any row. Refresh when new rows are added.
 export const asosCapturedAt = "2026-10-06T17:00:00+01:00";
@@ -203,18 +207,18 @@ export const asosEvidence: Evidence[] = [
 ];
 
 export const asosEvidenceMeta: Record<string, AsosEvidenceMeta> = {
-  "A-01": { captured_at: "2026-10-06T16:00:00+01:00", time_note: "~10:01 per LBC, Yahoo News UK and Quartz", read_in_original: false },
+  "A-01": { captured_at: "2026-10-06T16:00:00+01:00", time_note: "~10:01", read_in_original: false },
   "A-02": { captured_at: "2026-10-06T16:00:00+01:00", time_note: "morning", read_in_original: false },
   "A-03": { captured_at: "2026-10-06T16:00:00+01:00", time_note: "morning", read_in_original: false },
   "A-04": { captured_at: "2026-10-06T16:00:00+01:00", time_note: "morning", read_in_original: false },
   "A-05": { captured_at: "2026-10-06T16:00:00+01:00", time_note: "morning", read_in_original: false },
   "A-06": { captured_at: "2026-10-06T16:00:00+01:00", time_note: "morning", read_in_original: false },
-  "A-07": { captured_at: "2026-10-06T16:00:00+01:00", time_note: "pre-market New York (ends 14:30 BST)", read_in_original: false },
-  "A-08": { captured_at: "2026-10-06T16:00:00+01:00", time_note: "during the day; placed before ASOS's 15:00 announcement, as in the prep ledger", read_in_original: false },
-  "A-09": { captured_at: "2026-10-06T16:00:00+01:00", time_note: "during the day; placed before ASOS's 15:00 announcement, as in the prep ledger", read_in_original: false },
-  "A-10": { captured_at: "2026-10-06T16:00:00+01:00", time_note: "letters dated 21 Aug 2026", read_in_original: false },
-  "A-11": { captured_at: "2026-10-06T17:00:00+01:00", time_note: "\"shortly after 3pm\" per Drapers", read_in_original: true },
+  "A-07": { captured_at: "2026-10-06T16:00:00+01:00", time_note: "pre-market NY", read_in_original: false },
+  "A-08": { captured_at: "2026-10-06T16:00:00+01:00", time_note: "during the day", read_in_original: false },
+  "A-09": { captured_at: "2026-10-06T16:00:00+01:00", time_note: "during the day", read_in_original: false },
+  "A-10": { captured_at: "2026-10-06T16:00:00+01:00", time_note: "21 Aug 2026", read_in_original: false },
+  "A-11": { captured_at: "2026-10-06T17:00:00+01:00", time_note: "~15:00", read_in_original: true },
   "A-12": { captured_at: "2026-10-06T17:00:00+01:00", time_note: "afternoon", read_in_original: true },
   "A-13": { captured_at: "2026-10-06T17:00:00+01:00", time_note: "afternoon", read_in_original: true },
-  "A-14": { captured_at: "2026-10-06T17:00:00+01:00", time_note: "~09:41 to 10:30; LBC published 10:11", read_in_original: true },
+  "A-14": { captured_at: "2026-10-06T17:00:00+01:00", time_note: "~09:41", read_in_original: true },
 };
