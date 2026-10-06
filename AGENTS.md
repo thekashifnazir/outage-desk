@@ -18,6 +18,7 @@
 - Derive new/changed/expanded UI state in components and keep added actions in React state only; reference records remain immutable and reload resets additions.
 - Keep the real-organisation Live desk separate from replay state via a read-only presentation adapter; share evidence, ledger and provenance controls, disable drafts and AI runs for that desk, and preserve replay selection when switching.
 - Render post-incident panels from existing stage records and sentence verification flags; presentation never mutates or re-verifies reference evidence.
+- Derive draft key facts from unique sentence claim citations in the shared presentation component; replay and post-incident drafts stay consistent without altering source records.
 
 Incident comms desk built at the GPT-6 Astra Hackathon London (6 Oct 2026). React +
 TypeScript + Tailwind on Lovable. GPT-6 Astra powers the evidence → claim → comms →
