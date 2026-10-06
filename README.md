@@ -12,6 +12,10 @@ and runs the same desk on a live incident from this morning.
 
 Built solo by Kashif Nazir at the GPT-6 Astra Hackathon London, 6 October 2026.
 
+**Live app:** <https://outage-desk.kashifnazir.com> · **Demo video (75 s):** <https://www.loom.com/share/4aa306b1fdc0418db0ae3c73bcc4acc6>
+
+**Try it in 30 seconds:** open the live app, click the **T+20** marker and then the **Conflicting** pill (Google's status page vs outside reports), then **T+60** and the **Unconfirmed** pill to see a claim GPT-6 Astra proposed being capped by policy. **Post-incident** in the sidebar checks what we said against the provider's report; **Live · ASOS** runs the same ledger on a real incident from this morning.
+
 ![The desk at T+60: Google Cloud's incident is confirmed, C-005 is upgraded and a private-channel claim is capped by policy](docs/screenshots/06-stage4-upgraded.png)
 
 ## What it does
@@ -122,7 +126,7 @@ they could push in parallel without stepping on each other.
 
 | Lane | Tool | Owned | Commits to look at |
 | --- | --- | --- | --- |
-| UI | Lovable | `src/components/`, `src/routes/`, server functions 39 `gpt-engineer-app[bot]` commits by 19:30, from the first brief to "Added ASOS Live view to app" (`a0d5f20`) |
+| UI | Lovable | `src/components/`, `src/routes/`, server functions | 39 `gpt-engineer-app[bot]` commits by 19:30, from the first brief to "Added ASOS Live view to app" (`a0d5f20`) |
 | Data and checks | Codex | `src/data/replay/`, `src/lib/policy.*`, `src/lib/verify.*` | `6fbd1fe` types, `e73f9f1` all nine stages, `a88a29d` policy caps, `adb0b35` sentence verifier |
 | Astra batch | Codex | `scripts/`, `src/data/saved-runs/` | `5c5891a` batch runner, `f529a65` saved ledgers and drafts, `5de5665` verified drafts, `b46e51a` ASOS snapshot |
 | Docs and QA | Claude Code | `README.md`, `docs/`, `src/data/live/` | `e351a36` README, `4a0f58d` QA screenshots, `7e46ab0` ASOS evidence |
