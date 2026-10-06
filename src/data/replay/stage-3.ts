@@ -277,11 +277,11 @@ export const stage3: Stage = {
       superseded_by: null,
       contradiction_sides: [
         {
-          label: "Says no",
+          label: "no",
           source_ids: ["S2"],
         },
         {
-          label: "Says yes",
+          label: "yes",
           source_ids: ["S3", "S4", "S5", "S6"],
         },
       ],

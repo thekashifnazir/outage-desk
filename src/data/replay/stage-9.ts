@@ -983,11 +983,11 @@ export const stage9: Stage = {
       superseded_by: null,
       contradiction_sides: [
         {
-          label: "Support account",
+          label: "no",
           source_ids: ["S18"],
         },
         {
-          label: "Status page",
+          label: "yes",
           source_ids: ["S7"],
         },
       ],
