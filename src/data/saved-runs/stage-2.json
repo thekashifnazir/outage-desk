@@ -646,7 +646,7 @@
           "heading": "Situation",
           "sentences": [
             {
-              "text": "Customers cannot reliably log in or use our API since 17:51 UTC [C-001].",
+              "text": "Customers cannot reliably log in or use our API since 17:51 UTC.",
               "type": "fact",
               "claim_ids": [
                 "C-001"
@@ -663,7 +663,7 @@
           "heading": "Impact on us",
           "sentences": [
             {
-              "text": "Our us-central1 logs show Firestore and Firebase Auth HTTP 503s [C-006].",
+              "text": "Our us-central1 logs show Firestore and Firebase Auth HTTP 503s.",
               "type": "fact",
               "claim_ids": [
                 "C-006"
@@ -680,7 +680,7 @@
           "heading": "Confirmed",
           "sentences": [
             {
-              "text": "Google Cloud’s status page shows no incident [C-005].",
+              "text": "Google Cloud’s status page shows no incident.",
               "type": "fact",
               "claim_ids": [
                 "C-005"
@@ -692,7 +692,7 @@
               }
             },
             {
-              "text": "Discord is investigating attachment and embed rendering failures [C-007].",
+              "text": "Discord is investigating attachment and embed rendering failures.",
               "type": "fact",
               "claim_ids": [
                 "C-007"
@@ -709,7 +709,7 @@
           "heading": "Not yet known",
           "sentences": [
             {
-              "text": "Cause, recovery time, customer-impact extent and data-integrity effects are not yet known [C-003] [C-004] [C-008] [C-009].",
+              "text": "Cause, recovery time, customer-impact extent and data-integrity effects are not yet known.",
               "type": "fact",
               "claim_ids": [
                 "C-003",
@@ -791,7 +791,7 @@
           "heading": "Confirmed technical facts",
           "sentences": [
             {
-              "text": "Customer login and API access have been unreliable since 17:51 UTC [C-001].",
+              "text": "Customer login and API access have been unreliable since 17:51 UTC.",
               "type": "fact",
               "claim_ids": [
                 "C-001"
@@ -803,7 +803,7 @@
               }
             },
             {
-              "text": "Northwind's us-central1 logs show HTTP 503 responses from Firestore and Firebase Auth APIs [C-006].",
+              "text": "Northwind's us-central1 logs show HTTP 503 responses from Firestore and Firebase Auth APIs.",
               "type": "fact",
               "claim_ids": [
                 "C-006"
@@ -815,7 +815,7 @@
               }
             },
             {
-              "text": "Google Cloud's status page shows no incident [C-005].",
+              "text": "Google Cloud's status page shows no incident.",
               "type": "fact",
               "claim_ids": [
                 "C-005"
@@ -827,7 +827,7 @@
               }
             },
             {
-              "text": "Discord is investigating attachment and embed rendering failures [C-007].",
+              "text": "Discord is investigating attachment and embed rendering failures.",
               "type": "fact",
               "claim_ids": [
                 "C-007"
@@ -839,7 +839,7 @@
               }
             },
             {
-              "text": "Root cause, recovery time, customer-impact extent and data-integrity effects are not yet known [C-003][C-004][C-008][C-009].",
+              "text": "Root cause, recovery time, customer-impact extent and data-integrity effects are not yet known.",
               "type": "fact",
               "claim_ids": [
                 "C-003",
@@ -915,7 +915,7 @@
             "heading": "Northwind service update",
             "sentences": [
               {
-                "text": "We're sorry that customers have been unable to reliably log in or use our API since 17:51 UTC [C-001].",
+                "text": "We're sorry that customers have been unable to reliably log in or use our API since 17:51 UTC.",
                 "type": "fact",
                 "claim_ids": [
                   "C-001"
@@ -927,7 +927,7 @@
                 }
               },
               {
-                "text": "The cause and recovery time are not yet known [C-003] [C-004].",
+                "text": "The cause and recovery time are not yet known.",
                 "type": "fact",
                 "claim_ids": [
                   "C-003",
@@ -1033,7 +1033,7 @@
               "heading": "Situation",
               "sentences": [
                 {
-                  "text": "Customers cannot reliably log in or use our API since 17:51 UTC [C-001].",
+                  "text": "Customers cannot reliably log in or use our API since 17:51 UTC.",
                   "type": "fact",
                   "claim_ids": [
                     "C-001"
@@ -1050,7 +1050,7 @@
               "heading": "Impact on us",
               "sentences": [
                 {
-                  "text": "Our us-central1 logs show Firestore and Firebase Auth HTTP 503s [C-006].",
+                  "text": "Our us-central1 logs show Firestore and Firebase Auth HTTP 503s.",
                   "type": "fact",
                   "claim_ids": [
                     "C-006"
@@ -1067,7 +1067,7 @@
               "heading": "Confirmed",
               "sentences": [
                 {
-                  "text": "Google Cloud’s status page shows no incident [C-005].",
+                  "text": "Google Cloud’s status page shows no incident.",
                   "type": "fact",
                   "claim_ids": [
                     "C-005"
@@ -1079,7 +1079,7 @@
                   }
                 },
                 {
-                  "text": "Discord is investigating attachment and embed rendering failures [C-007].",
+                  "text": "Discord is investigating attachment and embed rendering failures.",
                   "type": "fact",
                   "claim_ids": [
                     "C-007"
@@ -1096,7 +1096,7 @@
               "heading": "Not yet known",
               "sentences": [
                 {
-                  "text": "Cause, recovery time, customer-impact extent and data-integrity effects are not yet known [C-003] [C-004] [C-008] [C-009].",
+                  "text": "Cause, recovery time, customer-impact extent and data-integrity effects are not yet known.",
                   "type": "fact",
                   "claim_ids": [
                     "C-003",
@@ -1171,7 +1171,7 @@
         "total": 8,
         "verified": 8,
         "excluded": 0,
-        "word_count": 97,
+        "word_count": 89,
         "word_limit": 120,
         "over_limit": false
       },
@@ -1233,7 +1233,7 @@
               "heading": "Confirmed technical facts",
               "sentences": [
                 {
-                  "text": "Customer login and API access have been unreliable since 17:51 UTC [C-001].",
+                  "text": "Customer login and API access have been unreliable since 17:51 UTC.",
                   "type": "fact",
                   "claim_ids": [
                     "C-001"
@@ -1245,7 +1245,7 @@
                   }
                 },
                 {
-                  "text": "Northwind's us-central1 logs show HTTP 503 responses from Firestore and Firebase Auth APIs [C-006].",
+                  "text": "Northwind's us-central1 logs show HTTP 503 responses from Firestore and Firebase Auth APIs.",
                   "type": "fact",
                   "claim_ids": [
                     "C-006"
@@ -1257,7 +1257,7 @@
                   }
                 },
                 {
-                  "text": "Google Cloud's status page shows no incident [C-005].",
+                  "text": "Google Cloud's status page shows no incident.",
                   "type": "fact",
                   "claim_ids": [
                     "C-005"
@@ -1269,7 +1269,7 @@
                   }
                 },
                 {
-                  "text": "Discord is investigating attachment and embed rendering failures [C-007].",
+                  "text": "Discord is investigating attachment and embed rendering failures.",
                   "type": "fact",
                   "claim_ids": [
                     "C-007"
@@ -1281,7 +1281,7 @@
                   }
                 },
                 {
-                  "text": "Root cause, recovery time, customer-impact extent and data-integrity effects are not yet known [C-003][C-004][C-008][C-009].",
+                  "text": "Root cause, recovery time, customer-impact extent and data-integrity effects are not yet known.",
                   "type": "fact",
                   "claim_ids": [
                     "C-003",
@@ -1349,7 +1349,7 @@
         "total": 8,
         "verified": 8,
         "excluded": 0,
-        "word_count": 102,
+        "word_count": 97,
         "word_limit": 140,
         "over_limit": false
       },
@@ -1391,7 +1391,7 @@
               "heading": "Northwind service update",
               "sentences": [
                 {
-                  "text": "We're sorry that customers have been unable to reliably log in or use our API since 17:51 UTC [C-001].",
+                  "text": "We're sorry that customers have been unable to reliably log in or use our API since 17:51 UTC.",
                   "type": "fact",
                   "claim_ids": [
                     "C-001"
@@ -1403,7 +1403,7 @@
                   }
                 },
                 {
-                  "text": "The cause and recovery time are not yet known [C-003] [C-004].",
+                  "text": "The cause and recovery time are not yet known.",
                   "type": "fact",
                   "claim_ids": [
                     "C-003",
@@ -1447,7 +1447,7 @@
         "total": 4,
         "verified": 4,
         "excluded": 0,
-        "word_count": 47,
+        "word_count": 44,
         "word_limit": 70,
         "over_limit": false
       }

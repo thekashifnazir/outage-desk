@@ -1772,7 +1772,7 @@
           "heading": "Situation",
           "sentences": [
             {
-              "text": "Google Cloud's incident continues, with recovery signs in Northwind's region [C-005][C-019].",
+              "text": "Google Cloud's incident continues, with recovery signs in Northwind's region.",
               "type": "fact",
               "claim_ids": [
                 "C-005",
@@ -1790,7 +1790,7 @@
           "heading": "Impact on us",
           "sentences": [
             {
-              "text": "Login/API failures persist; 5xx fell from 38% to 12% [C-001].",
+              "text": "Login/API failures persist; 5xx fell from 38% to 12%.",
               "type": "fact",
               "claim_ids": [
                 "C-001"
@@ -1807,7 +1807,7 @@
           "heading": "Confirmed",
           "sentences": [
             {
-              "text": "Cloudflare's outage affected staff Access authentication; services were restored at 20:57 [C-010][C-011].",
+              "text": "Cloudflare's outage affected staff Access authentication; services were restored at 20:57.",
               "type": "fact",
               "claim_ids": [
                 "C-010",
@@ -1825,7 +1825,7 @@
           "heading": "Not yet known",
           "sentences": [
             {
-              "text": "Cause, Northwind recovery time and data impact remain unknown [C-003][C-004][C-025].",
+              "text": "Cause, Northwind recovery time and data impact remain unknown.",
               "type": "fact",
               "claim_ids": [
                 "C-003",
@@ -1839,7 +1839,7 @@
               }
             },
             {
-              "text": "Evidence conflicts: Google support denies disruptions; its status page confirms them [C-021].",
+              "text": "Evidence conflicts: Google support denies disruptions; its status page confirms them.",
               "type": "fact",
               "claim_ids": [
                 "C-021"
@@ -1917,7 +1917,7 @@
           "heading": "Technical status",
           "sentences": [
             {
-              "text": "Google Cloud's multi-product incident has reported signs of recovery in us-central1 and multi-region/us; full recovery has not been declared [C-005] [C-019].",
+              "text": "Google Cloud's multi-product incident has reported signs of recovery in us-central1 and multi-region/us; full recovery has not been declared.",
               "type": "fact",
               "claim_ids": [
                 "C-005",
@@ -1930,7 +1930,7 @@
               }
             },
             {
-              "text": "Northwind's Firestore and Firebase Auth calls return 503; login-api 5xx fell to 12% at 21:00 [C-006] [C-001].",
+              "text": "Northwind's Firestore and Firebase Auth calls return 503; login-api 5xx fell to 12% at 21:00.",
               "type": "fact",
               "claim_ids": [
                 "C-006",
@@ -1943,7 +1943,7 @@
               }
             },
             {
-              "text": "Cloudflare's outage affected staff's Access authentication; Cloudflare reports all services restored at 20:57 [C-010] [C-011].",
+              "text": "Cloudflare's outage affected staff's Access authentication; Cloudflare reports all services restored at 20:57.",
               "type": "fact",
               "claim_ids": [
                 "C-010",
@@ -1956,7 +1956,7 @@
               }
             },
             {
-              "text": "Root cause, Northwind's recovery time and data impact remain unknown [C-003] [C-004] [C-025].",
+              "text": "Root cause, Northwind's recovery time and data impact remain unknown.",
               "type": "fact",
               "claim_ids": [
                 "C-003",
@@ -2001,7 +2001,7 @@
               }
             },
             {
-              "text": "BGP theories are unverified and should not be acted on [C-014].",
+              "text": "BGP theories are unverified and should not be acted on.",
               "type": "fact",
               "claim_ids": [
                 "C-014"
@@ -2045,7 +2045,7 @@
             "heading": "Northwind service update",
             "sentences": [
               {
-                "text": "We're sorry login and API access remain unreliable, though errors are declining [C-001].",
+                "text": "We're sorry login and API access remain unreliable, though errors are declining.",
                 "type": "fact",
                 "claim_ids": [
                   "C-001"
@@ -2057,7 +2057,7 @@
                 }
               },
               {
-                "text": "Our cloud provider has confirmed an incident [C-005].",
+                "text": "Our cloud provider has confirmed an incident.",
                 "type": "fact",
                 "claim_ids": [
                   "C-005"
@@ -2069,7 +2069,7 @@
                 }
               },
               {
-                "text": "The cause and Northwind's full recovery time are not yet known [C-003] [C-004].",
+                "text": "The cause and Northwind's full recovery time are not yet known.",
                 "type": "fact",
                 "claim_ids": [
                   "C-003",
@@ -2175,7 +2175,7 @@
               "heading": "Situation",
               "sentences": [
                 {
-                  "text": "Google Cloud's incident continues, with recovery signs in Northwind's region [C-005][C-019].",
+                  "text": "Google Cloud's incident continues, with recovery signs in Northwind's region.",
                   "type": "fact",
                   "claim_ids": [
                     "C-005",
@@ -2193,7 +2193,7 @@
               "heading": "Impact on us",
               "sentences": [
                 {
-                  "text": "Login/API failures persist; 5xx fell from 38% to 12% [C-001].",
+                  "text": "Login/API failures persist; 5xx fell from 38% to 12%.",
                   "type": "fact",
                   "claim_ids": [
                     "C-001"
@@ -2210,7 +2210,7 @@
               "heading": "Confirmed",
               "sentences": [
                 {
-                  "text": "Cloudflare's outage affected staff Access authentication; services were restored at 20:57 [C-010][C-011].",
+                  "text": "Cloudflare's outage affected staff Access authentication; services were restored at 20:57.",
                   "type": "fact",
                   "claim_ids": [
                     "C-010",
@@ -2228,7 +2228,7 @@
               "heading": "Not yet known",
               "sentences": [
                 {
-                  "text": "Cause, Northwind recovery time and data impact remain unknown [C-003][C-004][C-025].",
+                  "text": "Cause, Northwind recovery time and data impact remain unknown.",
                   "type": "fact",
                   "claim_ids": [
                     "C-003",
@@ -2242,7 +2242,7 @@
                   }
                 },
                 {
-                  "text": "Evidence conflicts: Google support denies disruptions; its status page confirms them [C-021].",
+                  "text": "Evidence conflicts: Google support denies disruptions; its status page confirms them.",
                   "type": "fact",
                   "claim_ids": [
                     "C-021"
@@ -2313,7 +2313,7 @@
         "total": 8,
         "verified": 7,
         "excluded": 1,
-        "word_count": 81,
+        "word_count": 76,
         "word_limit": 120,
         "over_limit": false
       },
@@ -2375,7 +2375,7 @@
               "heading": "Technical status",
               "sentences": [
                 {
-                  "text": "Google Cloud's multi-product incident has reported signs of recovery in us-central1 and multi-region/us; full recovery has not been declared [C-005] [C-019].",
+                  "text": "Google Cloud's multi-product incident has reported signs of recovery in us-central1 and multi-region/us; full recovery has not been declared.",
                   "type": "fact",
                   "claim_ids": [
                     "C-005",
@@ -2388,7 +2388,7 @@
                   }
                 },
                 {
-                  "text": "Northwind's Firestore and Firebase Auth calls return 503; login-api 5xx fell to 12% at 21:00 [C-006] [C-001].",
+                  "text": "Northwind's Firestore and Firebase Auth calls return 503; login-api 5xx fell to 12% at 21:00.",
                   "type": "fact",
                   "claim_ids": [
                     "C-006",
@@ -2401,7 +2401,7 @@
                   }
                 },
                 {
-                  "text": "Cloudflare's outage affected staff's Access authentication; Cloudflare reports all services restored at 20:57 [C-010] [C-011].",
+                  "text": "Cloudflare's outage affected staff's Access authentication; Cloudflare reports all services restored at 20:57.",
                   "type": "fact",
                   "claim_ids": [
                     "C-010",
@@ -2414,7 +2414,7 @@
                   }
                 },
                 {
-                  "text": "Root cause, Northwind's recovery time and data impact remain unknown [C-003] [C-004] [C-025].",
+                  "text": "Root cause, Northwind's recovery time and data impact remain unknown.",
                   "type": "fact",
                   "claim_ids": [
                     "C-003",
@@ -2459,7 +2459,7 @@
                   }
                 },
                 {
-                  "text": "BGP theories are unverified and should not be acted on [C-014].",
+                  "text": "BGP theories are unverified and should not be acted on.",
                   "type": "fact",
                   "claim_ids": [
                     "C-014"
@@ -2495,7 +2495,7 @@
         "total": 8,
         "verified": 6,
         "excluded": 2,
-        "word_count": 110,
+        "word_count": 100,
         "word_limit": 140,
         "over_limit": false
       },
@@ -2542,7 +2542,7 @@
               "heading": "Northwind service update",
               "sentences": [
                 {
-                  "text": "We're sorry login and API access remain unreliable, though errors are declining [C-001].",
+                  "text": "We're sorry login and API access remain unreliable, though errors are declining.",
                   "type": "fact",
                   "claim_ids": [
                     "C-001"
@@ -2554,7 +2554,7 @@
                   }
                 },
                 {
-                  "text": "Our cloud provider has confirmed an incident [C-005].",
+                  "text": "Our cloud provider has confirmed an incident.",
                   "type": "fact",
                   "claim_ids": [
                     "C-005"
@@ -2566,7 +2566,7 @@
                   }
                 },
                 {
-                  "text": "The cause and Northwind's full recovery time are not yet known [C-003] [C-004].",
+                  "text": "The cause and Northwind's full recovery time are not yet known.",
                   "type": "fact",
                   "claim_ids": [
                     "C-003",
@@ -2610,7 +2610,7 @@
         "total": 5,
         "verified": 5,
         "excluded": 0,
-        "word_count": 51,
+        "word_count": 47,
         "word_limit": 70,
         "over_limit": false
       }
@@ -3032,7 +3032,7 @@
               "heading": "Situation",
               "sentences": [
                 {
-                  "text": "Google Cloud's outage is recovering in Northwind's region, not resolved [C-005][C-019].",
+                  "text": "Google Cloud's outage is recovering in Northwind's region, not resolved.",
                   "type": "fact",
                   "claim_ids": [
                     "C-005",
@@ -3050,7 +3050,7 @@
               "heading": "Impact on us",
               "sentences": [
                 {
-                  "text": "Login/API failures persist; 5xx fell from 38% to 12% [C-001].",
+                  "text": "Login/API failures persist; 5xx fell from 38% to 12%.",
                   "type": "fact",
                   "claim_ids": [
                     "C-001"
@@ -3067,7 +3067,7 @@
               "heading": "Confirmed",
               "sentences": [
                 {
-                  "text": "Cloudflare's outage affected staff Access authentication; services were restored at 20:57 [C-010][C-011].",
+                  "text": "Cloudflare's outage affected staff Access authentication; services were restored at 20:57.",
                   "type": "fact",
                   "claim_ids": [
                     "C-010",
@@ -3085,7 +3085,7 @@
               "heading": "Not yet known",
               "sentences": [
                 {
-                  "text": "Cause, Northwind recovery time and data impact remain unknown [C-003][C-004][C-025].",
+                  "text": "Cause, Northwind recovery time and data impact remain unknown.",
                   "type": "fact",
                   "claim_ids": [
                     "C-003",
@@ -3099,7 +3099,7 @@
                   }
                 },
                 {
-                  "text": "Evidence conflicts: Google support denies disruptions; its status page confirms them [C-021].",
+                  "text": "Evidence conflicts: Google support denies disruptions; its status page confirms them.",
                   "type": "fact",
                   "claim_ids": [
                     "C-021"
@@ -3177,7 +3177,7 @@
               "heading": "Confirmed technical facts",
               "sentences": [
                 {
-                  "text": "Google Cloud's incident is recovering in Northwind's us-central1 region, not fully recovered [C-005] [C-019].",
+                  "text": "Google Cloud's incident is recovering in Northwind's us-central1 region, not fully recovered.",
                   "type": "fact",
                   "claim_ids": [
                     "C-005",
@@ -3190,7 +3190,7 @@
                   }
                 },
                 {
-                  "text": "Firestore and Firebase Auth calls return 503; login-api 5xx fell to 12% at 21:00 [C-006] [C-001].",
+                  "text": "Firestore and Firebase Auth calls return 503; login-api 5xx fell to 12% at 21:00.",
                   "type": "fact",
                   "claim_ids": [
                     "C-006",
@@ -3203,7 +3203,7 @@
                   }
                 },
                 {
-                  "text": "Cloudflare's outage affected staff Access authentication; Cloudflare reports restoration at 20:57 [C-010] [C-011].",
+                  "text": "Cloudflare's outage affected staff Access authentication; Cloudflare reports restoration at 20:57.",
                   "type": "fact",
                   "claim_ids": [
                     "C-010",
@@ -3216,7 +3216,7 @@
                   }
                 },
                 {
-                  "text": "Root cause, Northwind recovery time, and data impact remain unknown [C-003] [C-004] [C-025].",
+                  "text": "Root cause, Northwind recovery time, and data impact remain unknown.",
                   "type": "fact",
                   "claim_ids": [
                     "C-003",
@@ -3266,7 +3266,7 @@
               "heading": "What NOT to chase",
               "sentences": [
                 {
-                  "text": "BGP theories are unverified and should not be acted on [C-014].",
+                  "text": "BGP theories are unverified and should not be acted on.",
                   "type": "fact",
                   "claim_ids": [
                     "C-014"
@@ -3322,7 +3322,7 @@
                 "heading": "Northwind service update",
                 "sentences": [
                   {
-                    "text": "We're sorry login and API access remain unreliable, though errors are decreasing [C-001].",
+                    "text": "We're sorry login and API access remain unreliable, though errors are decreasing.",
                     "type": "fact",
                     "claim_ids": [
                       "C-001"
@@ -3334,7 +3334,7 @@
                     }
                   },
                   {
-                    "text": "Our cloud provider has confirmed an incident [C-005].",
+                    "text": "Our cloud provider has confirmed an incident.",
                     "type": "fact",
                     "claim_ids": [
                       "C-005"
@@ -3346,7 +3346,7 @@
                     }
                   },
                   {
-                    "text": "The root cause and Northwind's full recovery time are not yet known [C-003] [C-004].",
+                    "text": "The root cause and Northwind's full recovery time are not yet known.",
                     "type": "fact",
                     "claim_ids": [
                       "C-003",
@@ -3452,7 +3452,7 @@
                   "heading": "Situation",
                   "sentences": [
                     {
-                      "text": "Google Cloud's outage is recovering in Northwind's region, not resolved [C-005][C-019].",
+                      "text": "Google Cloud's outage is recovering in Northwind's region, not resolved.",
                       "type": "fact",
                       "claim_ids": [
                         "C-005",
@@ -3470,7 +3470,7 @@
                   "heading": "Impact on us",
                   "sentences": [
                     {
-                      "text": "Login/API failures persist; 5xx fell from 38% to 12% [C-001].",
+                      "text": "Login/API failures persist; 5xx fell from 38% to 12%.",
                       "type": "fact",
                       "claim_ids": [
                         "C-001"
@@ -3487,7 +3487,7 @@
                   "heading": "Confirmed",
                   "sentences": [
                     {
-                      "text": "Cloudflare's outage affected staff Access authentication; services were restored at 20:57 [C-010][C-011].",
+                      "text": "Cloudflare's outage affected staff Access authentication; services were restored at 20:57.",
                       "type": "fact",
                       "claim_ids": [
                         "C-010",
@@ -3505,7 +3505,7 @@
                   "heading": "Not yet known",
                   "sentences": [
                     {
-                      "text": "Cause, Northwind recovery time and data impact remain unknown [C-003][C-004][C-025].",
+                      "text": "Cause, Northwind recovery time and data impact remain unknown.",
                       "type": "fact",
                       "claim_ids": [
                         "C-003",
@@ -3519,7 +3519,7 @@
                       }
                     },
                     {
-                      "text": "Evidence conflicts: Google support denies disruptions; its status page confirms them [C-021].",
+                      "text": "Evidence conflicts: Google support denies disruptions; its status page confirms them.",
                       "type": "fact",
                       "claim_ids": [
                         "C-021"
@@ -3590,7 +3590,7 @@
             "total": 8,
             "verified": 6,
             "excluded": 2,
-            "word_count": 85,
+            "word_count": 80,
             "word_limit": 120,
             "over_limit": false
           },
@@ -3657,7 +3657,7 @@
                   "heading": "Confirmed technical facts",
                   "sentences": [
                     {
-                      "text": "Google Cloud's incident is recovering in Northwind's us-central1 region, not fully recovered [C-005] [C-019].",
+                      "text": "Google Cloud's incident is recovering in Northwind's us-central1 region, not fully recovered.",
                       "type": "fact",
                       "claim_ids": [
                         "C-005",
@@ -3670,7 +3670,7 @@
                       }
                     },
                     {
-                      "text": "Firestore and Firebase Auth calls return 503; login-api 5xx fell to 12% at 21:00 [C-006] [C-001].",
+                      "text": "Firestore and Firebase Auth calls return 503; login-api 5xx fell to 12% at 21:00.",
                       "type": "fact",
                       "claim_ids": [
                         "C-006",
@@ -3683,7 +3683,7 @@
                       }
                     },
                     {
-                      "text": "Cloudflare's outage affected staff Access authentication; Cloudflare reports restoration at 20:57 [C-010] [C-011].",
+                      "text": "Cloudflare's outage affected staff Access authentication; Cloudflare reports restoration at 20:57.",
                       "type": "fact",
                       "claim_ids": [
                         "C-010",
@@ -3696,7 +3696,7 @@
                       }
                     },
                     {
-                      "text": "Root cause, Northwind recovery time, and data impact remain unknown [C-003] [C-004] [C-025].",
+                      "text": "Root cause, Northwind recovery time, and data impact remain unknown.",
                       "type": "fact",
                       "claim_ids": [
                         "C-003",
@@ -3746,7 +3746,7 @@
                   "heading": "What NOT to chase",
                   "sentences": [
                     {
-                      "text": "BGP theories are unverified and should not be acted on [C-014].",
+                      "text": "BGP theories are unverified and should not be acted on.",
                       "type": "fact",
                       "claim_ids": [
                         "C-014"
@@ -3794,7 +3794,7 @@
             "total": 9,
             "verified": 7,
             "excluded": 2,
-            "word_count": 109,
+            "word_count": 99,
             "word_limit": 140,
             "over_limit": false
           },
@@ -3841,7 +3841,7 @@
                   "heading": "Northwind service update",
                   "sentences": [
                     {
-                      "text": "We're sorry login and API access remain unreliable, though errors are decreasing [C-001].",
+                      "text": "We're sorry login and API access remain unreliable, though errors are decreasing.",
                       "type": "fact",
                       "claim_ids": [
                         "C-001"
@@ -3853,7 +3853,7 @@
                       }
                     },
                     {
-                      "text": "Our cloud provider has confirmed an incident [C-005].",
+                      "text": "Our cloud provider has confirmed an incident.",
                       "type": "fact",
                       "claim_ids": [
                         "C-005"
@@ -3865,7 +3865,7 @@
                       }
                     },
                     {
-                      "text": "The root cause and Northwind's full recovery time are not yet known [C-003] [C-004].",
+                      "text": "The root cause and Northwind's full recovery time are not yet known.",
                       "type": "fact",
                       "claim_ids": [
                         "C-003",
@@ -3909,7 +3909,7 @@
             "total": 5,
             "verified": 5,
             "excluded": 0,
-            "word_count": 54,
+            "word_count": 50,
             "word_limit": 70,
             "over_limit": false
           }
@@ -3930,7 +3930,7 @@
               "heading": "Situation",
               "sentences": [
                 {
-                  "text": "Google Cloud reports recovery signs in Northwind's region, without declaring full recovery [C-019].",
+                  "text": "Google Cloud reports recovery signs in Northwind's region, without declaring full recovery.",
                   "type": "fact",
                   "claim_ids": [
                     "C-019"
@@ -3947,7 +3947,7 @@
               "heading": "Impact on us",
               "sentences": [
                 {
-                  "text": "Login/API failures continue; 5xx fell to 12% at 21:00 [C-001].",
+                  "text": "Login/API failures continue; 5xx fell to 12% at 21:00.",
                   "type": "fact",
                   "claim_ids": [
                     "C-001"
@@ -3964,7 +3964,7 @@
               "heading": "Confirmed",
               "sentences": [
                 {
-                  "text": "Cloudflare's outage affected Access, which staff use; Cloudflare reports services restored at 20:57 [C-010][C-011].",
+                  "text": "Cloudflare's outage affected Access, which staff use; Cloudflare reports services restored at 20:57.",
                   "type": "fact",
                   "claim_ids": [
                     "C-010",
@@ -3977,7 +3977,7 @@
                   }
                 },
                 {
-                  "text": "Evidence conflicts: Google's support account denies disruptions; its status page confirms an incident [C-021].",
+                  "text": "Evidence conflicts: Google's support account denies disruptions; its status page confirms an incident.",
                   "type": "fact",
                   "claim_ids": [
                     "C-021"
@@ -3994,7 +3994,7 @@
               "heading": "Not yet known",
               "sentences": [
                 {
-                  "text": "Cause, Northwind recovery time and data impact remain unknown [C-003][C-004][C-025].",
+                  "text": "Cause, Northwind recovery time and data impact remain unknown.",
                   "type": "fact",
                   "claim_ids": [
                     "C-003",
@@ -4074,7 +4074,7 @@
               "heading": "Confirmed technical facts",
               "sentences": [
                 {
-                  "text": "Google Cloud's multi-product incident is recovering in us-central1 and multi-region/us, not fully recovered [C-005] [C-019].",
+                  "text": "Google Cloud's multi-product incident is recovering in us-central1 and multi-region/us, not fully recovered.",
                   "type": "fact",
                   "claim_ids": [
                     "C-005",
@@ -4087,7 +4087,7 @@
                   }
                 },
                 {
-                  "text": "Northwind's Firestore and Firebase Auth calls return 503; login-api 5xx fell to 12% at 21:00 [C-006] [C-001].",
+                  "text": "Northwind's Firestore and Firebase Auth calls return 503; login-api 5xx fell to 12% at 21:00.",
                   "type": "fact",
                   "claim_ids": [
                     "C-006",
@@ -4100,7 +4100,7 @@
                   }
                 },
                 {
-                  "text": "Staff use Cloudflare Access; Cloudflare's outage included Access authentication, with all services reported restored at 20:57 [C-010] [C-011].",
+                  "text": "Staff use Cloudflare Access; Cloudflare's outage included Access authentication, with all services reported restored at 20:57.",
                   "type": "fact",
                   "claim_ids": [
                     "C-010",
@@ -4113,7 +4113,7 @@
                   }
                 },
                 {
-                  "text": "Google's root cause, Northwind's recovery time, and whether Northwind data was affected remain unknown [C-003] [C-004] [C-025].",
+                  "text": "Google's root cause, Northwind's recovery time, and whether Northwind data was affected remain unknown.",
                   "type": "fact",
                   "claim_ids": [
                     "C-003",
@@ -4202,7 +4202,7 @@
                 "heading": "Northwind service update",
                 "sentences": [
                   {
-                    "text": "We're sorry customers are still experiencing login and API failures, though errors are decreasing [C-001].",
+                    "text": "We're sorry customers are still experiencing login and API failures, though errors are decreasing.",
                     "type": "fact",
                     "claim_ids": [
                       "C-001"
@@ -4214,7 +4214,7 @@
                     }
                   },
                   {
-                    "text": "Our cloud provider has confirmed an incident [C-005].",
+                    "text": "Our cloud provider has confirmed an incident.",
                     "type": "fact",
                     "claim_ids": [
                       "C-005"
@@ -4226,7 +4226,7 @@
                     }
                   },
                   {
-                    "text": "The root cause and Northwind's full recovery time remain unknown [C-003] [C-004].",
+                    "text": "The root cause and Northwind's full recovery time remain unknown.",
                     "type": "fact",
                     "claim_ids": [
                       "C-003",
@@ -4332,7 +4332,7 @@
                   "heading": "Situation",
                   "sentences": [
                     {
-                      "text": "Google Cloud reports recovery signs in Northwind's region, without declaring full recovery [C-019].",
+                      "text": "Google Cloud reports recovery signs in Northwind's region, without declaring full recovery.",
                       "type": "fact",
                       "claim_ids": [
                         "C-019"
@@ -4349,7 +4349,7 @@
                   "heading": "Impact on us",
                   "sentences": [
                     {
-                      "text": "Login/API failures continue; 5xx fell to 12% at 21:00 [C-001].",
+                      "text": "Login/API failures continue; 5xx fell to 12% at 21:00.",
                       "type": "fact",
                       "claim_ids": [
                         "C-001"
@@ -4366,7 +4366,7 @@
                   "heading": "Confirmed",
                   "sentences": [
                     {
-                      "text": "Cloudflare's outage affected Access, which staff use; Cloudflare reports services restored at 20:57 [C-010][C-011].",
+                      "text": "Cloudflare's outage affected Access, which staff use; Cloudflare reports services restored at 20:57.",
                       "type": "fact",
                       "claim_ids": [
                         "C-010",
@@ -4379,7 +4379,7 @@
                       }
                     },
                     {
-                      "text": "Evidence conflicts: Google's support account denies disruptions; its status page confirms an incident [C-021].",
+                      "text": "Evidence conflicts: Google's support account denies disruptions; its status page confirms an incident.",
                       "type": "fact",
                       "claim_ids": [
                         "C-021"
@@ -4396,7 +4396,7 @@
                   "heading": "Not yet known",
                   "sentences": [
                     {
-                      "text": "Cause, Northwind recovery time and data impact remain unknown [C-003][C-004][C-025].",
+                      "text": "Cause, Northwind recovery time and data impact remain unknown.",
                       "type": "fact",
                       "claim_ids": [
                         "C-003",
@@ -4469,7 +4469,7 @@
             "total": 8,
             "verified": 8,
             "excluded": 0,
-            "word_count": 91,
+            "word_count": 86,
             "word_limit": 120,
             "over_limit": false
           },
@@ -4531,7 +4531,7 @@
                   "heading": "Confirmed technical facts",
                   "sentences": [
                     {
-                      "text": "Google Cloud's multi-product incident is recovering in us-central1 and multi-region/us, not fully recovered [C-005] [C-019].",
+                      "text": "Google Cloud's multi-product incident is recovering in us-central1 and multi-region/us, not fully recovered.",
                       "type": "fact",
                       "claim_ids": [
                         "C-005",
@@ -4544,7 +4544,7 @@
                       }
                     },
                     {
-                      "text": "Northwind's Firestore and Firebase Auth calls return 503; login-api 5xx fell to 12% at 21:00 [C-006] [C-001].",
+                      "text": "Northwind's Firestore and Firebase Auth calls return 503; login-api 5xx fell to 12% at 21:00.",
                       "type": "fact",
                       "claim_ids": [
                         "C-006",
@@ -4557,7 +4557,7 @@
                       }
                     },
                     {
-                      "text": "Staff use Cloudflare Access; Cloudflare's outage included Access authentication, with all services reported restored at 20:57 [C-010] [C-011].",
+                      "text": "Staff use Cloudflare Access; Cloudflare's outage included Access authentication, with all services reported restored at 20:57.",
                       "type": "fact",
                       "claim_ids": [
                         "C-010",
@@ -4570,7 +4570,7 @@
                       }
                     },
                     {
-                      "text": "Google's root cause, Northwind's recovery time, and whether Northwind data was affected remain unknown [C-003] [C-004] [C-025].",
+                      "text": "Google's root cause, Northwind's recovery time, and whether Northwind data was affected remain unknown.",
                       "type": "fact",
                       "claim_ids": [
                         "C-003",
@@ -4651,7 +4651,7 @@
             "total": 8,
             "verified": 7,
             "excluded": 1,
-            "word_count": 108,
+            "word_count": 99,
             "word_limit": 140,
             "over_limit": false
           },
@@ -4698,7 +4698,7 @@
                   "heading": "Northwind service update",
                   "sentences": [
                     {
-                      "text": "We're sorry customers are still experiencing login and API failures, though errors are decreasing [C-001].",
+                      "text": "We're sorry customers are still experiencing login and API failures, though errors are decreasing.",
                       "type": "fact",
                       "claim_ids": [
                         "C-001"
@@ -4710,7 +4710,7 @@
                       }
                     },
                     {
-                      "text": "Our cloud provider has confirmed an incident [C-005].",
+                      "text": "Our cloud provider has confirmed an incident.",
                       "type": "fact",
                       "claim_ids": [
                         "C-005"
@@ -4722,7 +4722,7 @@
                       }
                     },
                     {
-                      "text": "The root cause and Northwind's full recovery time remain unknown [C-003] [C-004].",
+                      "text": "The root cause and Northwind's full recovery time remain unknown.",
                       "type": "fact",
                       "claim_ids": [
                         "C-003",
@@ -4766,7 +4766,7 @@
             "total": 5,
             "verified": 5,
             "excluded": 0,
-            "word_count": 52,
+            "word_count": 48,
             "word_limit": 70,
             "over_limit": false
           }

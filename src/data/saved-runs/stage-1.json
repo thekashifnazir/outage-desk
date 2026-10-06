@@ -579,7 +579,7 @@
           "heading": "Situation",
           "sentences": [
             {
-              "text": "Login-api errors in us-central1 have risen since 17:51 [C-002].",
+              "text": "Login-api errors in us-central1 have risen since 17:51.",
               "type": "fact",
               "claim_ids": [
                 "C-002"
@@ -596,7 +596,7 @@
           "heading": "Impact on us",
           "sentences": [
             {
-              "text": "The 5xx rate is 38%, versus 0.2% baseline [C-001].",
+              "text": "The 5xx rate is 38%, versus 0.2% baseline.",
               "type": "fact",
               "claim_ids": [
                 "C-001"
@@ -613,7 +613,7 @@
           "heading": "Confirmed",
           "sentences": [
             {
-              "text": "Google Cloud's status page reports no major incidents as of 17:56 [C-005].",
+              "text": "Google Cloud's status page reports no major incidents as of 17:56.",
               "type": "fact",
               "claim_ids": [
                 "C-005"
@@ -630,7 +630,7 @@
           "heading": "Not yet known",
           "sentences": [
             {
-              "text": "Cause, recovery time, broader service scope and customer-data impact are not yet known [C-006] [C-007] [C-008] [C-009].",
+              "text": "Cause, recovery time, broader service scope and customer-data impact are not yet known.",
               "type": "fact",
               "claim_ids": [
                 "C-006",
@@ -723,7 +723,7 @@
           "heading": "Confirmed technical facts",
           "sentences": [
             {
-              "text": "Northwind login-api 5xx in us-central1 is 38% versus a 0.2% baseline, rising since 17:51 [C-001] [C-002].",
+              "text": "Northwind login-api 5xx in us-central1 is 38% versus a 0.2% baseline, rising since 17:51.",
               "type": "fact",
               "claim_ids": [
                 "C-001",
@@ -736,7 +736,7 @@
               }
             },
             {
-              "text": "Google Cloud’s status page reports no major incidents as of 17:56 [C-005].",
+              "text": "Google Cloud’s status page reports no major incidents as of 17:56.",
               "type": "fact",
               "claim_ids": [
                 "C-005"
@@ -748,7 +748,7 @@
               }
             },
             {
-              "text": "Cause, recovery time, impact beyond login-api, and customer-data impact are not yet known [C-006] [C-007] [C-008] [C-009].",
+              "text": "Cause, recovery time, impact beyond login-api, and customer-data impact are not yet known.",
               "type": "fact",
               "claim_ids": [
                 "C-006",
@@ -797,7 +797,7 @@
           "heading": "What NOT to chase",
           "sentences": [
             {
-              "text": "Community speculation about Google console and us-east1 problems is unverified and should not be acted on [C-003] [C-004].",
+              "text": "Community speculation about Google console and us-east1 problems is unverified and should not be acted on.",
               "type": "fact",
               "claim_ids": [
                 "C-003",
@@ -854,7 +854,7 @@
             "heading": "Northwind login update",
             "sentences": [
               {
-                "text": "We're sorry for the disruption: Northwind's login API in us-central1 is returning server errors on 38% of requests [C-001].",
+                "text": "We're sorry for the disruption: Northwind's login API in us-central1 is returning server errors on 38% of requests.",
                 "type": "fact",
                 "claim_ids": [
                   "C-001"
@@ -866,7 +866,7 @@
                 }
               },
               {
-                "text": "The cause and recovery time are not yet known [C-006] [C-007].",
+                "text": "The cause and recovery time are not yet known.",
                 "type": "fact",
                 "claim_ids": [
                   "C-006",
@@ -972,7 +972,7 @@
               "heading": "Situation",
               "sentences": [
                 {
-                  "text": "Login-api errors in us-central1 have risen since 17:51 [C-002].",
+                  "text": "Login-api errors in us-central1 have risen since 17:51.",
                   "type": "fact",
                   "claim_ids": [
                     "C-002"
@@ -989,7 +989,7 @@
               "heading": "Impact on us",
               "sentences": [
                 {
-                  "text": "The 5xx rate is 38%, versus 0.2% baseline [C-001].",
+                  "text": "The 5xx rate is 38%, versus 0.2% baseline.",
                   "type": "fact",
                   "claim_ids": [
                     "C-001"
@@ -1006,7 +1006,7 @@
               "heading": "Confirmed",
               "sentences": [
                 {
-                  "text": "Google Cloud's status page reports no major incidents as of 17:56 [C-005].",
+                  "text": "Google Cloud's status page reports no major incidents as of 17:56.",
                   "type": "fact",
                   "claim_ids": [
                     "C-005"
@@ -1023,7 +1023,7 @@
               "heading": "Not yet known",
               "sentences": [
                 {
-                  "text": "Cause, recovery time, broader service scope and customer-data impact are not yet known [C-006] [C-007] [C-008] [C-009].",
+                  "text": "Cause, recovery time, broader service scope and customer-data impact are not yet known.",
                   "type": "fact",
                   "claim_ids": [
                     "C-006",
@@ -1109,7 +1109,7 @@
         "total": 8,
         "verified": 8,
         "excluded": 0,
-        "word_count": 93,
+        "word_count": 86,
         "word_limit": 120,
         "over_limit": false
       },
@@ -1171,7 +1171,7 @@
               "heading": "Confirmed technical facts",
               "sentences": [
                 {
-                  "text": "Northwind login-api 5xx in us-central1 is 38% versus a 0.2% baseline, rising since 17:51 [C-001] [C-002].",
+                  "text": "Northwind login-api 5xx in us-central1 is 38% versus a 0.2% baseline, rising since 17:51.",
                   "type": "fact",
                   "claim_ids": [
                     "C-001",
@@ -1184,7 +1184,7 @@
                   }
                 },
                 {
-                  "text": "Google Cloud’s status page reports no major incidents as of 17:56 [C-005].",
+                  "text": "Google Cloud’s status page reports no major incidents as of 17:56.",
                   "type": "fact",
                   "claim_ids": [
                     "C-005"
@@ -1196,7 +1196,7 @@
                   }
                 },
                 {
-                  "text": "Cause, recovery time, impact beyond login-api, and customer-data impact are not yet known [C-006] [C-007] [C-008] [C-009].",
+                  "text": "Cause, recovery time, impact beyond login-api, and customer-data impact are not yet known.",
                   "type": "fact",
                   "claim_ids": [
                     "C-006",
@@ -1245,7 +1245,7 @@
               "heading": "What NOT to chase",
               "sentences": [
                 {
-                  "text": "Community speculation about Google console and us-east1 problems is unverified and should not be acted on [C-003] [C-004].",
+                  "text": "Community speculation about Google console and us-east1 problems is unverified and should not be acted on.",
                   "type": "fact",
                   "claim_ids": [
                     "C-003",
@@ -1294,7 +1294,7 @@
         "total": 8,
         "verified": 7,
         "excluded": 1,
-        "word_count": 113,
+        "word_count": 104,
         "word_limit": 140,
         "over_limit": false
       },
@@ -1336,7 +1336,7 @@
               "heading": "Northwind login update",
               "sentences": [
                 {
-                  "text": "We're sorry for the disruption: Northwind's login API in us-central1 is returning server errors on 38% of requests [C-001].",
+                  "text": "We're sorry for the disruption: Northwind's login API in us-central1 is returning server errors on 38% of requests.",
                   "type": "fact",
                   "claim_ids": [
                     "C-001"
@@ -1348,7 +1348,7 @@
                   }
                 },
                 {
-                  "text": "The cause and recovery time are not yet known [C-006] [C-007].",
+                  "text": "The cause and recovery time are not yet known.",
                   "type": "fact",
                   "claim_ids": [
                     "C-006",
@@ -1392,7 +1392,7 @@
         "total": 4,
         "verified": 4,
         "excluded": 0,
-        "word_count": 47,
+        "word_count": 44,
         "word_limit": 70,
         "over_limit": false
       }
@@ -1814,7 +1814,7 @@
               "heading": "Situation",
               "sentences": [
                 {
-                  "text": "Login-api errors in us-central1 have risen since 17:51 [C-002].",
+                  "text": "Login-api errors in us-central1 have risen since 17:51.",
                   "type": "fact",
                   "claim_ids": [
                     "C-002"
@@ -1831,7 +1831,7 @@
               "heading": "Impact on us",
               "sentences": [
                 {
-                  "text": "The 5xx rate is 38%, versus 0.2% baseline [C-001].",
+                  "text": "The 5xx rate is 38%, versus 0.2% baseline.",
                   "type": "fact",
                   "claim_ids": [
                     "C-001"
@@ -1848,7 +1848,7 @@
               "heading": "Confirmed",
               "sentences": [
                 {
-                  "text": "Google Cloud's status page reports no major incidents as of 17:56 [C-005].",
+                  "text": "Google Cloud's status page reports no major incidents as of 17:56.",
                   "type": "fact",
                   "claim_ids": [
                     "C-005"
@@ -1865,7 +1865,7 @@
               "heading": "Not yet known",
               "sentences": [
                 {
-                  "text": "Cause, recovery time, broader service impact and customer-data impact are not yet known [C-006][C-007][C-008][C-009].",
+                  "text": "Cause, recovery time, broader service impact and customer-data impact are not yet known.",
                   "type": "fact",
                   "claim_ids": [
                     "C-006",
@@ -1958,7 +1958,7 @@
               "heading": "Confirmed technical facts",
               "sentences": [
                 {
-                  "text": "Northwind login-api 5xx errors in us-central1 reached 38% versus a 0.2% baseline, rising since 17:51 [C-001] [C-002].",
+                  "text": "Northwind login-api 5xx errors in us-central1 reached 38% versus a 0.2% baseline, rising since 17:51.",
                   "type": "fact",
                   "claim_ids": [
                     "C-001",
@@ -1971,7 +1971,7 @@
                   }
                 },
                 {
-                  "text": "Google Cloud's status page reports no major incidents as of 17:56 [C-005].",
+                  "text": "Google Cloud's status page reports no major incidents as of 17:56.",
                   "type": "fact",
                   "claim_ids": [
                     "C-005"
@@ -1983,7 +1983,7 @@
                   }
                 },
                 {
-                  "text": "Cause, recovery time, impact beyond login-api, and customer-data impact are not yet known [C-006] [C-007] [C-008] [C-009].",
+                  "text": "Cause, recovery time, impact beyond login-api, and customer-data impact are not yet known.",
                   "type": "fact",
                   "claim_ids": [
                     "C-006",
@@ -2032,7 +2032,7 @@
               "heading": "What not to chase",
               "sentences": [
                 {
-                  "text": "Community speculation about Google Cloud console and us-east1 problems is unverified and should not be acted on [C-003] [C-004].",
+                  "text": "Community speculation about Google Cloud console and us-east1 problems is unverified and should not be acted on.",
                   "type": "fact",
                   "claim_ids": [
                     "C-003",
@@ -2089,7 +2089,7 @@
                 "heading": "Northwind login update",
                 "sentences": [
                   {
-                    "text": "We're sorry that login requests are experiencing elevated errors [C-001].",
+                    "text": "We're sorry that login requests are experiencing elevated errors.",
                     "type": "fact",
                     "claim_ids": [
                       "C-001"
@@ -2101,7 +2101,7 @@
                     }
                   },
                   {
-                    "text": "The cause and recovery time are not yet known [C-006] [C-007].",
+                    "text": "The cause and recovery time are not yet known.",
                     "type": "fact",
                     "claim_ids": [
                       "C-006",
@@ -2207,7 +2207,7 @@
                   "heading": "Situation",
                   "sentences": [
                     {
-                      "text": "Login-api errors in us-central1 have risen since 17:51 [C-002].",
+                      "text": "Login-api errors in us-central1 have risen since 17:51.",
                       "type": "fact",
                       "claim_ids": [
                         "C-002"
@@ -2224,7 +2224,7 @@
                   "heading": "Impact on us",
                   "sentences": [
                     {
-                      "text": "The 5xx rate is 38%, versus 0.2% baseline [C-001].",
+                      "text": "The 5xx rate is 38%, versus 0.2% baseline.",
                       "type": "fact",
                       "claim_ids": [
                         "C-001"
@@ -2241,7 +2241,7 @@
                   "heading": "Confirmed",
                   "sentences": [
                     {
-                      "text": "Google Cloud's status page reports no major incidents as of 17:56 [C-005].",
+                      "text": "Google Cloud's status page reports no major incidents as of 17:56.",
                       "type": "fact",
                       "claim_ids": [
                         "C-005"
@@ -2258,7 +2258,7 @@
                   "heading": "Not yet known",
                   "sentences": [
                     {
-                      "text": "Cause, recovery time, broader service impact and customer-data impact are not yet known [C-006][C-007][C-008][C-009].",
+                      "text": "Cause, recovery time, broader service impact and customer-data impact are not yet known.",
                       "type": "fact",
                       "claim_ids": [
                         "C-006",
@@ -2344,7 +2344,7 @@
             "total": 8,
             "verified": 8,
             "excluded": 0,
-            "word_count": 92,
+            "word_count": 88,
             "word_limit": 120,
             "over_limit": false
           },
@@ -2406,7 +2406,7 @@
                   "heading": "Confirmed technical facts",
                   "sentences": [
                     {
-                      "text": "Northwind login-api 5xx errors in us-central1 reached 38% versus a 0.2% baseline, rising since 17:51 [C-001] [C-002].",
+                      "text": "Northwind login-api 5xx errors in us-central1 reached 38% versus a 0.2% baseline, rising since 17:51.",
                       "type": "fact",
                       "claim_ids": [
                         "C-001",
@@ -2419,7 +2419,7 @@
                       }
                     },
                     {
-                      "text": "Google Cloud's status page reports no major incidents as of 17:56 [C-005].",
+                      "text": "Google Cloud's status page reports no major incidents as of 17:56.",
                       "type": "fact",
                       "claim_ids": [
                         "C-005"
@@ -2431,7 +2431,7 @@
                       }
                     },
                     {
-                      "text": "Cause, recovery time, impact beyond login-api, and customer-data impact are not yet known [C-006] [C-007] [C-008] [C-009].",
+                      "text": "Cause, recovery time, impact beyond login-api, and customer-data impact are not yet known.",
                       "type": "fact",
                       "claim_ids": [
                         "C-006",
@@ -2480,7 +2480,7 @@
                   "heading": "What not to chase",
                   "sentences": [
                     {
-                      "text": "Community speculation about Google Cloud console and us-east1 problems is unverified and should not be acted on [C-003] [C-004].",
+                      "text": "Community speculation about Google Cloud console and us-east1 problems is unverified and should not be acted on.",
                       "type": "fact",
                       "claim_ids": [
                         "C-003",
@@ -2529,7 +2529,7 @@
             "total": 8,
             "verified": 7,
             "excluded": 1,
-            "word_count": 109,
+            "word_count": 100,
             "word_limit": 140,
             "over_limit": false
           },
@@ -2571,7 +2571,7 @@
                   "heading": "Northwind login update",
                   "sentences": [
                     {
-                      "text": "We're sorry that login requests are experiencing elevated errors [C-001].",
+                      "text": "We're sorry that login requests are experiencing elevated errors.",
                       "type": "fact",
                       "claim_ids": [
                         "C-001"
@@ -2583,7 +2583,7 @@
                       }
                     },
                     {
-                      "text": "The cause and recovery time are not yet known [C-006] [C-007].",
+                      "text": "The cause and recovery time are not yet known.",
                       "type": "fact",
                       "claim_ids": [
                         "C-006",
@@ -2627,7 +2627,7 @@
             "total": 4,
             "verified": 3,
             "excluded": 1,
-            "word_count": 41,
+            "word_count": 38,
             "word_limit": 70,
             "over_limit": false
           }
@@ -2648,7 +2648,7 @@
               "heading": "Situation",
               "sentences": [
                 {
-                  "text": "Login-api errors in us-central1 have risen since 17:51 [C-002].",
+                  "text": "Login-api errors in us-central1 have risen since 17:51.",
                   "type": "fact",
                   "claim_ids": [
                     "C-002"
@@ -2665,7 +2665,7 @@
               "heading": "Impact on us",
               "sentences": [
                 {
-                  "text": "The 5xx rate is 38%, versus 0.2% baseline [C-001].",
+                  "text": "The 5xx rate is 38%, versus 0.2% baseline.",
                   "type": "fact",
                   "claim_ids": [
                     "C-001"
@@ -2682,7 +2682,7 @@
               "heading": "Confirmed",
               "sentences": [
                 {
-                  "text": "Google Cloud's status page reports no major incidents as of 17:56 [C-005].",
+                  "text": "Google Cloud's status page reports no major incidents as of 17:56.",
                   "type": "fact",
                   "claim_ids": [
                     "C-005"
@@ -2699,7 +2699,7 @@
               "heading": "Not yet known",
               "sentences": [
                 {
-                  "text": "Cause, recovery time, broader service impact, and customer-data impact are not yet known [C-006][C-007][C-008][C-009].",
+                  "text": "Cause, recovery time, broader service impact, and customer-data impact are not yet known.",
                   "type": "fact",
                   "claim_ids": [
                     "C-006",
@@ -2792,7 +2792,7 @@
               "heading": "Confirmed technical facts",
               "sentences": [
                 {
-                  "text": "Northwind's login-api 5xx rate in us-central1 is 38%, against a 0.2% baseline, and has been rising since 17:51 [C-001] [C-002].",
+                  "text": "Northwind's login-api 5xx rate in us-central1 is 38%, against a 0.2% baseline, and has been rising since 17:51.",
                   "type": "fact",
                   "claim_ids": [
                     "C-001",
@@ -2805,7 +2805,7 @@
                   }
                 },
                 {
-                  "text": "Google Cloud's status page reports no major incidents as of 17:56 [C-005].",
+                  "text": "Google Cloud's status page reports no major incidents as of 17:56.",
                   "type": "fact",
                   "claim_ids": [
                     "C-005"
@@ -2817,7 +2817,7 @@
                   }
                 },
                 {
-                  "text": "Cause, recovery time, scope beyond login-api, and customer-data impact are not yet known [C-006] [C-007] [C-008] [C-009].",
+                  "text": "Cause, recovery time, scope beyond login-api, and customer-data impact are not yet known.",
                   "type": "fact",
                   "claim_ids": [
                     "C-006",
@@ -2905,7 +2905,7 @@
                 "heading": "Northwind login update",
                 "sentences": [
                   {
-                    "text": "We're sorry for the elevated login errors in us-central1, where 38% of login requests are failing [C-001].",
+                    "text": "We're sorry for the elevated login errors in us-central1, where 38% of login requests are failing.",
                     "type": "fact",
                     "claim_ids": [
                       "C-001"
@@ -2917,7 +2917,7 @@
                     }
                   },
                   {
-                    "text": "The cause and recovery time are not yet known [C-006] [C-007].",
+                    "text": "The cause and recovery time are not yet known.",
                     "type": "fact",
                     "claim_ids": [
                       "C-006",
@@ -3023,7 +3023,7 @@
                   "heading": "Situation",
                   "sentences": [
                     {
-                      "text": "Login-api errors in us-central1 have risen since 17:51 [C-002].",
+                      "text": "Login-api errors in us-central1 have risen since 17:51.",
                       "type": "fact",
                       "claim_ids": [
                         "C-002"
@@ -3040,7 +3040,7 @@
                   "heading": "Impact on us",
                   "sentences": [
                     {
-                      "text": "The 5xx rate is 38%, versus 0.2% baseline [C-001].",
+                      "text": "The 5xx rate is 38%, versus 0.2% baseline.",
                       "type": "fact",
                       "claim_ids": [
                         "C-001"
@@ -3057,7 +3057,7 @@
                   "heading": "Confirmed",
                   "sentences": [
                     {
-                      "text": "Google Cloud's status page reports no major incidents as of 17:56 [C-005].",
+                      "text": "Google Cloud's status page reports no major incidents as of 17:56.",
                       "type": "fact",
                       "claim_ids": [
                         "C-005"
@@ -3074,7 +3074,7 @@
                   "heading": "Not yet known",
                   "sentences": [
                     {
-                      "text": "Cause, recovery time, broader service impact, and customer-data impact are not yet known [C-006][C-007][C-008][C-009].",
+                      "text": "Cause, recovery time, broader service impact, and customer-data impact are not yet known.",
                       "type": "fact",
                       "claim_ids": [
                         "C-006",
@@ -3160,7 +3160,7 @@
             "total": 8,
             "verified": 8,
             "excluded": 0,
-            "word_count": 92,
+            "word_count": 88,
             "word_limit": 120,
             "over_limit": false
           },
@@ -3217,7 +3217,7 @@
                   "heading": "Confirmed technical facts",
                   "sentences": [
                     {
-                      "text": "Northwind's login-api 5xx rate in us-central1 is 38%, against a 0.2% baseline, and has been rising since 17:51 [C-001] [C-002].",
+                      "text": "Northwind's login-api 5xx rate in us-central1 is 38%, against a 0.2% baseline, and has been rising since 17:51.",
                       "type": "fact",
                       "claim_ids": [
                         "C-001",
@@ -3230,7 +3230,7 @@
                       }
                     },
                     {
-                      "text": "Google Cloud's status page reports no major incidents as of 17:56 [C-005].",
+                      "text": "Google Cloud's status page reports no major incidents as of 17:56.",
                       "type": "fact",
                       "claim_ids": [
                         "C-005"
@@ -3242,7 +3242,7 @@
                       }
                     },
                     {
-                      "text": "Cause, recovery time, scope beyond login-api, and customer-data impact are not yet known [C-006] [C-007] [C-008] [C-009].",
+                      "text": "Cause, recovery time, scope beyond login-api, and customer-data impact are not yet known.",
                       "type": "fact",
                       "claim_ids": [
                         "C-006",
@@ -3322,7 +3322,7 @@
             "total": 7,
             "verified": 7,
             "excluded": 0,
-            "word_count": 99,
+            "word_count": 92,
             "word_limit": 140,
             "over_limit": false
           },
@@ -3364,7 +3364,7 @@
                   "heading": "Northwind login update",
                   "sentences": [
                     {
-                      "text": "We're sorry for the elevated login errors in us-central1, where 38% of login requests are failing [C-001].",
+                      "text": "We're sorry for the elevated login errors in us-central1, where 38% of login requests are failing.",
                       "type": "fact",
                       "claim_ids": [
                         "C-001"
@@ -3376,7 +3376,7 @@
                       }
                     },
                     {
-                      "text": "The cause and recovery time are not yet known [C-006] [C-007].",
+                      "text": "The cause and recovery time are not yet known.",
                       "type": "fact",
                       "claim_ids": [
                         "C-006",
@@ -3420,7 +3420,7 @@
             "total": 4,
             "verified": 3,
             "excluded": 1,
-            "word_count": 42,
+            "word_count": 39,
             "word_limit": 70,
             "over_limit": false
           }

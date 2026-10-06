@@ -1340,7 +1340,7 @@
           "heading": "Situation",
           "sentences": [
             {
-              "text": "Broader Google Cloud disruption is reported, not yet confirmed [C-002].",
+              "text": "Broader Google Cloud disruption is reported, not yet confirmed.",
               "type": "fact",
               "claim_ids": [
                 "C-002"
@@ -1357,7 +1357,7 @@
           "heading": "Impact on us",
           "sentences": [
             {
-              "text": "Customer login and API access are unreliable since 17:51 UTC [C-001].",
+              "text": "Customer login and API access are unreliable since 17:51 UTC.",
               "type": "fact",
               "claim_ids": [
                 "C-001"
@@ -1374,7 +1374,7 @@
           "heading": "Confirmed",
           "sentences": [
             {
-              "text": "Firestore and Firebase Auth calls return 503; Google's status page shows no incident [C-006][C-005].",
+              "text": "Firestore and Firebase Auth calls return 503; Google's status page shows no incident.",
               "type": "fact",
               "claim_ids": [
                 "C-006",
@@ -1392,7 +1392,7 @@
           "heading": "Not yet known",
           "sentences": [
             {
-              "text": "Cause, recovery time, broader scope and customer-data impact are not yet known [C-003][C-004][C-015][C-016].",
+              "text": "Cause, recovery time, broader scope and customer-data impact are not yet known.",
               "type": "fact",
               "claim_ids": [
                 "C-003",
@@ -1473,7 +1473,7 @@
           "heading": "Technical facts",
           "sentences": [
             {
-              "text": "Login and API access have been unreliable since 17:51 UTC; Firestore and Firebase Auth calls return 503s [C-001] [C-006].",
+              "text": "Login and API access have been unreliable since 17:51 UTC; Firestore and Firebase Auth calls return 503s.",
               "type": "fact",
               "claim_ids": [
                 "C-001",
@@ -1486,7 +1486,7 @@
               }
             },
             {
-              "text": "The app runs only in us-central1; no deploys occurred since 14:00 [C-011] [C-007].",
+              "text": "The app runs only in us-central1; no deploys occurred since 14:00.",
               "type": "fact",
               "claim_ids": [
                 "C-011",
@@ -1499,7 +1499,7 @@
               }
             },
             {
-              "text": "Console support-case creation is blocked, but Google's status page shows no incident [C-013] [C-005].",
+              "text": "Console support-case creation is blocked, but Google's status page shows no incident.",
               "type": "fact",
               "claim_ids": [
                 "C-013",
@@ -1512,7 +1512,7 @@
               }
             },
             {
-              "text": "Root cause, recovery time, broader scope and customer-data impact are not yet known [C-003] [C-004] [C-015] [C-016].",
+              "text": "Root cause, recovery time, broader scope and customer-data impact are not yet known.",
               "type": "fact",
               "claim_ids": [
                 "C-003",
@@ -1591,7 +1591,7 @@
             "heading": "Northwind service update",
             "sentences": [
               {
-                "text": "We're sorry that customers have been unable to reliably log in or use our API since 17:51 UTC [C-001].",
+                "text": "We're sorry that customers have been unable to reliably log in or use our API since 17:51 UTC.",
                 "type": "fact",
                 "claim_ids": [
                   "C-001"
@@ -1603,7 +1603,7 @@
                 }
               },
               {
-                "text": "The cause and recovery time are not yet known [C-003] [C-004].",
+                "text": "The cause and recovery time are not yet known.",
                 "type": "fact",
                 "claim_ids": [
                   "C-003",
@@ -1647,8 +1647,8 @@
     }
   },
   "verify": {
-    "pass": true,
-    "status": "complete",
+    "pass": false,
+    "status": "failed",
     "verifier_sha256": "5a5eb2c893c4710d3318edcb014b46cd4f1b1bd21e021c706b42c468aa75b3ea",
     "audiences": [
       {
@@ -1704,7 +1704,7 @@
               "heading": "Situation",
               "sentences": [
                 {
-                  "text": "Broader Google Cloud disruption is reported, not yet confirmed [C-002].",
+                  "text": "Broader Google Cloud disruption is reported, not yet confirmed.",
                   "type": "fact",
                   "claim_ids": [
                     "C-002"
@@ -1721,7 +1721,7 @@
               "heading": "Impact on us",
               "sentences": [
                 {
-                  "text": "Customer login and API access are unreliable since 17:51 UTC [C-001].",
+                  "text": "Customer login and API access are unreliable since 17:51 UTC.",
                   "type": "fact",
                   "claim_ids": [
                     "C-001"
@@ -1738,7 +1738,7 @@
               "heading": "Confirmed",
               "sentences": [
                 {
-                  "text": "Firestore and Firebase Auth calls return 503; Google's status page shows no incident [C-006][C-005].",
+                  "text": "Firestore and Firebase Auth calls return 503; Google's status page shows no incident.",
                   "type": "fact",
                   "claim_ids": [
                     "C-006",
@@ -1756,7 +1756,7 @@
               "heading": "Not yet known",
               "sentences": [
                 {
-                  "text": "Cause, recovery time, broader scope and customer-data impact are not yet known [C-003][C-004][C-015][C-016].",
+                  "text": "Cause, recovery time, broader scope and customer-data impact are not yet known.",
                   "type": "fact",
                   "claim_ids": [
                     "C-003",
@@ -1830,7 +1830,7 @@
         "total": 7,
         "verified": 7,
         "excluded": 0,
-        "word_count": 85,
+        "word_count": 81,
         "word_limit": 120,
         "over_limit": false
       },
@@ -1887,7 +1887,7 @@
               "heading": "Technical facts",
               "sentences": [
                 {
-                  "text": "Login and API access have been unreliable since 17:51 UTC; Firestore and Firebase Auth calls return 503s [C-001] [C-006].",
+                  "text": "Login and API access have been unreliable since 17:51 UTC; Firestore and Firebase Auth calls return 503s.",
                   "type": "fact",
                   "claim_ids": [
                     "C-001",
@@ -1900,7 +1900,7 @@
                   }
                 },
                 {
-                  "text": "The app runs only in us-central1; no deploys occurred since 14:00 [C-011] [C-007].",
+                  "text": "The app runs only in us-central1; no deploys occurred since 14:00.",
                   "type": "fact",
                   "claim_ids": [
                     "C-011",
@@ -1913,7 +1913,7 @@
                   }
                 },
                 {
-                  "text": "Console support-case creation is blocked, but Google's status page shows no incident [C-013] [C-005].",
+                  "text": "Console support-case creation is blocked, but Google's status page shows no incident.",
                   "type": "fact",
                   "claim_ids": [
                     "C-013",
@@ -1926,7 +1926,7 @@
                   }
                 },
                 {
-                  "text": "Root cause, recovery time, broader scope and customer-data impact are not yet known [C-003] [C-004] [C-015] [C-016].",
+                  "text": "Root cause, recovery time, broader scope and customer-data impact are not yet known.",
                   "type": "fact",
                   "claim_ids": [
                     "C-003",
@@ -1997,7 +1997,7 @@
         "total": 7,
         "verified": 7,
         "excluded": 0,
-        "word_count": 106,
+        "word_count": 96,
         "word_limit": 140,
         "over_limit": false
       },
@@ -2039,7 +2039,7 @@
               "heading": "Northwind service update",
               "sentences": [
                 {
-                  "text": "We're sorry that customers have been unable to reliably log in or use our API since 17:51 UTC [C-001].",
+                  "text": "We're sorry that customers have been unable to reliably log in or use our API since 17:51 UTC.",
                   "type": "fact",
                   "claim_ids": [
                     "C-001"
@@ -2051,7 +2051,7 @@
                   }
                 },
                 {
-                  "text": "The cause and recovery time are not yet known [C-003] [C-004].",
+                  "text": "The cause and recovery time are not yet known.",
                   "type": "fact",
                   "claim_ids": [
                     "C-003",
@@ -2095,11 +2095,12 @@
         "total": 4,
         "verified": 4,
         "excluded": 0,
-        "word_count": 45,
+        "word_count": 42,
         "word_limit": 70,
         "over_limit": false
       }
-    ]
+    ],
+    "reason": "Golden mismatch: C-005 should be CONFLICTING at 18:11; saved ledger is CONFIRMED. Use reference data."
   },
   "timings": [
     {
@@ -2261,5 +2262,12 @@
       }
     }
   ],
-  "error": null
+  "error": null,
+  "golden_check": {
+    "pass": false,
+    "claim_id": "C-005",
+    "expected_class": "CONFLICTING",
+    "actual_class": "CONFIRMED",
+    "at": "18:11"
+  }
 }

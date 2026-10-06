@@ -45,6 +45,7 @@ for (let stage = 1; stage <= 9; stage++) {
   const timing = timingSummary(saved.timings);
   replayTokens += timing.tokens;
   const failures = (saved.verify.audiences ?? []).flatMap((a: any) => a.error ? [a.error] : a.draft.sections.flatMap((section: any) => section.sentences.filter((s: any) => s.verify?.pass === false).map((s: any) => `${a.audience}: ${s.verify.reason} — ${s.text}`)));
+  if (saved.verify.reason) failures.unshift(saved.verify.reason);
   rows.push({ stage, status: saved.verify.status, pass: saved.verify.pass,
     ...compare(reference.claims, saved.capped_ledger ?? []),
     reference_ledger_sha256: createHash('sha256').update(JSON.stringify(reference.claims)).digest('hex'),
