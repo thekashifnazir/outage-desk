@@ -1,14 +1,32 @@
-# Welcome to your Lovable project
+# outage-desk
+
+Add a server function called test-astra-json that uses Lovable AI with the model
+
+"GPT-6 Astra". It should ask the model to return a JSON object matching this shape
+
+exactly and nothing else:
+
+{ "claims": [ { "id": "C-001", "class": "CONFIRMED", "statement": "one sentence" } ] }
+
+Validate that the response parses as JSON, and return
+
+{ "ok": true, "json": <the model's JSON> } on success or
+
+{ "ok": false, "raw": <first 200 chars of what came back> } on failure.
+
+Add a button on the page labelled "Test Astra JSON" that calls it and shows the
+
+result. Dark, minimal styling — this page becomes the app's shell.
 
 This project was built with [Lovable](https://lovable.dev).
 
 ## Build with Lovable
 
-Open your project in the [Lovable editor](https://lovable.dev) and keep building.
+Continue developing this project in the [Lovable editor](https://lovable.dev/projects/1ec9a401-cb85-4a9b-874b-e98291f1ce4b).
 
 - **Ship faster**: describe what you want to build and Lovable handles the code.
-- **Stay in sync**: connect the project to GitHub and every change made in Lovable is committed straight to your repository.
-- **Full ownership**: this code is yours. Push to your repository and your changes sync back into Lovable, ready for your next prompt.
+- **Stay in sync**: every change made in Lovable is committed straight to this repository.
+- **Full ownership**: this code is yours. Push to `main` on GitHub and your changes sync back into Lovable, ready for your next prompt.
 
 ## Development
 
@@ -20,10 +38,3 @@ cd <repository-name>
 npm i
 npm run dev
 ```
-
-## Built with
-
-- TanStack Start
-- TypeScript
-- React
-- Tailwind CSS
