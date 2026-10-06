@@ -33,12 +33,15 @@ Built solo by Kashif Nazir at the GPT-6 Astra Hackathon London, 6 October 2026.
 ## How to read the desk
 
 - **Top bar** is time: the incident clock and the replay bar, one stop per stage.
-- **Column 1, Evidence**: what came in, with its source and when.
-- **Column 2, Claim ledger**: the claims grouped by certainty, Confirmed down to Unknown.
-- **Column 3, Updates**: the executive, engineering and customer updates, every sentence
-  citing its claim.
-- **Analysis** shows the GPT-6 Astra pipeline for the selected stage.
-- **Live** switches the desk to tonight's ASOS incident.
+- **Evidence** opens from the button above the ledger: what came in, with its source and
+  when.
+- **Left column, Claim ledger**: the claims grouped by certainty, Confirmed down to
+  Unknown.
+- **Right column, Updates**: the executive, engineering and customer updates, every
+  sentence citing its claim.
+- **Sidebar**: **Analysis** shows the GPT-6 Astra pipeline for the selected stage,
+  **Post-incident** checks what we said against the provider's report, and
+  **Live · ASOS** runs the same ledger on tonight's ASOS incident.
 
 ## How it works
 
