@@ -26,6 +26,8 @@ describe('Post-incident presentation', () => {
    const html = renderToStaticMarkup(<PostIncidentDraft {...props} draft={draft} footer={<span>Copy</span>}/>);
    expect(html).toContain(draft.sections[0]?.heading);
    expect(html).toContain('C-028');
+    expect(html).toContain('Key facts used');
+    expect(html).toContain('class-pill certainty-confirmed');
    expect(html).not.toContain('loads next');
   }
  });
