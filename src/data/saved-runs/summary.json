@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-10-06T18:13:01.325Z",
+  "generated_at": "2026-10-06T18:29:27.713Z",
   "claim_match_method": "Conservative exact content match after case/whitespace/curly-apostrophe normalization: statement, subject, class and unknown_kind must agree. IDs may differ. One generated claim can match at most one reference claim. Superseded claims are excluded from both active-ledger counts. Paraphrases, splits and merges count as nonmatches; this is not a semantic accuracy score. Same-ID/class counts are separate diagnostics and are not claim matches.",
-  "total_tokens": 376135,
-  "replay_total_tokens": 356538,
+  "total_tokens": 641994,
+  "replay_total_tokens": 622397,
   "live_total_tokens": 19597,
   "timing_note": "Communication and verification timings show slowest audience call; extraction/reconciliation sum attempts. Full per-call timings are included. Policy timing was not recorded for the earlier replay run (null). Step-zero usage is already included in stage 4 and is not counted twice.",
   "stages": [
@@ -83,9 +83,9 @@
       "extract_seconds": 21.085105708000004,
       "reconcile_seconds": 25.777956166,
       "policy_seconds": null,
-      "communicate_parallel_seconds": 8.911143166,
+      "communicate_parallel_seconds": 11.211696291,
       "verify_parallel_seconds": 4.806503167,
-      "tokens": 23180,
+      "tokens": 56608,
       "timings": [
         {
           "step": "EXTRACT",
@@ -244,11 +244,250 @@
             },
             "total_tokens": 2332
           }
+        },
+        {
+          "step": "COMMUNICATE",
+          "stage": 1,
+          "audience": "customer",
+          "attempt": 1,
+          "seconds": 6.303402416999999,
+          "tokens": {
+            "input_tokens": 2770,
+            "input_tokens_details": {
+              "cache_write_tokens": 2767,
+              "cached_tokens": 0
+            },
+            "output_tokens": 176,
+            "output_tokens_details": {
+              "reasoning_tokens": 0
+            },
+            "total_tokens": 2946
+          }
+        },
+        {
+          "step": "COMMUNICATE",
+          "stage": 1,
+          "audience": "executive",
+          "attempt": 1,
+          "seconds": 9.299461208,
+          "tokens": {
+            "input_tokens": 2619,
+            "input_tokens_details": {
+              "cache_write_tokens": 2616,
+              "cached_tokens": 0
+            },
+            "output_tokens": 428,
+            "output_tokens_details": {
+              "reasoning_tokens": 0
+            },
+            "total_tokens": 3047
+          }
+        },
+        {
+          "step": "COMMUNICATE",
+          "stage": 1,
+          "audience": "engineering",
+          "attempt": 1,
+          "seconds": 9.953942875000001,
+          "tokens": {
+            "input_tokens": 2785,
+            "input_tokens_details": {
+              "cache_write_tokens": 2782,
+              "cached_tokens": 0
+            },
+            "output_tokens": 401,
+            "output_tokens_details": {
+              "reasoning_tokens": 19
+            },
+            "total_tokens": 3186
+          }
+        },
+        {
+          "step": "VERIFY_CODE",
+          "stage": 1,
+          "seconds": 0.0008719170000000105,
+          "tokens": null
+        },
+        {
+          "step": "VERIFY",
+          "stage": 1,
+          "audience": "engineering",
+          "attempt": 1,
+          "seconds": 3.5527836660000003,
+          "tokens": {
+            "input_tokens": 2462,
+            "input_tokens_details": {
+              "cache_write_tokens": 2459,
+              "cached_tokens": 0
+            },
+            "output_tokens": 103,
+            "output_tokens_details": {
+              "reasoning_tokens": 0
+            },
+            "total_tokens": 2565
+          }
+        },
+        {
+          "step": "VERIFY",
+          "stage": 1,
+          "audience": "executive",
+          "attempt": 1,
+          "seconds": 4.270384875,
+          "tokens": {
+            "input_tokens": 2522,
+            "input_tokens_details": {
+              "cache_write_tokens": 2519,
+              "cached_tokens": 0
+            },
+            "output_tokens": 116,
+            "output_tokens_details": {
+              "reasoning_tokens": 0
+            },
+            "total_tokens": 2638
+          }
+        },
+        {
+          "step": "VERIFY",
+          "stage": 1,
+          "audience": "customer",
+          "attempt": 1,
+          "seconds": 4.712469208000001,
+          "tokens": {
+            "input_tokens": 2226,
+            "input_tokens_details": {
+              "cache_write_tokens": 2223,
+              "cached_tokens": 0
+            },
+            "output_tokens": 126,
+            "output_tokens_details": {
+              "reasoning_tokens": 28
+            },
+            "total_tokens": 2352
+          }
+        },
+        {
+          "step": "COMMUNICATE",
+          "stage": 1,
+          "audience": "customer",
+          "attempt": 1,
+          "seconds": 3.942041458,
+          "tokens": {
+            "input_tokens": 2784,
+            "input_tokens_details": {
+              "cache_write_tokens": 2781,
+              "cached_tokens": 0
+            },
+            "output_tokens": 183,
+            "output_tokens_details": {
+              "reasoning_tokens": 0
+            },
+            "total_tokens": 2967
+          }
+        },
+        {
+          "step": "COMMUNICATE",
+          "stage": 1,
+          "audience": "executive",
+          "attempt": 1,
+          "seconds": 9.357338166,
+          "tokens": {
+            "input_tokens": 2619,
+            "input_tokens_details": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 2616
+            },
+            "output_tokens": 427,
+            "output_tokens_details": {
+              "reasoning_tokens": 0
+            },
+            "total_tokens": 3046
+          }
+        },
+        {
+          "step": "COMMUNICATE",
+          "stage": 1,
+          "audience": "engineering",
+          "attempt": 1,
+          "seconds": 11.211696291,
+          "tokens": {
+            "input_tokens": 2619,
+            "input_tokens_details": {
+              "cache_write_tokens": 2616,
+              "cached_tokens": 0
+            },
+            "output_tokens": 434,
+            "output_tokens_details": {
+              "reasoning_tokens": 0
+            },
+            "total_tokens": 3053
+          }
+        },
+        {
+          "step": "VERIFY_CODE",
+          "stage": 1,
+          "seconds": 0.0003535830000000004,
+          "tokens": null
+        },
+        {
+          "step": "VERIFY",
+          "stage": 1,
+          "audience": "customer",
+          "attempt": 1,
+          "seconds": 2.656036208,
+          "tokens": {
+            "input_tokens": 2233,
+            "input_tokens_details": {
+              "cache_write_tokens": 2230,
+              "cached_tokens": 0
+            },
+            "output_tokens": 64,
+            "output_tokens_details": {
+              "reasoning_tokens": 0
+            },
+            "total_tokens": 2297
+          }
+        },
+        {
+          "step": "VERIFY",
+          "stage": 1,
+          "audience": "executive",
+          "attempt": 1,
+          "seconds": 3.737076875,
+          "tokens": {
+            "input_tokens": 2521,
+            "input_tokens_details": {
+              "cache_write_tokens": 2518,
+              "cached_tokens": 0
+            },
+            "output_tokens": 138,
+            "output_tokens_details": {
+              "reasoning_tokens": 20
+            },
+            "total_tokens": 2659
+          }
+        },
+        {
+          "step": "VERIFY",
+          "stage": 1,
+          "audience": "engineering",
+          "attempt": 1,
+          "seconds": 4.655154459,
+          "tokens": {
+            "input_tokens": 2527,
+            "input_tokens_details": {
+              "cache_write_tokens": 2524,
+              "cached_tokens": 0
+            },
+            "output_tokens": 145,
+            "output_tokens_details": {
+              "reasoning_tokens": 0
+            },
+            "total_tokens": 2672
+          }
         }
       ],
       "failures": [
-        "engineering: Astra: C-003 and C-004 support that the community speculation is unverified, but do not support the instruction that it should not be acted on. — Community speculation about Google Cloud console and us-east1 problems is unverified and should not be acted on [C-003] [C-004].",
-        "customer: Astra: C-001 supports elevated login-api errors only in us-central1; the sentence omits that regional limit and broadens the scope to login requests generally. — We're sorry that login requests are experiencing elevated errors [C-001]."
+        "engineering: Astra: C-003 and C-004 support that the community speculation is unconfirmed, but do not support the instruction that it should not be acted on. — Community speculation about Google console and us-east1 problems is unverified and should not be acted on [C-003] [C-004]."
       ]
     },
     {
@@ -624,7 +863,7 @@
           "same_id_generated_class": "CONFIRMED"
         }
       ],
-      "reference_ledger_sha256": "eb27ca566998604622bebec43f7385a40da2f96d49b24f70ac0588c05969367e",
+      "reference_ledger_sha256": "5148f548fea561cc8262c74de82c53aaf2913283b28ad4079e868e9d9131af16",
       "extract_seconds": 27.729158792,
       "reconcile_seconds": 40.500095625,
       "policy_seconds": null,
@@ -795,8 +1034,8 @@
     },
     {
       "stage": 4,
-      "status": "failed",
-      "pass": false,
+      "status": "complete",
+      "pass": true,
       "claims_matching_reference": 8,
       "reference_claim_count": 15,
       "generated_claim_count": 19,
@@ -972,9 +1211,9 @@
       "extract_seconds": 31.703646874999997,
       "reconcile_seconds": 49.966455625,
       "policy_seconds": null,
-      "communicate_parallel_seconds": 9.529546416,
+      "communicate_parallel_seconds": 10.645527125000001,
       "verify_parallel_seconds": 5.9253227079999995,
-      "tokens": 43818,
+      "tokens": 76169,
       "timings": [
         {
           "step": "EXTRACT",
@@ -1132,16 +1371,134 @@
             },
             "total_tokens": 5271
           }
+        },
+        {
+          "step": "COMMUNICATE",
+          "stage": 4,
+          "audience": "customer",
+          "attempt": 1,
+          "seconds": 7.122751999999999,
+          "tokens": {
+            "input_tokens": 5215,
+            "input_tokens_details": {
+              "cache_write_tokens": 5212,
+              "cached_tokens": 0
+            },
+            "output_tokens": 208,
+            "output_tokens_details": {
+              "reasoning_tokens": 0
+            },
+            "total_tokens": 5423
+          }
+        },
+        {
+          "step": "COMMUNICATE",
+          "stage": 4,
+          "audience": "executive",
+          "attempt": 1,
+          "seconds": 10.621626666000001,
+          "tokens": {
+            "input_tokens": 5215,
+            "input_tokens_details": {
+              "cache_write_tokens": 5212,
+              "cached_tokens": 0
+            },
+            "output_tokens": 443,
+            "output_tokens_details": {
+              "reasoning_tokens": 0
+            },
+            "total_tokens": 5658
+          }
+        },
+        {
+          "step": "COMMUNICATE",
+          "stage": 4,
+          "audience": "engineering",
+          "attempt": 1,
+          "seconds": 10.645527125000001,
+          "tokens": {
+            "input_tokens": 5369,
+            "input_tokens_details": {
+              "cache_write_tokens": 5366,
+              "cached_tokens": 0
+            },
+            "output_tokens": 464,
+            "output_tokens_details": {
+              "reasoning_tokens": 24
+            },
+            "total_tokens": 5833
+          }
+        },
+        {
+          "step": "VERIFY_CODE",
+          "stage": 4,
+          "seconds": 0.00014312499999999772,
+          "tokens": null
+        },
+        {
+          "step": "VERIFY",
+          "stage": 4,
+          "audience": "customer",
+          "attempt": 1,
+          "seconds": 3.407089541,
+          "tokens": {
+            "input_tokens": 4866,
+            "input_tokens_details": {
+              "cache_write_tokens": 4863,
+              "cached_tokens": 0
+            },
+            "output_tokens": 77,
+            "output_tokens_details": {
+              "reasoning_tokens": 0
+            },
+            "total_tokens": 4943
+          }
+        },
+        {
+          "step": "VERIFY",
+          "stage": 4,
+          "audience": "executive",
+          "attempt": 1,
+          "seconds": 3.590909,
+          "tokens": {
+            "input_tokens": 5134,
+            "input_tokens_details": {
+              "cache_write_tokens": 5131,
+              "cached_tokens": 0
+            },
+            "output_tokens": 116,
+            "output_tokens_details": {
+              "reasoning_tokens": 0
+            },
+            "total_tokens": 5250
+          }
+        },
+        {
+          "step": "VERIFY",
+          "stage": 4,
+          "audience": "engineering",
+          "attempt": 1,
+          "seconds": 3.83086025,
+          "tokens": {
+            "input_tokens": 5128,
+            "input_tokens_details": {
+              "cache_write_tokens": 5125,
+              "cached_tokens": 0
+            },
+            "output_tokens": 116,
+            "output_tokens_details": {
+              "reasoning_tokens": 0
+            },
+            "total_tokens": 5244
+          }
         }
       ],
-      "failures": [
-        "engineering: Astra: C-018 supports that the alleged causal link is unverified, but does not support the instruction that it should not be acted on. — Claims Google caused Cloudflare's outage are unverified and should not be acted on [C-018]."
-      ]
+      "failures": []
     },
     {
       "stage": 5,
-      "status": "failed",
-      "pass": false,
+      "status": "complete",
+      "pass": true,
       "claims_matching_reference": 13,
       "reference_claim_count": 20,
       "generated_claim_count": 23,
@@ -1362,13 +1719,13 @@
           "same_id_generated_class": "CONFIRMED"
         }
       ],
-      "reference_ledger_sha256": "b0e41d68410b1983c2f3d9eb1786251f8ed7bbeef056e9d8cea399055f1d54c2",
+      "reference_ledger_sha256": "f0f671a3a161d197afde75658bcd88a7af18a73ed486eea4f24a714b451304c3",
       "extract_seconds": 26.261994082999998,
       "reconcile_seconds": 57.01213224999999,
       "policy_seconds": null,
       "communicate_parallel_seconds": 15.808274292,
       "verify_parallel_seconds": 6.133092334,
-      "tokens": 48785,
+      "tokens": 85205,
       "timings": [
         {
           "step": "EXTRACT",
@@ -1527,18 +1884,134 @@
             },
             "total_tokens": 6035
           }
+        },
+        {
+          "step": "COMMUNICATE",
+          "stage": 5,
+          "audience": "customer",
+          "attempt": 1,
+          "seconds": 6.40669575,
+          "tokens": {
+            "input_tokens": 5838,
+            "input_tokens_details": {
+              "cache_write_tokens": 5835,
+              "cached_tokens": 0
+            },
+            "output_tokens": 222,
+            "output_tokens_details": {
+              "reasoning_tokens": 0
+            },
+            "total_tokens": 6060
+          }
+        },
+        {
+          "step": "COMMUNICATE",
+          "stage": 5,
+          "audience": "engineering",
+          "attempt": 1,
+          "seconds": 12.038061207999998,
+          "tokens": {
+            "input_tokens": 6085,
+            "input_tokens_details": {
+              "cache_write_tokens": 6082,
+              "cached_tokens": 0
+            },
+            "output_tokens": 486,
+            "output_tokens_details": {
+              "reasoning_tokens": 30
+            },
+            "total_tokens": 6571
+          }
+        },
+        {
+          "step": "COMMUNICATE",
+          "stage": 5,
+          "audience": "executive",
+          "attempt": 1,
+          "seconds": 12.797714833,
+          "tokens": {
+            "input_tokens": 5995,
+            "input_tokens_details": {
+              "cache_write_tokens": 5992,
+              "cached_tokens": 0
+            },
+            "output_tokens": 463,
+            "output_tokens_details": {
+              "reasoning_tokens": 44
+            },
+            "total_tokens": 6458
+          }
+        },
+        {
+          "step": "VERIFY_CODE",
+          "stage": 5,
+          "seconds": 0.0003360410000000087,
+          "tokens": null
+        },
+        {
+          "step": "VERIFY",
+          "stage": 5,
+          "audience": "engineering",
+          "attempt": 1,
+          "seconds": 3.041146834,
+          "tokens": {
+            "input_tokens": 5777,
+            "input_tokens_details": {
+              "cache_write_tokens": 5774,
+              "cached_tokens": 0
+            },
+            "output_tokens": 129,
+            "output_tokens_details": {
+              "reasoning_tokens": 0
+            },
+            "total_tokens": 5906
+          }
+        },
+        {
+          "step": "VERIFY",
+          "stage": 5,
+          "audience": "customer",
+          "attempt": 1,
+          "seconds": 3.363963167,
+          "tokens": {
+            "input_tokens": 5502,
+            "input_tokens_details": {
+              "cache_write_tokens": 5499,
+              "cached_tokens": 0
+            },
+            "output_tokens": 77,
+            "output_tokens_details": {
+              "reasoning_tokens": 0
+            },
+            "total_tokens": 5579
+          }
+        },
+        {
+          "step": "VERIFY",
+          "stage": 5,
+          "audience": "executive",
+          "attempt": 1,
+          "seconds": 4.2050188330000005,
+          "tokens": {
+            "input_tokens": 5730,
+            "input_tokens_details": {
+              "cache_write_tokens": 5727,
+              "cached_tokens": 0
+            },
+            "output_tokens": 116,
+            "output_tokens_details": {
+              "reasoning_tokens": 0
+            },
+            "total_tokens": 5846
+          }
         }
       ],
-      "failures": [
-        "executive: Astra: C-019 says consumer support reports no known service disruptions, with services and regions unspecified. 'Reports no disruptions' drops the knowledge qualifier and increases certainty. — Evidence conflicts: Google consumer support reports no disruptions; Cloud status reports incomplete recovery [C-019].",
-        "engineering: Astra: The cited claims establish a Google Cloud incident and Northwind's Google API 503 errors separately, but do not explicitly establish that those errors are part of that incident. — Google Cloud’s multi-product incident includes Firestore/Firebase Auth 503s in Northwind; our sole region, us-central1, is mostly recovered [C-005][C-006][C-009][C-016].",
-        "engineering: Astra: The claims support that the BGP and ConnectWise theories are unverified, but not the added directive that they should not be acted on. — BGP and ConnectWise theories are unverified and should not be acted on [C-014][C-020]."
-      ]
+      "failures": []
     },
     {
       "stage": 6,
-      "status": "failed",
-      "pass": false,
+      "status": "complete",
+      "pass": true,
       "claims_matching_reference": 18,
       "reference_claim_count": 21,
       "generated_claim_count": 22,
@@ -1763,13 +2236,13 @@
           "same_id_generated_class": "CONFIRMED"
         }
       ],
-      "reference_ledger_sha256": "80f767a671b34c2e3dcfaa9525cd2fc2dacd2e79eca77a99f0b5bb622fdc04d9",
+      "reference_ledger_sha256": "98d5f61318429e7488e621ea56905a2ee1730f49fd55d4e804f77b4e5e17ed84",
       "extract_seconds": 14.689695167,
       "reconcile_seconds": 50.488732916000004,
       "policy_seconds": null,
-      "communicate_parallel_seconds": 10.211004208,
+      "communicate_parallel_seconds": 11.766167874999999,
       "verify_parallel_seconds": 8.0845965,
-      "tokens": 48083,
+      "tokens": 85075,
       "timings": [
         {
           "step": "EXTRACT",
@@ -1928,12 +2401,129 @@
             },
             "total_tokens": 6102
           }
+        },
+        {
+          "step": "COMMUNICATE",
+          "stage": 6,
+          "audience": "customer",
+          "attempt": 1,
+          "seconds": 6.856658959000001,
+          "tokens": {
+            "input_tokens": 5971,
+            "input_tokens_details": {
+              "cache_write_tokens": 5968,
+              "cached_tokens": 0
+            },
+            "output_tokens": 203,
+            "output_tokens_details": {
+              "reasoning_tokens": 0
+            },
+            "total_tokens": 6174
+          }
+        },
+        {
+          "step": "COMMUNICATE",
+          "stage": 6,
+          "audience": "executive",
+          "attempt": 1,
+          "seconds": 11.008502791,
+          "tokens": {
+            "input_tokens": 6132,
+            "input_tokens_details": {
+              "cache_write_tokens": 6129,
+              "cached_tokens": 0
+            },
+            "output_tokens": 449,
+            "output_tokens_details": {
+              "reasoning_tokens": 0
+            },
+            "total_tokens": 6581
+          }
+        },
+        {
+          "step": "COMMUNICATE",
+          "stage": 6,
+          "audience": "engineering",
+          "attempt": 1,
+          "seconds": 11.766167874999999,
+          "tokens": {
+            "input_tokens": 6132,
+            "input_tokens_details": {
+              "cache_write_tokens": 6129,
+              "cached_tokens": 0
+            },
+            "output_tokens": 446,
+            "output_tokens_details": {
+              "reasoning_tokens": 26
+            },
+            "total_tokens": 6578
+          }
+        },
+        {
+          "step": "VERIFY_CODE",
+          "stage": 6,
+          "seconds": 0.00005166699999998059,
+          "tokens": null
+        },
+        {
+          "step": "VERIFY",
+          "stage": 6,
+          "audience": "customer",
+          "attempt": 1,
+          "seconds": 2.979020667,
+          "tokens": {
+            "input_tokens": 5605,
+            "input_tokens_details": {
+              "cache_write_tokens": 5602,
+              "cached_tokens": 0
+            },
+            "output_tokens": 64,
+            "output_tokens_details": {
+              "reasoning_tokens": 0
+            },
+            "total_tokens": 5669
+          }
+        },
+        {
+          "step": "VERIFY",
+          "stage": 6,
+          "audience": "engineering",
+          "attempt": 1,
+          "seconds": 3.516638792,
+          "tokens": {
+            "input_tokens": 5852,
+            "input_tokens_details": {
+              "cache_write_tokens": 5849,
+              "cached_tokens": 0
+            },
+            "output_tokens": 103,
+            "output_tokens_details": {
+              "reasoning_tokens": 0
+            },
+            "total_tokens": 5955
+          }
+        },
+        {
+          "step": "VERIFY",
+          "stage": 6,
+          "audience": "executive",
+          "attempt": 1,
+          "seconds": 4.402588375,
+          "tokens": {
+            "input_tokens": 5906,
+            "input_tokens_details": {
+              "cache_write_tokens": 5903,
+              "cached_tokens": 0
+            },
+            "output_tokens": 129,
+            "output_tokens_details": {
+              "reasoning_tokens": 0
+            },
+            "total_tokens": 6035
+          }
         }
       ],
-      "failures": [
-        "executive: Astra: C-010 establishes that staff use Cloudflare Access, and C-011 establishes an Access outage, but neither confirms that the outage affected Northwind staff's internal-tool access. — Cloudflare's Access outage affects staff's internal-tool access [C-010][C-011].",
-        "engineering: Astra: C-014 and C-022 support that these explanations are unverified, but do not support the added instruction that they should not be acted on. — BGP and ConnectWise explanations are unverified and should not be acted on [C-014] [C-022]."
-      ]
+      "failures": []
     },
     {
       "stage": 7,
@@ -2178,13 +2768,13 @@
           "same_id_generated_class": null
         }
       ],
-      "reference_ledger_sha256": "41443316fee8ecec322dd5dc8c7f808d2d882c82e748b9b94e9168491dd60a0a",
+      "reference_ledger_sha256": "a9400c48362f9deb4e7b7b1c72851aef589a923c3b426da0ae5b87de5ab04afb",
       "extract_seconds": 26.615650249999998,
       "reconcile_seconds": 61.982288166,
       "policy_seconds": null,
-      "communicate_parallel_seconds": 9.26872725,
+      "communicate_parallel_seconds": 15.332211959,
       "verify_parallel_seconds": 5.515935625,
-      "tokens": 55999,
+      "tokens": 138955,
       "timings": [
         {
           "step": "EXTRACT",
@@ -2343,19 +2933,258 @@
             },
             "total_tokens": 6830
           }
+        },
+        {
+          "step": "COMMUNICATE",
+          "stage": 7,
+          "audience": "customer",
+          "attempt": 1,
+          "seconds": 7.737873209,
+          "tokens": {
+            "input_tokens": 6697,
+            "input_tokens_details": {
+              "cache_write_tokens": 6694,
+              "cached_tokens": 0
+            },
+            "output_tokens": 208,
+            "output_tokens_details": {
+              "reasoning_tokens": 0
+            },
+            "total_tokens": 6905
+          }
+        },
+        {
+          "step": "COMMUNICATE",
+          "stage": 7,
+          "audience": "engineering",
+          "attempt": 1,
+          "seconds": 8.498658167,
+          "tokens": {
+            "input_tokens": 6917,
+            "input_tokens_details": {
+              "cache_write_tokens": 6914,
+              "cached_tokens": 0
+            },
+            "output_tokens": 466,
+            "output_tokens_details": {
+              "reasoning_tokens": 21
+            },
+            "total_tokens": 7383
+          }
+        },
+        {
+          "step": "COMMUNICATE",
+          "stage": 7,
+          "audience": "executive",
+          "attempt": 1,
+          "seconds": 15.332211959,
+          "tokens": {
+            "input_tokens": 6934,
+            "input_tokens_details": {
+              "cache_write_tokens": 6931,
+              "cached_tokens": 0
+            },
+            "output_tokens": 473,
+            "output_tokens_details": {
+              "reasoning_tokens": 45
+            },
+            "total_tokens": 7407
+          }
+        },
+        {
+          "step": "VERIFY_CODE",
+          "stage": 7,
+          "seconds": 0.0000600419999999815,
+          "tokens": null
+        },
+        {
+          "step": "VERIFY",
+          "stage": 7,
+          "audience": "customer",
+          "attempt": 1,
+          "seconds": 3.165259458,
+          "tokens": {
+            "input_tokens": 6347,
+            "input_tokens_details": {
+              "cache_write_tokens": 6344,
+              "cached_tokens": 0
+            },
+            "output_tokens": 77,
+            "output_tokens_details": {
+              "reasoning_tokens": 0
+            },
+            "total_tokens": 6424
+          }
+        },
+        {
+          "step": "VERIFY",
+          "stage": 7,
+          "audience": "executive",
+          "attempt": 1,
+          "seconds": 4.062275417,
+          "tokens": {
+            "input_tokens": 6598,
+            "input_tokens_details": {
+              "cache_write_tokens": 6595,
+              "cached_tokens": 0
+            },
+            "output_tokens": 116,
+            "output_tokens_details": {
+              "reasoning_tokens": 0
+            },
+            "total_tokens": 6714
+          }
+        },
+        {
+          "step": "VERIFY",
+          "stage": 7,
+          "audience": "engineering",
+          "attempt": 1,
+          "seconds": 4.437994875,
+          "tokens": {
+            "input_tokens": 6614,
+            "input_tokens_details": {
+              "cache_write_tokens": 6611,
+              "cached_tokens": 0
+            },
+            "output_tokens": 195,
+            "output_tokens_details": {
+              "reasoning_tokens": 41
+            },
+            "total_tokens": 6809
+          }
+        },
+        {
+          "step": "COMMUNICATE",
+          "stage": 7,
+          "audience": "customer",
+          "attempt": 1,
+          "seconds": 6.3577365420000005,
+          "tokens": {
+            "input_tokens": 6697,
+            "input_tokens_details": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 6694
+            },
+            "output_tokens": 207,
+            "output_tokens_details": {
+              "reasoning_tokens": 0
+            },
+            "total_tokens": 6904
+          }
+        },
+        {
+          "step": "COMMUNICATE",
+          "stage": 7,
+          "audience": "executive",
+          "attempt": 1,
+          "seconds": 7.950479083,
+          "tokens": {
+            "input_tokens": 6697,
+            "input_tokens_details": {
+              "cache_write_tokens": 6694,
+              "cached_tokens": 0
+            },
+            "output_tokens": 455,
+            "output_tokens_details": {
+              "reasoning_tokens": 31
+            },
+            "total_tokens": 7152
+          }
+        },
+        {
+          "step": "COMMUNICATE",
+          "stage": 7,
+          "audience": "engineering",
+          "attempt": 1,
+          "seconds": 9.658753500000001,
+          "tokens": {
+            "input_tokens": 6870,
+            "input_tokens_details": {
+              "cache_write_tokens": 6867,
+              "cached_tokens": 0
+            },
+            "output_tokens": 436,
+            "output_tokens_details": {
+              "reasoning_tokens": 0
+            },
+            "total_tokens": 7306
+          }
+        },
+        {
+          "step": "VERIFY_CODE",
+          "stage": 7,
+          "seconds": 0.0008982500000000044,
+          "tokens": null
+        },
+        {
+          "step": "VERIFY",
+          "stage": 7,
+          "audience": "customer",
+          "attempt": 1,
+          "seconds": 2.980870167,
+          "tokens": {
+            "input_tokens": 6346,
+            "input_tokens_details": {
+              "cache_write_tokens": 6343,
+              "cached_tokens": 0
+            },
+            "output_tokens": 77,
+            "output_tokens_details": {
+              "reasoning_tokens": 0
+            },
+            "total_tokens": 6423
+          }
+        },
+        {
+          "step": "VERIFY",
+          "stage": 7,
+          "audience": "engineering",
+          "attempt": 1,
+          "seconds": 3.628368834,
+          "tokens": {
+            "input_tokens": 6607,
+            "input_tokens_details": {
+              "cache_write_tokens": 6604,
+              "cached_tokens": 0
+            },
+            "output_tokens": 174,
+            "output_tokens_details": {
+              "reasoning_tokens": 0
+            },
+            "total_tokens": 6781
+          }
+        },
+        {
+          "step": "VERIFY",
+          "stage": 7,
+          "audience": "executive",
+          "attempt": 1,
+          "seconds": 5.155543375000001,
+          "tokens": {
+            "input_tokens": 6594,
+            "input_tokens_details": {
+              "cache_write_tokens": 6591,
+              "cached_tokens": 0
+            },
+            "output_tokens": 154,
+            "output_tokens_details": {
+              "reasoning_tokens": 0
+            },
+            "total_tokens": 6748
+          }
         }
       ],
       "failures": [
-        "executive: Astra: C-019 says Google Cloud reports signs of recovery and has not declared full recovery; 'not resolved' states unresolved status with greater certainty. — Google Cloud's outage is recovering in Northwind's region, not resolved [C-005][C-019].",
-        "executive: Astra: C-010 establishes that staff use Cloudflare Access, not that their authentication was affected. C-011 reports provider-wide Access impact and attributes restoration to Cloudflare; the sentence asserts staff-specific impact and restoration without that qualification. — Cloudflare's outage affected staff Access authentication; services were restored at 20:57 [C-010][C-011].",
-        "engineering: Astra: C-010 establishes that staff use Cloudflare Access, and C-011 establishes an Access authentication outage, but neither confirms that Northwind staff authentication was affected. — Cloudflare's outage affected staff Access authentication; Cloudflare reports restoration at 20:57 [C-010] [C-011].",
-        "engineering: Astra: C-014 supports that the BGP theory is unconfirmed, but does not support the added instruction that it should not be acted on. — BGP theories are unverified and should not be acted on [C-014]."
+        "executive: Astra: C-010 establishes staff use Cloudflare Access, not that staff authentication was affected. C-011 reports restoration as of 20:57, not restoration occurring exactly at 20:57. — Cloudflare's outage affected staff Access authentication; services were restored at 20:57 [C-010][C-011].",
+        "engineering: Astra: C-010 establishes that staff use Cloudflare Access, and C-011 establishes an Access authentication outage, but neither confirms that Northwind staff's authentication was affected. — Cloudflare's outage affected staff's Access authentication; Cloudflare reports all services restored at 20:57 [C-010] [C-011].",
+        "engineering: Astra: C-014 supports that the BGP theory is unverified, but does not support the instruction that it should not be acted on. — BGP theories are unverified and should not be acted on [C-014]."
       ]
     },
     {
       "stage": 8,
-      "status": "failed",
-      "pass": false,
+      "status": "complete",
+      "pass": true,
       "claims_matching_reference": 17,
       "reference_claim_count": 20,
       "generated_claim_count": 25,
@@ -2574,13 +3403,13 @@
           "same_id_generated_class": "UNKNOWN"
         }
       ],
-      "reference_ledger_sha256": "0e7fe48a33ef31ad29547cea698d0781c474dffd9193da733a68eb3ef53d1b03",
+      "reference_ledger_sha256": "41b49cc8a6e81d701e1d5c841cd718b894c3a3f7e0cdd4e0a2432d110b169074",
       "extract_seconds": 20.523199124999998,
       "reconcile_seconds": 76.737389417,
       "policy_seconds": null,
-      "communicate_parallel_seconds": 9.418659500000002,
+      "communicate_parallel_seconds": 14.856280917,
       "verify_parallel_seconds": 7.057848292,
-      "tokens": 57826,
+      "tokens": 101538,
       "timings": [
         {
           "step": "EXTRACT",
@@ -2739,18 +3568,129 @@
             },
             "total_tokens": 7132
           }
+        },
+        {
+          "step": "COMMUNICATE",
+          "stage": 8,
+          "audience": "customer",
+          "attempt": 1,
+          "seconds": 6.3594115,
+          "tokens": {
+            "input_tokens": 7164,
+            "input_tokens_details": {
+              "cache_write_tokens": 7161,
+              "cached_tokens": 0
+            },
+            "output_tokens": 319,
+            "output_tokens_details": {
+              "reasoning_tokens": 83
+            },
+            "total_tokens": 7483
+          }
+        },
+        {
+          "step": "COMMUNICATE",
+          "stage": 8,
+          "audience": "executive",
+          "attempt": 1,
+          "seconds": 11.943522125,
+          "tokens": {
+            "input_tokens": 7238,
+            "input_tokens_details": {
+              "cache_write_tokens": 7235,
+              "cached_tokens": 0
+            },
+            "output_tokens": 470,
+            "output_tokens_details": {
+              "reasoning_tokens": 42
+            },
+            "total_tokens": 7708
+          }
+        },
+        {
+          "step": "COMMUNICATE",
+          "stage": 8,
+          "audience": "engineering",
+          "attempt": 1,
+          "seconds": 14.856280917,
+          "tokens": {
+            "input_tokens": 7219,
+            "input_tokens_details": {
+              "cache_write_tokens": 7216,
+              "cached_tokens": 0
+            },
+            "output_tokens": 629,
+            "output_tokens_details": {
+              "reasoning_tokens": 65
+            },
+            "total_tokens": 7848
+          }
+        },
+        {
+          "step": "VERIFY_CODE",
+          "stage": 8,
+          "seconds": 0.00018912499999999,
+          "tokens": null
+        },
+        {
+          "step": "VERIFY",
+          "stage": 8,
+          "audience": "customer",
+          "attempt": 1,
+          "seconds": 3.015262958,
+          "tokens": {
+            "input_tokens": 6638,
+            "input_tokens_details": {
+              "cache_write_tokens": 6635,
+              "cached_tokens": 0
+            },
+            "output_tokens": 90,
+            "output_tokens_details": {
+              "reasoning_tokens": 0
+            },
+            "total_tokens": 6728
+          }
+        },
+        {
+          "step": "VERIFY",
+          "stage": 8,
+          "audience": "executive",
+          "attempt": 1,
+          "seconds": 4.2021127080000005,
+          "tokens": {
+            "input_tokens": 6852,
+            "input_tokens_details": {
+              "cache_write_tokens": 6849,
+              "cached_tokens": 0
+            },
+            "output_tokens": 116,
+            "output_tokens_details": {
+              "reasoning_tokens": 0
+            },
+            "total_tokens": 6968
+          }
+        },
+        {
+          "step": "VERIFY",
+          "stage": 8,
+          "audience": "engineering",
+          "attempt": 1,
+          "seconds": 5.791781667,
+          "tokens": {
+            "input_tokens": 6836,
+            "input_tokens_details": {
+              "cache_write_tokens": 6833,
+              "cached_tokens": 0
+            },
+            "output_tokens": 141,
+            "output_tokens_details": {
+              "reasoning_tokens": 36
+            },
+            "total_tokens": 6977
+          }
         }
       ],
-      "failures": [
-        "executive: Astra: C-010 establishes that staff use Cloudflare Access, not that staff access experienced an outage. C-026 confirms Cloudflare restoration but does not establish that specific impact. — Google Cloud retains residual impact; Cloudflare's staff-access outage is resolved [C-027] [C-010] [C-026].",
-        "executive: Astra: R-12 restricts naming in live updates and permits naming in the incident report; it does not say Google may appear only in the incident report across all communications. — Naming decision settled: Google appears only in the incident report [R-12].",
-        "executive: Astra: R-20 establishes a promised update at 21:30, or sooner when restored, but does not establish that the update was not delivered. Calling it overdue adds an unsupported status. — Our promised 21:30 update is overdue [R-20].",
-        "engineering: R6: Live drafts cannot cite superseded claims. — Cloudflare's outage affected Access, our staff-access dependency; all services were restored and the incident resolved at 21:31 [C-010] [C-011] [C-026].",
-        "engineering: Astra: C-014 supports that the BGP theory is unconfirmed, but does not support the instruction that it should not be acted on. — BGP theories are unverified and should not be acted on [C-014].",
-        "engineering: Astra: R-20 schedules an update for 21:30 or sooner when restored, but does not establish that the update was not delivered. Calling it overdue adds an unsupported status. — The scheduled next update was 21:30, now overdue [R-20].",
-        "customer: Astra: C-025 confirms only that the login-api 5xx rate returned to baseline, not that all Login API errors returned to normal. — Login API errors returned to normal levels at 21:10 UTC [C-025].",
-        "customer: Astra: R-20 schedules an update for 21:30, or sooner when restored; it does not establish that the update remains outstanding, as 'we owe you' implies. — We owe you the next update scheduled for 21:30 UTC [R-20]."
-      ]
+      "failures": []
     },
     {
       "stage": 9,
@@ -2998,7 +3938,7 @@
           "same_id_generated_class": "CONFIRMED"
         }
       ],
-      "reference_ledger_sha256": "187cd5c45a1017f97c83cac33863efb3340fd35412ed707a152f5c57469def26",
+      "reference_ledger_sha256": "992ed1dca04581d2047a6da0bd5cb5ddd526b4c2899d3414dca3a09ae393e9f7",
       "extract_seconds": 29.221256250000003,
       "reconcile_seconds": 75.800551375,
       "policy_seconds": null,

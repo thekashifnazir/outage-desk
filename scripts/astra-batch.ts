@@ -60,14 +60,14 @@ export async function stage4Input(): Promise<Stage> {
     return s;
   }
 }
-export async function call(step: number, stage: number | string, params: Record<string, string>, validate: (v: any) => void, timings: any[]) {
+export async function call(step: number, stage: number | string, params: Record<string, string>, validate: (v: any) => void, timings: any[], revisionContext = '') {
   let issue = '';
   for (let attempt = 1; attempt <= 2; attempt++) {
     const start = performance.now();
     const response = await fetch('https://api.openai.com/v1/responses', {
       method: 'POST', headers: { Authorization: `Bearer ${key}`, 'Content-Type': 'application/json' },
       body: JSON.stringify({ model: 'gpt-6-astra', store: false, reasoning: { effort: 'low' }, text: { format: { type: 'json_object' } },
-        input: fill(templates[step - 1], params) + '\n\nRuntime type contract (use the applicable fields; ledger claims must be complete Claim objects):\n' + types + '\nThe runtime Change type is authoritative: do not emit UPDATED or claim IDs as from/to. Represent merges with to:null. Use contradiction_sides rather than contradiction_group.\n' + (issue ? `Previous output was invalid: ${issue}. Return corrected JSON.` : '') }),
+        input: fill(templates[step - 1], params) + '\n\nRuntime type contract (use the applicable fields; ledger claims must be complete Claim objects):\n' + types + '\nThe runtime Change type is authoritative: do not emit UPDATED or claim IDs as from/to. Represent merges with to:null. Use contradiction_sides rather than contradiction_group.\n' + revisionContext + '\n' + (issue ? `Previous output was invalid: ${issue}. Return corrected JSON.` : '') }),
       signal: AbortSignal.timeout(600_000),
     });
     const body = await response.json();

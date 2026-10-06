@@ -57,3 +57,9 @@ subject, class, unknown-kind); IDs may differ. Paraphrases and split/merged clai
 are conservatively nonmatches. Same-ID/class counts are separate diagnostics,
 not semantic correctness. Full per-call timings and separate replay/live token
 totals are retained. Step-zero usage is included only once, through stage 4.
+
+When rerunning Communicate, the runner archives the previous drafts and verification
+under `draft_runs`, then supplies the previous audience-specific failures as revision
+feedback. This feedback is explicitly not incident evidence. The original prompt
+blocks, capped ledger, citation rules, and support-check standard remain intact.
+All old and new call usage stays in `timings` and the summary's token totals.

@@ -1847,23 +1847,22 @@
       "policy_mode": null,
       "as_of": "21:31",
       "source": "astra_saved",
-      "generated_at": "2026-10-06T17:58:19.809Z",
+      "generated_at": "2026-10-06T18:28:28.707Z",
       "sections": [
         {
           "heading": "Situation",
           "sentences": [
             {
-              "text": "Google Cloud retains residual impact; Cloudflare's staff-access outage is resolved [C-027] [C-010] [C-026].",
+              "text": "Google Cloud retains residual impact; Cloudflare's incident is resolved [C-027] [C-026].",
               "type": "fact",
               "claim_ids": [
                 "C-027",
-                "C-010",
                 "C-026"
               ],
               "response_ids": [],
               "verify": {
-                "pass": false,
-                "reason": "Astra: C-010 establishes that staff use Cloudflare Access, not that staff access experienced an outage. C-026 confirms Cloudflare restoration but does not establish that specific impact."
+                "pass": true,
+                "reason": null
               }
             }
           ]
@@ -1872,10 +1871,11 @@
           "heading": "Impact on us",
           "sentences": [
             {
-              "text": "Login-api errors returned to 0.2% baseline at 21:10 [C-025].",
+              "text": "Login-api errors returned to 0.2% baseline at 21:10; staff use Cloudflare Access [C-025] [C-010].",
               "type": "fact",
               "claim_ids": [
-                "C-025"
+                "C-025",
+                "C-010"
               ],
               "response_ids": [],
               "verify": {
@@ -1901,7 +1901,7 @@
               }
             },
             {
-              "text": "Evidence conflicts: Google's support account denies disruptions; its status page confirms an incident [C-021].",
+              "text": "Evidence conflicts: Google support denied disruptions; its status page confirmed them [C-021].",
               "type": "fact",
               "claim_ids": [
                 "C-021"
@@ -1918,7 +1918,7 @@
           "heading": "Not yet known",
           "sentences": [
             {
-              "text": "Root cause, full-recovery timing, residual scope and data impact remain unknown [C-003] [C-004] [C-016] [C-028].",
+              "text": "Cause, full-recovery timing, residual scope and data impact remain unknown [C-003] [C-004] [C-016] [C-028].",
               "type": "fact",
               "claim_ids": [
                 "C-003",
@@ -1955,15 +1955,15 @@
           "heading": "Decisions needed",
           "sentences": [
             {
-              "text": "Naming decision settled: Google appears only in the incident report [R-12].",
+              "text": "Naming decided: keep live updates provider-anonymous; name Google in the incident report [R-12].",
               "type": "commitment",
               "claim_ids": [],
               "response_ids": [
                 "R-12"
               ],
               "verify": {
-                "pass": false,
-                "reason": "Astra: R-12 restricts naming in live updates and permits naming in the incident report; it does not say Google may appear only in the incident report across all communications."
+                "pass": true,
+                "reason": null
               }
             }
           ]
@@ -1972,15 +1972,15 @@
           "heading": "Next update",
           "sentences": [
             {
-              "text": "Our promised 21:30 update is overdue [R-20].",
+              "text": "Last scheduled update: 21:30, or sooner upon restoration [R-20].",
               "type": "commitment",
               "claim_ids": [],
               "response_ids": [
                 "R-20"
               ],
               "verify": {
-                "pass": false,
-                "reason": "Astra: R-20 establishes a promised update at 21:30, or sooner when restored, but does not establish that the update was not delivered. Calling it overdue adds an unsupported status."
+                "pass": true,
+                "reason": null
               }
             }
           ]
@@ -1992,13 +1992,13 @@
       "policy_mode": null,
       "as_of": "21:31",
       "source": "astra_saved",
-      "generated_at": "2026-10-06T17:58:19.715Z",
+      "generated_at": "2026-10-06T18:28:31.620Z",
       "sections": [
         {
-          "heading": "Technical status",
+          "heading": "Confirmed technical facts",
           "sentences": [
             {
-              "text": "Google Cloud's incident retains residual impact after most products recovered [C-005] [C-027].",
+              "text": "Google Cloud's multi-product incident retains residual impact; most products have recovered [C-005] [C-027].",
               "type": "fact",
               "claim_ids": [
                 "C-005",
@@ -2011,7 +2011,7 @@
               }
             },
             {
-              "text": "Firestore and Firebase Auth calls returned 503s; login-api 5xx is back at 0.2% baseline since 21:10 [C-006] [C-025].",
+              "text": "Northwind's Firestore and Firebase Auth calls returned 503s; login-api 5xx returned to its 0.2% baseline at 21:10 [C-006] [C-025].",
               "type": "fact",
               "claim_ids": [
                 "C-006",
@@ -2024,21 +2024,20 @@
               }
             },
             {
-              "text": "Cloudflare's outage affected Access, our staff-access dependency; all services were restored and the incident resolved at 21:31 [C-010] [C-011] [C-026].",
+              "text": "Cloudflare, our staff-access dependency, restored all services and resolved its incident at 21:31 [C-010] [C-026].",
               "type": "fact",
               "claim_ids": [
                 "C-010",
-                "C-011",
                 "C-026"
               ],
               "response_ids": [],
               "verify": {
-                "pass": false,
-                "reason": "R6: Live drafts cannot cite superseded claims."
+                "pass": true,
+                "reason": null
               }
             },
             {
-              "text": "Root cause, residual scope, full-recovery timing and data impact remain unknown [C-003] [C-016] [C-004] [C-028].",
+              "text": "Root cause, residual service/region scope, full-recovery timing and data impact remain unknown [C-003] [C-016] [C-004] [C-028].",
               "type": "fact",
               "claim_ids": [
                 "C-003",
@@ -2055,16 +2054,15 @@
           ]
         },
         {
-          "heading": "Actions and exclusions",
+          "heading": "Actions and guardrails",
           "sentences": [
             {
-              "text": "We're reprocessing failed requests, throttling retries and job restarts, and keeping deploys frozen [R-21] [R-16] [R-7].",
+              "text": "We're reprocessing failed requests from 17:51–21:10 and throttling retries and job restarts [R-21] [R-16].",
               "type": "commitment",
               "claim_ids": [],
               "response_ids": [
                 "R-21",
-                "R-16",
-                "R-7"
+                "R-16"
               ],
               "verify": {
                 "pass": true,
@@ -2072,27 +2070,16 @@
               }
             },
             {
-              "text": "No rollback until a change is implicated [R-3].",
+              "text": "Deploys remain frozen; no rollback until a change is implicated [R-7] [R-3].",
               "type": "commitment",
               "claim_ids": [],
               "response_ids": [
+                "R-7",
                 "R-3"
               ],
               "verify": {
                 "pass": true,
                 "reason": null
-              }
-            },
-            {
-              "text": "BGP theories are unverified and should not be acted on [C-014].",
-              "type": "fact",
-              "claim_ids": [
-                "C-014"
-              ],
-              "response_ids": [],
-              "verify": {
-                "pass": false,
-                "reason": "Astra: C-014 supports that the BGP theory is unconfirmed, but does not support the instruction that it should not be acted on."
               }
             }
           ]
@@ -2101,15 +2088,15 @@
           "heading": "Next update",
           "sentences": [
             {
-              "text": "The scheduled next update was 21:30, now overdue [R-20].",
+              "text": "Our recorded next-update commitment is 21:30, or sooner when restored [R-20].",
               "type": "commitment",
               "claim_ids": [],
               "response_ids": [
                 "R-20"
               ],
               "verify": {
-                "pass": false,
-                "reason": "Astra: R-20 schedules an update for 21:30 or sooner when restored, but does not establish that the update was not delivered. Calling it overdue adds an unsupported status."
+                "pass": true,
+                "reason": null
               }
             }
           ]
@@ -2122,13 +2109,13 @@
         "policy_mode": "confirmed_only",
         "as_of": "21:31",
         "source": "astra_saved",
-        "generated_at": "2026-10-06T17:58:19.638Z",
+        "generated_at": "2026-10-06T18:28:23.123Z",
         "sections": [
           {
-            "heading": "Northwind update",
+            "heading": "Customer update",
             "sentences": [
               {
-                "text": "We're sorry for the login and API disruption since 17:51 UTC [C-001].",
+                "text": "We're sorry for the login and API disruption [C-001].",
                 "type": "fact",
                 "claim_ids": [
                   "C-001"
@@ -2152,15 +2139,15 @@
                 }
               },
               {
-                "text": "Login API errors returned to normal levels at 21:10 UTC [C-025].",
+                "text": "Login API server-error rates returned to baseline at 21:10 UTC [C-025].",
                 "type": "fact",
                 "claim_ids": [
                   "C-025"
                 ],
                 "response_ids": [],
                 "verify": {
-                  "pass": false,
-                  "reason": "Astra: C-025 confirms only that the login-api 5xx rate returned to baseline, not that all Login API errors returned to normal."
+                  "pass": true,
+                  "reason": null
                 }
               },
               {
@@ -2189,15 +2176,15 @@
                 }
               },
               {
-                "text": "We owe you the next update scheduled for 21:30 UTC [R-20].",
+                "text": "Our next-update schedule specifies 21:30 UTC, or sooner if restored [R-20].",
                 "type": "commitment",
                 "claim_ids": [],
                 "response_ids": [
                   "R-20"
                 ],
                 "verify": {
-                  "pass": false,
-                  "reason": "Astra: R-20 schedules an update for 21:30, or sooner when restored; it does not establish that the update remains outstanding, as 'we owe you' implies."
+                  "pass": true,
+                  "reason": null
                 }
               }
             ]
@@ -2208,8 +2195,8 @@
     }
   },
   "verify": {
-    "pass": false,
-    "status": "failed",
+    "pass": true,
+    "status": "complete",
     "verifier_sha256": "5a5eb2c893c4710d3318edcb014b46cd4f1b1bd21e021c706b42c468aa75b3ea",
     "audiences": [
       {
@@ -2219,8 +2206,8 @@
           "results": [
             {
               "sentence_index": 0,
-              "supported": false,
-              "problem": "C-010 establishes that staff use Cloudflare Access, not that staff access experienced an outage. C-026 confirms Cloudflare restoration but does not establish that specific impact."
+              "supported": true,
+              "problem": null
             },
             {
               "sentence_index": 1,
@@ -2249,13 +2236,13 @@
             },
             {
               "sentence_index": 6,
-              "supported": false,
-              "problem": "R-12 restricts naming in live updates and permits naming in the incident report; it does not say Google may appear only in the incident report across all communications."
+              "supported": true,
+              "problem": null
             },
             {
               "sentence_index": 7,
-              "supported": false,
-              "problem": "R-20 establishes a promised update at 21:30, or sooner when restored, but does not establish that the update was not delivered. Calling it overdue adds an unsupported status."
+              "supported": true,
+              "problem": null
             }
           ]
         },
@@ -2264,23 +2251,22 @@
           "policy_mode": null,
           "as_of": "21:31",
           "source": "astra_saved",
-          "generated_at": "2026-10-06T17:58:19.809Z",
+          "generated_at": "2026-10-06T18:28:28.707Z",
           "sections": [
             {
               "heading": "Situation",
               "sentences": [
                 {
-                  "text": "Google Cloud retains residual impact; Cloudflare's staff-access outage is resolved [C-027] [C-010] [C-026].",
+                  "text": "Google Cloud retains residual impact; Cloudflare's incident is resolved [C-027] [C-026].",
                   "type": "fact",
                   "claim_ids": [
                     "C-027",
-                    "C-010",
                     "C-026"
                   ],
                   "response_ids": [],
                   "verify": {
-                    "pass": false,
-                    "reason": "Astra: C-010 establishes that staff use Cloudflare Access, not that staff access experienced an outage. C-026 confirms Cloudflare restoration but does not establish that specific impact."
+                    "pass": true,
+                    "reason": null
                   }
                 }
               ]
@@ -2289,10 +2275,11 @@
               "heading": "Impact on us",
               "sentences": [
                 {
-                  "text": "Login-api errors returned to 0.2% baseline at 21:10 [C-025].",
+                  "text": "Login-api errors returned to 0.2% baseline at 21:10; staff use Cloudflare Access [C-025] [C-010].",
                   "type": "fact",
                   "claim_ids": [
-                    "C-025"
+                    "C-025",
+                    "C-010"
                   ],
                   "response_ids": [],
                   "verify": {
@@ -2318,7 +2305,7 @@
                   }
                 },
                 {
-                  "text": "Evidence conflicts: Google's support account denies disruptions; its status page confirms an incident [C-021].",
+                  "text": "Evidence conflicts: Google support denied disruptions; its status page confirmed them [C-021].",
                   "type": "fact",
                   "claim_ids": [
                     "C-021"
@@ -2335,7 +2322,7 @@
               "heading": "Not yet known",
               "sentences": [
                 {
-                  "text": "Root cause, full-recovery timing, residual scope and data impact remain unknown [C-003] [C-004] [C-016] [C-028].",
+                  "text": "Cause, full-recovery timing, residual scope and data impact remain unknown [C-003] [C-004] [C-016] [C-028].",
                   "type": "fact",
                   "claim_ids": [
                     "C-003",
@@ -2372,15 +2359,15 @@
               "heading": "Decisions needed",
               "sentences": [
                 {
-                  "text": "Naming decision settled: Google appears only in the incident report [R-12].",
+                  "text": "Naming decided: keep live updates provider-anonymous; name Google in the incident report [R-12].",
                   "type": "commitment",
                   "claim_ids": [],
                   "response_ids": [
                     "R-12"
                   ],
                   "verify": {
-                    "pass": false,
-                    "reason": "Astra: R-12 restricts naming in live updates and permits naming in the incident report; it does not say Google may appear only in the incident report across all communications."
+                    "pass": true,
+                    "reason": null
                   }
                 }
               ]
@@ -2389,32 +2376,32 @@
               "heading": "Next update",
               "sentences": [
                 {
-                  "text": "Our promised 21:30 update is overdue [R-20].",
+                  "text": "Last scheduled update: 21:30, or sooner upon restoration [R-20].",
                   "type": "commitment",
                   "claim_ids": [],
                   "response_ids": [
                     "R-20"
                   ],
                   "verify": {
-                    "pass": false,
-                    "reason": "Astra: R-20 establishes a promised update at 21:30, or sooner when restored, but does not establish that the update was not delivered. Calling it overdue adds an unsupported status."
+                    "pass": true,
+                    "reason": null
                   }
                 }
               ]
             }
           ]
         },
-        "pass": false,
+        "pass": true,
         "total": 8,
-        "verified": 5,
-        "excluded": 3,
-        "word_count": 80,
+        "verified": 8,
+        "excluded": 0,
+        "word_count": 84,
         "word_limit": 120,
         "over_limit": false
       },
       {
         "audience": "engineering",
-        "code_pass": false,
+        "code_pass": true,
         "support": {
           "results": [
             {
@@ -2449,13 +2436,8 @@
             },
             {
               "sentence_index": 6,
-              "supported": false,
-              "problem": "C-014 supports that the BGP theory is unconfirmed, but does not support the instruction that it should not be acted on."
-            },
-            {
-              "sentence_index": 7,
-              "supported": false,
-              "problem": "R-20 schedules an update for 21:30 or sooner when restored, but does not establish that the update was not delivered. Calling it overdue adds an unsupported status."
+              "supported": true,
+              "problem": null
             }
           ]
         },
@@ -2464,13 +2446,13 @@
           "policy_mode": null,
           "as_of": "21:31",
           "source": "astra_saved",
-          "generated_at": "2026-10-06T17:58:19.715Z",
+          "generated_at": "2026-10-06T18:28:31.620Z",
           "sections": [
             {
-              "heading": "Technical status",
+              "heading": "Confirmed technical facts",
               "sentences": [
                 {
-                  "text": "Google Cloud's incident retains residual impact after most products recovered [C-005] [C-027].",
+                  "text": "Google Cloud's multi-product incident retains residual impact; most products have recovered [C-005] [C-027].",
                   "type": "fact",
                   "claim_ids": [
                     "C-005",
@@ -2483,7 +2465,7 @@
                   }
                 },
                 {
-                  "text": "Firestore and Firebase Auth calls returned 503s; login-api 5xx is back at 0.2% baseline since 21:10 [C-006] [C-025].",
+                  "text": "Northwind's Firestore and Firebase Auth calls returned 503s; login-api 5xx returned to its 0.2% baseline at 21:10 [C-006] [C-025].",
                   "type": "fact",
                   "claim_ids": [
                     "C-006",
@@ -2496,21 +2478,20 @@
                   }
                 },
                 {
-                  "text": "Cloudflare's outage affected Access, our staff-access dependency; all services were restored and the incident resolved at 21:31 [C-010] [C-011] [C-026].",
+                  "text": "Cloudflare, our staff-access dependency, restored all services and resolved its incident at 21:31 [C-010] [C-026].",
                   "type": "fact",
                   "claim_ids": [
                     "C-010",
-                    "C-011",
                     "C-026"
                   ],
                   "response_ids": [],
                   "verify": {
-                    "pass": false,
-                    "reason": "R6: Live drafts cannot cite superseded claims."
+                    "pass": true,
+                    "reason": null
                   }
                 },
                 {
-                  "text": "Root cause, residual scope, full-recovery timing and data impact remain unknown [C-003] [C-016] [C-004] [C-028].",
+                  "text": "Root cause, residual service/region scope, full-recovery timing and data impact remain unknown [C-003] [C-016] [C-004] [C-028].",
                   "type": "fact",
                   "claim_ids": [
                     "C-003",
@@ -2527,16 +2508,15 @@
               ]
             },
             {
-              "heading": "Actions and exclusions",
+              "heading": "Actions and guardrails",
               "sentences": [
                 {
-                  "text": "We're reprocessing failed requests, throttling retries and job restarts, and keeping deploys frozen [R-21] [R-16] [R-7].",
+                  "text": "We're reprocessing failed requests from 17:51–21:10 and throttling retries and job restarts [R-21] [R-16].",
                   "type": "commitment",
                   "claim_ids": [],
                   "response_ids": [
                     "R-21",
-                    "R-16",
-                    "R-7"
+                    "R-16"
                   ],
                   "verify": {
                     "pass": true,
@@ -2544,27 +2524,16 @@
                   }
                 },
                 {
-                  "text": "No rollback until a change is implicated [R-3].",
+                  "text": "Deploys remain frozen; no rollback until a change is implicated [R-7] [R-3].",
                   "type": "commitment",
                   "claim_ids": [],
                   "response_ids": [
+                    "R-7",
                     "R-3"
                   ],
                   "verify": {
                     "pass": true,
                     "reason": null
-                  }
-                },
-                {
-                  "text": "BGP theories are unverified and should not be acted on [C-014].",
-                  "type": "fact",
-                  "claim_ids": [
-                    "C-014"
-                  ],
-                  "response_ids": [],
-                  "verify": {
-                    "pass": false,
-                    "reason": "Astra: C-014 supports that the BGP theory is unconfirmed, but does not support the instruction that it should not be acted on."
                   }
                 }
               ]
@@ -2573,26 +2542,26 @@
               "heading": "Next update",
               "sentences": [
                 {
-                  "text": "The scheduled next update was 21:30, now overdue [R-20].",
+                  "text": "Our recorded next-update commitment is 21:30, or sooner when restored [R-20].",
                   "type": "commitment",
                   "claim_ids": [],
                   "response_ids": [
                     "R-20"
                   ],
                   "verify": {
-                    "pass": false,
-                    "reason": "Astra: R-20 schedules an update for 21:30 or sooner when restored, but does not establish that the update was not delivered. Calling it overdue adds an unsupported status."
+                    "pass": true,
+                    "reason": null
                   }
                 }
               ]
             }
           ]
         },
-        "pass": false,
-        "total": 8,
-        "verified": 5,
-        "excluded": 3,
-        "word_count": 109,
+        "pass": true,
+        "total": 7,
+        "verified": 7,
+        "excluded": 0,
+        "word_count": 100,
         "word_limit": 140,
         "over_limit": false
       },
@@ -2613,8 +2582,8 @@
             },
             {
               "sentence_index": 2,
-              "supported": false,
-              "problem": "C-025 confirms only that the login-api 5xx rate returned to baseline, not that all Login API errors returned to normal."
+              "supported": true,
+              "problem": null
             },
             {
               "sentence_index": 3,
@@ -2628,8 +2597,8 @@
             },
             {
               "sentence_index": 5,
-              "supported": false,
-              "problem": "R-20 schedules an update for 21:30, or sooner when restored; it does not establish that the update remains outstanding, as 'we owe you' implies."
+              "supported": true,
+              "problem": null
             }
           ]
         },
@@ -2638,13 +2607,13 @@
           "policy_mode": "confirmed_only",
           "as_of": "21:31",
           "source": "astra_saved",
-          "generated_at": "2026-10-06T17:58:19.638Z",
+          "generated_at": "2026-10-06T18:28:23.123Z",
           "sections": [
             {
-              "heading": "Northwind update",
+              "heading": "Customer update",
               "sentences": [
                 {
-                  "text": "We're sorry for the login and API disruption since 17:51 UTC [C-001].",
+                  "text": "We're sorry for the login and API disruption [C-001].",
                   "type": "fact",
                   "claim_ids": [
                     "C-001"
@@ -2668,15 +2637,15 @@
                   }
                 },
                 {
-                  "text": "Login API errors returned to normal levels at 21:10 UTC [C-025].",
+                  "text": "Login API server-error rates returned to baseline at 21:10 UTC [C-025].",
                   "type": "fact",
                   "claim_ids": [
                     "C-025"
                   ],
                   "response_ids": [],
                   "verify": {
-                    "pass": false,
-                    "reason": "Astra: C-025 confirms only that the login-api 5xx rate returned to baseline, not that all Login API errors returned to normal."
+                    "pass": true,
+                    "reason": null
                   }
                 },
                 {
@@ -2705,26 +2674,26 @@
                   }
                 },
                 {
-                  "text": "We owe you the next update scheduled for 21:30 UTC [R-20].",
+                  "text": "Our next-update schedule specifies 21:30 UTC, or sooner if restored [R-20].",
                   "type": "commitment",
                   "claim_ids": [],
                   "response_ids": [
                     "R-20"
                   ],
                   "verify": {
-                    "pass": false,
-                    "reason": "Astra: R-20 schedules an update for 21:30, or sooner when restored; it does not establish that the update remains outstanding, as 'we owe you' implies."
+                    "pass": true,
+                    "reason": null
                   }
                 }
               ]
             }
           ]
         },
-        "pass": false,
+        "pass": true,
         "total": 6,
-        "verified": 4,
-        "excluded": 2,
-        "word_count": 57,
+        "verified": 6,
+        "excluded": 0,
+        "word_count": 54,
         "word_limit": 70,
         "over_limit": false
       }
@@ -2888,7 +2857,1021 @@
         },
         "total_tokens": 7132
       }
+    },
+    {
+      "step": "COMMUNICATE",
+      "stage": 8,
+      "audience": "customer",
+      "attempt": 1,
+      "seconds": 6.3594115,
+      "tokens": {
+        "input_tokens": 7164,
+        "input_tokens_details": {
+          "cache_write_tokens": 7161,
+          "cached_tokens": 0
+        },
+        "output_tokens": 319,
+        "output_tokens_details": {
+          "reasoning_tokens": 83
+        },
+        "total_tokens": 7483
+      }
+    },
+    {
+      "step": "COMMUNICATE",
+      "stage": 8,
+      "audience": "executive",
+      "attempt": 1,
+      "seconds": 11.943522125,
+      "tokens": {
+        "input_tokens": 7238,
+        "input_tokens_details": {
+          "cache_write_tokens": 7235,
+          "cached_tokens": 0
+        },
+        "output_tokens": 470,
+        "output_tokens_details": {
+          "reasoning_tokens": 42
+        },
+        "total_tokens": 7708
+      }
+    },
+    {
+      "step": "COMMUNICATE",
+      "stage": 8,
+      "audience": "engineering",
+      "attempt": 1,
+      "seconds": 14.856280917,
+      "tokens": {
+        "input_tokens": 7219,
+        "input_tokens_details": {
+          "cache_write_tokens": 7216,
+          "cached_tokens": 0
+        },
+        "output_tokens": 629,
+        "output_tokens_details": {
+          "reasoning_tokens": 65
+        },
+        "total_tokens": 7848
+      }
+    },
+    {
+      "step": "VERIFY_CODE",
+      "stage": 8,
+      "seconds": 0.00018912499999999,
+      "tokens": null
+    },
+    {
+      "step": "VERIFY",
+      "stage": 8,
+      "audience": "customer",
+      "attempt": 1,
+      "seconds": 3.015262958,
+      "tokens": {
+        "input_tokens": 6638,
+        "input_tokens_details": {
+          "cache_write_tokens": 6635,
+          "cached_tokens": 0
+        },
+        "output_tokens": 90,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 6728
+      }
+    },
+    {
+      "step": "VERIFY",
+      "stage": 8,
+      "audience": "executive",
+      "attempt": 1,
+      "seconds": 4.2021127080000005,
+      "tokens": {
+        "input_tokens": 6852,
+        "input_tokens_details": {
+          "cache_write_tokens": 6849,
+          "cached_tokens": 0
+        },
+        "output_tokens": 116,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 6968
+      }
+    },
+    {
+      "step": "VERIFY",
+      "stage": 8,
+      "audience": "engineering",
+      "attempt": 1,
+      "seconds": 5.791781667,
+      "tokens": {
+        "input_tokens": 6836,
+        "input_tokens_details": {
+          "cache_write_tokens": 6833,
+          "cached_tokens": 0
+        },
+        "output_tokens": 141,
+        "output_tokens_details": {
+          "reasoning_tokens": 36
+        },
+        "total_tokens": 6977
+      }
     }
   ],
-  "error": null
+  "error": null,
+  "draft_runs": [
+    {
+      "archived_at": "2026-10-06T18:28:16.757Z",
+      "drafts": {
+        "executive": {
+          "audience": "executive",
+          "policy_mode": null,
+          "as_of": "21:31",
+          "source": "astra_saved",
+          "generated_at": "2026-10-06T17:58:19.809Z",
+          "sections": [
+            {
+              "heading": "Situation",
+              "sentences": [
+                {
+                  "text": "Google Cloud retains residual impact; Cloudflare's staff-access outage is resolved [C-027] [C-010] [C-026].",
+                  "type": "fact",
+                  "claim_ids": [
+                    "C-027",
+                    "C-010",
+                    "C-026"
+                  ],
+                  "response_ids": [],
+                  "verify": {
+                    "pass": false,
+                    "reason": "Astra: C-010 establishes that staff use Cloudflare Access, not that staff access experienced an outage. C-026 confirms Cloudflare restoration but does not establish that specific impact."
+                  }
+                }
+              ]
+            },
+            {
+              "heading": "Impact on us",
+              "sentences": [
+                {
+                  "text": "Login-api errors returned to 0.2% baseline at 21:10 [C-025].",
+                  "type": "fact",
+                  "claim_ids": [
+                    "C-025"
+                  ],
+                  "response_ids": [],
+                  "verify": {
+                    "pass": true,
+                    "reason": null
+                  }
+                }
+              ]
+            },
+            {
+              "heading": "Confirmed",
+              "sentences": [
+                {
+                  "text": "Google applied mitigation in us-central1 [C-024].",
+                  "type": "fact",
+                  "claim_ids": [
+                    "C-024"
+                  ],
+                  "response_ids": [],
+                  "verify": {
+                    "pass": true,
+                    "reason": null
+                  }
+                },
+                {
+                  "text": "Evidence conflicts: Google's support account denies disruptions; its status page confirms an incident [C-021].",
+                  "type": "fact",
+                  "claim_ids": [
+                    "C-021"
+                  ],
+                  "response_ids": [],
+                  "verify": {
+                    "pass": true,
+                    "reason": null
+                  }
+                }
+              ]
+            },
+            {
+              "heading": "Not yet known",
+              "sentences": [
+                {
+                  "text": "Root cause, full-recovery timing, residual scope and data impact remain unknown [C-003] [C-004] [C-016] [C-028].",
+                  "type": "fact",
+                  "claim_ids": [
+                    "C-003",
+                    "C-004",
+                    "C-016",
+                    "C-028"
+                  ],
+                  "response_ids": [],
+                  "verify": {
+                    "pass": true,
+                    "reason": null
+                  }
+                }
+              ]
+            },
+            {
+              "heading": "What we're doing",
+              "sentences": [
+                {
+                  "text": "We're reprocessing failed requests [R-21].",
+                  "type": "commitment",
+                  "claim_ids": [],
+                  "response_ids": [
+                    "R-21"
+                  ],
+                  "verify": {
+                    "pass": true,
+                    "reason": null
+                  }
+                }
+              ]
+            },
+            {
+              "heading": "Decisions needed",
+              "sentences": [
+                {
+                  "text": "Naming decision settled: Google appears only in the incident report [R-12].",
+                  "type": "commitment",
+                  "claim_ids": [],
+                  "response_ids": [
+                    "R-12"
+                  ],
+                  "verify": {
+                    "pass": false,
+                    "reason": "Astra: R-12 restricts naming in live updates and permits naming in the incident report; it does not say Google may appear only in the incident report across all communications."
+                  }
+                }
+              ]
+            },
+            {
+              "heading": "Next update",
+              "sentences": [
+                {
+                  "text": "Our promised 21:30 update is overdue [R-20].",
+                  "type": "commitment",
+                  "claim_ids": [],
+                  "response_ids": [
+                    "R-20"
+                  ],
+                  "verify": {
+                    "pass": false,
+                    "reason": "Astra: R-20 establishes a promised update at 21:30, or sooner when restored, but does not establish that the update was not delivered. Calling it overdue adds an unsupported status."
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        "engineering": {
+          "audience": "engineering",
+          "policy_mode": null,
+          "as_of": "21:31",
+          "source": "astra_saved",
+          "generated_at": "2026-10-06T17:58:19.715Z",
+          "sections": [
+            {
+              "heading": "Technical status",
+              "sentences": [
+                {
+                  "text": "Google Cloud's incident retains residual impact after most products recovered [C-005] [C-027].",
+                  "type": "fact",
+                  "claim_ids": [
+                    "C-005",
+                    "C-027"
+                  ],
+                  "response_ids": [],
+                  "verify": {
+                    "pass": true,
+                    "reason": null
+                  }
+                },
+                {
+                  "text": "Firestore and Firebase Auth calls returned 503s; login-api 5xx is back at 0.2% baseline since 21:10 [C-006] [C-025].",
+                  "type": "fact",
+                  "claim_ids": [
+                    "C-006",
+                    "C-025"
+                  ],
+                  "response_ids": [],
+                  "verify": {
+                    "pass": true,
+                    "reason": null
+                  }
+                },
+                {
+                  "text": "Cloudflare's outage affected Access, our staff-access dependency; all services were restored and the incident resolved at 21:31 [C-010] [C-011] [C-026].",
+                  "type": "fact",
+                  "claim_ids": [
+                    "C-010",
+                    "C-011",
+                    "C-026"
+                  ],
+                  "response_ids": [],
+                  "verify": {
+                    "pass": false,
+                    "reason": "R6: Live drafts cannot cite superseded claims."
+                  }
+                },
+                {
+                  "text": "Root cause, residual scope, full-recovery timing and data impact remain unknown [C-003] [C-016] [C-004] [C-028].",
+                  "type": "fact",
+                  "claim_ids": [
+                    "C-003",
+                    "C-016",
+                    "C-004",
+                    "C-028"
+                  ],
+                  "response_ids": [],
+                  "verify": {
+                    "pass": true,
+                    "reason": null
+                  }
+                }
+              ]
+            },
+            {
+              "heading": "Actions and exclusions",
+              "sentences": [
+                {
+                  "text": "We're reprocessing failed requests, throttling retries and job restarts, and keeping deploys frozen [R-21] [R-16] [R-7].",
+                  "type": "commitment",
+                  "claim_ids": [],
+                  "response_ids": [
+                    "R-21",
+                    "R-16",
+                    "R-7"
+                  ],
+                  "verify": {
+                    "pass": true,
+                    "reason": null
+                  }
+                },
+                {
+                  "text": "No rollback until a change is implicated [R-3].",
+                  "type": "commitment",
+                  "claim_ids": [],
+                  "response_ids": [
+                    "R-3"
+                  ],
+                  "verify": {
+                    "pass": true,
+                    "reason": null
+                  }
+                },
+                {
+                  "text": "BGP theories are unverified and should not be acted on [C-014].",
+                  "type": "fact",
+                  "claim_ids": [
+                    "C-014"
+                  ],
+                  "response_ids": [],
+                  "verify": {
+                    "pass": false,
+                    "reason": "Astra: C-014 supports that the BGP theory is unconfirmed, but does not support the instruction that it should not be acted on."
+                  }
+                }
+              ]
+            },
+            {
+              "heading": "Next update",
+              "sentences": [
+                {
+                  "text": "The scheduled next update was 21:30, now overdue [R-20].",
+                  "type": "commitment",
+                  "claim_ids": [],
+                  "response_ids": [
+                    "R-20"
+                  ],
+                  "verify": {
+                    "pass": false,
+                    "reason": "Astra: R-20 schedules an update for 21:30 or sooner when restored, but does not establish that the update was not delivered. Calling it overdue adds an unsupported status."
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        "customer": {
+          "confirmed_only": {
+            "audience": "customer",
+            "policy_mode": "confirmed_only",
+            "as_of": "21:31",
+            "source": "astra_saved",
+            "generated_at": "2026-10-06T17:58:19.638Z",
+            "sections": [
+              {
+                "heading": "Northwind update",
+                "sentences": [
+                  {
+                    "text": "We're sorry for the login and API disruption since 17:51 UTC [C-001].",
+                    "type": "fact",
+                    "claim_ids": [
+                      "C-001"
+                    ],
+                    "response_ids": [],
+                    "verify": {
+                      "pass": true,
+                      "reason": null
+                    }
+                  },
+                  {
+                    "text": "Our cloud provider has confirmed an incident [C-005].",
+                    "type": "fact",
+                    "claim_ids": [
+                      "C-005"
+                    ],
+                    "response_ids": [],
+                    "verify": {
+                      "pass": true,
+                      "reason": null
+                    }
+                  },
+                  {
+                    "text": "Login API errors returned to normal levels at 21:10 UTC [C-025].",
+                    "type": "fact",
+                    "claim_ids": [
+                      "C-025"
+                    ],
+                    "response_ids": [],
+                    "verify": {
+                      "pass": false,
+                      "reason": "Astra: C-025 confirms only that the login-api 5xx rate returned to baseline, not that all Login API errors returned to normal."
+                    }
+                  },
+                  {
+                    "text": "The cause and full recovery time remain unknown [C-003] [C-004].",
+                    "type": "fact",
+                    "claim_ids": [
+                      "C-003",
+                      "C-004"
+                    ],
+                    "response_ids": [],
+                    "verify": {
+                      "pass": true,
+                      "reason": null
+                    }
+                  },
+                  {
+                    "text": "We're reprocessing failed requests [R-21].",
+                    "type": "commitment",
+                    "claim_ids": [],
+                    "response_ids": [
+                      "R-21"
+                    ],
+                    "verify": {
+                      "pass": true,
+                      "reason": null
+                    }
+                  },
+                  {
+                    "text": "We owe you the next update scheduled for 21:30 UTC [R-20].",
+                    "type": "commitment",
+                    "claim_ids": [],
+                    "response_ids": [
+                      "R-20"
+                    ],
+                    "verify": {
+                      "pass": false,
+                      "reason": "Astra: R-20 schedules an update for 21:30, or sooner when restored; it does not establish that the update remains outstanding, as 'we owe you' implies."
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          "early_incident": null
+        }
+      },
+      "verify": {
+        "pass": false,
+        "status": "failed",
+        "verifier_sha256": "5a5eb2c893c4710d3318edcb014b46cd4f1b1bd21e021c706b42c468aa75b3ea",
+        "audiences": [
+          {
+            "audience": "executive",
+            "code_pass": true,
+            "support": {
+              "results": [
+                {
+                  "sentence_index": 0,
+                  "supported": false,
+                  "problem": "C-010 establishes that staff use Cloudflare Access, not that staff access experienced an outage. C-026 confirms Cloudflare restoration but does not establish that specific impact."
+                },
+                {
+                  "sentence_index": 1,
+                  "supported": true,
+                  "problem": null
+                },
+                {
+                  "sentence_index": 2,
+                  "supported": true,
+                  "problem": null
+                },
+                {
+                  "sentence_index": 3,
+                  "supported": true,
+                  "problem": null
+                },
+                {
+                  "sentence_index": 4,
+                  "supported": true,
+                  "problem": null
+                },
+                {
+                  "sentence_index": 5,
+                  "supported": true,
+                  "problem": null
+                },
+                {
+                  "sentence_index": 6,
+                  "supported": false,
+                  "problem": "R-12 restricts naming in live updates and permits naming in the incident report; it does not say Google may appear only in the incident report across all communications."
+                },
+                {
+                  "sentence_index": 7,
+                  "supported": false,
+                  "problem": "R-20 establishes a promised update at 21:30, or sooner when restored, but does not establish that the update was not delivered. Calling it overdue adds an unsupported status."
+                }
+              ]
+            },
+            "draft": {
+              "audience": "executive",
+              "policy_mode": null,
+              "as_of": "21:31",
+              "source": "astra_saved",
+              "generated_at": "2026-10-06T17:58:19.809Z",
+              "sections": [
+                {
+                  "heading": "Situation",
+                  "sentences": [
+                    {
+                      "text": "Google Cloud retains residual impact; Cloudflare's staff-access outage is resolved [C-027] [C-010] [C-026].",
+                      "type": "fact",
+                      "claim_ids": [
+                        "C-027",
+                        "C-010",
+                        "C-026"
+                      ],
+                      "response_ids": [],
+                      "verify": {
+                        "pass": false,
+                        "reason": "Astra: C-010 establishes that staff use Cloudflare Access, not that staff access experienced an outage. C-026 confirms Cloudflare restoration but does not establish that specific impact."
+                      }
+                    }
+                  ]
+                },
+                {
+                  "heading": "Impact on us",
+                  "sentences": [
+                    {
+                      "text": "Login-api errors returned to 0.2% baseline at 21:10 [C-025].",
+                      "type": "fact",
+                      "claim_ids": [
+                        "C-025"
+                      ],
+                      "response_ids": [],
+                      "verify": {
+                        "pass": true,
+                        "reason": null
+                      }
+                    }
+                  ]
+                },
+                {
+                  "heading": "Confirmed",
+                  "sentences": [
+                    {
+                      "text": "Google applied mitigation in us-central1 [C-024].",
+                      "type": "fact",
+                      "claim_ids": [
+                        "C-024"
+                      ],
+                      "response_ids": [],
+                      "verify": {
+                        "pass": true,
+                        "reason": null
+                      }
+                    },
+                    {
+                      "text": "Evidence conflicts: Google's support account denies disruptions; its status page confirms an incident [C-021].",
+                      "type": "fact",
+                      "claim_ids": [
+                        "C-021"
+                      ],
+                      "response_ids": [],
+                      "verify": {
+                        "pass": true,
+                        "reason": null
+                      }
+                    }
+                  ]
+                },
+                {
+                  "heading": "Not yet known",
+                  "sentences": [
+                    {
+                      "text": "Root cause, full-recovery timing, residual scope and data impact remain unknown [C-003] [C-004] [C-016] [C-028].",
+                      "type": "fact",
+                      "claim_ids": [
+                        "C-003",
+                        "C-004",
+                        "C-016",
+                        "C-028"
+                      ],
+                      "response_ids": [],
+                      "verify": {
+                        "pass": true,
+                        "reason": null
+                      }
+                    }
+                  ]
+                },
+                {
+                  "heading": "What we're doing",
+                  "sentences": [
+                    {
+                      "text": "We're reprocessing failed requests [R-21].",
+                      "type": "commitment",
+                      "claim_ids": [],
+                      "response_ids": [
+                        "R-21"
+                      ],
+                      "verify": {
+                        "pass": true,
+                        "reason": null
+                      }
+                    }
+                  ]
+                },
+                {
+                  "heading": "Decisions needed",
+                  "sentences": [
+                    {
+                      "text": "Naming decision settled: Google appears only in the incident report [R-12].",
+                      "type": "commitment",
+                      "claim_ids": [],
+                      "response_ids": [
+                        "R-12"
+                      ],
+                      "verify": {
+                        "pass": false,
+                        "reason": "Astra: R-12 restricts naming in live updates and permits naming in the incident report; it does not say Google may appear only in the incident report across all communications."
+                      }
+                    }
+                  ]
+                },
+                {
+                  "heading": "Next update",
+                  "sentences": [
+                    {
+                      "text": "Our promised 21:30 update is overdue [R-20].",
+                      "type": "commitment",
+                      "claim_ids": [],
+                      "response_ids": [
+                        "R-20"
+                      ],
+                      "verify": {
+                        "pass": false,
+                        "reason": "Astra: R-20 establishes a promised update at 21:30, or sooner when restored, but does not establish that the update was not delivered. Calling it overdue adds an unsupported status."
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            "pass": false,
+            "total": 8,
+            "verified": 5,
+            "excluded": 3,
+            "word_count": 80,
+            "word_limit": 120,
+            "over_limit": false
+          },
+          {
+            "audience": "engineering",
+            "code_pass": false,
+            "support": {
+              "results": [
+                {
+                  "sentence_index": 0,
+                  "supported": true,
+                  "problem": null
+                },
+                {
+                  "sentence_index": 1,
+                  "supported": true,
+                  "problem": null
+                },
+                {
+                  "sentence_index": 2,
+                  "supported": true,
+                  "problem": null
+                },
+                {
+                  "sentence_index": 3,
+                  "supported": true,
+                  "problem": null
+                },
+                {
+                  "sentence_index": 4,
+                  "supported": true,
+                  "problem": null
+                },
+                {
+                  "sentence_index": 5,
+                  "supported": true,
+                  "problem": null
+                },
+                {
+                  "sentence_index": 6,
+                  "supported": false,
+                  "problem": "C-014 supports that the BGP theory is unconfirmed, but does not support the instruction that it should not be acted on."
+                },
+                {
+                  "sentence_index": 7,
+                  "supported": false,
+                  "problem": "R-20 schedules an update for 21:30 or sooner when restored, but does not establish that the update was not delivered. Calling it overdue adds an unsupported status."
+                }
+              ]
+            },
+            "draft": {
+              "audience": "engineering",
+              "policy_mode": null,
+              "as_of": "21:31",
+              "source": "astra_saved",
+              "generated_at": "2026-10-06T17:58:19.715Z",
+              "sections": [
+                {
+                  "heading": "Technical status",
+                  "sentences": [
+                    {
+                      "text": "Google Cloud's incident retains residual impact after most products recovered [C-005] [C-027].",
+                      "type": "fact",
+                      "claim_ids": [
+                        "C-005",
+                        "C-027"
+                      ],
+                      "response_ids": [],
+                      "verify": {
+                        "pass": true,
+                        "reason": null
+                      }
+                    },
+                    {
+                      "text": "Firestore and Firebase Auth calls returned 503s; login-api 5xx is back at 0.2% baseline since 21:10 [C-006] [C-025].",
+                      "type": "fact",
+                      "claim_ids": [
+                        "C-006",
+                        "C-025"
+                      ],
+                      "response_ids": [],
+                      "verify": {
+                        "pass": true,
+                        "reason": null
+                      }
+                    },
+                    {
+                      "text": "Cloudflare's outage affected Access, our staff-access dependency; all services were restored and the incident resolved at 21:31 [C-010] [C-011] [C-026].",
+                      "type": "fact",
+                      "claim_ids": [
+                        "C-010",
+                        "C-011",
+                        "C-026"
+                      ],
+                      "response_ids": [],
+                      "verify": {
+                        "pass": false,
+                        "reason": "R6: Live drafts cannot cite superseded claims."
+                      }
+                    },
+                    {
+                      "text": "Root cause, residual scope, full-recovery timing and data impact remain unknown [C-003] [C-016] [C-004] [C-028].",
+                      "type": "fact",
+                      "claim_ids": [
+                        "C-003",
+                        "C-016",
+                        "C-004",
+                        "C-028"
+                      ],
+                      "response_ids": [],
+                      "verify": {
+                        "pass": true,
+                        "reason": null
+                      }
+                    }
+                  ]
+                },
+                {
+                  "heading": "Actions and exclusions",
+                  "sentences": [
+                    {
+                      "text": "We're reprocessing failed requests, throttling retries and job restarts, and keeping deploys frozen [R-21] [R-16] [R-7].",
+                      "type": "commitment",
+                      "claim_ids": [],
+                      "response_ids": [
+                        "R-21",
+                        "R-16",
+                        "R-7"
+                      ],
+                      "verify": {
+                        "pass": true,
+                        "reason": null
+                      }
+                    },
+                    {
+                      "text": "No rollback until a change is implicated [R-3].",
+                      "type": "commitment",
+                      "claim_ids": [],
+                      "response_ids": [
+                        "R-3"
+                      ],
+                      "verify": {
+                        "pass": true,
+                        "reason": null
+                      }
+                    },
+                    {
+                      "text": "BGP theories are unverified and should not be acted on [C-014].",
+                      "type": "fact",
+                      "claim_ids": [
+                        "C-014"
+                      ],
+                      "response_ids": [],
+                      "verify": {
+                        "pass": false,
+                        "reason": "Astra: C-014 supports that the BGP theory is unconfirmed, but does not support the instruction that it should not be acted on."
+                      }
+                    }
+                  ]
+                },
+                {
+                  "heading": "Next update",
+                  "sentences": [
+                    {
+                      "text": "The scheduled next update was 21:30, now overdue [R-20].",
+                      "type": "commitment",
+                      "claim_ids": [],
+                      "response_ids": [
+                        "R-20"
+                      ],
+                      "verify": {
+                        "pass": false,
+                        "reason": "Astra: R-20 schedules an update for 21:30 or sooner when restored, but does not establish that the update was not delivered. Calling it overdue adds an unsupported status."
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            "pass": false,
+            "total": 8,
+            "verified": 5,
+            "excluded": 3,
+            "word_count": 109,
+            "word_limit": 140,
+            "over_limit": false
+          },
+          {
+            "audience": "customer",
+            "code_pass": true,
+            "support": {
+              "results": [
+                {
+                  "sentence_index": 0,
+                  "supported": true,
+                  "problem": null
+                },
+                {
+                  "sentence_index": 1,
+                  "supported": true,
+                  "problem": null
+                },
+                {
+                  "sentence_index": 2,
+                  "supported": false,
+                  "problem": "C-025 confirms only that the login-api 5xx rate returned to baseline, not that all Login API errors returned to normal."
+                },
+                {
+                  "sentence_index": 3,
+                  "supported": true,
+                  "problem": null
+                },
+                {
+                  "sentence_index": 4,
+                  "supported": true,
+                  "problem": null
+                },
+                {
+                  "sentence_index": 5,
+                  "supported": false,
+                  "problem": "R-20 schedules an update for 21:30, or sooner when restored; it does not establish that the update remains outstanding, as 'we owe you' implies."
+                }
+              ]
+            },
+            "draft": {
+              "audience": "customer",
+              "policy_mode": "confirmed_only",
+              "as_of": "21:31",
+              "source": "astra_saved",
+              "generated_at": "2026-10-06T17:58:19.638Z",
+              "sections": [
+                {
+                  "heading": "Northwind update",
+                  "sentences": [
+                    {
+                      "text": "We're sorry for the login and API disruption since 17:51 UTC [C-001].",
+                      "type": "fact",
+                      "claim_ids": [
+                        "C-001"
+                      ],
+                      "response_ids": [],
+                      "verify": {
+                        "pass": true,
+                        "reason": null
+                      }
+                    },
+                    {
+                      "text": "Our cloud provider has confirmed an incident [C-005].",
+                      "type": "fact",
+                      "claim_ids": [
+                        "C-005"
+                      ],
+                      "response_ids": [],
+                      "verify": {
+                        "pass": true,
+                        "reason": null
+                      }
+                    },
+                    {
+                      "text": "Login API errors returned to normal levels at 21:10 UTC [C-025].",
+                      "type": "fact",
+                      "claim_ids": [
+                        "C-025"
+                      ],
+                      "response_ids": [],
+                      "verify": {
+                        "pass": false,
+                        "reason": "Astra: C-025 confirms only that the login-api 5xx rate returned to baseline, not that all Login API errors returned to normal."
+                      }
+                    },
+                    {
+                      "text": "The cause and full recovery time remain unknown [C-003] [C-004].",
+                      "type": "fact",
+                      "claim_ids": [
+                        "C-003",
+                        "C-004"
+                      ],
+                      "response_ids": [],
+                      "verify": {
+                        "pass": true,
+                        "reason": null
+                      }
+                    },
+                    {
+                      "text": "We're reprocessing failed requests [R-21].",
+                      "type": "commitment",
+                      "claim_ids": [],
+                      "response_ids": [
+                        "R-21"
+                      ],
+                      "verify": {
+                        "pass": true,
+                        "reason": null
+                      }
+                    },
+                    {
+                      "text": "We owe you the next update scheduled for 21:30 UTC [R-20].",
+                      "type": "commitment",
+                      "claim_ids": [],
+                      "response_ids": [
+                        "R-20"
+                      ],
+                      "verify": {
+                        "pass": false,
+                        "reason": "Astra: R-20 schedules an update for 21:30, or sooner when restored; it does not establish that the update remains outstanding, as 'we owe you' implies."
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            "pass": false,
+            "total": 6,
+            "verified": 4,
+            "excluded": 2,
+            "word_count": 57,
+            "word_limit": 70,
+            "over_limit": false
+          }
+        ]
+      }
+    }
+  ]
 }
