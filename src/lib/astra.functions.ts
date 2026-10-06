@@ -3,7 +3,7 @@ import { createServerFn } from "@tanstack/react-start";
 import { askAstraForClaimsJson } from "./astra.server";
 
 export type AstraTestResult =
-  | { ok: true; json: unknown }
+  | { ok: true; json: Record<string, unknown> }
   | { ok: false; raw: string };
 
 export const testAstraJson = createServerFn({ method: "POST" }).handler(
