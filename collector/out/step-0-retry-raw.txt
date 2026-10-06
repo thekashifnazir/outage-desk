@@ -1,0 +1,1 @@
+The browser displayed “Site Unavailable” and “Unable to access this site.” I could not observe Google Cloud status content, so no Evidence item was captured.

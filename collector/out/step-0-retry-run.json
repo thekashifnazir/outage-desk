@@ -1,0 +1,41 @@
+{
+  "model": "gpt-6-astra",
+  "attempt": 2,
+  "started_at": "2026-10-06T18:19:22.199Z",
+  "deadline_at": "2026-10-06T18:28:00.000Z",
+  "urls": [],
+  "status": "failed",
+  "session_id": "sess_071742e3af77c731006ac53baac9bc8198955550f6cd535bf1",
+  "turn_id": "turn_071742e3af77c731006ac53bb137408198a8b570ddf1a8f0b8",
+  "browser_activity": [
+    {
+      "id": "exec-730a116a-f7d8-4098-813d-b66139cac795",
+      "title": "Connecting to the status page",
+      "status": "completed"
+    },
+    {
+      "id": "exec-6a9f6560-0277-431e-999b-5a01f242683b",
+      "title": "Connecting to Google Cloud status",
+      "status": "completed"
+    },
+    {
+      "id": "exec-f239acc6-a9d8-486e-9dbb-28b17b68f1ea",
+      "title": "Reading Google Cloud service health",
+      "status": "completed"
+    },
+    {
+      "id": "exec-c9875fef-2718-46bf-a4a1-f9f14abdb0e0",
+      "title": "Checking the status page",
+      "status": "completed"
+    }
+  ],
+  "error": {
+    "message": "Unexpected token 'T', \"The browse\"... is not valid JSON",
+    "status": null,
+    "code": null,
+    "type": null,
+    "request_id": null
+  },
+  "cleanup": "deleted",
+  "elapsed_seconds": 58.602
+}
