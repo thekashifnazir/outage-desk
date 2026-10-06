@@ -44,7 +44,7 @@ export function ReplayProvider({ children }: { children: ReactNode }) {
  const reference = stages[n - 1] ?? stages[0];
  if (!reference) throw new Error("Replay stages unavailable");
  const [playing,setPlaying] = useState(false); const [additions,setAdditions] = useState<Record<number, ResponseItem[]>>({});
- const setLive = (v: boolean) => { setPlaying(false); setLiveState(v); };
+ const setLive = (v: boolean) => { setPlaying(false); setLiveState(v); if(v) void navigate({to:'/',search:{stage:n,run:search.run}}); };
  const extract = useServerFn(astraExtract), reconcile = useServerFn(astraReconcile), communicate = useServerFn(astraCommunicate), verify = useServerFn(astraVerify);
  const select = (next: number) => { if (next < 1 || next > 9) return; void navigate({to: '.', search: (old) => ({...old,stage:next})}); };
  useEffect(() => { if (!playing || isLive) return; if (n === 9) {setPlaying(false); return;} const id=setInterval(()=>select(n+1),5000); return ()=>clearInterval(id); },[playing,n,isLive]);
