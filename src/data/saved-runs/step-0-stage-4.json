@@ -1,0 +1,291 @@
+{
+  "stage": 4,
+  "model": "gpt-6-astra",
+  "generated_at": "2026-10-06T17:54:22.512Z",
+  "extract": {
+    "claims": [
+      {
+        "statement": "Cloudflare is investigating an issue causing Access authentication failures.",
+        "subject": "Cloudflare",
+        "unknown_kind": null,
+        "region": null,
+        "proposed_class": "CONFIRMED",
+        "source_ids": [
+          "S8"
+        ],
+        "provider_wording": "Cloudflare engineering is investigating an issue causing Access authentication to fail.",
+        "settled_by": null,
+        "estimate": null
+      },
+      {
+        "statement": "Cloudflare Zero Trust WARP connectivity is impacted.",
+        "subject": "Cloudflare",
+        "unknown_kind": null,
+        "region": null,
+        "proposed_class": "CONFIRMED",
+        "source_ids": [
+          "S8"
+        ],
+        "provider_wording": "Cloudflare Zero Trust WARP connectivity is also impacted.",
+        "settled_by": null,
+        "estimate": null
+      },
+      {
+        "statement": "Cloudflare's 18:48 update lists Access, WARP, Durable Objects (SQLite backed Durable Objects only), Workers KV, Realtime, Workers AI, Stream, and parts of the Cloudflare dashboard as impacted.",
+        "subject": "Cloudflare",
+        "unknown_kind": null,
+        "region": null,
+        "proposed_class": "CONFIRMED",
+        "source_ids": [
+          "S8"
+        ],
+        "provider_wording": "Impacted services: Access WARP Durable Objects (SQLite backed Durable Objects only) Workers KV Realtime Workers AI Stream Parts of the Cloudflare dashboard",
+        "settled_by": null,
+        "estimate": null
+      },
+      {
+        "statement": "A single community post reports a Cloudflare KV GET failure with HTTP 503 Service temporarily unavailable.",
+        "subject": "Cloudflare",
+        "unknown_kind": null,
+        "region": null,
+        "proposed_class": "UNCONFIRMED",
+        "source_ids": [
+          "S9"
+        ],
+        "provider_wording": null,
+        "settled_by": null,
+        "estimate": null
+      },
+      {
+        "statement": "Supabase reports connectivity issues on its own status page.",
+        "subject": "Supabase",
+        "unknown_kind": null,
+        "region": null,
+        "proposed_class": "CONFIRMED",
+        "source_ids": [
+          "S12"
+        ],
+        "provider_wording": "We believe connectivity issues are the result of a broad outage with our upstream provider.",
+        "settled_by": null,
+        "estimate": null
+      },
+      {
+        "statement": "Supabase believes its connectivity issues result from a broad outage at an unnamed upstream provider; that cause is not established.",
+        "subject": "Supabase",
+        "unknown_kind": null,
+        "region": null,
+        "proposed_class": "UNCONFIRMED",
+        "source_ids": [
+          "S12"
+        ],
+        "provider_wording": "We believe connectivity issues are the result of a broad outage with our upstream provider.",
+        "settled_by": null,
+        "estimate": null
+      },
+      {
+        "statement": "Google Cloud reports service issues affecting multiple GCP products beginning June 12, 2025, at 10:51 PDT.",
+        "subject": "Google Cloud",
+        "unknown_kind": null,
+        "region": null,
+        "proposed_class": "CONFIRMED",
+        "source_ids": [
+          "S7"
+        ],
+        "provider_wording": "We are experiencing service issues with multiple GCP products beginning at Thursday, 2025-06-12 10:51 PDT.",
+        "settled_by": null,
+        "estimate": null
+      },
+      {
+        "statement": "A single community post alleges AWS is having serious issues.",
+        "subject": "AWS",
+        "unknown_kind": null,
+        "region": null,
+        "proposed_class": "UNCONFIRMED",
+        "source_ids": [
+          "S11"
+        ],
+        "provider_wording": null,
+        "settled_by": null,
+        "estimate": null
+      },
+      {
+        "statement": "A single community post alleges Azure is having serious issues.",
+        "subject": "Azure",
+        "unknown_kind": null,
+        "region": null,
+        "proposed_class": "UNCONFIRMED",
+        "source_ids": [
+          "S11"
+        ],
+        "provider_wording": null,
+        "settled_by": null,
+        "estimate": null
+      },
+      {
+        "statement": "A single community post alleges Google Cloud is having serious issues.",
+        "subject": "Google Cloud",
+        "unknown_kind": null,
+        "region": null,
+        "proposed_class": "UNCONFIRMED",
+        "source_ids": [
+          "S11"
+        ],
+        "provider_wording": null,
+        "settled_by": null,
+        "estimate": null
+      },
+      {
+        "statement": "A single community post alleges Cloudflare is having serious issues.",
+        "subject": "Cloudflare",
+        "unknown_kind": null,
+        "region": null,
+        "proposed_class": "UNCONFIRMED",
+        "source_ids": [
+          "S11"
+        ],
+        "provider_wording": null,
+        "settled_by": null,
+        "estimate": null
+      },
+      {
+        "statement": "The Downdetector snapshot records a Google Cloud report-count peak of 14,695 at 18:31 UTC.",
+        "subject": "Google Cloud",
+        "unknown_kind": null,
+        "region": null,
+        "proposed_class": "REPORTED",
+        "source_ids": [
+          "M1"
+        ],
+        "provider_wording": null,
+        "settled_by": null,
+        "estimate": null
+      },
+      {
+        "statement": "The Downdetector snapshot records 3,071 Cloudflare reports at 18:49 UTC.",
+        "subject": "Cloudflare",
+        "unknown_kind": null,
+        "region": null,
+        "proposed_class": "REPORTED",
+        "source_ids": [
+          "M1"
+        ],
+        "provider_wording": null,
+        "settled_by": null,
+        "estimate": null
+      },
+      {
+        "statement": "A community relay attributed to a Cloudflare account manager alleges Google Cloud outages caused the Cloudflare outage.",
+        "subject": "Cloudflare",
+        "unknown_kind": null,
+        "region": null,
+        "proposed_class": "UNCONFIRMED",
+        "source_ids": [
+          "S10"
+        ],
+        "provider_wording": null,
+        "settled_by": null,
+        "estimate": null
+      },
+      {
+        "statement": "The cause of Google Cloud's service issues is unknown.",
+        "subject": "Google Cloud",
+        "unknown_kind": "cause",
+        "region": null,
+        "proposed_class": "UNKNOWN",
+        "source_ids": [
+          "S7"
+        ],
+        "provider_wording": null,
+        "settled_by": null,
+        "estimate": null
+      },
+      {
+        "statement": "Google Cloud's recovery ETA is unknown.",
+        "subject": "Google Cloud",
+        "unknown_kind": "recovery",
+        "region": null,
+        "proposed_class": "UNKNOWN",
+        "source_ids": [
+          "S7"
+        ],
+        "provider_wording": null,
+        "settled_by": null,
+        "estimate": null
+      },
+      {
+        "statement": "Cloudflare's recovery ETA is unknown.",
+        "subject": "Cloudflare",
+        "unknown_kind": "recovery",
+        "region": null,
+        "proposed_class": "UNKNOWN",
+        "source_ids": [
+          "S8"
+        ],
+        "provider_wording": null,
+        "settled_by": null,
+        "estimate": null
+      },
+      {
+        "statement": "Whether Google Cloud's reported issues affect Northwind's Cloud Run, Firestore, or Firebase Auth deployment in us-central1 is unknown.",
+        "subject": "Northwind",
+        "unknown_kind": "scope",
+        "region": "us-central1",
+        "proposed_class": "UNKNOWN",
+        "source_ids": [
+          "S7"
+        ],
+        "provider_wording": null,
+        "settled_by": null,
+        "estimate": null
+      },
+      {
+        "statement": "Whether Cloudflare Access failures affect Northwind's staff tools is unknown.",
+        "subject": "Northwind",
+        "unknown_kind": "scope",
+        "region": null,
+        "proposed_class": "UNKNOWN",
+        "source_ids": [
+          "S8"
+        ],
+        "provider_wording": null,
+        "settled_by": null,
+        "estimate": null
+      },
+      {
+        "statement": "Whether the reported incidents caused any loss, corruption, or exposure of Northwind data is unknown.",
+        "subject": "Northwind",
+        "unknown_kind": "data",
+        "region": null,
+        "proposed_class": "UNKNOWN",
+        "source_ids": [
+          "S7",
+          "S8"
+        ],
+        "provider_wording": null,
+        "settled_by": null,
+        "estimate": null
+      }
+    ]
+  },
+  "timings": [
+    {
+      "step": "EXTRACT",
+      "stage": 4,
+      "attempt": 1,
+      "seconds": 31.703646874999997,
+      "tokens": {
+        "input_tokens": 785,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 2009,
+        "output_tokens_details": {
+          "reasoning_tokens": 95
+        },
+        "total_tokens": 2794
+      }
+    }
+  ],
+  "schema_valid": true
+}
