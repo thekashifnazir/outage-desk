@@ -2,68 +2,135 @@
 
 When a cloud provider goes down, someone has to tell the board, the engineers and the
 customers what's happening, usually before the provider explains it. Outage Desk turns
-the evidence coming in into a ledger of claims labelled by certainty, then drafts an
-update per audience where every sentence cites the claim behind it.
+the evidence flying in (status pages, other companies' pages, community posts, our own
+monitoring) into a ledger of claims labelled by certainty, then drafts an update per
+audience where every sentence cites the claim behind it.
 
-Built at the GPT-6 Astra Hackathon London, 6 October 2026. The demo replays the real
-12 June 2025 Google Cloud → Cloudflare outage, stage by stage.
+GPT-6 Astra does the reasoning; plain code decides what's allowed to be said. Tonight's
+build replays the real 12 June 2025 Google Cloud → Cloudflare outage, minute by minute,
+and runs the same desk on a live incident from this morning.
 
-<!-- TODO 20:05: hero screenshot from docs/screenshots/ -->
+Built solo by Kashif Nazir at the GPT-6 Astra Hackathon London, 6 October 2026.
+
+![The desk at T+60: Google Cloud's incident is confirmed, C-005 is upgraded and a private-channel claim is capped by policy](docs/screenshots/06-stage4-upgraded.png)
 
 ## What it does
 
-- Takes evidence from status pages, other companies' pages, community posts and our own
-  monitoring.
-- Turns it into claims, each labelled **Confirmed**, **Reported**, **Conflicting**,
-  **Unconfirmed** or **Unknown**.
+- Takes in evidence from status pages, other companies' pages, community posts and our
+  own monitoring, each with its source and the time it arrived.
+- Turns it into claims labelled **Confirmed**, **Reported**, **Conflicting**,
+  **Unconfirmed** or **Unknown**, and records why each one changed.
 - Drafts three updates (executive, engineering, customer) where every sentence cites the
-  claims it rests on.
-- Checks each sentence against what it cites before it can be copied out.
+  claim or the action behind it. The customer update has two policies: Confirmed only,
+  or Early incident.
+- Checks every sentence against what it cites. Copy pastes plain text and leaves out any
+  sentence that failed.
 
 ## How it works
 
 ```
 evidence ──▶ 1. extract ──▶ 2. reconcile ──▶ policy caps ──▶ 3. communicate ──▶ 4. verify
-             (Astra)        (Astra)          (code only)     (Astra, ×3)        (code + Astra)
-                                │                                 │
-                                ▼                                 ▼
-                          claim ledger                  executive · engineering · customer
+             GPT-6 Astra    GPT-6 Astra      code only       GPT-6 Astra, ×3    code, then GPT-6 Astra
+                                 │                                  │
+                                 ▼                                  ▼
+                           claim ledger                 executive · engineering · customer
 ```
 
-GPT-6 Astra does four of the steps:
+GPT-6 Astra powers four of the five pipeline steps:
 
 1. **Extract** checkable claims from raw evidence.
 2. **Reconcile** them into the ledger: upgrades, merges, conflicts.
-3. **Communicate**: write the executive, engineering and customer updates.
-4. **Verify** that each generated sentence is supported by the claims it cites.
+3. **Communicate**: write the three audience updates.
+4. **Verify** that each generated sentence is supported by what it cites.
 
-The policy step is deliberately not AI. A small deterministic engine caps each claim's
-label by who said it, so a single private-channel post can never become Confirmed, no
-matter how convincing it sounds. Model output is treated as data: it is validated
-against the types before anything uses it.
+The fifth step is deliberately not AI. A small deterministic policy engine
+([`src/lib/policy.ts`](src/lib/policy.ts)) caps each claim's label by who said it, so a
+single private-channel post can never become Confirmed, no matter how convincing it
+sounds. Astra's label is a proposal; the policy can lower it and never raise it. The
+desk shows the difference as "Capped: Reported → Unconfirmed".
 
-<!-- TODO 20:05: reliability model (policy caps, citation checks, golden replay) -->
+## Reliability model
 
-| Where | What |
+| Class | Allowed only if the sources include |
 | --- | --- |
-| `src/data/replay/` | Replay stages 1–9 and the shared types |
-| `src/data/saved-runs/` | Saved GPT-6 Astra runs for each stage |
-| `src/lib/policy.ts` | Provenance caps and channel precedence (no AI) |
-| `src/lib/verify.ts` | Sentence citation checks (no AI) |
-| `src/lib/astra.*` | Server functions calling GPT-6 Astra |
-| `scripts/` | Batch runner that produced the saved runs |
+| Confirmed | the organisation's own official source about itself, or our own monitoring about us |
+| Reported | two independent unofficial sources, or one monitor or press source, or one official source talking about someone else |
+| Unconfirmed | anything else: a single community or private-channel post, speculation |
+| Conflicting | two sources at Reported or better that disagree; both sides are kept |
+| Unknown | no sources yet: the question the exec will ask (cause, ETA, scope, data) |
+
+- **Policy in code.** [`src/lib/policy.ts`](src/lib/policy.ts) caps labels by provenance
+  and ignores evidence that arrived after the stage's "now".
+- **Verify in two layers.** [`src/lib/verify.ts`](src/lib/verify.ts) checks every
+  sentence's citations and the publication rules first (for example, no customer
+  sentence may cite an Unconfirmed or Conflicting claim), then GPT-6 Astra checks that
+  each sentence is supported by what it cites.
+- **Golden replay check.** The Analysis page compares Astra's ledger with a hand-built
+  golden ledger for each stage, claim by claim.
+- **Model output is data.** Saved runs are validated against the types, the policy and
+  the verifier before the desk will show them. A stage whose run fails verify falls back
+  to the reference data and says so on screen.
+
+## The replay
+
+Nine stages, from "Something's wrong" at 17:56 UTC to the next-day post-incident pack.
+Step through them with the replay bar or open one directly with `/?stage=4`. The
+Analysis page shows what GPT-6 Astra did for the stage, the golden check and the policy
+result, and can re-run the stage live.
+
+| Stage 4: the claim and where it's used | Copy: plain text, checked sentences only |
+| --- | --- |
+| ![The claim drawer for C-005](docs/screenshots/07-stage4-drawer-C-005.png) | ![Copying the executive update](docs/screenshots/10-stage4-copy-toast.png) |
+| **Analysis: four Astra steps, one code step** | **Stage 9: what we said, checked** |
+| ![The Analysis pipeline at stage 4](docs/screenshots/11a-analysis-stage4.png) | ![The post-incident pack](docs/screenshots/12-stage9-post-incident.png) |
+
+Northwind, the company on the receiving end, is fictional, and its evidence is marked
+"Fictional". Everything from Google, Cloudflare and the other companies is real public
+reporting from 12 June 2025.
+
+## Live tonight: ASOS
+
+On the morning of the event, ASOS customers received a push notification through the
+ASOS app saying the company had been hacked. The **Live** chip runs the same desk on it,
+captured at 17:00 BST: 14 evidence rows, each with its source link
+([`src/data/live/asos.ts`](src/data/live/asos.ts)), and the ledger GPT-6 Astra built
+from them.
+
+It's a real company and the repo is public, so the live view is ledger only: no drafts
+in ASOS's voice, every claim names who said it, and nothing links to the attacker's
+channel. The attacker's claim stays Unconfirmed because the attacker is its only source.
+ASOS's own announcement at about 15:00 confirms the notification and says names and
+contact details may have been accessed, so those become Confirmed as ASOS's statements.
+
+![The live ASOS ledger](docs/screenshots/13-live-asos.png)
 
 ## How it was built tonight
 
-<!-- TODO 20:05: final copy + commit citations -->
+Every line of product code in this repo was written on 6 October 2026, AI-assisted
+throughout, by four lanes working on `main` at once. Each lane owned its own paths so
+they could push in parallel without stepping on each other.
 
-- **Lovable** built the whole UI from a written brief, iterated with fix prompts, synced
-  to this repo and published it.
-- **Codex** wrote the replay data, the policy engine, the verifier and the Astra batch
-  runner, commit by commit.
-- **Claude Code** wrote this README and walked the published app as the tester.
+| Lane | Tool | Owned | Commits to look at |
+| --- | --- | --- | --- |
+| UI | Lovable | `src/components/`, `src/routes/`, server functions 39 `gpt-engineer-app[bot]` commits by 19:30, from the first brief to "Added ASOS Live view to app" (`a0d5f20`) |
+| Data and checks | Codex | `src/data/replay/`, `src/lib/policy.*`, `src/lib/verify.*` | `6fbd1fe` types, `e73f9f1` all nine stages, `a88a29d` policy caps, `adb0b35` sentence verifier |
+| Astra batch | Codex | `scripts/`, `src/data/saved-runs/` | `5c5891a` batch runner, `f529a65` saved ledgers and drafts, `5de5665` verified drafts, `b46e51a` ASOS snapshot |
+| Docs and QA | Claude Code | `README.md`, `docs/`, `src/data/live/` | `e351a36` README, `4a0f58d` QA screenshots, `7e46ab0` ASOS evidence |
 
-AI-assisted throughout. Pre-existing tooling is dev config only, no product code.
+Lovable built the whole UI from a single written brief, iterated with fix prompts,
+synced it live to this repo and published it. The other lanes worked over git, commit
+by commit. Claude Code also walked the published app twice at 1440 × 900, against the acceptance walk-through in the design spec, and reported the gaps
+back as fix prompts.
+
+**Lane E, the live evidence collector, didn't work.** It tried to read a public status
+page with GPT-6 Astra driving a hosted browser. The first run returned output that
+failed validation, and the one authorised retry got "Site Unavailable". No evidence from
+it is used anywhere in the app; the ASOS rows were captured by hand from published
+reporting. Its code and both failure records are in [`collector/`](collector/).
+
+Before the night there was only Lovable's empty starter template (5 October). Dev
+config (secret scanning, CI, licence, `AGENTS.md`) went in as one commit, `48f82c6`,
+with no product code.
 
 ## Run it
 
@@ -74,15 +141,19 @@ npm test        # policy and verify tests
 npm run build   # production build
 ```
 
-Open the desk at `/?stage=1` and step through stages with the replay bar. The Analysis
-page shows the pipeline, the golden replay check and the policy rules.
-
-The live Astra calls need a Lovable AI key set as a server secret in Lovable Cloud. The
-replay itself runs from the files in `src/data/` with no key.
+Open `/?stage=1` and step through with the replay bar. The replay runs from the files
+in `src/data/` with no key. Re-running a stage with GPT-6 Astra needs a Lovable AI key,
+set as a server secret in Lovable Cloud, never in the code.
 
 ## Roadmap
 
-<!-- TODO 20:05 -->
+- **A "relays" flag on evidence.** A press story that repeats the attacker's claim is
+  still the attacker's claim. Tonight that depends on Astra citing the right source;
+  the policy should enforce it.
+- **Live collection that works.** Lane E's job: status pages and public posts captured
+  with their time and link, straight into the ledger.
+- **More saved stages passing verify.** Stages that fail fall back to reference data
+  today.
 
 ## Licence
 
