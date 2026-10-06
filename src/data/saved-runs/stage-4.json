@@ -1823,8 +1823,8 @@
     }
   },
   "verify": {
-    "pass": true,
-    "status": "complete",
+    "pass": false,
+    "status": "failed",
     "verifier_sha256": "5a5eb2c893c4710d3318edcb014b46cd4f1b1bd21e021c706b42c468aa75b3ea",
     "audiences": [
       {
@@ -2333,7 +2333,8 @@
         "word_limit": 70,
         "over_limit": false
       }
-    ]
+    ],
+    "reason": "Golden mismatch: C-012 must be UNCONFIRMED, capped from REPORTED; 12/19 golden. Saved C-012 is CONFIRMED (proposed CONFIRMED) and describes Supabase instead of the reference causal claim. Use reference data."
   },
   "timings": [
     {
@@ -3509,5 +3510,17 @@
         ]
       }
     }
-  ]
+  ],
+  "golden_check": {
+    "pass": false,
+    "claim_id": "C-012",
+    "expected_class": "UNCONFIRMED",
+    "expected_proposed_class": "REPORTED",
+    "actual_class": "CONFIRMED",
+    "actual_proposed_class": "CONFIRMED",
+    "at": "18:51",
+    "matched_claims": 12,
+    "total_claims": 19,
+    "assessment_source": "user-provided golden assessment"
+  }
 }
