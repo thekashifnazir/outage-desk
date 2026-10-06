@@ -652,7 +652,10 @@
                 "C-001"
               ],
               "response_ids": [],
-              "verify": null
+              "verify": {
+                "pass": true,
+                "reason": null
+              }
             }
           ]
         },
@@ -666,7 +669,10 @@
                 "C-006"
               ],
               "response_ids": [],
-              "verify": null
+              "verify": {
+                "pass": true,
+                "reason": null
+              }
             }
           ]
         },
@@ -680,7 +686,10 @@
                 "C-005"
               ],
               "response_ids": [],
-              "verify": null
+              "verify": {
+                "pass": true,
+                "reason": null
+              }
             },
             {
               "text": "Discord is investigating attachment and embed rendering failures [C-007].",
@@ -689,7 +698,10 @@
                 "C-007"
               ],
               "response_ids": [],
-              "verify": null
+              "verify": {
+                "pass": true,
+                "reason": null
+              }
             }
           ]
         },
@@ -706,7 +718,10 @@
                 "C-009"
               ],
               "response_ids": [],
-              "verify": null
+              "verify": {
+                "pass": true,
+                "reason": null
+              }
             }
           ]
         },
@@ -722,7 +737,10 @@
                 "R-3",
                 "R-5"
               ],
-              "verify": null
+              "verify": {
+                "pass": true,
+                "reason": null
+              }
             }
           ]
         },
@@ -736,7 +754,10 @@
               "response_ids": [
                 "R-3"
               ],
-              "verify": null
+              "verify": {
+                "pass": true,
+                "reason": null
+              }
             }
           ]
         },
@@ -750,7 +771,10 @@
               "response_ids": [
                 "R-6"
               ],
-              "verify": null
+              "verify": {
+                "pass": true,
+                "reason": null
+              }
             }
           ]
         }
@@ -773,7 +797,10 @@
                 "C-001"
               ],
               "response_ids": [],
-              "verify": null
+              "verify": {
+                "pass": true,
+                "reason": null
+              }
             },
             {
               "text": "Northwind's us-central1 logs show HTTP 503 responses from Firestore and Firebase Auth APIs [C-006].",
@@ -782,7 +809,10 @@
                 "C-006"
               ],
               "response_ids": [],
-              "verify": null
+              "verify": {
+                "pass": true,
+                "reason": null
+              }
             },
             {
               "text": "Google Cloud's status page shows no incident [C-005].",
@@ -791,7 +821,10 @@
                 "C-005"
               ],
               "response_ids": [],
-              "verify": null
+              "verify": {
+                "pass": true,
+                "reason": null
+              }
             },
             {
               "text": "Discord is investigating attachment and embed rendering failures [C-007].",
@@ -800,7 +833,10 @@
                 "C-007"
               ],
               "response_ids": [],
-              "verify": null
+              "verify": {
+                "pass": true,
+                "reason": null
+              }
             },
             {
               "text": "Root cause, recovery time, customer-impact extent and data-integrity effects are not yet known [C-003][C-004][C-008][C-009].",
@@ -812,7 +848,10 @@
                 "C-009"
               ],
               "response_ids": [],
-              "verify": null
+              "verify": {
+                "pass": true,
+                "reason": null
+              }
             }
           ]
         },
@@ -826,7 +865,10 @@
               "response_ids": [
                 "R-3"
               ],
-              "verify": null
+              "verify": {
+                "pass": true,
+                "reason": null
+              }
             },
             {
               "text": "We're checking quotas and IAM, with phone support if the console won't load [R-5].",
@@ -835,7 +877,10 @@
               "response_ids": [
                 "R-5"
               ],
-              "verify": null
+              "verify": {
+                "pass": true,
+                "reason": null
+              }
             }
           ]
         },
@@ -849,7 +894,10 @@
               "response_ids": [
                 "R-6"
               ],
-              "verify": null
+              "verify": {
+                "pass": true,
+                "reason": null
+              }
             }
           ]
         }
@@ -873,7 +921,10 @@
                   "C-001"
                 ],
                 "response_ids": [],
-                "verify": null
+                "verify": {
+                  "pass": true,
+                  "reason": null
+                }
               },
               {
                 "text": "The cause and recovery time are not yet known [C-003] [C-004].",
@@ -883,7 +934,10 @@
                   "C-004"
                 ],
                 "response_ids": [],
-                "verify": null
+                "verify": {
+                  "pass": true,
+                  "reason": null
+                }
               },
               {
                 "text": "We're investigating recent changes and service errors [R-3].",
@@ -892,7 +946,10 @@
                 "response_ids": [
                   "R-3"
                 ],
-                "verify": null
+                "verify": {
+                  "pass": true,
+                  "reason": null
+                }
               },
               {
                 "text": "We'll provide another customer update by 18:26 UTC [R-6].",
@@ -901,7 +958,10 @@
                 "response_ids": [
                   "R-6"
                 ],
-                "verify": null
+                "verify": {
+                  "pass": true,
+                  "reason": null
+                }
               }
             ]
           }
@@ -911,9 +971,487 @@
     }
   },
   "verify": {
-    "pass": false,
-    "status": "pending",
-    "reason": "Awaiting code verification and Astra support check"
+    "pass": true,
+    "status": "complete",
+    "verifier_sha256": "5a5eb2c893c4710d3318edcb014b46cd4f1b1bd21e021c706b42c468aa75b3ea",
+    "audiences": [
+      {
+        "audience": "executive",
+        "code_pass": true,
+        "support": {
+          "results": [
+            {
+              "sentence_index": 0,
+              "supported": true,
+              "problem": null
+            },
+            {
+              "sentence_index": 1,
+              "supported": true,
+              "problem": null
+            },
+            {
+              "sentence_index": 2,
+              "supported": true,
+              "problem": null
+            },
+            {
+              "sentence_index": 3,
+              "supported": true,
+              "problem": null
+            },
+            {
+              "sentence_index": 4,
+              "supported": true,
+              "problem": null
+            },
+            {
+              "sentence_index": 5,
+              "supported": true,
+              "problem": null
+            },
+            {
+              "sentence_index": 6,
+              "supported": true,
+              "problem": null
+            },
+            {
+              "sentence_index": 7,
+              "supported": true,
+              "problem": null
+            }
+          ]
+        },
+        "draft": {
+          "audience": "executive",
+          "policy_mode": null,
+          "as_of": "18:02",
+          "source": "astra_saved",
+          "generated_at": "2026-10-06T17:57:54.028Z",
+          "sections": [
+            {
+              "heading": "Situation",
+              "sentences": [
+                {
+                  "text": "Customers cannot reliably log in or use our API since 17:51 UTC [C-001].",
+                  "type": "fact",
+                  "claim_ids": [
+                    "C-001"
+                  ],
+                  "response_ids": [],
+                  "verify": {
+                    "pass": true,
+                    "reason": null
+                  }
+                }
+              ]
+            },
+            {
+              "heading": "Impact on us",
+              "sentences": [
+                {
+                  "text": "Our us-central1 logs show Firestore and Firebase Auth HTTP 503s [C-006].",
+                  "type": "fact",
+                  "claim_ids": [
+                    "C-006"
+                  ],
+                  "response_ids": [],
+                  "verify": {
+                    "pass": true,
+                    "reason": null
+                  }
+                }
+              ]
+            },
+            {
+              "heading": "Confirmed",
+              "sentences": [
+                {
+                  "text": "Google Cloud’s status page shows no incident [C-005].",
+                  "type": "fact",
+                  "claim_ids": [
+                    "C-005"
+                  ],
+                  "response_ids": [],
+                  "verify": {
+                    "pass": true,
+                    "reason": null
+                  }
+                },
+                {
+                  "text": "Discord is investigating attachment and embed rendering failures [C-007].",
+                  "type": "fact",
+                  "claim_ids": [
+                    "C-007"
+                  ],
+                  "response_ids": [],
+                  "verify": {
+                    "pass": true,
+                    "reason": null
+                  }
+                }
+              ]
+            },
+            {
+              "heading": "Not yet known",
+              "sentences": [
+                {
+                  "text": "Cause, recovery time, customer-impact extent and data-integrity effects are not yet known [C-003] [C-004] [C-008] [C-009].",
+                  "type": "fact",
+                  "claim_ids": [
+                    "C-003",
+                    "C-004",
+                    "C-008",
+                    "C-009"
+                  ],
+                  "response_ids": [],
+                  "verify": {
+                    "pass": true,
+                    "reason": null
+                  }
+                }
+              ]
+            },
+            {
+              "heading": "What we're doing",
+              "sentences": [
+                {
+                  "text": "We declared P1, opened the bridge, and are checking changes, API calls, quotas and IAM [R-1] [R-3] [R-5].",
+                  "type": "commitment",
+                  "claim_ids": [],
+                  "response_ids": [
+                    "R-1",
+                    "R-3",
+                    "R-5"
+                  ],
+                  "verify": {
+                    "pass": true,
+                    "reason": null
+                  }
+                }
+              ]
+            },
+            {
+              "heading": "Decisions needed",
+              "sentences": [
+                {
+                  "text": "We will not roll back unless a change is implicated [R-3].",
+                  "type": "commitment",
+                  "claim_ids": [],
+                  "response_ids": [
+                    "R-3"
+                  ],
+                  "verify": {
+                    "pass": true,
+                    "reason": null
+                  }
+                }
+              ]
+            },
+            {
+              "heading": "Next update",
+              "sentences": [
+                {
+                  "text": "We’ll update the bridge at 18:15 and customers by 18:26 [R-6].",
+                  "type": "commitment",
+                  "claim_ids": [],
+                  "response_ids": [
+                    "R-6"
+                  ],
+                  "verify": {
+                    "pass": true,
+                    "reason": null
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        "pass": true,
+        "total": 8,
+        "verified": 8,
+        "excluded": 0,
+        "word_count": 97,
+        "word_limit": 120,
+        "over_limit": false
+      },
+      {
+        "audience": "engineering",
+        "code_pass": true,
+        "support": {
+          "results": [
+            {
+              "sentence_index": 0,
+              "supported": true,
+              "problem": null
+            },
+            {
+              "sentence_index": 1,
+              "supported": true,
+              "problem": null
+            },
+            {
+              "sentence_index": 2,
+              "supported": true,
+              "problem": null
+            },
+            {
+              "sentence_index": 3,
+              "supported": true,
+              "problem": null
+            },
+            {
+              "sentence_index": 4,
+              "supported": true,
+              "problem": null
+            },
+            {
+              "sentence_index": 5,
+              "supported": true,
+              "problem": null
+            },
+            {
+              "sentence_index": 6,
+              "supported": true,
+              "problem": null
+            },
+            {
+              "sentence_index": 7,
+              "supported": true,
+              "problem": null
+            }
+          ]
+        },
+        "draft": {
+          "audience": "engineering",
+          "policy_mode": null,
+          "as_of": "18:02",
+          "source": "astra_saved",
+          "generated_at": "2026-10-06T17:57:49.816Z",
+          "sections": [
+            {
+              "heading": "Confirmed technical facts",
+              "sentences": [
+                {
+                  "text": "Customer login and API access have been unreliable since 17:51 UTC [C-001].",
+                  "type": "fact",
+                  "claim_ids": [
+                    "C-001"
+                  ],
+                  "response_ids": [],
+                  "verify": {
+                    "pass": true,
+                    "reason": null
+                  }
+                },
+                {
+                  "text": "Northwind's us-central1 logs show HTTP 503 responses from Firestore and Firebase Auth APIs [C-006].",
+                  "type": "fact",
+                  "claim_ids": [
+                    "C-006"
+                  ],
+                  "response_ids": [],
+                  "verify": {
+                    "pass": true,
+                    "reason": null
+                  }
+                },
+                {
+                  "text": "Google Cloud's status page shows no incident [C-005].",
+                  "type": "fact",
+                  "claim_ids": [
+                    "C-005"
+                  ],
+                  "response_ids": [],
+                  "verify": {
+                    "pass": true,
+                    "reason": null
+                  }
+                },
+                {
+                  "text": "Discord is investigating attachment and embed rendering failures [C-007].",
+                  "type": "fact",
+                  "claim_ids": [
+                    "C-007"
+                  ],
+                  "response_ids": [],
+                  "verify": {
+                    "pass": true,
+                    "reason": null
+                  }
+                },
+                {
+                  "text": "Root cause, recovery time, customer-impact extent and data-integrity effects are not yet known [C-003][C-004][C-008][C-009].",
+                  "type": "fact",
+                  "claim_ids": [
+                    "C-003",
+                    "C-004",
+                    "C-008",
+                    "C-009"
+                  ],
+                  "response_ids": [],
+                  "verify": {
+                    "pass": true,
+                    "reason": null
+                  }
+                }
+              ]
+            },
+            {
+              "heading": "What to do / not to chase",
+              "sentences": [
+                {
+                  "text": "We're triaging recent changes, code versus Google API calls, and console access; no rollback until a change is implicated [R-3].",
+                  "type": "commitment",
+                  "claim_ids": [],
+                  "response_ids": [
+                    "R-3"
+                  ],
+                  "verify": {
+                    "pass": true,
+                    "reason": null
+                  }
+                },
+                {
+                  "text": "We're checking quotas and IAM, with phone support if the console won't load [R-5].",
+                  "type": "commitment",
+                  "claim_ids": [],
+                  "response_ids": [
+                    "R-5"
+                  ],
+                  "verify": {
+                    "pass": true,
+                    "reason": null
+                  }
+                }
+              ]
+            },
+            {
+              "heading": "Next update",
+              "sentences": [
+                {
+                  "text": "We'll update the bridge at 18:15 and customers by 18:26 [R-6].",
+                  "type": "commitment",
+                  "claim_ids": [],
+                  "response_ids": [
+                    "R-6"
+                  ],
+                  "verify": {
+                    "pass": true,
+                    "reason": null
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        "pass": true,
+        "total": 8,
+        "verified": 8,
+        "excluded": 0,
+        "word_count": 102,
+        "word_limit": 140,
+        "over_limit": false
+      },
+      {
+        "audience": "customer",
+        "code_pass": true,
+        "support": {
+          "results": [
+            {
+              "sentence_index": 0,
+              "supported": true,
+              "problem": null
+            },
+            {
+              "sentence_index": 1,
+              "supported": true,
+              "problem": null
+            },
+            {
+              "sentence_index": 2,
+              "supported": true,
+              "problem": null
+            },
+            {
+              "sentence_index": 3,
+              "supported": true,
+              "problem": null
+            }
+          ]
+        },
+        "draft": {
+          "audience": "customer",
+          "policy_mode": "confirmed_only",
+          "as_of": "18:02",
+          "source": "astra_saved",
+          "generated_at": "2026-10-06T17:57:48.237Z",
+          "sections": [
+            {
+              "heading": "Northwind service update",
+              "sentences": [
+                {
+                  "text": "We're sorry that customers have been unable to reliably log in or use our API since 17:51 UTC [C-001].",
+                  "type": "fact",
+                  "claim_ids": [
+                    "C-001"
+                  ],
+                  "response_ids": [],
+                  "verify": {
+                    "pass": true,
+                    "reason": null
+                  }
+                },
+                {
+                  "text": "The cause and recovery time are not yet known [C-003] [C-004].",
+                  "type": "fact",
+                  "claim_ids": [
+                    "C-003",
+                    "C-004"
+                  ],
+                  "response_ids": [],
+                  "verify": {
+                    "pass": true,
+                    "reason": null
+                  }
+                },
+                {
+                  "text": "We're investigating recent changes and service errors [R-3].",
+                  "type": "commitment",
+                  "claim_ids": [],
+                  "response_ids": [
+                    "R-3"
+                  ],
+                  "verify": {
+                    "pass": true,
+                    "reason": null
+                  }
+                },
+                {
+                  "text": "We'll provide another customer update by 18:26 UTC [R-6].",
+                  "type": "commitment",
+                  "claim_ids": [],
+                  "response_ids": [
+                    "R-6"
+                  ],
+                  "verify": {
+                    "pass": true,
+                    "reason": null
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        "pass": true,
+        "total": 4,
+        "verified": 4,
+        "excluded": 0,
+        "word_count": 47,
+        "word_limit": 70,
+        "over_limit": false
+      }
+    ]
   },
   "timings": [
     {
@@ -1009,6 +1547,69 @@
           "reasoning_tokens": 31
         },
         "total_tokens": 3458
+      }
+    },
+    {
+      "step": "VERIFY_CODE",
+      "stage": 2,
+      "seconds": 0.00007141599999999926,
+      "tokens": null
+    },
+    {
+      "step": "VERIFY",
+      "stage": 2,
+      "audience": "executive",
+      "attempt": 1,
+      "seconds": 3.26085025,
+      "tokens": {
+        "input_tokens": 2900,
+        "input_tokens_details": {
+          "cache_write_tokens": 2897,
+          "cached_tokens": 0
+        },
+        "output_tokens": 116,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 3016
+      }
+    },
+    {
+      "step": "VERIFY",
+      "stage": 2,
+      "audience": "customer",
+      "attempt": 1,
+      "seconds": 3.7438870840000003,
+      "tokens": {
+        "input_tokens": 2601,
+        "input_tokens_details": {
+          "cache_write_tokens": 2598,
+          "cached_tokens": 0
+        },
+        "output_tokens": 64,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 2665
+      }
+    },
+    {
+      "step": "VERIFY",
+      "stage": 2,
+      "audience": "engineering",
+      "attempt": 1,
+      "seconds": 4.084214749999999,
+      "tokens": {
+        "input_tokens": 2852,
+        "input_tokens_details": {
+          "cache_write_tokens": 2849,
+          "cached_tokens": 0
+        },
+        "output_tokens": 116,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 2968
       }
     }
   ],

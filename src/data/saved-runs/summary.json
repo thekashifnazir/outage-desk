@@ -1,0 +1,132 @@
+{
+  "generated_at": "2026-10-06T17:59:57.956Z",
+  "total_tokens": 356538,
+  "timing_note": "Communication and verification timings show slowest audience call; extraction/reconciliation sum attempts. These are API call times, not end-to-end wall time.",
+  "stages": [
+    {
+      "stage": 1,
+      "status": "failed",
+      "pass": false,
+      "extract_seconds": 21.085105708000004,
+      "reconcile_seconds": 25.777956166,
+      "communicate_parallel_seconds": 8.911143166,
+      "verify_parallel_seconds": 4.806503167,
+      "tokens": 23180,
+      "failures": [
+        "engineering: Astra: C-003 and C-004 support that the community speculation is unverified, but do not support the instruction that it should not be acted on. — Community speculation about Google Cloud console and us-east1 problems is unverified and should not be acted on [C-003] [C-004].",
+        "customer: Astra: C-001 supports elevated login-api errors only in us-central1; the sentence omits that regional limit and broadens the scope to login requests generally. — We're sorry that login requests are experiencing elevated errors [C-001]."
+      ]
+    },
+    {
+      "stage": 2,
+      "status": "complete",
+      "pass": true,
+      "extract_seconds": 17.264727667,
+      "reconcile_seconds": 30.145448583,
+      "communicate_parallel_seconds": 10.709124040999999,
+      "verify_parallel_seconds": 4.084214749999999,
+      "tokens": 25694,
+      "failures": []
+    },
+    {
+      "stage": 3,
+      "status": "complete",
+      "pass": true,
+      "extract_seconds": 27.729158792,
+      "reconcile_seconds": 40.500095625,
+      "communicate_parallel_seconds": 7.775984375,
+      "verify_parallel_seconds": 6.237460916999999,
+      "tokens": 36923,
+      "failures": []
+    },
+    {
+      "stage": 4,
+      "status": "failed",
+      "pass": false,
+      "extract_seconds": 31.703646874999997,
+      "reconcile_seconds": 49.966455625,
+      "communicate_parallel_seconds": 9.529546416,
+      "verify_parallel_seconds": 5.9253227079999995,
+      "tokens": 43818,
+      "failures": [
+        "engineering: Astra: C-018 supports that the alleged causal link is unverified, but does not support the instruction that it should not be acted on. — Claims Google caused Cloudflare's outage are unverified and should not be acted on [C-018]."
+      ]
+    },
+    {
+      "stage": 5,
+      "status": "failed",
+      "pass": false,
+      "extract_seconds": 26.261994082999998,
+      "reconcile_seconds": 57.01213224999999,
+      "communicate_parallel_seconds": 15.808274292,
+      "verify_parallel_seconds": 6.133092334,
+      "tokens": 48785,
+      "failures": [
+        "executive: Astra: C-019 says consumer support reports no known service disruptions, with services and regions unspecified. 'Reports no disruptions' drops the knowledge qualifier and increases certainty. — Evidence conflicts: Google consumer support reports no disruptions; Cloud status reports incomplete recovery [C-019].",
+        "engineering: Astra: The cited claims establish a Google Cloud incident and Northwind's Google API 503 errors separately, but do not explicitly establish that those errors are part of that incident. — Google Cloud’s multi-product incident includes Firestore/Firebase Auth 503s in Northwind; our sole region, us-central1, is mostly recovered [C-005][C-006][C-009][C-016].",
+        "engineering: Astra: The claims support that the BGP and ConnectWise theories are unverified, but not the added directive that they should not be acted on. — BGP and ConnectWise theories are unverified and should not be acted on [C-014][C-020]."
+      ]
+    },
+    {
+      "stage": 6,
+      "status": "failed",
+      "pass": false,
+      "extract_seconds": 14.689695167,
+      "reconcile_seconds": 50.488732916000004,
+      "communicate_parallel_seconds": 10.211004208,
+      "verify_parallel_seconds": 8.0845965,
+      "tokens": 48083,
+      "failures": [
+        "executive: Astra: C-010 establishes that staff use Cloudflare Access, and C-011 establishes an Access outage, but neither confirms that the outage affected Northwind staff's internal-tool access. — Cloudflare's Access outage affects staff's internal-tool access [C-010][C-011].",
+        "engineering: Astra: C-014 and C-022 support that these explanations are unverified, but do not support the added instruction that they should not be acted on. — BGP and ConnectWise explanations are unverified and should not be acted on [C-014] [C-022]."
+      ]
+    },
+    {
+      "stage": 7,
+      "status": "failed",
+      "pass": false,
+      "extract_seconds": 26.615650249999998,
+      "reconcile_seconds": 61.982288166,
+      "communicate_parallel_seconds": 9.26872725,
+      "verify_parallel_seconds": 5.515935625,
+      "tokens": 55999,
+      "failures": [
+        "executive: Astra: C-019 says Google Cloud reports signs of recovery and has not declared full recovery; 'not resolved' states unresolved status with greater certainty. — Google Cloud's outage is recovering in Northwind's region, not resolved [C-005][C-019].",
+        "executive: Astra: C-010 establishes that staff use Cloudflare Access, not that their authentication was affected. C-011 reports provider-wide Access impact and attributes restoration to Cloudflare; the sentence asserts staff-specific impact and restoration without that qualification. — Cloudflare's outage affected staff Access authentication; services were restored at 20:57 [C-010][C-011].",
+        "engineering: Astra: C-010 establishes that staff use Cloudflare Access, and C-011 establishes an Access authentication outage, but neither confirms that Northwind staff authentication was affected. — Cloudflare's outage affected staff Access authentication; Cloudflare reports restoration at 20:57 [C-010] [C-011].",
+        "engineering: Astra: C-014 supports that the BGP theory is unconfirmed, but does not support the added instruction that it should not be acted on. — BGP theories are unverified and should not be acted on [C-014]."
+      ]
+    },
+    {
+      "stage": 8,
+      "status": "failed",
+      "pass": false,
+      "extract_seconds": 20.523199124999998,
+      "reconcile_seconds": 76.737389417,
+      "communicate_parallel_seconds": 9.418659500000002,
+      "verify_parallel_seconds": 7.057848292,
+      "tokens": 57826,
+      "failures": [
+        "executive: Astra: C-010 establishes that staff use Cloudflare Access, not that staff access experienced an outage. C-026 confirms Cloudflare restoration but does not establish that specific impact. — Google Cloud retains residual impact; Cloudflare's staff-access outage is resolved [C-027] [C-010] [C-026].",
+        "executive: Astra: R-12 restricts naming in live updates and permits naming in the incident report; it does not say Google may appear only in the incident report across all communications. — Naming decision settled: Google appears only in the incident report [R-12].",
+        "executive: Astra: R-20 establishes a promised update at 21:30, or sooner when restored, but does not establish that the update was not delivered. Calling it overdue adds an unsupported status. — Our promised 21:30 update is overdue [R-20].",
+        "engineering: R6: Live drafts cannot cite superseded claims. — Cloudflare's outage affected Access, our staff-access dependency; all services were restored and the incident resolved at 21:31 [C-010] [C-011] [C-026].",
+        "engineering: Astra: C-014 supports that the BGP theory is unconfirmed, but does not support the instruction that it should not be acted on. — BGP theories are unverified and should not be acted on [C-014].",
+        "engineering: Astra: R-20 schedules an update for 21:30 or sooner when restored, but does not establish that the update was not delivered. Calling it overdue adds an unsupported status. — The scheduled next update was 21:30, now overdue [R-20].",
+        "customer: Astra: C-025 confirms only that the login-api 5xx rate returned to baseline, not that all Login API errors returned to normal. — Login API errors returned to normal levels at 21:10 UTC [C-025].",
+        "customer: Astra: R-20 schedules an update for 21:30, or sooner when restored; it does not establish that the update remains outstanding, as 'we owe you' implies. — We owe you the next update scheduled for 21:30 UTC [R-20]."
+      ]
+    },
+    {
+      "stage": 9,
+      "status": "not_applicable",
+      "pass": false,
+      "extract_seconds": 29.221256250000003,
+      "reconcile_seconds": 75.800551375,
+      "communicate_parallel_seconds": 0,
+      "verify_parallel_seconds": 0,
+      "tokens": 16230,
+      "failures": []
+    }
+  ]
+}

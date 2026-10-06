@@ -1,160 +1,302 @@
 {
-  "stage": 8,
+  "stage": 5,
   "model": "gpt-6-astra",
   "source": "astra_saved",
-  "generated_at": "2026-10-06T17:56:13.675Z",
+  "generated_at": "2026-10-06T17:57:19.685Z",
   "extract": {
     "claims": [
       {
         "id": "C1",
-        "statement": "Northwind monitoring observed the login-api 5xx rate back at its 0.2% baseline since 21:10.",
-        "subject": "Northwind",
-        "unknown_kind": null,
-        "region": "us-central1",
-        "class": "CONFIRMED",
-        "proposed_class": "CONFIRMED",
-        "source_ids": [
-          "N5"
-        ],
-        "provider_wording": null,
-        "settled_by": null,
-        "estimate": null,
-        "first_seen": "21:10",
-        "superseded_by": null,
-        "contradiction_sides": null,
-        "history": []
-      },
-      {
-        "id": "C2",
-        "statement": "Google Cloud reported full service recovery for most Google Cloud products.",
-        "subject": "Google Cloud",
-        "unknown_kind": null,
-        "region": null,
-        "class": "CONFIRMED",
-        "proposed_class": "CONFIRMED",
-        "source_ids": [
-          "S22"
-        ],
-        "provider_wording": "Most of the Google Cloud products have confirmed full service recovery.",
-        "settled_by": null,
-        "estimate": null,
-        "first_seen": "21:23",
-        "superseded_by": null,
-        "contradiction_sides": null,
-        "history": []
-      },
-      {
-        "id": "C3",
-        "statement": "Google Cloud reported residual impact on a few services.",
-        "subject": "Google Cloud",
-        "unknown_kind": null,
-        "region": null,
-        "class": "CONFIRMED",
-        "proposed_class": "CONFIRMED",
-        "source_ids": [
-          "S22"
-        ],
-        "provider_wording": "A few services are still seeing some residual impact.",
-        "settled_by": null,
-        "estimate": null,
-        "first_seen": "21:23",
-        "superseded_by": null,
-        "contradiction_sides": null,
-        "history": []
-      },
-      {
-        "id": "C4",
-        "statement": "Cloudflare declared its incident resolved at 21:31.",
+        "statement": "Cloudflare reports that its services are starting to recover.",
         "subject": "Cloudflare",
         "unknown_kind": null,
         "region": null,
         "class": "CONFIRMED",
         "proposed_class": "CONFIRMED",
         "source_ids": [
-          "S23"
+          "S14"
         ],
-        "provider_wording": "This incident has been resolved.",
+        "provider_wording": "We are starting to see services recover.",
         "settled_by": null,
         "estimate": null,
-        "first_seen": "21:31",
+        "first_seen": "19:12",
+        "superseded_by": null,
+        "contradiction_sides": null,
+        "history": []
+      },
+      {
+        "id": "C2",
+        "statement": "Cloudflare expects intermittent errors to continue.",
+        "subject": "Cloudflare",
+        "unknown_kind": null,
+        "region": null,
+        "class": "CONFIRMED",
+        "proposed_class": "CONFIRMED",
+        "source_ids": [
+          "S14"
+        ],
+        "provider_wording": "We still expect to see intermittent errors…",
+        "settled_by": null,
+        "estimate": null,
+        "first_seen": "19:12",
+        "superseded_by": null,
+        "contradiction_sides": null,
+        "history": []
+      },
+      {
+        "id": "C3",
+        "statement": "Google Cloud reports that all locations except us-central1 have fully recovered.",
+        "subject": "Google Cloud",
+        "unknown_kind": null,
+        "region": "All locations except us-central1",
+        "class": "CONFIRMED",
+        "proposed_class": "CONFIRMED",
+        "source_ids": [
+          "S15"
+        ],
+        "provider_wording": "All locations except us-central1 have fully recovered.",
+        "settled_by": null,
+        "estimate": null,
+        "first_seen": "19:30",
+        "superseded_by": null,
+        "contradiction_sides": null,
+        "history": []
+      },
+      {
+        "id": "C4",
+        "statement": "Google Cloud reports that us-central1 is mostly recovered.",
+        "subject": "Google Cloud",
+        "unknown_kind": null,
+        "region": "us-central1",
+        "class": "CONFIRMED",
+        "proposed_class": "CONFIRMED",
+        "source_ids": [
+          "S15"
+        ],
+        "provider_wording": "us-central1 is mostly recovered.",
+        "settled_by": null,
+        "estimate": null,
+        "first_seen": "19:30",
         "superseded_by": null,
         "contradiction_sides": null,
         "history": []
       },
       {
         "id": "C5",
-        "statement": "Whether Google Cloud's residual impact includes Cloud Run, Firestore, or Firebase Auth in us-central1 is unknown.",
-        "subject": "Google Cloud",
-        "unknown_kind": "scope",
-        "region": "us-central1",
-        "class": "UNKNOWN",
-        "proposed_class": "UNKNOWN",
+        "statement": "Google's consumer-support account reports no known service disruptions, without specifying the services or regions covered.",
+        "subject": "Google",
+        "unknown_kind": null,
+        "region": null,
+        "class": "CONFIRMED",
+        "proposed_class": "CONFIRMED",
         "source_ids": [
-          "S22"
+          "S18"
         ],
-        "provider_wording": null,
+        "provider_wording": "there aren't any known service disruptions. Can you try clearing cache & cookies",
         "settled_by": null,
         "estimate": null,
-        "first_seen": "21:31",
+        "first_seen": "19:33",
         "superseded_by": null,
         "contradiction_sides": null,
         "history": []
       },
       {
         "id": "C6",
-        "statement": "The time to full recovery of Google Cloud's services with residual impact is unknown.",
+        "statement": "Google's consumer-support account reports no known disruptions, while Google Cloud's status page reports incomplete recovery; whether these statements cover the same services is unspecified.",
         "subject": "Google Cloud",
-        "unknown_kind": "recovery",
+        "unknown_kind": null,
         "region": null,
-        "class": "UNKNOWN",
-        "proposed_class": "UNKNOWN",
+        "class": "CONFLICTING",
+        "proposed_class": "CONFLICTING",
         "source_ids": [
-          "S22"
+          "S15",
+          "S18",
+          "S16"
         ],
-        "provider_wording": null,
+        "provider_wording": "All locations except us-central1 have fully recovered. us-central1 is mostly recovered.\nthere aren't any known service disruptions. Can you try clearing cache & cookies\nOur engineers have identified the root cause and have applied appropriate mitigations… We do not have an ETA for full service recovery.",
         "settled_by": null,
         "estimate": null,
-        "first_seen": "21:31",
+        "first_seen": "19:33",
         "superseded_by": null,
-        "contradiction_sides": null,
+        "contradiction_sides": [
+          {
+            "label": "Google consumer support: no known service disruptions; scope unspecified.",
+            "source_ids": [
+              "S18"
+            ]
+          },
+          {
+            "label": "Google Cloud status: us-central1 mostly recovered, with no ETA for full recovery.",
+            "source_ids": [
+              "S15",
+              "S16"
+            ]
+          }
+        ],
         "history": []
       },
       {
         "id": "C7",
-        "statement": "The cause of Northwind's preceding login-api 5xx elevation is unknown.",
-        "subject": "Northwind",
-        "unknown_kind": "cause",
-        "region": "us-central1",
-        "class": "UNKNOWN",
-        "proposed_class": "UNKNOWN",
+        "statement": "A single r/sysadmin post alleges that the incident is a direct result of a ConnectWise compromise.",
+        "subject": "ConnectWise",
+        "unknown_kind": null,
+        "region": null,
+        "class": "UNCONFIRMED",
+        "proposed_class": "UNCONFIRMED",
         "source_ids": [
-          "N5"
+          "S17"
         ],
         "provider_wording": null,
         "settled_by": null,
         "estimate": null,
-        "first_seen": "21:31",
+        "first_seen": "19:37",
         "superseded_by": null,
         "contradiction_sides": null,
         "history": []
       },
       {
         "id": "C8",
-        "statement": "Whether Northwind experienced any data impact is unknown.",
-        "subject": "Northwind",
-        "unknown_kind": "data",
-        "region": "us-central1",
+        "statement": "Google Cloud reports that its engineers have identified the root cause.",
+        "subject": "Google Cloud",
+        "unknown_kind": null,
+        "region": null,
+        "class": "CONFIRMED",
+        "proposed_class": "CONFIRMED",
+        "source_ids": [
+          "S16"
+        ],
+        "provider_wording": "Our engineers have identified the root cause and have applied appropriate mitigations…",
+        "settled_by": null,
+        "estimate": null,
+        "first_seen": "19:41",
+        "superseded_by": null,
+        "contradiction_sides": null,
+        "history": []
+      },
+      {
+        "id": "C9",
+        "statement": "Google Cloud reports that its engineers have applied mitigations.",
+        "subject": "Google Cloud",
+        "unknown_kind": null,
+        "region": null,
+        "class": "CONFIRMED",
+        "proposed_class": "CONFIRMED",
+        "source_ids": [
+          "S16"
+        ],
+        "provider_wording": "Our engineers have identified the root cause and have applied appropriate mitigations…",
+        "settled_by": null,
+        "estimate": null,
+        "first_seen": "19:41",
+        "superseded_by": null,
+        "contradiction_sides": null,
+        "history": []
+      },
+      {
+        "id": "C10",
+        "statement": "Google Cloud states that it has no ETA for full service recovery.",
+        "subject": "Google Cloud",
+        "unknown_kind": null,
+        "region": null,
+        "class": "CONFIRMED",
+        "proposed_class": "CONFIRMED",
+        "source_ids": [
+          "S16"
+        ],
+        "provider_wording": "We do not have an ETA for full service recovery.",
+        "settled_by": null,
+        "estimate": null,
+        "first_seen": "19:41",
+        "superseded_by": null,
+        "contradiction_sides": null,
+        "history": []
+      },
+      {
+        "id": "C11",
+        "statement": "The specific root cause of the Google Cloud incident is not established by the supplied evidence.",
+        "subject": "Google Cloud",
+        "unknown_kind": "cause",
+        "region": null,
         "class": "UNKNOWN",
         "proposed_class": "UNKNOWN",
         "source_ids": [
-          "N5",
-          "S22",
-          "S23"
+          "S16",
+          "S17"
         ],
+        "provider_wording": "Our engineers have identified the root cause and have applied appropriate mitigations…",
+        "settled_by": null,
+        "estimate": null,
+        "first_seen": "19:41",
+        "superseded_by": null,
+        "contradiction_sides": null,
+        "history": []
+      },
+      {
+        "id": "C12",
+        "statement": "The time of full Google Cloud service recovery remains unknown.",
+        "subject": "Google Cloud",
+        "unknown_kind": "recovery",
+        "region": null,
+        "class": "UNKNOWN",
+        "proposed_class": "UNKNOWN",
+        "source_ids": [
+          "S16"
+        ],
+        "provider_wording": "We do not have an ETA for full service recovery.",
+        "settled_by": null,
+        "estimate": null,
+        "first_seen": "19:41",
+        "superseded_by": null,
+        "contradiction_sides": null,
+        "history": []
+      },
+      {
+        "id": "C13",
+        "statement": "Whether Northwind's customer app is affected through Cloud Run, Firestore, or Firebase Auth in us-central1 is unknown.",
+        "subject": "Northwind",
+        "unknown_kind": "scope",
+        "region": "us-central1",
+        "class": "UNKNOWN",
+        "proposed_class": "UNKNOWN",
+        "source_ids": [],
         "provider_wording": null,
         "settled_by": null,
         "estimate": null,
-        "first_seen": "21:31",
+        "first_seen": "19:41",
+        "superseded_by": null,
+        "contradiction_sides": null,
+        "history": []
+      },
+      {
+        "id": "C14",
+        "statement": "Whether Northwind's staff tools are affected through Cloudflare Access is unknown.",
+        "subject": "Northwind",
+        "unknown_kind": "scope",
+        "region": null,
+        "class": "UNKNOWN",
+        "proposed_class": "UNKNOWN",
+        "source_ids": [],
+        "provider_wording": null,
+        "settled_by": null,
+        "estimate": null,
+        "first_seen": "19:41",
+        "superseded_by": null,
+        "contradiction_sides": null,
+        "history": []
+      },
+      {
+        "id": "C15",
+        "statement": "Whether the incident has affected Northwind's data is unknown.",
+        "subject": "Northwind",
+        "unknown_kind": "data",
+        "region": null,
+        "class": "UNKNOWN",
+        "proposed_class": "UNKNOWN",
+        "source_ids": [],
+        "provider_wording": null,
+        "settled_by": null,
+        "estimate": null,
+        "first_seen": "19:41",
         "superseded_by": null,
         "contradiction_sides": null,
         "history": []
@@ -163,99 +305,6 @@
   },
   "reconcile": {
     "claims": [
-      {
-        "id": "C-001",
-        "statement": "Since 17:51 UTC customers can't reliably log in or use our API",
-        "subject": "Northwind",
-        "unknown_kind": null,
-        "class": "CONFIRMED",
-        "proposed_class": "CONFIRMED",
-        "source_ids": [
-          "N1"
-        ],
-        "provider_wording": null,
-        "settled_by": null,
-        "estimate": null,
-        "first_seen": "17:52",
-        "superseded_by": null,
-        "contradiction_sides": null,
-        "history": [
-          {
-            "stage": 1,
-            "class": "CONFIRMED",
-            "statement": "Since 17:51 UTC customers can't reliably log in or use our API",
-            "because": [
-              "N1"
-            ]
-          }
-        ]
-      },
-      {
-        "id": "C-003",
-        "statement": "Root cause",
-        "subject": "Google Cloud",
-        "unknown_kind": "cause",
-        "class": "UNKNOWN",
-        "proposed_class": "UNKNOWN",
-        "source_ids": [],
-        "provider_wording": null,
-        "settled_by": "The provider stating the cause on the record",
-        "estimate": null,
-        "first_seen": "17:56",
-        "superseded_by": null,
-        "contradiction_sides": null,
-        "history": [
-          {
-            "stage": 1,
-            "class": "UNKNOWN",
-            "statement": "Root cause",
-            "because": []
-          }
-        ]
-      },
-      {
-        "id": "C-004",
-        "statement": "When full recovery will be complete remains unknown: Northwind's login-api 5xx rate is back at baseline, but Google Cloud reports residual service impact.",
-        "subject": "Northwind",
-        "unknown_kind": "recovery",
-        "class": "UNKNOWN",
-        "proposed_class": "UNKNOWN",
-        "source_ids": [],
-        "provider_wording": null,
-        "settled_by": "Our monitoring confirming full recovery, or a provider update on remaining impact",
-        "estimate": {
-          "speaker": "Google",
-          "said": "We expect the recovery to complete in less than an hour.",
-          "at": "21:00",
-          "source_id": "S20"
-        },
-        "first_seen": "17:56",
-        "superseded_by": null,
-        "contradiction_sides": null,
-        "history": [
-          {
-            "stage": 1,
-            "class": "UNKNOWN",
-            "statement": "When our service will recover",
-            "because": []
-          },
-          {
-            "stage": 7,
-            "class": "UNKNOWN",
-            "statement": "When our service will recover",
-            "because": []
-          },
-          {
-            "stage": 8,
-            "class": "UNKNOWN",
-            "statement": "When full recovery will be complete remains unknown: Northwind's login-api 5xx rate is back at baseline, but Google Cloud reports residual service impact.",
-            "because": [
-              "N5",
-              "S22"
-            ]
-          }
-        ]
-      },
       {
         "id": "C-005",
         "statement": "Google Cloud has an incident affecting multiple products since 17:51 UTC",
@@ -292,7 +341,6 @@
             "class": "CONFLICTING",
             "statement": "Google Cloud incident: the status page still shows none, but widespread reports say otherwise",
             "because": [
-              "S2",
               "S3",
               "S4",
               "S5",
@@ -305,6 +353,62 @@
             "statement": "Google Cloud has an incident affecting multiple products since 17:51 UTC",
             "because": [
               "S7"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "C-011",
+        "statement": "Cloudflare has an outage: Access authentication failing, WARP impacted, Workers KV and Durable Objects among impacted services",
+        "subject": "Cloudflare",
+        "unknown_kind": null,
+        "class": "CONFIRMED",
+        "proposed_class": "CONFIRMED",
+        "source_ids": [
+          "S8",
+          "S9"
+        ],
+        "provider_wording": "an issue causing Access authentication to fail. Cloudflare Zero Trust WARP connectivity is also impacted.",
+        "settled_by": null,
+        "estimate": null,
+        "first_seen": "18:19",
+        "superseded_by": null,
+        "contradiction_sides": null,
+        "history": [
+          {
+            "stage": 4,
+            "class": "CONFIRMED",
+            "statement": "Cloudflare has an outage: Access authentication failing, WARP impacted, Workers KV and Durable Objects among impacted services",
+            "because": [
+              "S8",
+              "S9"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "C-001",
+        "statement": "Since 17:51 UTC customers can't reliably log in or use our API",
+        "subject": "Northwind",
+        "unknown_kind": null,
+        "class": "CONFIRMED",
+        "proposed_class": "CONFIRMED",
+        "source_ids": [
+          "N1"
+        ],
+        "provider_wording": null,
+        "settled_by": null,
+        "estimate": null,
+        "first_seen": "17:52",
+        "superseded_by": null,
+        "contradiction_sides": null,
+        "history": [
+          {
+            "stage": 1,
+            "class": "CONFIRMED",
+            "statement": "Since 17:51 UTC customers can't reliably log in or use our API",
+            "because": [
+              "N1"
             ]
           }
         ]
@@ -445,30 +549,28 @@
         ]
       },
       {
-        "id": "C-011",
-        "statement": "Cloudflare has an outage: Access authentication failing, WARP impacted, Workers KV and Durable Objects among impacted services",
-        "subject": "Cloudflare",
+        "id": "C-015",
+        "statement": "Downdetector: Google Cloud problem reports peaked at 14,695 (18:31); Cloudflare at 3,071 (18:49)",
+        "subject": "Google Cloud",
         "unknown_kind": null,
-        "class": "CONFIRMED",
-        "proposed_class": "CONFIRMED",
+        "class": "REPORTED",
+        "proposed_class": "REPORTED",
         "source_ids": [
-          "S8",
-          "S9"
+          "M1"
         ],
-        "provider_wording": "an issue causing Access authentication to fail. Cloudflare Zero Trust WARP connectivity is also impacted.",
-        "settled_by": null,
+        "provider_wording": null,
+        "settled_by": "Provider statements on scope (crowd counts are a signal, not proof)",
         "estimate": null,
-        "first_seen": "18:19",
-        "superseded_by": "C-026",
+        "first_seen": "18:49",
+        "superseded_by": null,
         "contradiction_sides": null,
         "history": [
           {
             "stage": 4,
-            "class": "CONFIRMED",
-            "statement": "Cloudflare has an outage: Access authentication failing, WARP impacted, Workers KV and Durable Objects among impacted services",
+            "class": "REPORTED",
+            "statement": "Downdetector: Google Cloud problem reports peaked at 14,695 (18:31); Cloudflare at 3,071 (18:49)",
             "because": [
-              "S8",
-              "S9"
+              "M1"
             ]
           }
         ]
@@ -555,42 +657,71 @@
         ]
       },
       {
-        "id": "C-015",
-        "statement": "Downdetector: Google Cloud problem reports peaked at 14,695 (18:31); Cloudflare at 3,071 (18:49)",
+        "id": "C-003",
+        "statement": "Root cause",
         "subject": "Google Cloud",
-        "unknown_kind": null,
-        "class": "REPORTED",
-        "proposed_class": "REPORTED",
-        "source_ids": [
-          "M1"
-        ],
+        "unknown_kind": "cause",
+        "class": "UNKNOWN",
+        "proposed_class": "UNKNOWN",
+        "source_ids": [],
         "provider_wording": null,
-        "settled_by": "Provider statements on scope (crowd counts are a signal, not proof)",
+        "settled_by": "The provider stating the cause on the record",
         "estimate": null,
-        "first_seen": "18:49",
+        "first_seen": "17:56",
         "superseded_by": null,
         "contradiction_sides": null,
         "history": [
           {
-            "stage": 4,
-            "class": "REPORTED",
-            "statement": "Downdetector: Google Cloud problem reports peaked at 14,695 (18:31); Cloudflare at 3,071 (18:49)",
+            "stage": 1,
+            "class": "UNKNOWN",
+            "statement": "Root cause",
+            "because": []
+          }
+        ]
+      },
+      {
+        "id": "C-004",
+        "statement": "When our service will recover remains unknown; Google Cloud says it has no ETA for full service recovery.",
+        "subject": "Northwind",
+        "unknown_kind": "recovery",
+        "class": "UNKNOWN",
+        "proposed_class": "UNKNOWN",
+        "source_ids": [],
+        "provider_wording": null,
+        "settled_by": "Our monitoring returning to baseline, or a provider estimate",
+        "estimate": null,
+        "first_seen": "17:56",
+        "superseded_by": null,
+        "contradiction_sides": null,
+        "history": [
+          {
+            "stage": 1,
+            "class": "UNKNOWN",
+            "statement": "When our service will recover",
+            "because": []
+          },
+          {
+            "stage": 5,
+            "class": "UNKNOWN",
+            "statement": "When our service will recover remains unknown; Google Cloud says it has no ETA for full service recovery.",
             "because": [
-              "M1"
+              "S16"
             ]
           }
         ]
       },
       {
         "id": "C-016",
-        "statement": "Which Google Cloud services and regions retain residual impact, including whether Cloud Run, Firestore or Firebase Auth in us-central1 are affected, is unknown.",
+        "statement": "Google Cloud reports that all locations except us-central1 have fully recovered; us-central1 is mostly recovered.",
         "subject": "Google Cloud",
-        "unknown_kind": "scope",
-        "class": "UNKNOWN",
-        "proposed_class": "UNKNOWN",
-        "source_ids": [],
-        "provider_wording": null,
-        "settled_by": "The provider's list of services and regions with residual impact",
+        "unknown_kind": null,
+        "class": "CONFIRMED",
+        "proposed_class": "CONFIRMED",
+        "source_ids": [
+          "S15"
+        ],
+        "provider_wording": "All locations except us-central1 have fully recovered. us-central1 is mostly recovered.",
+        "settled_by": null,
         "estimate": null,
         "first_seen": "18:51",
         "superseded_by": null,
@@ -603,18 +734,144 @@
             "because": []
           },
           {
-            "stage": 8,
-            "class": "UNKNOWN",
-            "statement": "Which Google Cloud services and regions retain residual impact, including whether Cloud Run, Firestore or Firebase Auth in us-central1 are affected, is unknown.",
+            "stage": 5,
+            "class": "CONFIRMED",
+            "statement": "Google Cloud reports that all locations except us-central1 have fully recovered; us-central1 is mostly recovered.",
             "because": [
-              "S22"
+              "S15"
             ]
           }
         ]
       },
       {
         "id": "C-017",
-        "statement": "Google has identified the root cause and applied mitigations, without disclosing the cause",
+        "statement": "Cloudflare reports that its services are starting to recover.",
+        "subject": "Cloudflare",
+        "unknown_kind": null,
+        "class": "CONFIRMED",
+        "proposed_class": "CONFIRMED",
+        "source_ids": [
+          "S14"
+        ],
+        "provider_wording": "We are starting to see services recover.",
+        "settled_by": null,
+        "estimate": null,
+        "first_seen": "19:12",
+        "superseded_by": null,
+        "contradiction_sides": null,
+        "history": [
+          {
+            "stage": 5,
+            "class": "CONFIRMED",
+            "statement": "Cloudflare reports that its services are starting to recover.",
+            "because": [
+              "S14"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "C-018",
+        "statement": "Cloudflare expects intermittent errors to continue.",
+        "subject": "Cloudflare",
+        "unknown_kind": null,
+        "class": "CONFIRMED",
+        "proposed_class": "CONFIRMED",
+        "source_ids": [
+          "S14"
+        ],
+        "provider_wording": "We still expect to see intermittent errors…",
+        "settled_by": null,
+        "estimate": null,
+        "first_seen": "19:12",
+        "superseded_by": null,
+        "contradiction_sides": null,
+        "history": [
+          {
+            "stage": 5,
+            "class": "CONFIRMED",
+            "statement": "Cloudflare expects intermittent errors to continue.",
+            "because": [
+              "S14"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "C-019",
+        "statement": "Google's consumer-support account reports no known service disruptions, without specifying services or regions; this contradicts the provider's status page, which reports incomplete Google Cloud recovery.",
+        "subject": "Google",
+        "unknown_kind": null,
+        "class": "CONFLICTING",
+        "proposed_class": "CONFLICTING",
+        "source_ids": [
+          "S18",
+          "S15",
+          "S16"
+        ],
+        "provider_wording": "there aren't any known service disruptions. Can you try clearing cache & cookies",
+        "settled_by": null,
+        "estimate": null,
+        "first_seen": "19:33",
+        "superseded_by": null,
+        "contradiction_sides": [
+          {
+            "label": "Google consumer support: no known service disruptions; scope unspecified.",
+            "source_ids": [
+              "S18"
+            ]
+          },
+          {
+            "label": "Google Cloud status page: us-central1 mostly recovered, with no ETA for full recovery.",
+            "source_ids": [
+              "S15",
+              "S16"
+            ]
+          }
+        ],
+        "history": [
+          {
+            "stage": 5,
+            "class": "CONFLICTING",
+            "statement": "Google's consumer-support account reports no known service disruptions, without specifying services or regions; this contradicts the provider's status page, which reports incomplete Google Cloud recovery.",
+            "because": [
+              "S18",
+              "S15",
+              "S16"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "C-020",
+        "statement": "A single r/sysadmin post alleges that the incident is a direct result of a ConnectWise compromise.",
+        "subject": "ConnectWise",
+        "unknown_kind": null,
+        "class": "UNCONFIRMED",
+        "proposed_class": "UNCONFIRMED",
+        "source_ids": [
+          "S17"
+        ],
+        "provider_wording": null,
+        "settled_by": null,
+        "estimate": null,
+        "first_seen": "19:37",
+        "superseded_by": null,
+        "contradiction_sides": null,
+        "history": [
+          {
+            "stage": 5,
+            "class": "UNCONFIRMED",
+            "statement": "A single r/sysadmin post alleges that the incident is a direct result of a ConnectWise compromise.",
+            "because": [
+              "S17"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "C-021",
+        "statement": "Google Cloud reports that its engineers have identified the root cause, but the supplied statement does not disclose the specific cause.",
         "subject": "Google Cloud",
         "unknown_kind": null,
         "class": "CONFIRMED",
@@ -622,7 +879,7 @@
         "source_ids": [
           "S16"
         ],
-        "provider_wording": "Our engineers have identified the root cause and have applied appropriate mitigations… We do not have an ETA for full service recovery.",
+        "provider_wording": "Our engineers have identified the root cause and have applied appropriate mitigations…",
         "settled_by": null,
         "estimate": null,
         "first_seen": "19:41",
@@ -632,7 +889,7 @@
           {
             "stage": 5,
             "class": "CONFIRMED",
-            "statement": "Google has identified the root cause and applied mitigations, without disclosing the cause",
+            "statement": "Google Cloud reports that its engineers have identified the root cause, but the supplied statement does not disclose the specific cause.",
             "because": [
               "S16"
             ]
@@ -640,327 +897,74 @@
         ]
       },
       {
-        "id": "C-018",
-        "statement": "All Google Cloud locations except us-central1 have fully recovered",
-        "subject": "Google Cloud",
-        "unknown_kind": null,
-        "class": "CONFIRMED",
-        "proposed_class": "CONFIRMED",
-        "source_ids": [
-          "S15"
-        ],
-        "provider_wording": "All locations except us-central1 have fully recovered. us-central1 is mostly recovered.",
-        "settled_by": null,
-        "estimate": null,
-        "first_seen": "19:30",
-        "superseded_by": null,
-        "contradiction_sides": null,
-        "history": [
-          {
-            "stage": 5,
-            "class": "CONFIRMED",
-            "statement": "All Google Cloud locations except us-central1 have fully recovered",
-            "because": [
-              "S15"
-            ]
-          }
-        ]
-      },
-      {
-        "id": "C-019",
-        "statement": "us-central1, our region, is still affected (\"mostly recovered\")",
-        "subject": "Google Cloud",
-        "unknown_kind": null,
-        "class": "CONFIRMED",
-        "proposed_class": "CONFIRMED",
-        "source_ids": [
-          "S15"
-        ],
-        "provider_wording": "All locations except us-central1 have fully recovered. us-central1 is mostly recovered.",
-        "settled_by": null,
-        "estimate": null,
-        "first_seen": "19:30",
-        "superseded_by": null,
-        "contradiction_sides": null,
-        "history": [
-          {
-            "stage": 5,
-            "class": "CONFIRMED",
-            "statement": "us-central1, our region, is still affected (\"mostly recovered\")",
-            "because": [
-              "S15"
-            ]
-          }
-        ]
-      },
-      {
-        "id": "C-020",
-        "statement": "Cloudflare services are starting to recover",
-        "subject": "Cloudflare",
-        "unknown_kind": null,
-        "class": "CONFIRMED",
-        "proposed_class": "CONFIRMED",
-        "source_ids": [
-          "S14"
-        ],
-        "provider_wording": "We are starting to see services recover. We still expect to see intermittent errors…",
-        "settled_by": null,
-        "estimate": null,
-        "first_seen": "19:12",
-        "superseded_by": "C-026",
-        "contradiction_sides": null,
-        "history": [
-          {
-            "stage": 5,
-            "class": "CONFIRMED",
-            "statement": "Cloudflare services are starting to recover",
-            "because": [
-              "S14"
-            ]
-          }
-        ]
-      },
-      {
-        "id": "C-021",
-        "statement": "Google's support account on X says there are no known service disruptions (contradicts the status page)",
-        "subject": "Google",
-        "unknown_kind": null,
-        "class": "CONFLICTING",
-        "proposed_class": "CONFLICTING",
-        "source_ids": [
-          "S18",
-          "S7"
-        ],
-        "provider_wording": "there aren't any known service disruptions. Can you try clearing cache & cookies",
-        "settled_by": "Google retracting or correcting the post",
-        "estimate": null,
-        "first_seen": "18:46",
-        "superseded_by": null,
-        "contradiction_sides": [
-          {
-            "label": "Support account",
-            "source_ids": [
-              "S18"
-            ]
-          },
-          {
-            "label": "Status page",
-            "source_ids": [
-              "S7"
-            ]
-          }
-        ],
-        "history": [
-          {
-            "stage": 5,
-            "class": "CONFLICTING",
-            "statement": "Google's support account on X says there are no known service disruptions (contradicts the status page)",
-            "because": [
-              "S18",
-              "S7"
-            ]
-          }
-        ]
-      },
-      {
         "id": "C-022",
-        "statement": "The outage is a result of the ConnectWise compromise",
+        "statement": "Google Cloud reports that its engineers have applied mitigations.",
         "subject": "Google Cloud",
         "unknown_kind": null,
-        "class": "UNCONFIRMED",
-        "proposed_class": "UNCONFIRMED",
+        "class": "CONFIRMED",
+        "proposed_class": "CONFIRMED",
         "source_ids": [
-          "S17"
+          "S16"
         ],
-        "provider_wording": null,
-        "settled_by": "The provider's root-cause statement",
+        "provider_wording": "Our engineers have identified the root cause and have applied appropriate mitigations…",
+        "settled_by": null,
         "estimate": null,
-        "first_seen": "19:37",
+        "first_seen": "19:41",
         "superseded_by": null,
         "contradiction_sides": null,
         "history": [
           {
             "stage": 5,
-            "class": "UNCONFIRMED",
-            "statement": "The outage is a result of the ConnectWise compromise",
+            "class": "CONFIRMED",
+            "statement": "Google Cloud reports that its engineers have applied mitigations.",
             "because": [
-              "S17"
+              "S16"
             ]
           }
         ]
       },
       {
         "id": "C-023",
-        "statement": "Cloudflare's Workers KV outage was caused by the failure of a third-party service it depends on (not named)",
-        "subject": "Cloudflare",
-        "unknown_kind": null,
-        "class": "CONFIRMED",
-        "proposed_class": "CONFIRMED",
-        "source_ids": [
-          "S19"
-        ],
-        "provider_wording": "Cloudflare's critical Workers KV service went offline due to an outage of a 3rd party service that is a key dependency.",
+        "statement": "Whether Northwind's staff tools are affected through Cloudflare Access is unknown.",
+        "subject": "Northwind",
+        "unknown_kind": "scope",
+        "class": "UNKNOWN",
+        "proposed_class": "UNKNOWN",
+        "source_ids": [],
+        "provider_wording": null,
         "settled_by": null,
         "estimate": null,
-        "first_seen": "19:57",
+        "first_seen": "19:41",
         "superseded_by": null,
         "contradiction_sides": null,
         "history": [
           {
-            "stage": 6,
-            "class": "CONFIRMED",
-            "statement": "Cloudflare's Workers KV outage was caused by the failure of a third-party service it depends on (not named)",
-            "because": [
-              "S19"
-            ]
+            "stage": 5,
+            "class": "UNKNOWN",
+            "statement": "Whether Northwind's staff tools are affected through Cloudflare Access is unknown.",
+            "because": []
           }
         ]
       },
       {
         "id": "C-024",
-        "statement": "Google has applied a mitigation in us-central1",
-        "subject": "Google Cloud",
-        "unknown_kind": null,
-        "class": "CONFIRMED",
-        "proposed_class": "CONFIRMED",
-        "source_ids": [
-          "S20"
-        ],
-        "provider_wording": "We have implemented mitigation for the issue in us-central1 and multi-region/us and we are seeing signs of recovery… We expect the recovery to complete in less than an hour.",
-        "settled_by": null,
-        "estimate": null,
-        "first_seen": "21:00",
-        "superseded_by": null,
-        "contradiction_sides": null,
-        "history": [
-          {
-            "stage": 7,
-            "class": "CONFIRMED",
-            "statement": "Google has applied a mitigation in us-central1",
-            "because": [
-              "S20"
-            ]
-          }
-        ]
-      },
-      {
-        "id": "C-025",
-        "statement": "Northwind monitoring observed the login-api 5xx rate back at its 0.2% baseline since 21:10, following the earlier decline to 12% from a 38% peak.",
-        "subject": "Northwind",
-        "unknown_kind": null,
-        "class": "CONFIRMED",
-        "proposed_class": "CONFIRMED",
-        "source_ids": [
-          "N7",
-          "N5"
-        ],
-        "provider_wording": null,
-        "settled_by": null,
-        "estimate": null,
-        "first_seen": "21:00",
-        "superseded_by": null,
-        "contradiction_sides": null,
-        "history": [
-          {
-            "stage": 7,
-            "class": "CONFIRMED",
-            "statement": "Our error rate is falling: 12%, down from a 38% peak",
-            "because": [
-              "N7"
-            ]
-          },
-          {
-            "stage": 8,
-            "class": "CONFIRMED",
-            "statement": "Northwind monitoring observed the login-api 5xx rate back at its 0.2% baseline since 21:10, following the earlier decline to 12% from a 38% peak.",
-            "because": [
-              "N5"
-            ]
-          }
-        ]
-      },
-      {
-        "id": "C-026",
-        "statement": "All Cloudflare services have been restored; Cloudflare declared the incident resolved at 21:31.",
-        "subject": "Cloudflare",
-        "unknown_kind": null,
-        "class": "CONFIRMED",
-        "proposed_class": "CONFIRMED",
-        "source_ids": [
-          "S21",
-          "S23"
-        ],
-        "provider_wording": "This incident has been resolved.",
-        "settled_by": null,
-        "estimate": null,
-        "first_seen": "20:57",
-        "superseded_by": null,
-        "contradiction_sides": null,
-        "history": [
-          {
-            "stage": 7,
-            "class": "CONFIRMED",
-            "statement": "All Cloudflare services have been restored",
-            "because": [
-              "S21"
-            ]
-          },
-          {
-            "stage": 8,
-            "class": "CONFIRMED",
-            "statement": "All Cloudflare services have been restored; Cloudflare declared the incident resolved at 21:31.",
-            "because": [
-              "S23"
-            ]
-          }
-        ]
-      },
-      {
-        "id": "C-027",
-        "statement": "At 21:23 Google Cloud reported full service recovery for most products, with a few services still seeing residual impact.",
-        "subject": "Google Cloud",
-        "unknown_kind": null,
-        "class": "CONFIRMED",
-        "proposed_class": "CONFIRMED",
-        "source_ids": [
-          "S22"
-        ],
-        "provider_wording": "Most of the Google Cloud products have confirmed full service recovery. A few services are still seeing some residual impact.",
-        "settled_by": null,
-        "estimate": null,
-        "first_seen": "21:23",
-        "superseded_by": null,
-        "contradiction_sides": null,
-        "history": [
-          {
-            "stage": 8,
-            "class": "CONFIRMED",
-            "statement": "At 21:23 Google Cloud reported full service recovery for most products, with a few services still seeing residual impact.",
-            "because": [
-              "S22"
-            ]
-          }
-        ]
-      },
-      {
-        "id": "C-028",
-        "statement": "Whether Northwind experienced any data impact is unknown.",
+        "statement": "Whether the incident has affected Northwind's data is unknown.",
         "subject": "Northwind",
         "unknown_kind": "data",
         "class": "UNKNOWN",
         "proposed_class": "UNKNOWN",
         "source_ids": [],
         "provider_wording": null,
-        "settled_by": "Northwind data-integrity checks or an authoritative statement on data impact",
+        "settled_by": null,
         "estimate": null,
-        "first_seen": "21:31",
+        "first_seen": "19:41",
         "superseded_by": null,
         "contradiction_sides": null,
         "history": [
           {
-            "stage": 8,
+            "stage": 5,
             "class": "UNKNOWN",
-            "statement": "Whether Northwind experienced any data impact is unknown.",
+            "statement": "Whether the incident has affected Northwind's data is unknown.",
             "because": []
           }
         ]
@@ -988,48 +992,83 @@
         "from": "UNKNOWN",
         "to": "UNKNOWN",
         "because": [
-          "N5",
-          "S22"
+          "S16"
         ]
       },
       {
         "claim_id": "C-016",
         "change": "UPGRADED",
         "from": "UNKNOWN",
-        "to": "UNKNOWN",
-        "because": [
-          "S22"
-        ]
-      },
-      {
-        "claim_id": "C-025",
-        "change": "UPGRADED",
-        "from": "CONFIRMED",
         "to": "CONFIRMED",
         "because": [
-          "N5"
+          "S15"
         ]
       },
       {
-        "claim_id": "C-026",
-        "change": "UPGRADED",
-        "from": "CONFIRMED",
-        "to": "CONFIRMED",
-        "because": [
-          "S23"
-        ]
-      },
-      {
-        "claim_id": "C-027",
+        "claim_id": "C-017",
         "change": "NEW",
         "from": null,
         "to": "CONFIRMED",
         "because": [
-          "S22"
+          "S14"
         ]
       },
       {
-        "claim_id": "C-028",
+        "claim_id": "C-018",
+        "change": "NEW",
+        "from": null,
+        "to": "CONFIRMED",
+        "because": [
+          "S14"
+        ]
+      },
+      {
+        "claim_id": "C-019",
+        "change": "NEW",
+        "from": null,
+        "to": "CONFLICTING",
+        "because": [
+          "S18",
+          "S15",
+          "S16"
+        ]
+      },
+      {
+        "claim_id": "C-020",
+        "change": "NEW",
+        "from": null,
+        "to": "UNCONFIRMED",
+        "because": [
+          "S17"
+        ]
+      },
+      {
+        "claim_id": "C-021",
+        "change": "NEW",
+        "from": null,
+        "to": "CONFIRMED",
+        "because": [
+          "S16"
+        ]
+      },
+      {
+        "claim_id": "C-022",
+        "change": "NEW",
+        "from": null,
+        "to": "CONFIRMED",
+        "because": [
+          "S16"
+        ]
+      },
+      {
+        "claim_id": "C-023",
+        "change": "NEW",
+        "from": null,
+        "to": "UNKNOWN",
+        "because": []
+      },
+      {
+        "claim_id": "C-024",
         "change": "NEW",
         "from": null,
         "to": "UNKNOWN",
@@ -1038,99 +1077,6 @@
     ]
   },
   "capped_ledger": [
-    {
-      "id": "C-001",
-      "statement": "Since 17:51 UTC customers can't reliably log in or use our API",
-      "subject": "Northwind",
-      "unknown_kind": null,
-      "class": "CONFIRMED",
-      "proposed_class": "CONFIRMED",
-      "source_ids": [
-        "N1"
-      ],
-      "provider_wording": null,
-      "settled_by": null,
-      "estimate": null,
-      "first_seen": "17:52",
-      "superseded_by": null,
-      "contradiction_sides": null,
-      "history": [
-        {
-          "stage": 1,
-          "class": "CONFIRMED",
-          "statement": "Since 17:51 UTC customers can't reliably log in or use our API",
-          "because": [
-            "N1"
-          ]
-        }
-      ]
-    },
-    {
-      "id": "C-003",
-      "statement": "Root cause",
-      "subject": "Google Cloud",
-      "unknown_kind": "cause",
-      "class": "UNKNOWN",
-      "proposed_class": "UNKNOWN",
-      "source_ids": [],
-      "provider_wording": null,
-      "settled_by": "The provider stating the cause on the record",
-      "estimate": null,
-      "first_seen": "17:56",
-      "superseded_by": null,
-      "contradiction_sides": null,
-      "history": [
-        {
-          "stage": 1,
-          "class": "UNKNOWN",
-          "statement": "Root cause",
-          "because": []
-        }
-      ]
-    },
-    {
-      "id": "C-004",
-      "statement": "When full recovery will be complete remains unknown: Northwind's login-api 5xx rate is back at baseline, but Google Cloud reports residual service impact.",
-      "subject": "Northwind",
-      "unknown_kind": "recovery",
-      "class": "UNKNOWN",
-      "proposed_class": "UNKNOWN",
-      "source_ids": [],
-      "provider_wording": null,
-      "settled_by": "Our monitoring confirming full recovery, or a provider update on remaining impact",
-      "estimate": {
-        "speaker": "Google",
-        "said": "We expect the recovery to complete in less than an hour.",
-        "at": "21:00",
-        "source_id": "S20"
-      },
-      "first_seen": "17:56",
-      "superseded_by": null,
-      "contradiction_sides": null,
-      "history": [
-        {
-          "stage": 1,
-          "class": "UNKNOWN",
-          "statement": "When our service will recover",
-          "because": []
-        },
-        {
-          "stage": 7,
-          "class": "UNKNOWN",
-          "statement": "When our service will recover",
-          "because": []
-        },
-        {
-          "stage": 8,
-          "class": "UNKNOWN",
-          "statement": "When full recovery will be complete remains unknown: Northwind's login-api 5xx rate is back at baseline, but Google Cloud reports residual service impact.",
-          "because": [
-            "N5",
-            "S22"
-          ]
-        }
-      ]
-    },
     {
       "id": "C-005",
       "statement": "Google Cloud has an incident affecting multiple products since 17:51 UTC",
@@ -1167,7 +1113,6 @@
           "class": "CONFLICTING",
           "statement": "Google Cloud incident: the status page still shows none, but widespread reports say otherwise",
           "because": [
-            "S2",
             "S3",
             "S4",
             "S5",
@@ -1180,6 +1125,62 @@
           "statement": "Google Cloud has an incident affecting multiple products since 17:51 UTC",
           "because": [
             "S7"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "C-011",
+      "statement": "Cloudflare has an outage: Access authentication failing, WARP impacted, Workers KV and Durable Objects among impacted services",
+      "subject": "Cloudflare",
+      "unknown_kind": null,
+      "class": "CONFIRMED",
+      "proposed_class": "CONFIRMED",
+      "source_ids": [
+        "S8",
+        "S9"
+      ],
+      "provider_wording": "an issue causing Access authentication to fail. Cloudflare Zero Trust WARP connectivity is also impacted.",
+      "settled_by": null,
+      "estimate": null,
+      "first_seen": "18:19",
+      "superseded_by": null,
+      "contradiction_sides": null,
+      "history": [
+        {
+          "stage": 4,
+          "class": "CONFIRMED",
+          "statement": "Cloudflare has an outage: Access authentication failing, WARP impacted, Workers KV and Durable Objects among impacted services",
+          "because": [
+            "S8",
+            "S9"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "C-001",
+      "statement": "Since 17:51 UTC customers can't reliably log in or use our API",
+      "subject": "Northwind",
+      "unknown_kind": null,
+      "class": "CONFIRMED",
+      "proposed_class": "CONFIRMED",
+      "source_ids": [
+        "N1"
+      ],
+      "provider_wording": null,
+      "settled_by": null,
+      "estimate": null,
+      "first_seen": "17:52",
+      "superseded_by": null,
+      "contradiction_sides": null,
+      "history": [
+        {
+          "stage": 1,
+          "class": "CONFIRMED",
+          "statement": "Since 17:51 UTC customers can't reliably log in or use our API",
+          "because": [
+            "N1"
           ]
         }
       ]
@@ -1320,30 +1321,28 @@
       ]
     },
     {
-      "id": "C-011",
-      "statement": "Cloudflare has an outage: Access authentication failing, WARP impacted, Workers KV and Durable Objects among impacted services",
-      "subject": "Cloudflare",
+      "id": "C-015",
+      "statement": "Downdetector: Google Cloud problem reports peaked at 14,695 (18:31); Cloudflare at 3,071 (18:49)",
+      "subject": "Google Cloud",
       "unknown_kind": null,
-      "class": "CONFIRMED",
-      "proposed_class": "CONFIRMED",
+      "class": "REPORTED",
+      "proposed_class": "REPORTED",
       "source_ids": [
-        "S8",
-        "S9"
+        "M1"
       ],
-      "provider_wording": "an issue causing Access authentication to fail. Cloudflare Zero Trust WARP connectivity is also impacted.",
-      "settled_by": null,
+      "provider_wording": null,
+      "settled_by": "Provider statements on scope (crowd counts are a signal, not proof)",
       "estimate": null,
-      "first_seen": "18:19",
-      "superseded_by": "C-026",
+      "first_seen": "18:49",
+      "superseded_by": null,
       "contradiction_sides": null,
       "history": [
         {
           "stage": 4,
-          "class": "CONFIRMED",
-          "statement": "Cloudflare has an outage: Access authentication failing, WARP impacted, Workers KV and Durable Objects among impacted services",
+          "class": "REPORTED",
+          "statement": "Downdetector: Google Cloud problem reports peaked at 14,695 (18:31); Cloudflare at 3,071 (18:49)",
           "because": [
-            "S8",
-            "S9"
+            "M1"
           ]
         }
       ]
@@ -1430,42 +1429,71 @@
       ]
     },
     {
-      "id": "C-015",
-      "statement": "Downdetector: Google Cloud problem reports peaked at 14,695 (18:31); Cloudflare at 3,071 (18:49)",
+      "id": "C-003",
+      "statement": "Root cause",
       "subject": "Google Cloud",
-      "unknown_kind": null,
-      "class": "REPORTED",
-      "proposed_class": "REPORTED",
-      "source_ids": [
-        "M1"
-      ],
+      "unknown_kind": "cause",
+      "class": "UNKNOWN",
+      "proposed_class": "UNKNOWN",
+      "source_ids": [],
       "provider_wording": null,
-      "settled_by": "Provider statements on scope (crowd counts are a signal, not proof)",
+      "settled_by": "The provider stating the cause on the record",
       "estimate": null,
-      "first_seen": "18:49",
+      "first_seen": "17:56",
       "superseded_by": null,
       "contradiction_sides": null,
       "history": [
         {
-          "stage": 4,
-          "class": "REPORTED",
-          "statement": "Downdetector: Google Cloud problem reports peaked at 14,695 (18:31); Cloudflare at 3,071 (18:49)",
+          "stage": 1,
+          "class": "UNKNOWN",
+          "statement": "Root cause",
+          "because": []
+        }
+      ]
+    },
+    {
+      "id": "C-004",
+      "statement": "When our service will recover remains unknown; Google Cloud says it has no ETA for full service recovery.",
+      "subject": "Northwind",
+      "unknown_kind": "recovery",
+      "class": "UNKNOWN",
+      "proposed_class": "UNKNOWN",
+      "source_ids": [],
+      "provider_wording": null,
+      "settled_by": "Our monitoring returning to baseline, or a provider estimate",
+      "estimate": null,
+      "first_seen": "17:56",
+      "superseded_by": null,
+      "contradiction_sides": null,
+      "history": [
+        {
+          "stage": 1,
+          "class": "UNKNOWN",
+          "statement": "When our service will recover",
+          "because": []
+        },
+        {
+          "stage": 5,
+          "class": "UNKNOWN",
+          "statement": "When our service will recover remains unknown; Google Cloud says it has no ETA for full service recovery.",
           "because": [
-            "M1"
+            "S16"
           ]
         }
       ]
     },
     {
       "id": "C-016",
-      "statement": "Which Google Cloud services and regions retain residual impact, including whether Cloud Run, Firestore or Firebase Auth in us-central1 are affected, is unknown.",
+      "statement": "Google Cloud reports that all locations except us-central1 have fully recovered; us-central1 is mostly recovered.",
       "subject": "Google Cloud",
-      "unknown_kind": "scope",
-      "class": "UNKNOWN",
-      "proposed_class": "UNKNOWN",
-      "source_ids": [],
-      "provider_wording": null,
-      "settled_by": "The provider's list of services and regions with residual impact",
+      "unknown_kind": null,
+      "class": "CONFIRMED",
+      "proposed_class": "CONFIRMED",
+      "source_ids": [
+        "S15"
+      ],
+      "provider_wording": "All locations except us-central1 have fully recovered. us-central1 is mostly recovered.",
+      "settled_by": null,
       "estimate": null,
       "first_seen": "18:51",
       "superseded_by": null,
@@ -1478,18 +1506,144 @@
           "because": []
         },
         {
-          "stage": 8,
-          "class": "UNKNOWN",
-          "statement": "Which Google Cloud services and regions retain residual impact, including whether Cloud Run, Firestore or Firebase Auth in us-central1 are affected, is unknown.",
+          "stage": 5,
+          "class": "CONFIRMED",
+          "statement": "Google Cloud reports that all locations except us-central1 have fully recovered; us-central1 is mostly recovered.",
           "because": [
-            "S22"
+            "S15"
           ]
         }
       ]
     },
     {
       "id": "C-017",
-      "statement": "Google has identified the root cause and applied mitigations, without disclosing the cause",
+      "statement": "Cloudflare reports that its services are starting to recover.",
+      "subject": "Cloudflare",
+      "unknown_kind": null,
+      "class": "CONFIRMED",
+      "proposed_class": "CONFIRMED",
+      "source_ids": [
+        "S14"
+      ],
+      "provider_wording": "We are starting to see services recover.",
+      "settled_by": null,
+      "estimate": null,
+      "first_seen": "19:12",
+      "superseded_by": null,
+      "contradiction_sides": null,
+      "history": [
+        {
+          "stage": 5,
+          "class": "CONFIRMED",
+          "statement": "Cloudflare reports that its services are starting to recover.",
+          "because": [
+            "S14"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "C-018",
+      "statement": "Cloudflare expects intermittent errors to continue.",
+      "subject": "Cloudflare",
+      "unknown_kind": null,
+      "class": "CONFIRMED",
+      "proposed_class": "CONFIRMED",
+      "source_ids": [
+        "S14"
+      ],
+      "provider_wording": "We still expect to see intermittent errors…",
+      "settled_by": null,
+      "estimate": null,
+      "first_seen": "19:12",
+      "superseded_by": null,
+      "contradiction_sides": null,
+      "history": [
+        {
+          "stage": 5,
+          "class": "CONFIRMED",
+          "statement": "Cloudflare expects intermittent errors to continue.",
+          "because": [
+            "S14"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "C-019",
+      "statement": "Google's consumer-support account reports no known service disruptions, without specifying services or regions; this contradicts the provider's status page, which reports incomplete Google Cloud recovery.",
+      "subject": "Google",
+      "unknown_kind": null,
+      "class": "CONFLICTING",
+      "proposed_class": "CONFLICTING",
+      "source_ids": [
+        "S18",
+        "S15",
+        "S16"
+      ],
+      "provider_wording": "there aren't any known service disruptions. Can you try clearing cache & cookies",
+      "settled_by": null,
+      "estimate": null,
+      "first_seen": "19:33",
+      "superseded_by": null,
+      "contradiction_sides": [
+        {
+          "label": "Google consumer support: no known service disruptions; scope unspecified.",
+          "source_ids": [
+            "S18"
+          ]
+        },
+        {
+          "label": "Google Cloud status page: us-central1 mostly recovered, with no ETA for full recovery.",
+          "source_ids": [
+            "S15",
+            "S16"
+          ]
+        }
+      ],
+      "history": [
+        {
+          "stage": 5,
+          "class": "CONFLICTING",
+          "statement": "Google's consumer-support account reports no known service disruptions, without specifying services or regions; this contradicts the provider's status page, which reports incomplete Google Cloud recovery.",
+          "because": [
+            "S18",
+            "S15",
+            "S16"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "C-020",
+      "statement": "A single r/sysadmin post alleges that the incident is a direct result of a ConnectWise compromise.",
+      "subject": "ConnectWise",
+      "unknown_kind": null,
+      "class": "UNCONFIRMED",
+      "proposed_class": "UNCONFIRMED",
+      "source_ids": [
+        "S17"
+      ],
+      "provider_wording": null,
+      "settled_by": null,
+      "estimate": null,
+      "first_seen": "19:37",
+      "superseded_by": null,
+      "contradiction_sides": null,
+      "history": [
+        {
+          "stage": 5,
+          "class": "UNCONFIRMED",
+          "statement": "A single r/sysadmin post alleges that the incident is a direct result of a ConnectWise compromise.",
+          "because": [
+            "S17"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "C-021",
+      "statement": "Google Cloud reports that its engineers have identified the root cause, but the supplied statement does not disclose the specific cause.",
       "subject": "Google Cloud",
       "unknown_kind": null,
       "class": "CONFIRMED",
@@ -1497,7 +1651,7 @@
       "source_ids": [
         "S16"
       ],
-      "provider_wording": "Our engineers have identified the root cause and have applied appropriate mitigations… We do not have an ETA for full service recovery.",
+      "provider_wording": "Our engineers have identified the root cause and have applied appropriate mitigations…",
       "settled_by": null,
       "estimate": null,
       "first_seen": "19:41",
@@ -1507,7 +1661,7 @@
         {
           "stage": 5,
           "class": "CONFIRMED",
-          "statement": "Google has identified the root cause and applied mitigations, without disclosing the cause",
+          "statement": "Google Cloud reports that its engineers have identified the root cause, but the supplied statement does not disclose the specific cause.",
           "because": [
             "S16"
           ]
@@ -1515,327 +1669,74 @@
       ]
     },
     {
-      "id": "C-018",
-      "statement": "All Google Cloud locations except us-central1 have fully recovered",
-      "subject": "Google Cloud",
-      "unknown_kind": null,
-      "class": "CONFIRMED",
-      "proposed_class": "CONFIRMED",
-      "source_ids": [
-        "S15"
-      ],
-      "provider_wording": "All locations except us-central1 have fully recovered. us-central1 is mostly recovered.",
-      "settled_by": null,
-      "estimate": null,
-      "first_seen": "19:30",
-      "superseded_by": null,
-      "contradiction_sides": null,
-      "history": [
-        {
-          "stage": 5,
-          "class": "CONFIRMED",
-          "statement": "All Google Cloud locations except us-central1 have fully recovered",
-          "because": [
-            "S15"
-          ]
-        }
-      ]
-    },
-    {
-      "id": "C-019",
-      "statement": "us-central1, our region, is still affected (\"mostly recovered\")",
-      "subject": "Google Cloud",
-      "unknown_kind": null,
-      "class": "CONFIRMED",
-      "proposed_class": "CONFIRMED",
-      "source_ids": [
-        "S15"
-      ],
-      "provider_wording": "All locations except us-central1 have fully recovered. us-central1 is mostly recovered.",
-      "settled_by": null,
-      "estimate": null,
-      "first_seen": "19:30",
-      "superseded_by": null,
-      "contradiction_sides": null,
-      "history": [
-        {
-          "stage": 5,
-          "class": "CONFIRMED",
-          "statement": "us-central1, our region, is still affected (\"mostly recovered\")",
-          "because": [
-            "S15"
-          ]
-        }
-      ]
-    },
-    {
-      "id": "C-020",
-      "statement": "Cloudflare services are starting to recover",
-      "subject": "Cloudflare",
-      "unknown_kind": null,
-      "class": "CONFIRMED",
-      "proposed_class": "CONFIRMED",
-      "source_ids": [
-        "S14"
-      ],
-      "provider_wording": "We are starting to see services recover. We still expect to see intermittent errors…",
-      "settled_by": null,
-      "estimate": null,
-      "first_seen": "19:12",
-      "superseded_by": "C-026",
-      "contradiction_sides": null,
-      "history": [
-        {
-          "stage": 5,
-          "class": "CONFIRMED",
-          "statement": "Cloudflare services are starting to recover",
-          "because": [
-            "S14"
-          ]
-        }
-      ]
-    },
-    {
-      "id": "C-021",
-      "statement": "Google's support account on X says there are no known service disruptions (contradicts the status page)",
-      "subject": "Google",
-      "unknown_kind": null,
-      "class": "CONFLICTING",
-      "proposed_class": "CONFLICTING",
-      "source_ids": [
-        "S18",
-        "S7"
-      ],
-      "provider_wording": "there aren't any known service disruptions. Can you try clearing cache & cookies",
-      "settled_by": "Google retracting or correcting the post",
-      "estimate": null,
-      "first_seen": "18:46",
-      "superseded_by": null,
-      "contradiction_sides": [
-        {
-          "label": "Support account",
-          "source_ids": [
-            "S18"
-          ]
-        },
-        {
-          "label": "Status page",
-          "source_ids": [
-            "S7"
-          ]
-        }
-      ],
-      "history": [
-        {
-          "stage": 5,
-          "class": "CONFLICTING",
-          "statement": "Google's support account on X says there are no known service disruptions (contradicts the status page)",
-          "because": [
-            "S18",
-            "S7"
-          ]
-        }
-      ]
-    },
-    {
       "id": "C-022",
-      "statement": "The outage is a result of the ConnectWise compromise",
+      "statement": "Google Cloud reports that its engineers have applied mitigations.",
       "subject": "Google Cloud",
       "unknown_kind": null,
-      "class": "UNCONFIRMED",
-      "proposed_class": "UNCONFIRMED",
+      "class": "CONFIRMED",
+      "proposed_class": "CONFIRMED",
       "source_ids": [
-        "S17"
+        "S16"
       ],
-      "provider_wording": null,
-      "settled_by": "The provider's root-cause statement",
+      "provider_wording": "Our engineers have identified the root cause and have applied appropriate mitigations…",
+      "settled_by": null,
       "estimate": null,
-      "first_seen": "19:37",
+      "first_seen": "19:41",
       "superseded_by": null,
       "contradiction_sides": null,
       "history": [
         {
           "stage": 5,
-          "class": "UNCONFIRMED",
-          "statement": "The outage is a result of the ConnectWise compromise",
+          "class": "CONFIRMED",
+          "statement": "Google Cloud reports that its engineers have applied mitigations.",
           "because": [
-            "S17"
+            "S16"
           ]
         }
       ]
     },
     {
       "id": "C-023",
-      "statement": "Cloudflare's Workers KV outage was caused by the failure of a third-party service it depends on (not named)",
-      "subject": "Cloudflare",
-      "unknown_kind": null,
-      "class": "CONFIRMED",
-      "proposed_class": "CONFIRMED",
-      "source_ids": [
-        "S19"
-      ],
-      "provider_wording": "Cloudflare's critical Workers KV service went offline due to an outage of a 3rd party service that is a key dependency.",
+      "statement": "Whether Northwind's staff tools are affected through Cloudflare Access is unknown.",
+      "subject": "Northwind",
+      "unknown_kind": "scope",
+      "class": "UNKNOWN",
+      "proposed_class": "UNKNOWN",
+      "source_ids": [],
+      "provider_wording": null,
       "settled_by": null,
       "estimate": null,
-      "first_seen": "19:57",
+      "first_seen": "19:41",
       "superseded_by": null,
       "contradiction_sides": null,
       "history": [
         {
-          "stage": 6,
-          "class": "CONFIRMED",
-          "statement": "Cloudflare's Workers KV outage was caused by the failure of a third-party service it depends on (not named)",
-          "because": [
-            "S19"
-          ]
+          "stage": 5,
+          "class": "UNKNOWN",
+          "statement": "Whether Northwind's staff tools are affected through Cloudflare Access is unknown.",
+          "because": []
         }
       ]
     },
     {
       "id": "C-024",
-      "statement": "Google has applied a mitigation in us-central1",
-      "subject": "Google Cloud",
-      "unknown_kind": null,
-      "class": "CONFIRMED",
-      "proposed_class": "CONFIRMED",
-      "source_ids": [
-        "S20"
-      ],
-      "provider_wording": "We have implemented mitigation for the issue in us-central1 and multi-region/us and we are seeing signs of recovery… We expect the recovery to complete in less than an hour.",
-      "settled_by": null,
-      "estimate": null,
-      "first_seen": "21:00",
-      "superseded_by": null,
-      "contradiction_sides": null,
-      "history": [
-        {
-          "stage": 7,
-          "class": "CONFIRMED",
-          "statement": "Google has applied a mitigation in us-central1",
-          "because": [
-            "S20"
-          ]
-        }
-      ]
-    },
-    {
-      "id": "C-025",
-      "statement": "Northwind monitoring observed the login-api 5xx rate back at its 0.2% baseline since 21:10, following the earlier decline to 12% from a 38% peak.",
-      "subject": "Northwind",
-      "unknown_kind": null,
-      "class": "CONFIRMED",
-      "proposed_class": "CONFIRMED",
-      "source_ids": [
-        "N7",
-        "N5"
-      ],
-      "provider_wording": null,
-      "settled_by": null,
-      "estimate": null,
-      "first_seen": "21:00",
-      "superseded_by": null,
-      "contradiction_sides": null,
-      "history": [
-        {
-          "stage": 7,
-          "class": "CONFIRMED",
-          "statement": "Our error rate is falling: 12%, down from a 38% peak",
-          "because": [
-            "N7"
-          ]
-        },
-        {
-          "stage": 8,
-          "class": "CONFIRMED",
-          "statement": "Northwind monitoring observed the login-api 5xx rate back at its 0.2% baseline since 21:10, following the earlier decline to 12% from a 38% peak.",
-          "because": [
-            "N5"
-          ]
-        }
-      ]
-    },
-    {
-      "id": "C-026",
-      "statement": "All Cloudflare services have been restored; Cloudflare declared the incident resolved at 21:31.",
-      "subject": "Cloudflare",
-      "unknown_kind": null,
-      "class": "CONFIRMED",
-      "proposed_class": "CONFIRMED",
-      "source_ids": [
-        "S21",
-        "S23"
-      ],
-      "provider_wording": "This incident has been resolved.",
-      "settled_by": null,
-      "estimate": null,
-      "first_seen": "20:57",
-      "superseded_by": null,
-      "contradiction_sides": null,
-      "history": [
-        {
-          "stage": 7,
-          "class": "CONFIRMED",
-          "statement": "All Cloudflare services have been restored",
-          "because": [
-            "S21"
-          ]
-        },
-        {
-          "stage": 8,
-          "class": "CONFIRMED",
-          "statement": "All Cloudflare services have been restored; Cloudflare declared the incident resolved at 21:31.",
-          "because": [
-            "S23"
-          ]
-        }
-      ]
-    },
-    {
-      "id": "C-027",
-      "statement": "At 21:23 Google Cloud reported full service recovery for most products, with a few services still seeing residual impact.",
-      "subject": "Google Cloud",
-      "unknown_kind": null,
-      "class": "CONFIRMED",
-      "proposed_class": "CONFIRMED",
-      "source_ids": [
-        "S22"
-      ],
-      "provider_wording": "Most of the Google Cloud products have confirmed full service recovery. A few services are still seeing some residual impact.",
-      "settled_by": null,
-      "estimate": null,
-      "first_seen": "21:23",
-      "superseded_by": null,
-      "contradiction_sides": null,
-      "history": [
-        {
-          "stage": 8,
-          "class": "CONFIRMED",
-          "statement": "At 21:23 Google Cloud reported full service recovery for most products, with a few services still seeing residual impact.",
-          "because": [
-            "S22"
-          ]
-        }
-      ]
-    },
-    {
-      "id": "C-028",
-      "statement": "Whether Northwind experienced any data impact is unknown.",
+      "statement": "Whether the incident has affected Northwind's data is unknown.",
       "subject": "Northwind",
       "unknown_kind": "data",
       "class": "UNKNOWN",
       "proposed_class": "UNKNOWN",
       "source_ids": [],
       "provider_wording": null,
-      "settled_by": "Northwind data-integrity checks or an authoritative statement on data impact",
+      "settled_by": null,
       "estimate": null,
-      "first_seen": "21:31",
+      "first_seen": "19:41",
       "superseded_by": null,
       "contradiction_sides": null,
       "history": [
         {
-          "stage": 8,
+          "stage": 5,
           "class": "UNKNOWN",
-          "statement": "Whether Northwind experienced any data impact is unknown.",
+          "statement": "Whether the incident has affected Northwind's data is unknown.",
           "because": []
         }
       ]
@@ -1845,25 +1746,24 @@
     "executive": {
       "audience": "executive",
       "policy_mode": null,
-      "as_of": "21:31",
+      "as_of": "19:41",
       "source": "astra_saved",
-      "generated_at": "2026-10-06T17:58:19.809Z",
+      "generated_at": "2026-10-06T17:59:44.574Z",
       "sections": [
         {
           "heading": "Situation",
           "sentences": [
             {
-              "text": "Google Cloud retains residual impact; Cloudflare's staff-access outage is resolved [C-027] [C-010] [C-026].",
+              "text": "Google Cloud and Cloudflare Access outages are confirmed [C-005][C-011].",
               "type": "fact",
               "claim_ids": [
-                "C-027",
-                "C-010",
-                "C-026"
+                "C-005",
+                "C-011"
               ],
               "response_ids": [],
               "verify": {
-                "pass": false,
-                "reason": "Astra: C-010 establishes that staff use Cloudflare Access, not that staff access experienced an outage. C-026 confirms Cloudflare restoration but does not establish that specific impact."
+                "pass": true,
+                "reason": null
               }
             }
           ]
@@ -1872,10 +1772,11 @@
           "heading": "Impact on us",
           "sentences": [
             {
-              "text": "Login-api errors returned to 0.2% baseline at 21:10 [C-025].",
+              "text": "Login/API reliability is impaired; staff use Cloudflare Access [C-001][C-010].",
               "type": "fact",
               "claim_ids": [
-                "C-025"
+                "C-001",
+                "C-010"
               ],
               "response_ids": [],
               "verify": {
@@ -1889,22 +1790,11 @@
           "heading": "Confirmed",
           "sentences": [
             {
-              "text": "Google applied mitigation in us-central1 [C-024].",
+              "text": "Our sole region, us-central1, is mostly recovered [C-009][C-016].",
               "type": "fact",
               "claim_ids": [
-                "C-024"
-              ],
-              "response_ids": [],
-              "verify": {
-                "pass": true,
-                "reason": null
-              }
-            },
-            {
-              "text": "Evidence conflicts: Google's support account denies disruptions; its status page confirms an incident [C-021].",
-              "type": "fact",
-              "claim_ids": [
-                "C-021"
+                "C-009",
+                "C-016"
               ],
               "response_ids": [],
               "verify": {
@@ -1918,13 +1808,25 @@
           "heading": "Not yet known",
           "sentences": [
             {
-              "text": "Root cause, full-recovery timing, residual scope and data impact remain unknown [C-003] [C-004] [C-016] [C-028].",
+              "text": "Evidence conflicts: Google consumer support reports no disruptions; Cloud status reports incomplete recovery [C-019].",
+              "type": "fact",
+              "claim_ids": [
+                "C-019"
+              ],
+              "response_ids": [],
+              "verify": {
+                "pass": false,
+                "reason": "Astra: C-019 says consumer support reports no known service disruptions, with services and regions unspecified. 'Reports no disruptions' drops the knowledge qualifier and increases certainty."
+              }
+            },
+            {
+              "text": "Specific cause, recovery time, staff-tool impact and data impact remain unknown [C-003][C-004][C-023][C-024].",
               "type": "fact",
               "claim_ids": [
                 "C-003",
                 "C-004",
-                "C-016",
-                "C-028"
+                "C-023",
+                "C-024"
               ],
               "response_ids": [],
               "verify": {
@@ -1938,11 +1840,12 @@
           "heading": "What we're doing",
           "sentences": [
             {
-              "text": "We're reprocessing failed requests [R-21].",
+              "text": "We're throttling retries and preparing request replay [R-16][R-14].",
               "type": "commitment",
               "claim_ids": [],
               "response_ids": [
-                "R-21"
+                "R-16",
+                "R-14"
               ],
               "verify": {
                 "pass": true,
@@ -1955,15 +1858,15 @@
           "heading": "Decisions needed",
           "sentences": [
             {
-              "text": "Naming decision settled: Google appears only in the incident report [R-12].",
+              "text": "Naming decision resolved: retain “our cloud provider” in live updates [R-12].",
               "type": "commitment",
               "claim_ids": [],
               "response_ids": [
                 "R-12"
               ],
               "verify": {
-                "pass": false,
-                "reason": "Astra: R-12 restricts naming in live updates and permits naming in the incident report; it does not say Google may appear only in the incident report across all communications."
+                "pass": true,
+                "reason": null
               }
             }
           ]
@@ -1972,15 +1875,15 @@
           "heading": "Next update",
           "sentences": [
             {
-              "text": "Our promised 21:30 update is overdue [R-20].",
+              "text": "We'll update at 20:15 [R-17].",
               "type": "commitment",
               "claim_ids": [],
               "response_ids": [
-                "R-20"
+                "R-17"
               ],
               "verify": {
-                "pass": false,
-                "reason": "Astra: R-20 establishes a promised update at 21:30, or sooner when restored, but does not establish that the update was not delivered. Calling it overdue adds an unsupported status."
+                "pass": true,
+                "reason": null
               }
             }
           ]
@@ -1990,61 +1893,50 @@
     "engineering": {
       "audience": "engineering",
       "policy_mode": null,
-      "as_of": "21:31",
+      "as_of": "19:41",
       "source": "astra_saved",
-      "generated_at": "2026-10-06T17:58:19.715Z",
+      "generated_at": "2026-10-06T17:59:37.917Z",
       "sections": [
         {
           "heading": "Technical status",
           "sentences": [
             {
-              "text": "Google Cloud's incident retains residual impact after most products recovered [C-005] [C-027].",
+              "text": "Google Cloud’s multi-product incident includes Firestore/Firebase Auth 503s in Northwind; our sole region, us-central1, is mostly recovered [C-005][C-006][C-009][C-016].",
               "type": "fact",
               "claim_ids": [
                 "C-005",
-                "C-027"
-              ],
-              "response_ids": [],
-              "verify": {
-                "pass": true,
-                "reason": null
-              }
-            },
-            {
-              "text": "Firestore and Firebase Auth calls returned 503s; login-api 5xx is back at 0.2% baseline since 21:10 [C-006] [C-025].",
-              "type": "fact",
-              "claim_ids": [
                 "C-006",
-                "C-025"
-              ],
-              "response_ids": [],
-              "verify": {
-                "pass": true,
-                "reason": null
-              }
-            },
-            {
-              "text": "Cloudflare's outage affected Access, our staff-access dependency; all services were restored and the incident resolved at 21:31 [C-010] [C-011] [C-026].",
-              "type": "fact",
-              "claim_ids": [
-                "C-010",
-                "C-011",
-                "C-026"
+                "C-009",
+                "C-016"
               ],
               "response_ids": [],
               "verify": {
                 "pass": false,
-                "reason": "R6: Live drafts cannot cite superseded claims."
+                "reason": "Astra: The cited claims establish a Google Cloud incident and Northwind's Google API 503 errors separately, but do not explicitly establish that those errors are part of that incident."
               }
             },
             {
-              "text": "Root cause, residual scope, full-recovery timing and data impact remain unknown [C-003] [C-016] [C-004] [C-028].",
+              "text": "Cloudflare’s outage includes Access authentication failures; staff use Access, but staff-tool impact is not yet known [C-011][C-010][C-023].",
               "type": "fact",
               "claim_ids": [
+                "C-011",
+                "C-010",
+                "C-023"
+              ],
+              "response_ids": [],
+              "verify": {
+                "pass": true,
+                "reason": null
+              }
+            },
+            {
+              "text": "Google reports mitigations applied; the specific cause, Northwind recovery time, and data impact remain unknown [C-022][C-003][C-004][C-024].",
+              "type": "fact",
+              "claim_ids": [
+                "C-022",
                 "C-003",
-                "C-016",
                 "C-004",
-                "C-028"
+                "C-024"
               ],
               "response_ids": [],
               "verify": {
@@ -2055,16 +1947,16 @@
           ]
         },
         {
-          "heading": "Actions and exclusions",
+          "heading": "Actions",
           "sentences": [
             {
-              "text": "We're reprocessing failed requests, throttling retries and job restarts, and keeping deploys frozen [R-21] [R-16] [R-7].",
+              "text": "Keep deploys frozen, throttle retries and job restarts, and prepare failed-request replay [R-7][R-16][R-14].",
               "type": "commitment",
               "claim_ids": [],
               "response_ids": [
-                "R-21",
+                "R-7",
                 "R-16",
-                "R-7"
+                "R-14"
               ],
               "verify": {
                 "pass": true,
@@ -2072,7 +1964,38 @@
               }
             },
             {
-              "text": "No rollback until a change is implicated [R-3].",
+              "text": "Use staff break-glass access; escalate to Google by phone and account team [R-11][R-8].",
+              "type": "commitment",
+              "claim_ids": [],
+              "response_ids": [
+                "R-11",
+                "R-8"
+              ],
+              "verify": {
+                "pass": true,
+                "reason": null
+              }
+            }
+          ]
+        },
+        {
+          "heading": "Do not chase",
+          "sentences": [
+            {
+              "text": "BGP and ConnectWise theories are unverified and should not be acted on [C-014][C-020].",
+              "type": "fact",
+              "claim_ids": [
+                "C-014",
+                "C-020"
+              ],
+              "response_ids": [],
+              "verify": {
+                "pass": false,
+                "reason": "Astra: The claims support that the BGP and ConnectWise theories are unverified, but not the added directive that they should not be acted on."
+              }
+            },
+            {
+              "text": "Do not roll back unless a change is implicated [R-3].",
               "type": "commitment",
               "claim_ids": [],
               "response_ids": [
@@ -2082,18 +2005,6 @@
                 "pass": true,
                 "reason": null
               }
-            },
-            {
-              "text": "BGP theories are unverified and should not be acted on [C-014].",
-              "type": "fact",
-              "claim_ids": [
-                "C-014"
-              ],
-              "response_ids": [],
-              "verify": {
-                "pass": false,
-                "reason": "Astra: C-014 supports that the BGP theory is unconfirmed, but does not support the instruction that it should not be acted on."
-              }
             }
           ]
         },
@@ -2101,15 +2012,15 @@
           "heading": "Next update",
           "sentences": [
             {
-              "text": "The scheduled next update was 21:30, now overdue [R-20].",
+              "text": "We will update at 20:15 [R-17].",
               "type": "commitment",
               "claim_ids": [],
               "response_ids": [
-                "R-20"
+                "R-17"
               ],
               "verify": {
-                "pass": false,
-                "reason": "Astra: R-20 schedules an update for 21:30 or sooner when restored, but does not establish that the update was not delivered. Calling it overdue adds an unsupported status."
+                "pass": true,
+                "reason": null
               }
             }
           ]
@@ -2120,15 +2031,15 @@
       "confirmed_only": {
         "audience": "customer",
         "policy_mode": "confirmed_only",
-        "as_of": "21:31",
+        "as_of": "19:41",
         "source": "astra_saved",
-        "generated_at": "2026-10-06T17:58:19.638Z",
+        "generated_at": "2026-10-06T17:59:35.089Z",
         "sections": [
           {
-            "heading": "Northwind update",
+            "heading": "Northwind service update",
             "sentences": [
               {
-                "text": "We're sorry for the login and API disruption since 17:51 UTC [C-001].",
+                "text": "We’re sorry customers have been unable to reliably log in or use our API since 17:51 UTC [C-001].",
                 "type": "fact",
                 "claim_ids": [
                   "C-001"
@@ -2140,10 +2051,11 @@
                 }
               },
               {
-                "text": "Our cloud provider has confirmed an incident [C-005].",
+                "text": "Our cloud provider has confirmed an incident and applied mitigations [C-005] [C-022].",
                 "type": "fact",
                 "claim_ids": [
-                  "C-005"
+                  "C-005",
+                  "C-022"
                 ],
                 "response_ids": [],
                 "verify": {
@@ -2152,19 +2064,7 @@
                 }
               },
               {
-                "text": "Login API errors returned to normal levels at 21:10 UTC [C-025].",
-                "type": "fact",
-                "claim_ids": [
-                  "C-025"
-                ],
-                "response_ids": [],
-                "verify": {
-                  "pass": false,
-                  "reason": "Astra: C-025 confirms only that the login-api 5xx rate returned to baseline, not that all Login API errors returned to normal."
-                }
-              },
-              {
-                "text": "The cause and full recovery time remain unknown [C-003] [C-004].",
+                "text": "The specific cause and Northwind’s recovery time remain unknown [C-003] [C-004].",
                 "type": "fact",
                 "claim_ids": [
                   "C-003",
@@ -2177,11 +2077,11 @@
                 }
               },
               {
-                "text": "We're reprocessing failed requests [R-21].",
+                "text": "We’re preparing to replay failed requests [R-14].",
                 "type": "commitment",
                 "claim_ids": [],
                 "response_ids": [
-                  "R-21"
+                  "R-14"
                 ],
                 "verify": {
                   "pass": true,
@@ -2189,15 +2089,15 @@
                 }
               },
               {
-                "text": "We owe you the next update scheduled for 21:30 UTC [R-20].",
+                "text": "Our next update will be at 20:15 [R-17].",
                 "type": "commitment",
                 "claim_ids": [],
                 "response_ids": [
-                  "R-20"
+                  "R-17"
                 ],
                 "verify": {
-                  "pass": false,
-                  "reason": "Astra: R-20 schedules an update for 21:30, or sooner when restored; it does not establish that the update remains outstanding, as 'we owe you' implies."
+                  "pass": true,
+                  "reason": null
                 }
               }
             ]
@@ -2219,8 +2119,8 @@
           "results": [
             {
               "sentence_index": 0,
-              "supported": false,
-              "problem": "C-010 establishes that staff use Cloudflare Access, not that staff access experienced an outage. C-026 confirms Cloudflare restoration but does not establish that specific impact."
+              "supported": true,
+              "problem": null
             },
             {
               "sentence_index": 1,
@@ -2234,8 +2134,8 @@
             },
             {
               "sentence_index": 3,
-              "supported": true,
-              "problem": null
+              "supported": false,
+              "problem": "C-019 says consumer support reports no known service disruptions, with services and regions unspecified. 'Reports no disruptions' drops the knowledge qualifier and increases certainty."
             },
             {
               "sentence_index": 4,
@@ -2249,38 +2149,37 @@
             },
             {
               "sentence_index": 6,
-              "supported": false,
-              "problem": "R-12 restricts naming in live updates and permits naming in the incident report; it does not say Google may appear only in the incident report across all communications."
+              "supported": true,
+              "problem": null
             },
             {
               "sentence_index": 7,
-              "supported": false,
-              "problem": "R-20 establishes a promised update at 21:30, or sooner when restored, but does not establish that the update was not delivered. Calling it overdue adds an unsupported status."
+              "supported": true,
+              "problem": null
             }
           ]
         },
         "draft": {
           "audience": "executive",
           "policy_mode": null,
-          "as_of": "21:31",
+          "as_of": "19:41",
           "source": "astra_saved",
-          "generated_at": "2026-10-06T17:58:19.809Z",
+          "generated_at": "2026-10-06T17:59:44.574Z",
           "sections": [
             {
               "heading": "Situation",
               "sentences": [
                 {
-                  "text": "Google Cloud retains residual impact; Cloudflare's staff-access outage is resolved [C-027] [C-010] [C-026].",
+                  "text": "Google Cloud and Cloudflare Access outages are confirmed [C-005][C-011].",
                   "type": "fact",
                   "claim_ids": [
-                    "C-027",
-                    "C-010",
-                    "C-026"
+                    "C-005",
+                    "C-011"
                   ],
                   "response_ids": [],
                   "verify": {
-                    "pass": false,
-                    "reason": "Astra: C-010 establishes that staff use Cloudflare Access, not that staff access experienced an outage. C-026 confirms Cloudflare restoration but does not establish that specific impact."
+                    "pass": true,
+                    "reason": null
                   }
                 }
               ]
@@ -2289,10 +2188,11 @@
               "heading": "Impact on us",
               "sentences": [
                 {
-                  "text": "Login-api errors returned to 0.2% baseline at 21:10 [C-025].",
+                  "text": "Login/API reliability is impaired; staff use Cloudflare Access [C-001][C-010].",
                   "type": "fact",
                   "claim_ids": [
-                    "C-025"
+                    "C-001",
+                    "C-010"
                   ],
                   "response_ids": [],
                   "verify": {
@@ -2306,22 +2206,11 @@
               "heading": "Confirmed",
               "sentences": [
                 {
-                  "text": "Google applied mitigation in us-central1 [C-024].",
+                  "text": "Our sole region, us-central1, is mostly recovered [C-009][C-016].",
                   "type": "fact",
                   "claim_ids": [
-                    "C-024"
-                  ],
-                  "response_ids": [],
-                  "verify": {
-                    "pass": true,
-                    "reason": null
-                  }
-                },
-                {
-                  "text": "Evidence conflicts: Google's support account denies disruptions; its status page confirms an incident [C-021].",
-                  "type": "fact",
-                  "claim_ids": [
-                    "C-021"
+                    "C-009",
+                    "C-016"
                   ],
                   "response_ids": [],
                   "verify": {
@@ -2335,13 +2224,25 @@
               "heading": "Not yet known",
               "sentences": [
                 {
-                  "text": "Root cause, full-recovery timing, residual scope and data impact remain unknown [C-003] [C-004] [C-016] [C-028].",
+                  "text": "Evidence conflicts: Google consumer support reports no disruptions; Cloud status reports incomplete recovery [C-019].",
+                  "type": "fact",
+                  "claim_ids": [
+                    "C-019"
+                  ],
+                  "response_ids": [],
+                  "verify": {
+                    "pass": false,
+                    "reason": "Astra: C-019 says consumer support reports no known service disruptions, with services and regions unspecified. 'Reports no disruptions' drops the knowledge qualifier and increases certainty."
+                  }
+                },
+                {
+                  "text": "Specific cause, recovery time, staff-tool impact and data impact remain unknown [C-003][C-004][C-023][C-024].",
                   "type": "fact",
                   "claim_ids": [
                     "C-003",
                     "C-004",
-                    "C-016",
-                    "C-028"
+                    "C-023",
+                    "C-024"
                   ],
                   "response_ids": [],
                   "verify": {
@@ -2355,11 +2256,12 @@
               "heading": "What we're doing",
               "sentences": [
                 {
-                  "text": "We're reprocessing failed requests [R-21].",
+                  "text": "We're throttling retries and preparing request replay [R-16][R-14].",
                   "type": "commitment",
                   "claim_ids": [],
                   "response_ids": [
-                    "R-21"
+                    "R-16",
+                    "R-14"
                   ],
                   "verify": {
                     "pass": true,
@@ -2372,15 +2274,15 @@
               "heading": "Decisions needed",
               "sentences": [
                 {
-                  "text": "Naming decision settled: Google appears only in the incident report [R-12].",
+                  "text": "Naming decision resolved: retain “our cloud provider” in live updates [R-12].",
                   "type": "commitment",
                   "claim_ids": [],
                   "response_ids": [
                     "R-12"
                   ],
                   "verify": {
-                    "pass": false,
-                    "reason": "Astra: R-12 restricts naming in live updates and permits naming in the incident report; it does not say Google may appear only in the incident report across all communications."
+                    "pass": true,
+                    "reason": null
                   }
                 }
               ]
@@ -2389,15 +2291,15 @@
               "heading": "Next update",
               "sentences": [
                 {
-                  "text": "Our promised 21:30 update is overdue [R-20].",
+                  "text": "We'll update at 20:15 [R-17].",
                   "type": "commitment",
                   "claim_ids": [],
                   "response_ids": [
-                    "R-20"
+                    "R-17"
                   ],
                   "verify": {
-                    "pass": false,
-                    "reason": "Astra: R-20 establishes a promised update at 21:30, or sooner when restored, but does not establish that the update was not delivered. Calling it overdue adds an unsupported status."
+                    "pass": true,
+                    "reason": null
                   }
                 }
               ]
@@ -2406,21 +2308,21 @@
         },
         "pass": false,
         "total": 8,
-        "verified": 5,
-        "excluded": 3,
-        "word_count": 80,
+        "verified": 7,
+        "excluded": 1,
+        "word_count": 76,
         "word_limit": 120,
         "over_limit": false
       },
       {
         "audience": "engineering",
-        "code_pass": false,
+        "code_pass": true,
         "support": {
           "results": [
             {
               "sentence_index": 0,
-              "supported": true,
-              "problem": null
+              "supported": false,
+              "problem": "The cited claims establish a Google Cloud incident and Northwind's Google API 503 errors separately, but do not explicitly establish that those errors are part of that incident."
             },
             {
               "sentence_index": 1,
@@ -2444,79 +2346,68 @@
             },
             {
               "sentence_index": 5,
+              "supported": false,
+              "problem": "The claims support that the BGP and ConnectWise theories are unverified, but not the added directive that they should not be acted on."
+            },
+            {
+              "sentence_index": 6,
               "supported": true,
               "problem": null
             },
             {
-              "sentence_index": 6,
-              "supported": false,
-              "problem": "C-014 supports that the BGP theory is unconfirmed, but does not support the instruction that it should not be acted on."
-            },
-            {
               "sentence_index": 7,
-              "supported": false,
-              "problem": "R-20 schedules an update for 21:30 or sooner when restored, but does not establish that the update was not delivered. Calling it overdue adds an unsupported status."
+              "supported": true,
+              "problem": null
             }
           ]
         },
         "draft": {
           "audience": "engineering",
           "policy_mode": null,
-          "as_of": "21:31",
+          "as_of": "19:41",
           "source": "astra_saved",
-          "generated_at": "2026-10-06T17:58:19.715Z",
+          "generated_at": "2026-10-06T17:59:37.917Z",
           "sections": [
             {
               "heading": "Technical status",
               "sentences": [
                 {
-                  "text": "Google Cloud's incident retains residual impact after most products recovered [C-005] [C-027].",
+                  "text": "Google Cloud’s multi-product incident includes Firestore/Firebase Auth 503s in Northwind; our sole region, us-central1, is mostly recovered [C-005][C-006][C-009][C-016].",
                   "type": "fact",
                   "claim_ids": [
                     "C-005",
-                    "C-027"
-                  ],
-                  "response_ids": [],
-                  "verify": {
-                    "pass": true,
-                    "reason": null
-                  }
-                },
-                {
-                  "text": "Firestore and Firebase Auth calls returned 503s; login-api 5xx is back at 0.2% baseline since 21:10 [C-006] [C-025].",
-                  "type": "fact",
-                  "claim_ids": [
                     "C-006",
-                    "C-025"
-                  ],
-                  "response_ids": [],
-                  "verify": {
-                    "pass": true,
-                    "reason": null
-                  }
-                },
-                {
-                  "text": "Cloudflare's outage affected Access, our staff-access dependency; all services were restored and the incident resolved at 21:31 [C-010] [C-011] [C-026].",
-                  "type": "fact",
-                  "claim_ids": [
-                    "C-010",
-                    "C-011",
-                    "C-026"
+                    "C-009",
+                    "C-016"
                   ],
                   "response_ids": [],
                   "verify": {
                     "pass": false,
-                    "reason": "R6: Live drafts cannot cite superseded claims."
+                    "reason": "Astra: The cited claims establish a Google Cloud incident and Northwind's Google API 503 errors separately, but do not explicitly establish that those errors are part of that incident."
                   }
                 },
                 {
-                  "text": "Root cause, residual scope, full-recovery timing and data impact remain unknown [C-003] [C-016] [C-004] [C-028].",
+                  "text": "Cloudflare’s outage includes Access authentication failures; staff use Access, but staff-tool impact is not yet known [C-011][C-010][C-023].",
                   "type": "fact",
                   "claim_ids": [
+                    "C-011",
+                    "C-010",
+                    "C-023"
+                  ],
+                  "response_ids": [],
+                  "verify": {
+                    "pass": true,
+                    "reason": null
+                  }
+                },
+                {
+                  "text": "Google reports mitigations applied; the specific cause, Northwind recovery time, and data impact remain unknown [C-022][C-003][C-004][C-024].",
+                  "type": "fact",
+                  "claim_ids": [
+                    "C-022",
                     "C-003",
-                    "C-016",
                     "C-004",
-                    "C-028"
+                    "C-024"
                   ],
                   "response_ids": [],
                   "verify": {
@@ -2527,16 +2418,16 @@
               ]
             },
             {
-              "heading": "Actions and exclusions",
+              "heading": "Actions",
               "sentences": [
                 {
-                  "text": "We're reprocessing failed requests, throttling retries and job restarts, and keeping deploys frozen [R-21] [R-16] [R-7].",
+                  "text": "Keep deploys frozen, throttle retries and job restarts, and prepare failed-request replay [R-7][R-16][R-14].",
                   "type": "commitment",
                   "claim_ids": [],
                   "response_ids": [
-                    "R-21",
+                    "R-7",
                     "R-16",
-                    "R-7"
+                    "R-14"
                   ],
                   "verify": {
                     "pass": true,
@@ -2544,7 +2435,38 @@
                   }
                 },
                 {
-                  "text": "No rollback until a change is implicated [R-3].",
+                  "text": "Use staff break-glass access; escalate to Google by phone and account team [R-11][R-8].",
+                  "type": "commitment",
+                  "claim_ids": [],
+                  "response_ids": [
+                    "R-11",
+                    "R-8"
+                  ],
+                  "verify": {
+                    "pass": true,
+                    "reason": null
+                  }
+                }
+              ]
+            },
+            {
+              "heading": "Do not chase",
+              "sentences": [
+                {
+                  "text": "BGP and ConnectWise theories are unverified and should not be acted on [C-014][C-020].",
+                  "type": "fact",
+                  "claim_ids": [
+                    "C-014",
+                    "C-020"
+                  ],
+                  "response_ids": [],
+                  "verify": {
+                    "pass": false,
+                    "reason": "Astra: The claims support that the BGP and ConnectWise theories are unverified, but not the added directive that they should not be acted on."
+                  }
+                },
+                {
+                  "text": "Do not roll back unless a change is implicated [R-3].",
                   "type": "commitment",
                   "claim_ids": [],
                   "response_ids": [
@@ -2554,18 +2476,6 @@
                     "pass": true,
                     "reason": null
                   }
-                },
-                {
-                  "text": "BGP theories are unverified and should not be acted on [C-014].",
-                  "type": "fact",
-                  "claim_ids": [
-                    "C-014"
-                  ],
-                  "response_ids": [],
-                  "verify": {
-                    "pass": false,
-                    "reason": "Astra: C-014 supports that the BGP theory is unconfirmed, but does not support the instruction that it should not be acted on."
-                  }
                 }
               ]
             },
@@ -2573,15 +2483,15 @@
               "heading": "Next update",
               "sentences": [
                 {
-                  "text": "The scheduled next update was 21:30, now overdue [R-20].",
+                  "text": "We will update at 20:15 [R-17].",
                   "type": "commitment",
                   "claim_ids": [],
                   "response_ids": [
-                    "R-20"
+                    "R-17"
                   ],
                   "verify": {
-                    "pass": false,
-                    "reason": "Astra: R-20 schedules an update for 21:30 or sooner when restored, but does not establish that the update was not delivered. Calling it overdue adds an unsupported status."
+                    "pass": true,
+                    "reason": null
                   }
                 }
               ]
@@ -2590,9 +2500,9 @@
         },
         "pass": false,
         "total": 8,
-        "verified": 5,
-        "excluded": 3,
-        "word_count": 109,
+        "verified": 6,
+        "excluded": 2,
+        "word_count": 106,
         "word_limit": 140,
         "over_limit": false
       },
@@ -2613,8 +2523,8 @@
             },
             {
               "sentence_index": 2,
-              "supported": false,
-              "problem": "C-025 confirms only that the login-api 5xx rate returned to baseline, not that all Login API errors returned to normal."
+              "supported": true,
+              "problem": null
             },
             {
               "sentence_index": 3,
@@ -2625,26 +2535,21 @@
               "sentence_index": 4,
               "supported": true,
               "problem": null
-            },
-            {
-              "sentence_index": 5,
-              "supported": false,
-              "problem": "R-20 schedules an update for 21:30, or sooner when restored; it does not establish that the update remains outstanding, as 'we owe you' implies."
             }
           ]
         },
         "draft": {
           "audience": "customer",
           "policy_mode": "confirmed_only",
-          "as_of": "21:31",
+          "as_of": "19:41",
           "source": "astra_saved",
-          "generated_at": "2026-10-06T17:58:19.638Z",
+          "generated_at": "2026-10-06T17:59:35.089Z",
           "sections": [
             {
-              "heading": "Northwind update",
+              "heading": "Northwind service update",
               "sentences": [
                 {
-                  "text": "We're sorry for the login and API disruption since 17:51 UTC [C-001].",
+                  "text": "We’re sorry customers have been unable to reliably log in or use our API since 17:51 UTC [C-001].",
                   "type": "fact",
                   "claim_ids": [
                     "C-001"
@@ -2656,10 +2561,11 @@
                   }
                 },
                 {
-                  "text": "Our cloud provider has confirmed an incident [C-005].",
+                  "text": "Our cloud provider has confirmed an incident and applied mitigations [C-005] [C-022].",
                   "type": "fact",
                   "claim_ids": [
-                    "C-005"
+                    "C-005",
+                    "C-022"
                   ],
                   "response_ids": [],
                   "verify": {
@@ -2668,19 +2574,7 @@
                   }
                 },
                 {
-                  "text": "Login API errors returned to normal levels at 21:10 UTC [C-025].",
-                  "type": "fact",
-                  "claim_ids": [
-                    "C-025"
-                  ],
-                  "response_ids": [],
-                  "verify": {
-                    "pass": false,
-                    "reason": "Astra: C-025 confirms only that the login-api 5xx rate returned to baseline, not that all Login API errors returned to normal."
-                  }
-                },
-                {
-                  "text": "The cause and full recovery time remain unknown [C-003] [C-004].",
+                  "text": "The specific cause and Northwind’s recovery time remain unknown [C-003] [C-004].",
                   "type": "fact",
                   "claim_ids": [
                     "C-003",
@@ -2693,11 +2587,11 @@
                   }
                 },
                 {
-                  "text": "We're reprocessing failed requests [R-21].",
+                  "text": "We’re preparing to replay failed requests [R-14].",
                   "type": "commitment",
                   "claim_ids": [],
                   "response_ids": [
-                    "R-21"
+                    "R-14"
                   ],
                   "verify": {
                     "pass": true,
@@ -2705,26 +2599,26 @@
                   }
                 },
                 {
-                  "text": "We owe you the next update scheduled for 21:30 UTC [R-20].",
+                  "text": "Our next update will be at 20:15 [R-17].",
                   "type": "commitment",
                   "claim_ids": [],
                   "response_ids": [
-                    "R-20"
+                    "R-17"
                   ],
                   "verify": {
-                    "pass": false,
-                    "reason": "Astra: R-20 schedules an update for 21:30, or sooner when restored; it does not establish that the update remains outstanding, as 'we owe you' implies."
+                    "pass": true,
+                    "reason": null
                   }
                 }
               ]
             }
           ]
         },
-        "pass": false,
-        "total": 6,
-        "verified": 4,
-        "excluded": 2,
-        "word_count": 57,
+        "pass": true,
+        "total": 5,
+        "verified": 5,
+        "excluded": 0,
+        "word_count": 56,
         "word_limit": 70,
         "over_limit": false
       }
@@ -2733,160 +2627,160 @@
   "timings": [
     {
       "step": "EXTRACT",
-      "stage": 8,
+      "stage": 5,
       "audience": null,
       "attempt": 1,
-      "seconds": 20.523199124999998,
+      "seconds": 26.261994082999998,
       "tokens": {
-        "input_tokens": 1366,
+        "input_tokens": 1438,
         "input_tokens_details": {
-          "cache_write_tokens": 1363,
+          "cache_write_tokens": 1435,
           "cached_tokens": 0
         },
-        "output_tokens": 1205,
+        "output_tokens": 1751,
         "output_tokens_details": {
-          "reasoning_tokens": 44
+          "reasoning_tokens": 70
         },
-        "total_tokens": 2571
+        "total_tokens": 3189
       }
     },
     {
       "step": "RECONCILE",
-      "stage": 8,
+      "stage": 5,
       "audience": null,
       "attempt": 1,
-      "seconds": 76.737389417,
+      "seconds": 57.01213224999999,
       "tokens": {
-        "input_tokens": 6113,
+        "input_tokens": 5402,
         "input_tokens_details": {
-          "cache_write_tokens": 6110,
+          "cache_write_tokens": 5399,
           "cached_tokens": 0
         },
-        "output_tokens": 5942,
+        "output_tokens": 3910,
         "output_tokens_details": {
-          "reasoning_tokens": 78
+          "reasoning_tokens": 174
         },
-        "total_tokens": 12055
+        "total_tokens": 9312
       }
     },
     {
       "step": "COMMUNICATE",
-      "stage": 8,
+      "stage": 5,
       "audience": "customer",
       "attempt": 1,
-      "seconds": 9.219686083000001,
+      "seconds": 6.294968667,
       "tokens": {
-        "input_tokens": 6951,
+        "input_tokens": 5838,
         "input_tokens_details": {
-          "cache_write_tokens": 6948,
+          "cache_write_tokens": 5835,
           "cached_tokens": 0
         },
-        "output_tokens": 347,
+        "output_tokens": 255,
         "output_tokens_details": {
-          "reasoning_tokens": 107
+          "reasoning_tokens": 29
         },
-        "total_tokens": 7298
+        "total_tokens": 6093
       }
     },
     {
       "step": "COMMUNICATE",
-      "stage": 8,
+      "stage": 5,
       "audience": "engineering",
       "attempt": 1,
-      "seconds": 9.296863,
+      "seconds": 9.123458375,
       "tokens": {
-        "input_tokens": 6951,
+        "input_tokens": 5838,
         "input_tokens_details": {
-          "cache_write_tokens": 6948,
+          "cache_write_tokens": 5835,
           "cached_tokens": 0
         },
-        "output_tokens": 449,
+        "output_tokens": 479,
         "output_tokens_details": {
           "reasoning_tokens": 0
         },
-        "total_tokens": 7400
+        "total_tokens": 6317
       }
     },
     {
       "step": "COMMUNICATE",
-      "stage": 8,
+      "stage": 5,
       "audience": "executive",
       "attempt": 1,
-      "seconds": 9.418659500000002,
+      "seconds": 15.808274292,
       "tokens": {
-        "input_tokens": 6951,
+        "input_tokens": 5838,
         "input_tokens_details": {
-          "cache_write_tokens": 6948,
+          "cache_write_tokens": 5835,
           "cached_tokens": 0
         },
-        "output_tokens": 470,
+        "output_tokens": 481,
         "output_tokens_details": {
-          "reasoning_tokens": 52
+          "reasoning_tokens": 56
         },
-        "total_tokens": 7421
+        "total_tokens": 6319
       }
     },
     {
       "step": "VERIFY_CODE",
-      "stage": 8,
-      "seconds": 0.00021729199999998626,
+      "stage": 5,
+      "seconds": 0.0011667079999999998,
       "tokens": null
     },
     {
       "step": "VERIFY",
-      "stage": 8,
-      "audience": "engineering",
+      "stage": 5,
+      "audience": "customer",
       "attempt": 1,
-      "seconds": 4.788423542,
+      "seconds": 3.047006708,
       "tokens": {
-        "input_tokens": 6884,
+        "input_tokens": 5504,
         "input_tokens_details": {
-          "cache_write_tokens": 6881,
+          "cache_write_tokens": 5501,
           "cached_tokens": 0
         },
-        "output_tokens": 204,
+        "output_tokens": 77,
         "output_tokens_details": {
-          "reasoning_tokens": 26
+          "reasoning_tokens": 0
         },
-        "total_tokens": 7088
+        "total_tokens": 5581
       }
     },
     {
       "step": "VERIFY",
-      "stage": 8,
-      "audience": "customer",
+      "stage": 5,
+      "audience": "executive",
       "attempt": 1,
-      "seconds": 5.201124208,
+      "seconds": 5.716834207999999,
       "tokens": {
-        "input_tokens": 6642,
+        "input_tokens": 5736,
         "input_tokens_details": {
-          "cache_write_tokens": 6639,
+          "cache_write_tokens": 5733,
           "cached_tokens": 0
         },
-        "output_tokens": 219,
+        "output_tokens": 203,
+        "output_tokens_details": {
+          "reasoning_tokens": 55
+        },
+        "total_tokens": 5939
+      }
+    },
+    {
+      "step": "VERIFY",
+      "stage": 5,
+      "audience": "engineering",
+      "attempt": 1,
+      "seconds": 6.133092334,
+      "tokens": {
+        "input_tokens": 5791,
+        "input_tokens_details": {
+          "cache_write_tokens": 5788,
+          "cached_tokens": 0
+        },
+        "output_tokens": 244,
         "output_tokens_details": {
           "reasoning_tokens": 67
         },
-        "total_tokens": 6861
-      }
-    },
-    {
-      "step": "VERIFY",
-      "stage": 8,
-      "audience": "executive",
-      "attempt": 1,
-      "seconds": 7.057848292,
-      "tokens": {
-        "input_tokens": 6842,
-        "input_tokens_details": {
-          "cache_write_tokens": 6839,
-          "cached_tokens": 0
-        },
-        "output_tokens": 290,
-        "output_tokens_details": {
-          "reasoning_tokens": 71
-        },
-        "total_tokens": 7132
+        "total_tokens": 6035
       }
     }
   ],

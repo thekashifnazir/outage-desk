@@ -1553,7 +1553,10 @@
                 "C-019"
               ],
               "response_ids": [],
-              "verify": null
+              "verify": {
+                "pass": true,
+                "reason": null
+              }
             }
           ]
         },
@@ -1567,7 +1570,10 @@
                 "C-001"
               ],
               "response_ids": [],
-              "verify": null
+              "verify": {
+                "pass": true,
+                "reason": null
+              }
             },
             {
               "text": "Cloudflare's Access outage affects staff's internal-tool access [C-010][C-011].",
@@ -1577,7 +1583,10 @@
                 "C-011"
               ],
               "response_ids": [],
-              "verify": null
+              "verify": {
+                "pass": false,
+                "reason": "Astra: C-010 establishes that staff use Cloudflare Access, and C-011 establishes an Access outage, but neither confirms that the outage affected Northwind staff's internal-tool access."
+              }
             }
           ]
         },
@@ -1591,7 +1600,10 @@
                 "C-017"
               ],
               "response_ids": [],
-              "verify": null
+              "verify": {
+                "pass": true,
+                "reason": null
+              }
             },
             {
               "text": "Evidence conflicts: Google's support account denies disruptions; its status page confirms an incident [C-021].",
@@ -1600,7 +1612,10 @@
                 "C-021"
               ],
               "response_ids": [],
-              "verify": null
+              "verify": {
+                "pass": true,
+                "reason": null
+              }
             }
           ]
         },
@@ -1616,7 +1631,10 @@
                 "C-024"
               ],
               "response_ids": [],
-              "verify": null
+              "verify": {
+                "pass": true,
+                "reason": null
+              }
             }
           ]
         },
@@ -1631,7 +1649,10 @@
                 "R-16",
                 "R-14"
               ],
-              "verify": null
+              "verify": {
+                "pass": true,
+                "reason": null
+              }
             }
           ]
         },
@@ -1645,7 +1666,10 @@
               "response_ids": [
                 "R-12"
               ],
-              "verify": null
+              "verify": {
+                "pass": true,
+                "reason": null
+              }
             }
           ]
         },
@@ -1659,7 +1683,10 @@
               "response_ids": [
                 "R-17"
               ],
-              "verify": null
+              "verify": {
+                "pass": true,
+                "reason": null
+              }
             }
           ]
         }
@@ -1685,7 +1712,10 @@
                 "C-006"
               ],
               "response_ids": [],
-              "verify": null
+              "verify": {
+                "pass": true,
+                "reason": null
+              }
             },
             {
               "text": "Cloudflare's outage affects Access authentication used by staff; services are starting to recover [C-011] [C-010] [C-020].",
@@ -1696,7 +1726,10 @@
                 "C-020"
               ],
               "response_ids": [],
-              "verify": null
+              "verify": {
+                "pass": true,
+                "reason": null
+              }
             },
             {
               "text": "Root cause, Northwind recovery time, and whether Workers KV lost data remain unknown [C-003] [C-004] [C-024].",
@@ -1707,7 +1740,10 @@
                 "C-024"
               ],
               "response_ids": [],
-              "verify": null
+              "verify": {
+                "pass": true,
+                "reason": null
+              }
             }
           ]
         },
@@ -1724,7 +1760,10 @@
                 "R-14",
                 "R-16"
               ],
-              "verify": null
+              "verify": {
+                "pass": true,
+                "reason": null
+              }
             }
           ]
         },
@@ -1739,7 +1778,10 @@
                 "C-022"
               ],
               "response_ids": [],
-              "verify": null
+              "verify": {
+                "pass": false,
+                "reason": "Astra: C-014 and C-022 support that these explanations are unverified, but do not support the added instruction that they should not be acted on."
+              }
             },
             {
               "text": "Do not roll back until a change is implicated [R-3].",
@@ -1748,7 +1790,10 @@
               "response_ids": [
                 "R-3"
               ],
-              "verify": null
+              "verify": {
+                "pass": true,
+                "reason": null
+              }
             }
           ]
         },
@@ -1762,7 +1807,10 @@
               "response_ids": [
                 "R-17"
               ],
-              "verify": null
+              "verify": {
+                "pass": true,
+                "reason": null
+              }
             }
           ]
         }
@@ -1786,7 +1834,10 @@
                   "C-001"
                 ],
                 "response_ids": [],
-                "verify": null
+                "verify": {
+                  "pass": true,
+                  "reason": null
+                }
               },
               {
                 "text": "Our cloud provider has confirmed an incident [C-005].",
@@ -1795,7 +1846,10 @@
                   "C-005"
                 ],
                 "response_ids": [],
-                "verify": null
+                "verify": {
+                  "pass": true,
+                  "reason": null
+                }
               },
               {
                 "text": "The cause remains undisclosed, and recovery time is not yet known [C-003] [C-004] [C-017].",
@@ -1806,7 +1860,10 @@
                   "C-017"
                 ],
                 "response_ids": [],
-                "verify": null
+                "verify": {
+                  "pass": true,
+                  "reason": null
+                }
               },
               {
                 "text": "We're preparing to replay failed requests [R-14].",
@@ -1815,7 +1872,10 @@
                 "response_ids": [
                   "R-14"
                 ],
-                "verify": null
+                "verify": {
+                  "pass": true,
+                  "reason": null
+                }
               },
               {
                 "text": "We'll update you again at 20:15 UTC [R-17].",
@@ -1824,7 +1884,10 @@
                 "response_ids": [
                   "R-17"
                 ],
-                "verify": null
+                "verify": {
+                  "pass": true,
+                  "reason": null
+                }
               }
             ]
           }
@@ -1835,8 +1898,517 @@
   },
   "verify": {
     "pass": false,
-    "status": "pending",
-    "reason": "Awaiting code verification and Astra support check"
+    "status": "failed",
+    "verifier_sha256": "5a5eb2c893c4710d3318edcb014b46cd4f1b1bd21e021c706b42c468aa75b3ea",
+    "audiences": [
+      {
+        "audience": "executive",
+        "code_pass": true,
+        "support": {
+          "results": [
+            {
+              "sentence_index": 0,
+              "supported": true,
+              "problem": null
+            },
+            {
+              "sentence_index": 1,
+              "supported": true,
+              "problem": null
+            },
+            {
+              "sentence_index": 2,
+              "supported": false,
+              "problem": "C-010 establishes that staff use Cloudflare Access, and C-011 establishes an Access outage, but neither confirms that the outage affected Northwind staff's internal-tool access."
+            },
+            {
+              "sentence_index": 3,
+              "supported": true,
+              "problem": null
+            },
+            {
+              "sentence_index": 4,
+              "supported": true,
+              "problem": null
+            },
+            {
+              "sentence_index": 5,
+              "supported": true,
+              "problem": null
+            },
+            {
+              "sentence_index": 6,
+              "supported": true,
+              "problem": null
+            },
+            {
+              "sentence_index": 7,
+              "supported": true,
+              "problem": null
+            },
+            {
+              "sentence_index": 8,
+              "supported": true,
+              "problem": null
+            }
+          ]
+        },
+        "draft": {
+          "audience": "executive",
+          "policy_mode": null,
+          "as_of": "20:01",
+          "source": "astra_saved",
+          "generated_at": "2026-10-06T17:57:53.533Z",
+          "sections": [
+            {
+              "heading": "Situation",
+              "sentences": [
+                {
+                  "text": "Google Cloud's incident continues in our region, us-central1 [C-005][C-019].",
+                  "type": "fact",
+                  "claim_ids": [
+                    "C-005",
+                    "C-019"
+                  ],
+                  "response_ids": [],
+                  "verify": {
+                    "pass": true,
+                    "reason": null
+                  }
+                }
+              ]
+            },
+            {
+              "heading": "Impact on us",
+              "sentences": [
+                {
+                  "text": "Login/API reliability has been impaired since 17:51 UTC [C-001].",
+                  "type": "fact",
+                  "claim_ids": [
+                    "C-001"
+                  ],
+                  "response_ids": [],
+                  "verify": {
+                    "pass": true,
+                    "reason": null
+                  }
+                },
+                {
+                  "text": "Cloudflare's Access outage affects staff's internal-tool access [C-010][C-011].",
+                  "type": "fact",
+                  "claim_ids": [
+                    "C-010",
+                    "C-011"
+                  ],
+                  "response_ids": [],
+                  "verify": {
+                    "pass": false,
+                    "reason": "Astra: C-010 establishes that staff use Cloudflare Access, and C-011 establishes an Access outage, but neither confirms that the outage affected Northwind staff's internal-tool access."
+                  }
+                }
+              ]
+            },
+            {
+              "heading": "Confirmed",
+              "sentences": [
+                {
+                  "text": "Google applied mitigations [C-017].",
+                  "type": "fact",
+                  "claim_ids": [
+                    "C-017"
+                  ],
+                  "response_ids": [],
+                  "verify": {
+                    "pass": true,
+                    "reason": null
+                  }
+                },
+                {
+                  "text": "Evidence conflicts: Google's support account denies disruptions; its status page confirms an incident [C-021].",
+                  "type": "fact",
+                  "claim_ids": [
+                    "C-021"
+                  ],
+                  "response_ids": [],
+                  "verify": {
+                    "pass": true,
+                    "reason": null
+                  }
+                }
+              ]
+            },
+            {
+              "heading": "Not yet known",
+              "sentences": [
+                {
+                  "text": "The undisclosed cause, recovery time, and Cloudflare KV data-loss status remain unknown [C-003][C-004][C-024].",
+                  "type": "fact",
+                  "claim_ids": [
+                    "C-003",
+                    "C-004",
+                    "C-024"
+                  ],
+                  "response_ids": [],
+                  "verify": {
+                    "pass": true,
+                    "reason": null
+                  }
+                }
+              ]
+            },
+            {
+              "heading": "What we're doing",
+              "sentences": [
+                {
+                  "text": "We're throttling retries and preparing request replay [R-16][R-14].",
+                  "type": "commitment",
+                  "claim_ids": [],
+                  "response_ids": [
+                    "R-16",
+                    "R-14"
+                  ],
+                  "verify": {
+                    "pass": true,
+                    "reason": null
+                  }
+                }
+              ]
+            },
+            {
+              "heading": "Decisions needed",
+              "sentences": [
+                {
+                  "text": "Naming is decided: retain “our cloud provider” in live updates [R-12].",
+                  "type": "commitment",
+                  "claim_ids": [],
+                  "response_ids": [
+                    "R-12"
+                  ],
+                  "verify": {
+                    "pass": true,
+                    "reason": null
+                  }
+                }
+              ]
+            },
+            {
+              "heading": "Next update",
+              "sentences": [
+                {
+                  "text": "We'll update at 20:15 [R-17].",
+                  "type": "commitment",
+                  "claim_ids": [],
+                  "response_ids": [
+                    "R-17"
+                  ],
+                  "verify": {
+                    "pass": true,
+                    "reason": null
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        "pass": false,
+        "total": 9,
+        "verified": 8,
+        "excluded": 1,
+        "word_count": 81,
+        "word_limit": 120,
+        "over_limit": false
+      },
+      {
+        "audience": "engineering",
+        "code_pass": true,
+        "support": {
+          "results": [
+            {
+              "sentence_index": 0,
+              "supported": true,
+              "problem": null
+            },
+            {
+              "sentence_index": 1,
+              "supported": true,
+              "problem": null
+            },
+            {
+              "sentence_index": 2,
+              "supported": true,
+              "problem": null
+            },
+            {
+              "sentence_index": 3,
+              "supported": true,
+              "problem": null
+            },
+            {
+              "sentence_index": 4,
+              "supported": false,
+              "problem": "C-014 and C-022 support that these explanations are unverified, but do not support the added instruction that they should not be acted on."
+            },
+            {
+              "sentence_index": 5,
+              "supported": true,
+              "problem": null
+            },
+            {
+              "sentence_index": 6,
+              "supported": true,
+              "problem": null
+            }
+          ]
+        },
+        "draft": {
+          "audience": "engineering",
+          "policy_mode": null,
+          "as_of": "20:01",
+          "source": "astra_saved",
+          "generated_at": "2026-10-06T17:57:51.172Z",
+          "sections": [
+            {
+              "heading": "Confirmed technical facts",
+              "sentences": [
+                {
+                  "text": "Google Cloud's incident still affects us-central1, Northwind's only region; Firestore and Firebase Auth calls return 503s [C-005] [C-019] [C-009] [C-006].",
+                  "type": "fact",
+                  "claim_ids": [
+                    "C-005",
+                    "C-019",
+                    "C-009",
+                    "C-006"
+                  ],
+                  "response_ids": [],
+                  "verify": {
+                    "pass": true,
+                    "reason": null
+                  }
+                },
+                {
+                  "text": "Cloudflare's outage affects Access authentication used by staff; services are starting to recover [C-011] [C-010] [C-020].",
+                  "type": "fact",
+                  "claim_ids": [
+                    "C-011",
+                    "C-010",
+                    "C-020"
+                  ],
+                  "response_ids": [],
+                  "verify": {
+                    "pass": true,
+                    "reason": null
+                  }
+                },
+                {
+                  "text": "Root cause, Northwind recovery time, and whether Workers KV lost data remain unknown [C-003] [C-004] [C-024].",
+                  "type": "fact",
+                  "claim_ids": [
+                    "C-003",
+                    "C-004",
+                    "C-024"
+                  ],
+                  "response_ids": [],
+                  "verify": {
+                    "pass": true,
+                    "reason": null
+                  }
+                }
+              ]
+            },
+            {
+              "heading": "What to do",
+              "sentences": [
+                {
+                  "text": "Keep deploys frozen and staff on break-glass access; prepare failed-request replay and throttle retries and job restarts [R-7] [R-11] [R-14] [R-16].",
+                  "type": "commitment",
+                  "claim_ids": [],
+                  "response_ids": [
+                    "R-7",
+                    "R-11",
+                    "R-14",
+                    "R-16"
+                  ],
+                  "verify": {
+                    "pass": true,
+                    "reason": null
+                  }
+                }
+              ]
+            },
+            {
+              "heading": "What NOT to chase",
+              "sentences": [
+                {
+                  "text": "BGP and ConnectWise explanations are unverified and should not be acted on [C-014] [C-022].",
+                  "type": "fact",
+                  "claim_ids": [
+                    "C-014",
+                    "C-022"
+                  ],
+                  "response_ids": [],
+                  "verify": {
+                    "pass": false,
+                    "reason": "Astra: C-014 and C-022 support that these explanations are unverified, but do not support the added instruction that they should not be acted on."
+                  }
+                },
+                {
+                  "text": "Do not roll back until a change is implicated [R-3].",
+                  "type": "commitment",
+                  "claim_ids": [],
+                  "response_ids": [
+                    "R-3"
+                  ],
+                  "verify": {
+                    "pass": true,
+                    "reason": null
+                  }
+                }
+              ]
+            },
+            {
+              "heading": "Next update",
+              "sentences": [
+                {
+                  "text": "Next update at 20:15 [R-17].",
+                  "type": "commitment",
+                  "claim_ids": [],
+                  "response_ids": [
+                    "R-17"
+                  ],
+                  "verify": {
+                    "pass": true,
+                    "reason": null
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        "pass": false,
+        "total": 7,
+        "verified": 6,
+        "excluded": 1,
+        "word_count": 102,
+        "word_limit": 140,
+        "over_limit": false
+      },
+      {
+        "audience": "customer",
+        "code_pass": true,
+        "support": {
+          "results": [
+            {
+              "sentence_index": 0,
+              "supported": true,
+              "problem": null
+            },
+            {
+              "sentence_index": 1,
+              "supported": true,
+              "problem": null
+            },
+            {
+              "sentence_index": 2,
+              "supported": true,
+              "problem": null
+            },
+            {
+              "sentence_index": 3,
+              "supported": true,
+              "problem": null
+            },
+            {
+              "sentence_index": 4,
+              "supported": true,
+              "problem": null
+            }
+          ]
+        },
+        "draft": {
+          "audience": "customer",
+          "policy_mode": "confirmed_only",
+          "as_of": "20:01",
+          "source": "astra_saved",
+          "generated_at": "2026-10-06T17:57:48.587Z",
+          "sections": [
+            {
+              "heading": "Northwind service update",
+              "sentences": [
+                {
+                  "text": "We're sorry customers have been unable to reliably log in or use our API since 17:51 UTC [C-001].",
+                  "type": "fact",
+                  "claim_ids": [
+                    "C-001"
+                  ],
+                  "response_ids": [],
+                  "verify": {
+                    "pass": true,
+                    "reason": null
+                  }
+                },
+                {
+                  "text": "Our cloud provider has confirmed an incident [C-005].",
+                  "type": "fact",
+                  "claim_ids": [
+                    "C-005"
+                  ],
+                  "response_ids": [],
+                  "verify": {
+                    "pass": true,
+                    "reason": null
+                  }
+                },
+                {
+                  "text": "The cause remains undisclosed, and recovery time is not yet known [C-003] [C-004] [C-017].",
+                  "type": "fact",
+                  "claim_ids": [
+                    "C-003",
+                    "C-004",
+                    "C-017"
+                  ],
+                  "response_ids": [],
+                  "verify": {
+                    "pass": true,
+                    "reason": null
+                  }
+                },
+                {
+                  "text": "We're preparing to replay failed requests [R-14].",
+                  "type": "commitment",
+                  "claim_ids": [],
+                  "response_ids": [
+                    "R-14"
+                  ],
+                  "verify": {
+                    "pass": true,
+                    "reason": null
+                  }
+                },
+                {
+                  "text": "We'll update you again at 20:15 UTC [R-17].",
+                  "type": "commitment",
+                  "claim_ids": [],
+                  "response_ids": [
+                    "R-17"
+                  ],
+                  "verify": {
+                    "pass": true,
+                    "reason": null
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        "pass": true,
+        "total": 5,
+        "verified": 5,
+        "excluded": 0,
+        "word_count": 55,
+        "word_limit": 70,
+        "over_limit": false
+      }
+    ]
   },
   "timings": [
     {
@@ -1932,6 +2504,69 @@
           "reasoning_tokens": 28
         },
         "total_tokens": 6443
+      }
+    },
+    {
+      "step": "VERIFY_CODE",
+      "stage": 6,
+      "seconds": 0.00004954200000000242,
+      "tokens": null
+    },
+    {
+      "step": "VERIFY",
+      "stage": 6,
+      "audience": "customer",
+      "attempt": 1,
+      "seconds": 2.726210625,
+      "tokens": {
+        "input_tokens": 5633,
+        "input_tokens_details": {
+          "cache_write_tokens": 5630,
+          "cached_tokens": 0
+        },
+        "output_tokens": 77,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 5710
+      }
+    },
+    {
+      "step": "VERIFY",
+      "stage": 6,
+      "audience": "engineering",
+      "attempt": 1,
+      "seconds": 3.320407,
+      "tokens": {
+        "input_tokens": 5872,
+        "input_tokens_details": {
+          "cache_write_tokens": 5869,
+          "cached_tokens": 0
+        },
+        "output_tokens": 132,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 6004
+      }
+    },
+    {
+      "step": "VERIFY",
+      "stage": 6,
+      "audience": "executive",
+      "attempt": 1,
+      "seconds": 8.0845965,
+      "tokens": {
+        "input_tokens": 5899,
+        "input_tokens_details": {
+          "cache_write_tokens": 5896,
+          "cached_tokens": 0
+        },
+        "output_tokens": 203,
+        "output_tokens_details": {
+          "reasoning_tokens": 38
+        },
+        "total_tokens": 6102
       }
     }
   ],
