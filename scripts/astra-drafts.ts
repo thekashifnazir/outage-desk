@@ -13,7 +13,7 @@ await Promise.all(stages.map(async n => {
     const stage = n === 4 ? await stage4Input() : await loadStage(n);
     const claims = new Set(saved.capped_ledger.map((c: any) => c.id));
     const responses = new Set(stage.response_items.map(r => r.id));
-    const drafts = await Promise.all(['executive', 'engineering', 'customer'].map(async audience => {
+    const results = await Promise.allSettled(['executive', 'engineering', 'customer'].map(async audience => {
       const mode = audience === 'customer' ? 'confirmed_only' : null;
       const output = await call(3, n, { audience, company: 'Northwind', mode: mode ?? 'not applicable', now: stage.at, ledger_json: JSON.stringify(saved.capped_ledger), response_items_json: JSON.stringify(stage.response_items) }, value => {
         if (!Array.isArray(value?.sections) || !value.sections.length) throw new Error('Missing sections');
@@ -26,6 +26,9 @@ await Promise.all(stages.map(async n => {
       }, saved.timings);
       return { audience, policy_mode: mode, as_of: stage.at, source: 'astra_saved', generated_at: new Date().toISOString(), sections: output.sections.map((s: any) => ({ ...s, sentences: s.sentences.map((x: any) => ({ ...x, verify: null })) })) } as Draft;
     }));
+    const failed = results.find(r => r.status === 'rejected');
+    if (failed?.status === 'rejected') throw failed.reason;
+    const drafts = results.map(r => r.status === 'fulfilled' ? r.value : null);
     saved.drafts = { executive: drafts[0], engineering: drafts[1], customer: { confirmed_only: drafts[2], early_incident: null } };
     saved.verify = { pass: false, status: 'pending', reason: 'Awaiting code verification and Astra support check' };
   } catch (error: any) {

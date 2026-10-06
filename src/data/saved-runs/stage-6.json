@@ -1,270 +1,123 @@
 {
-  "stage": 4,
+  "stage": 6,
   "model": "gpt-6-astra",
   "source": "astra_saved",
-  "generated_at": "2026-10-06T17:55:55.332Z",
+  "generated_at": "2026-10-06T17:56:13.675Z",
   "extract": {
     "claims": [
       {
-        "statement": "Cloudflare is investigating an issue causing Access authentication failures.",
+        "id": "C1",
+        "statement": "Cloudflare Workers KV went offline.",
         "subject": "Cloudflare",
         "unknown_kind": null,
         "region": null,
+        "class": "CONFIRMED",
         "proposed_class": "CONFIRMED",
         "source_ids": [
-          "S8"
+          "S19"
         ],
-        "provider_wording": "Cloudflare engineering is investigating an issue causing Access authentication to fail.",
+        "provider_wording": "Cloudflare's critical Workers KV service went offline due to an outage of a 3rd party service that is a key dependency.",
         "settled_by": null,
-        "estimate": null
+        "estimate": null,
+        "first_seen": "19:57",
+        "superseded_by": null,
+        "contradiction_sides": null,
+        "history": []
       },
       {
-        "statement": "Cloudflare Zero Trust WARP connectivity is impacted.",
+        "id": "C2",
+        "statement": "Cloudflare attributed the Workers KV outage to an outage of a third-party service that is a key dependency.",
         "subject": "Cloudflare",
         "unknown_kind": null,
         "region": null,
+        "class": "CONFIRMED",
         "proposed_class": "CONFIRMED",
         "source_ids": [
-          "S8"
+          "S19"
         ],
-        "provider_wording": "Cloudflare Zero Trust WARP connectivity is also impacted.",
+        "provider_wording": "Cloudflare's critical Workers KV service went offline due to an outage of a 3rd party service that is a key dependency.",
         "settled_by": null,
-        "estimate": null
+        "estimate": null,
+        "first_seen": "19:57",
+        "superseded_by": null,
+        "contradiction_sides": null,
+        "history": []
       },
       {
-        "statement": "Cloudflare's 18:48 update lists Access, WARP, Durable Objects (SQLite backed Durable Objects only), Workers KV, Realtime, Workers AI, Stream, and parts of the Cloudflare dashboard as impacted.",
+        "id": "C3",
+        "statement": "The identity of the third-party dependency implicated in the Cloudflare Workers KV outage is unknown.",
         "subject": "Cloudflare",
-        "unknown_kind": null,
-        "region": null,
-        "proposed_class": "CONFIRMED",
-        "source_ids": [
-          "S8"
-        ],
-        "provider_wording": "Impacted services: Access WARP Durable Objects (SQLite backed Durable Objects only) Workers KV Realtime Workers AI Stream Parts of the Cloudflare dashboard",
-        "settled_by": null,
-        "estimate": null
-      },
-      {
-        "statement": "A single community post reports a Cloudflare KV GET failure with HTTP 503 Service temporarily unavailable.",
-        "subject": "Cloudflare",
-        "unknown_kind": null,
-        "region": null,
-        "proposed_class": "UNCONFIRMED",
-        "source_ids": [
-          "S9"
-        ],
-        "provider_wording": null,
-        "settled_by": null,
-        "estimate": null
-      },
-      {
-        "statement": "Supabase reports connectivity issues on its own status page.",
-        "subject": "Supabase",
-        "unknown_kind": null,
-        "region": null,
-        "proposed_class": "CONFIRMED",
-        "source_ids": [
-          "S12"
-        ],
-        "provider_wording": "We believe connectivity issues are the result of a broad outage with our upstream provider.",
-        "settled_by": null,
-        "estimate": null
-      },
-      {
-        "statement": "Supabase believes its connectivity issues result from a broad outage at an unnamed upstream provider; that cause is not established.",
-        "subject": "Supabase",
-        "unknown_kind": null,
-        "region": null,
-        "proposed_class": "UNCONFIRMED",
-        "source_ids": [
-          "S12"
-        ],
-        "provider_wording": "We believe connectivity issues are the result of a broad outage with our upstream provider.",
-        "settled_by": null,
-        "estimate": null
-      },
-      {
-        "statement": "Google Cloud reports service issues affecting multiple GCP products beginning June 12, 2025, at 10:51 PDT.",
-        "subject": "Google Cloud",
-        "unknown_kind": null,
-        "region": null,
-        "proposed_class": "CONFIRMED",
-        "source_ids": [
-          "S7"
-        ],
-        "provider_wording": "We are experiencing service issues with multiple GCP products beginning at Thursday, 2025-06-12 10:51 PDT.",
-        "settled_by": null,
-        "estimate": null
-      },
-      {
-        "statement": "A single community post alleges AWS is having serious issues.",
-        "subject": "AWS",
-        "unknown_kind": null,
-        "region": null,
-        "proposed_class": "UNCONFIRMED",
-        "source_ids": [
-          "S11"
-        ],
-        "provider_wording": null,
-        "settled_by": null,
-        "estimate": null
-      },
-      {
-        "statement": "A single community post alleges Azure is having serious issues.",
-        "subject": "Azure",
-        "unknown_kind": null,
-        "region": null,
-        "proposed_class": "UNCONFIRMED",
-        "source_ids": [
-          "S11"
-        ],
-        "provider_wording": null,
-        "settled_by": null,
-        "estimate": null
-      },
-      {
-        "statement": "A single community post alleges Google Cloud is having serious issues.",
-        "subject": "Google Cloud",
-        "unknown_kind": null,
-        "region": null,
-        "proposed_class": "UNCONFIRMED",
-        "source_ids": [
-          "S11"
-        ],
-        "provider_wording": null,
-        "settled_by": null,
-        "estimate": null
-      },
-      {
-        "statement": "A single community post alleges Cloudflare is having serious issues.",
-        "subject": "Cloudflare",
-        "unknown_kind": null,
-        "region": null,
-        "proposed_class": "UNCONFIRMED",
-        "source_ids": [
-          "S11"
-        ],
-        "provider_wording": null,
-        "settled_by": null,
-        "estimate": null
-      },
-      {
-        "statement": "The Downdetector snapshot records a Google Cloud report-count peak of 14,695 at 18:31 UTC.",
-        "subject": "Google Cloud",
-        "unknown_kind": null,
-        "region": null,
-        "proposed_class": "REPORTED",
-        "source_ids": [
-          "M1"
-        ],
-        "provider_wording": null,
-        "settled_by": null,
-        "estimate": null
-      },
-      {
-        "statement": "The Downdetector snapshot records 3,071 Cloudflare reports at 18:49 UTC.",
-        "subject": "Cloudflare",
-        "unknown_kind": null,
-        "region": null,
-        "proposed_class": "REPORTED",
-        "source_ids": [
-          "M1"
-        ],
-        "provider_wording": null,
-        "settled_by": null,
-        "estimate": null
-      },
-      {
-        "statement": "A community relay attributed to a Cloudflare account manager alleges Google Cloud outages caused the Cloudflare outage.",
-        "subject": "Cloudflare",
-        "unknown_kind": null,
-        "region": null,
-        "proposed_class": "UNCONFIRMED",
-        "source_ids": [
-          "S10"
-        ],
-        "provider_wording": null,
-        "settled_by": null,
-        "estimate": null
-      },
-      {
-        "statement": "The cause of Google Cloud's service issues is unknown.",
-        "subject": "Google Cloud",
         "unknown_kind": "cause",
         "region": null,
+        "class": "UNKNOWN",
         "proposed_class": "UNKNOWN",
         "source_ids": [
-          "S7"
+          "S19"
         ],
         "provider_wording": null,
         "settled_by": null,
-        "estimate": null
+        "estimate": null,
+        "first_seen": "19:57",
+        "superseded_by": null,
+        "contradiction_sides": null,
+        "history": []
       },
       {
-        "statement": "Google Cloud's recovery ETA is unknown.",
-        "subject": "Google Cloud",
-        "unknown_kind": "recovery",
-        "region": null,
-        "proposed_class": "UNKNOWN",
-        "source_ids": [
-          "S7"
-        ],
-        "provider_wording": null,
-        "settled_by": null,
-        "estimate": null
-      },
-      {
-        "statement": "Cloudflare's recovery ETA is unknown.",
+        "id": "C4",
+        "statement": "The recovery time for Cloudflare Workers KV is unknown.",
         "subject": "Cloudflare",
         "unknown_kind": "recovery",
         "region": null,
+        "class": "UNKNOWN",
         "proposed_class": "UNKNOWN",
         "source_ids": [
-          "S8"
+          "S19"
         ],
         "provider_wording": null,
         "settled_by": null,
-        "estimate": null
+        "estimate": null,
+        "first_seen": "19:57",
+        "superseded_by": null,
+        "contradiction_sides": null,
+        "history": []
       },
       {
-        "statement": "Whether Google Cloud's reported issues affect Northwind's Cloud Run, Firestore, or Firebase Auth deployment in us-central1 is unknown.",
-        "subject": "Northwind",
-        "unknown_kind": "scope",
-        "region": "us-central1",
-        "proposed_class": "UNKNOWN",
-        "source_ids": [
-          "S7"
-        ],
-        "provider_wording": null,
-        "settled_by": null,
-        "estimate": null
-      },
-      {
-        "statement": "Whether Cloudflare Access failures affect Northwind's staff tools is unknown.",
+        "id": "C5",
+        "statement": "Whether the Workers KV outage affects Northwind staff tools behind Cloudflare Access is unknown.",
         "subject": "Northwind",
         "unknown_kind": "scope",
         "region": null,
+        "class": "UNKNOWN",
         "proposed_class": "UNKNOWN",
         "source_ids": [
-          "S8"
+          "S19"
         ],
         "provider_wording": null,
         "settled_by": null,
-        "estimate": null
+        "estimate": null,
+        "first_seen": "19:57",
+        "superseded_by": null,
+        "contradiction_sides": null,
+        "history": []
       },
       {
-        "statement": "Whether the reported incidents caused any loss, corruption, or exposure of Northwind data is unknown.",
-        "subject": "Northwind",
+        "id": "C6",
+        "statement": "Whether the Cloudflare Workers KV outage caused data loss is unknown.",
+        "subject": "Cloudflare",
         "unknown_kind": "data",
         "region": null,
+        "class": "UNKNOWN",
         "proposed_class": "UNKNOWN",
         "source_ids": [
-          "S7",
-          "S8"
+          "S19"
         ],
         "provider_wording": null,
         "settled_by": null,
-        "estimate": null
+        "estimate": null,
+        "first_seen": "19:57",
+        "superseded_by": null,
+        "contradiction_sides": null,
+        "history": []
       }
     ]
   },
@@ -322,7 +175,7 @@
       },
       {
         "id": "C-004",
-        "statement": "When our service will recover",
+        "statement": "When our service will recover remains unknown; Google Cloud has provided no ETA for full service recovery.",
         "subject": "Northwind",
         "unknown_kind": "recovery",
         "class": "UNKNOWN",
@@ -340,31 +193,37 @@
             "class": "UNKNOWN",
             "statement": "When our service will recover",
             "because": []
+          },
+          {
+            "stage": 6,
+            "class": "UNKNOWN",
+            "statement": "When our service will recover remains unknown; Google Cloud has provided no ETA for full service recovery.",
+            "because": [
+              "S16"
+            ]
           }
         ]
       },
       {
         "id": "C-005",
-        "statement": "Google Cloud's status page confirms service issues affecting multiple GCP products beginning June 12, 2025, at 17:51 UTC (10:51 PDT); customer reports describe API errors and console access problems.",
+        "statement": "Google Cloud has an incident affecting multiple products since 17:51 UTC",
         "subject": "Google Cloud",
         "unknown_kind": null,
         "class": "CONFIRMED",
         "proposed_class": "CONFIRMED",
         "source_ids": [
-          "S2",
+          "S7",
+          "S1",
           "S3",
           "S4",
           "S5",
           "S6",
-          "S1",
-          "S13",
-          "S7",
-          "S11"
+          "S13"
         ],
         "provider_wording": "We are experiencing service issues with multiple GCP products beginning at Thursday, 2025-06-12 10:51 PDT.",
         "settled_by": null,
         "estimate": null,
-        "first_seen": "17:56",
+        "first_seen": "18:46",
         "superseded_by": null,
         "contradiction_sides": null,
         "history": [
@@ -391,16 +250,22 @@
           {
             "stage": 4,
             "class": "CONFIRMED",
-            "statement": "Google Cloud's status page confirms service issues affecting multiple GCP products beginning June 12, 2025, at 17:51 UTC (10:51 PDT); customer reports describe API errors and console access problems.",
+            "statement": "Google Cloud has an incident affecting multiple products since 17:51 UTC",
             "because": [
-              "S7",
+              "S7"
+            ]
+          },
+          {
+            "stage": 6,
+            "class": "CONFIRMED",
+            "statement": "Merged duplicate outage claim C-002 into C-005; its sources were already included.",
+            "because": [
               "S1",
               "S13",
               "S3",
               "S4",
               "S5",
-              "S6",
-              "S11"
+              "S6"
             ]
           }
         ]
@@ -542,7 +407,7 @@
       },
       {
         "id": "C-011",
-        "statement": "Cloudflare reports Access authentication failures and impacted Zero Trust WARP connectivity; its 18:48 update lists Access, WARP, Durable Objects (SQLite-backed only), Workers KV, Realtime, Workers AI, Stream, and parts of the Cloudflare dashboard as impacted.",
+        "statement": "Cloudflare has an outage: Access authentication failing, WARP impacted, Workers KV went offline, and Durable Objects is among impacted services.",
         "subject": "Cloudflare",
         "unknown_kind": null,
         "class": "CONFIRMED",
@@ -550,84 +415,64 @@
         "source_ids": [
           "S8",
           "S9",
-          "S11"
+          "S19"
         ],
-        "provider_wording": "Impacted services: Access WARP Durable Objects (SQLite backed Durable Objects only) Workers KV Realtime Workers AI Stream Parts of the Cloudflare dashboard",
+        "provider_wording": "Cloudflare's critical Workers KV service went offline due to an outage of a 3rd party service that is a key dependency.",
         "settled_by": null,
         "estimate": null,
-        "first_seen": "18:51",
+        "first_seen": "18:19",
         "superseded_by": null,
         "contradiction_sides": null,
         "history": [
           {
             "stage": 4,
             "class": "CONFIRMED",
-            "statement": "Cloudflare reports Access authentication failures and impacted Zero Trust WARP connectivity; its 18:48 update lists Access, WARP, Durable Objects (SQLite-backed only), Workers KV, Realtime, Workers AI, Stream, and parts of the Cloudflare dashboard as impacted.",
+            "statement": "Cloudflare has an outage: Access authentication failing, WARP impacted, Workers KV and Durable Objects among impacted services",
             "because": [
               "S8",
-              "S9",
-              "S11"
+              "S9"
+            ]
+          },
+          {
+            "stage": 6,
+            "class": "CONFIRMED",
+            "statement": "Cloudflare has an outage: Access authentication failing, WARP impacted, Workers KV went offline, and Durable Objects is among impacted services.",
+            "because": [
+              "S19"
             ]
           }
         ]
       },
       {
         "id": "C-012",
-        "statement": "Supabase reports connectivity issues on its own status page.",
-        "subject": "Supabase",
-        "unknown_kind": null,
-        "class": "CONFIRMED",
-        "proposed_class": "CONFIRMED",
-        "source_ids": [
-          "S12"
-        ],
-        "provider_wording": "We believe connectivity issues are the result of a broad outage with our upstream provider.",
-        "settled_by": null,
-        "estimate": null,
-        "first_seen": "18:51",
-        "superseded_by": null,
-        "contradiction_sides": null,
-        "history": [
-          {
-            "stage": 4,
-            "class": "CONFIRMED",
-            "statement": "Supabase reports connectivity issues on its own status page.",
-            "because": [
-              "S12"
-            ]
-          }
-        ]
-      },
-      {
-        "id": "C-013",
-        "statement": "Supabase believes its connectivity issues result from a broad outage at an unnamed upstream provider; that cause is not established.",
-        "subject": "Supabase",
+        "statement": "Cloudflare's outage is caused by Google Cloud's outage",
+        "subject": "Cloudflare",
         "unknown_kind": null,
         "class": "UNCONFIRMED",
-        "proposed_class": "UNCONFIRMED",
+        "proposed_class": "REPORTED",
         "source_ids": [
-          "S12"
+          "S10"
         ],
-        "provider_wording": "We believe connectivity issues are the result of a broad outage with our upstream provider.",
-        "settled_by": null,
+        "provider_wording": null,
+        "settled_by": "Google or Cloudflare saying so on the record",
         "estimate": null,
-        "first_seen": "18:51",
+        "first_seen": "18:50",
         "superseded_by": null,
         "contradiction_sides": null,
         "history": [
           {
             "stage": 4,
             "class": "UNCONFIRMED",
-            "statement": "Supabase believes its connectivity issues result from a broad outage at an unnamed upstream provider; that cause is not established.",
+            "statement": "Cloudflare's outage is caused by Google Cloud's outage",
             "because": [
-              "S12"
+              "S10"
             ]
           }
         ]
       },
       {
-        "id": "C-014",
-        "statement": "A single community post alleges AWS is having serious issues.",
+        "id": "C-013",
+        "statement": "AWS and Azure are also down",
         "subject": "AWS",
         "unknown_kind": null,
         "class": "UNCONFIRMED",
@@ -636,16 +481,43 @@
           "S11"
         ],
         "provider_wording": null,
-        "settled_by": null,
+        "settled_by": "An AWS or Azure status page declaring an incident",
         "estimate": null,
-        "first_seen": "18:51",
+        "first_seen": "18:48",
         "superseded_by": null,
         "contradiction_sides": null,
         "history": [
           {
             "stage": 4,
             "class": "UNCONFIRMED",
-            "statement": "A single community post alleges AWS is having serious issues.",
+            "statement": "AWS and Azure are also down",
+            "because": [
+              "S11"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "C-014",
+        "statement": "A BGP routing failure is behind the outages",
+        "subject": null,
+        "unknown_kind": null,
+        "class": "UNCONFIRMED",
+        "proposed_class": "UNCONFIRMED",
+        "source_ids": [
+          "S11"
+        ],
+        "provider_wording": null,
+        "settled_by": "The provider's root-cause statement",
+        "estimate": null,
+        "first_seen": "18:48",
+        "superseded_by": null,
+        "contradiction_sides": null,
+        "history": [
+          {
+            "stage": 4,
+            "class": "UNCONFIRMED",
+            "statement": "A BGP routing failure is behind the outages",
             "because": [
               "S11"
             ]
@@ -654,34 +526,7 @@
       },
       {
         "id": "C-015",
-        "statement": "A single community post alleges Azure is having serious issues.",
-        "subject": "Azure",
-        "unknown_kind": null,
-        "class": "UNCONFIRMED",
-        "proposed_class": "UNCONFIRMED",
-        "source_ids": [
-          "S11"
-        ],
-        "provider_wording": null,
-        "settled_by": null,
-        "estimate": null,
-        "first_seen": "18:51",
-        "superseded_by": null,
-        "contradiction_sides": null,
-        "history": [
-          {
-            "stage": 4,
-            "class": "UNCONFIRMED",
-            "statement": "A single community post alleges Azure is having serious issues.",
-            "because": [
-              "S11"
-            ]
-          }
-        ]
-      },
-      {
-        "id": "C-016",
-        "statement": "The Downdetector snapshot records a Google Cloud report-count peak of 14,695 at 18:31 UTC.",
+        "statement": "Downdetector: Google Cloud problem reports peaked at 14,695 (18:31); Cloudflare at 3,071 (18:49)",
         "subject": "Google Cloud",
         "unknown_kind": null,
         "class": "REPORTED",
@@ -690,16 +535,16 @@
           "M1"
         ],
         "provider_wording": null,
-        "settled_by": null,
+        "settled_by": "Provider statements on scope (crowd counts are a signal, not proof)",
         "estimate": null,
-        "first_seen": "18:51",
+        "first_seen": "18:49",
         "superseded_by": null,
         "contradiction_sides": null,
         "history": [
           {
             "stage": 4,
             "class": "REPORTED",
-            "statement": "The Downdetector snapshot records a Google Cloud report-count peak of 14,695 at 18:31 UTC.",
+            "statement": "Downdetector: Google Cloud problem reports peaked at 14,695 (18:31); Cloudflare at 3,071 (18:49)",
             "because": [
               "M1"
             ]
@@ -707,101 +552,251 @@
         ]
       },
       {
-        "id": "C-017",
-        "statement": "The Downdetector snapshot records 3,071 Cloudflare reports at 18:49 UTC.",
-        "subject": "Cloudflare",
-        "unknown_kind": null,
-        "class": "REPORTED",
-        "proposed_class": "REPORTED",
-        "source_ids": [
-          "M1"
-        ],
+        "id": "C-016",
+        "statement": "Which Google Cloud regions are affected",
+        "subject": "Google Cloud",
+        "unknown_kind": "scope",
+        "class": "UNKNOWN",
+        "proposed_class": "UNKNOWN",
+        "source_ids": [],
         "provider_wording": null,
-        "settled_by": null,
+        "settled_by": "The provider's list of affected regions",
         "estimate": null,
         "first_seen": "18:51",
-        "superseded_by": null,
+        "superseded_by": "C-018",
         "contradiction_sides": null,
         "history": [
           {
             "stage": 4,
-            "class": "REPORTED",
-            "statement": "The Downdetector snapshot records 3,071 Cloudflare reports at 18:49 UTC.",
+            "class": "UNKNOWN",
+            "statement": "Which Google Cloud regions are affected",
+            "because": []
+          }
+        ]
+      },
+      {
+        "id": "C-017",
+        "statement": "Google has identified the root cause and applied mitigations, without disclosing the cause",
+        "subject": "Google Cloud",
+        "unknown_kind": null,
+        "class": "CONFIRMED",
+        "proposed_class": "CONFIRMED",
+        "source_ids": [
+          "S16"
+        ],
+        "provider_wording": "Our engineers have identified the root cause and have applied appropriate mitigations… We do not have an ETA for full service recovery.",
+        "settled_by": null,
+        "estimate": null,
+        "first_seen": "19:41",
+        "superseded_by": null,
+        "contradiction_sides": null,
+        "history": [
+          {
+            "stage": 5,
+            "class": "CONFIRMED",
+            "statement": "Google has identified the root cause and applied mitigations, without disclosing the cause",
             "because": [
-              "M1"
+              "S16"
             ]
           }
         ]
       },
       {
         "id": "C-018",
-        "statement": "A community relay attributed to a Cloudflare account manager alleges Google Cloud outages caused the Cloudflare outage.",
-        "subject": "Cloudflare",
+        "statement": "All Google Cloud locations except us-central1 have fully recovered",
+        "subject": "Google Cloud",
         "unknown_kind": null,
-        "class": "UNCONFIRMED",
-        "proposed_class": "UNCONFIRMED",
+        "class": "CONFIRMED",
+        "proposed_class": "CONFIRMED",
         "source_ids": [
-          "S10"
+          "S15"
         ],
-        "provider_wording": null,
+        "provider_wording": "All locations except us-central1 have fully recovered. us-central1 is mostly recovered.",
         "settled_by": null,
         "estimate": null,
-        "first_seen": "18:51",
+        "first_seen": "19:30",
         "superseded_by": null,
         "contradiction_sides": null,
         "history": [
           {
-            "stage": 4,
-            "class": "UNCONFIRMED",
-            "statement": "A community relay attributed to a Cloudflare account manager alleges Google Cloud outages caused the Cloudflare outage.",
+            "stage": 5,
+            "class": "CONFIRMED",
+            "statement": "All Google Cloud locations except us-central1 have fully recovered",
             "because": [
-              "S10"
+              "S15"
             ]
           }
         ]
       },
       {
         "id": "C-019",
-        "statement": "The full affected scope for Northwind remains unknown: beyond observed Firestore and Firebase Auth failures, impact on Cloud Run in us-central1 and on staff tools using Cloudflare Access has not been established.",
-        "subject": "Northwind",
-        "unknown_kind": "scope",
-        "class": "UNKNOWN",
-        "proposed_class": "UNKNOWN",
-        "source_ids": [],
-        "provider_wording": null,
-        "settled_by": "Northwind service and staff-tool monitoring establishing the affected scope",
+        "statement": "us-central1, our region, is still affected (\"mostly recovered\")",
+        "subject": "Google Cloud",
+        "unknown_kind": null,
+        "class": "CONFIRMED",
+        "proposed_class": "CONFIRMED",
+        "source_ids": [
+          "S15"
+        ],
+        "provider_wording": "All locations except us-central1 have fully recovered. us-central1 is mostly recovered.",
+        "settled_by": null,
         "estimate": null,
-        "first_seen": "18:51",
+        "first_seen": "19:30",
         "superseded_by": null,
         "contradiction_sides": null,
         "history": [
           {
-            "stage": 4,
-            "class": "UNKNOWN",
-            "statement": "The full affected scope for Northwind remains unknown: beyond observed Firestore and Firebase Auth failures, impact on Cloud Run in us-central1 and on staff tools using Cloudflare Access has not been established.",
-            "because": []
+            "stage": 5,
+            "class": "CONFIRMED",
+            "statement": "us-central1, our region, is still affected (\"mostly recovered\")",
+            "because": [
+              "S15"
+            ]
           }
         ]
       },
       {
         "id": "C-020",
-        "statement": "Whether the reported incidents caused any loss, corruption, or exposure of Northwind data is unknown.",
-        "subject": "Northwind",
+        "statement": "Cloudflare services are starting to recover",
+        "subject": "Cloudflare",
+        "unknown_kind": null,
+        "class": "CONFIRMED",
+        "proposed_class": "CONFIRMED",
+        "source_ids": [
+          "S14"
+        ],
+        "provider_wording": "We are starting to see services recover. We still expect to see intermittent errors…",
+        "settled_by": null,
+        "estimate": null,
+        "first_seen": "19:12",
+        "superseded_by": null,
+        "contradiction_sides": null,
+        "history": [
+          {
+            "stage": 5,
+            "class": "CONFIRMED",
+            "statement": "Cloudflare services are starting to recover",
+            "because": [
+              "S14"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "C-021",
+        "statement": "Google's support account on X says there are no known service disruptions (contradicts the status page)",
+        "subject": "Google",
+        "unknown_kind": null,
+        "class": "CONFLICTING",
+        "proposed_class": "CONFLICTING",
+        "source_ids": [
+          "S18",
+          "S7"
+        ],
+        "provider_wording": "there aren't any known service disruptions. Can you try clearing cache & cookies",
+        "settled_by": "Google retracting or correcting the post",
+        "estimate": null,
+        "first_seen": "18:46",
+        "superseded_by": null,
+        "contradiction_sides": [
+          {
+            "label": "Support account",
+            "source_ids": [
+              "S18"
+            ]
+          },
+          {
+            "label": "Status page",
+            "source_ids": [
+              "S7"
+            ]
+          }
+        ],
+        "history": [
+          {
+            "stage": 5,
+            "class": "CONFLICTING",
+            "statement": "Google's support account on X says there are no known service disruptions (contradicts the status page)",
+            "because": [
+              "S18",
+              "S7"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "C-022",
+        "statement": "The outage is a result of the ConnectWise compromise",
+        "subject": "Google Cloud",
+        "unknown_kind": null,
+        "class": "UNCONFIRMED",
+        "proposed_class": "UNCONFIRMED",
+        "source_ids": [
+          "S17"
+        ],
+        "provider_wording": null,
+        "settled_by": "The provider's root-cause statement",
+        "estimate": null,
+        "first_seen": "19:37",
+        "superseded_by": null,
+        "contradiction_sides": null,
+        "history": [
+          {
+            "stage": 5,
+            "class": "UNCONFIRMED",
+            "statement": "The outage is a result of the ConnectWise compromise",
+            "because": [
+              "S17"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "C-023",
+        "statement": "Cloudflare attributed the Workers KV outage to an outage of a third-party service that is a key dependency; it did not identify that service.",
+        "subject": "Cloudflare",
+        "unknown_kind": null,
+        "class": "CONFIRMED",
+        "proposed_class": "CONFIRMED",
+        "source_ids": [
+          "S19"
+        ],
+        "provider_wording": "Cloudflare's critical Workers KV service went offline due to an outage of a 3rd party service that is a key dependency.",
+        "settled_by": null,
+        "estimate": null,
+        "first_seen": "19:57",
+        "superseded_by": null,
+        "contradiction_sides": null,
+        "history": [
+          {
+            "stage": 6,
+            "class": "CONFIRMED",
+            "statement": "Cloudflare attributed the Workers KV outage to an outage of a third-party service that is a key dependency; it did not identify that service.",
+            "because": [
+              "S19"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "C-024",
+        "statement": "Whether the Cloudflare Workers KV outage caused data loss is unknown.",
+        "subject": "Cloudflare",
         "unknown_kind": "data",
         "class": "UNKNOWN",
         "proposed_class": "UNKNOWN",
         "source_ids": [],
         "provider_wording": null,
-        "settled_by": "Data-integrity and security checks or authoritative provider findings",
+        "settled_by": null,
         "estimate": null,
-        "first_seen": "18:51",
+        "first_seen": "19:57",
         "superseded_by": null,
         "contradiction_sides": null,
         "history": [
           {
-            "stage": 4,
+            "stage": 6,
             "class": "UNKNOWN",
-            "statement": "Whether the reported incidents caused any loss, corruption, or exposure of Northwind data is unknown.",
+            "statement": "Whether the Cloudflare Workers KV outage caused data loss is unknown.",
             "because": []
           }
         ]
@@ -809,10 +804,10 @@
     ],
     "changes": [
       {
-        "claim_id": "C-005",
-        "change": "UPGRADED",
-        "from": "CONFLICTING",
-        "to": "CONFIRMED",
+        "claim_id": "C-002",
+        "change": "MERGED",
+        "from": "REPORTED",
+        "to": null,
         "because": [
           "S7",
           "S1",
@@ -820,102 +815,38 @@
           "S3",
           "S4",
           "S5",
-          "S6",
-          "S11"
+          "S6"
         ]
       },
       {
-        "claim_id": "C-002",
+        "claim_id": "C-004",
         "change": "MERGED",
-        "from": "REPORTED",
-        "to": null,
+        "from": "UNKNOWN",
+        "to": "UNKNOWN",
         "because": [
-          "S7"
+          "S16"
         ]
       },
       {
         "claim_id": "C-011",
+        "change": "MERGED",
+        "from": "CONFIRMED",
+        "to": "CONFIRMED",
+        "because": [
+          "S19"
+        ]
+      },
+      {
+        "claim_id": "C-023",
         "change": "NEW",
         "from": null,
         "to": "CONFIRMED",
         "because": [
-          "S8",
-          "S9",
-          "S11"
+          "S19"
         ]
       },
       {
-        "claim_id": "C-012",
-        "change": "NEW",
-        "from": null,
-        "to": "CONFIRMED",
-        "because": [
-          "S12"
-        ]
-      },
-      {
-        "claim_id": "C-013",
-        "change": "NEW",
-        "from": null,
-        "to": "UNCONFIRMED",
-        "because": [
-          "S12"
-        ]
-      },
-      {
-        "claim_id": "C-014",
-        "change": "NEW",
-        "from": null,
-        "to": "UNCONFIRMED",
-        "because": [
-          "S11"
-        ]
-      },
-      {
-        "claim_id": "C-015",
-        "change": "NEW",
-        "from": null,
-        "to": "UNCONFIRMED",
-        "because": [
-          "S11"
-        ]
-      },
-      {
-        "claim_id": "C-016",
-        "change": "NEW",
-        "from": null,
-        "to": "REPORTED",
-        "because": [
-          "M1"
-        ]
-      },
-      {
-        "claim_id": "C-017",
-        "change": "NEW",
-        "from": null,
-        "to": "REPORTED",
-        "because": [
-          "M1"
-        ]
-      },
-      {
-        "claim_id": "C-018",
-        "change": "NEW",
-        "from": null,
-        "to": "UNCONFIRMED",
-        "because": [
-          "S10"
-        ]
-      },
-      {
-        "claim_id": "C-019",
-        "change": "NEW",
-        "from": null,
-        "to": "UNKNOWN",
-        "because": []
-      },
-      {
-        "claim_id": "C-020",
+        "claim_id": "C-024",
         "change": "NEW",
         "from": null,
         "to": "UNKNOWN",
@@ -976,7 +907,7 @@
     },
     {
       "id": "C-004",
-      "statement": "When our service will recover",
+      "statement": "When our service will recover remains unknown; Google Cloud has provided no ETA for full service recovery.",
       "subject": "Northwind",
       "unknown_kind": "recovery",
       "class": "UNKNOWN",
@@ -994,31 +925,37 @@
           "class": "UNKNOWN",
           "statement": "When our service will recover",
           "because": []
+        },
+        {
+          "stage": 6,
+          "class": "UNKNOWN",
+          "statement": "When our service will recover remains unknown; Google Cloud has provided no ETA for full service recovery.",
+          "because": [
+            "S16"
+          ]
         }
       ]
     },
     {
       "id": "C-005",
-      "statement": "Google Cloud's status page confirms service issues affecting multiple GCP products beginning June 12, 2025, at 17:51 UTC (10:51 PDT); customer reports describe API errors and console access problems.",
+      "statement": "Google Cloud has an incident affecting multiple products since 17:51 UTC",
       "subject": "Google Cloud",
       "unknown_kind": null,
       "class": "CONFIRMED",
       "proposed_class": "CONFIRMED",
       "source_ids": [
-        "S2",
+        "S7",
+        "S1",
         "S3",
         "S4",
         "S5",
         "S6",
-        "S1",
-        "S13",
-        "S7",
-        "S11"
+        "S13"
       ],
       "provider_wording": "We are experiencing service issues with multiple GCP products beginning at Thursday, 2025-06-12 10:51 PDT.",
       "settled_by": null,
       "estimate": null,
-      "first_seen": "17:56",
+      "first_seen": "18:46",
       "superseded_by": null,
       "contradiction_sides": null,
       "history": [
@@ -1045,16 +982,22 @@
         {
           "stage": 4,
           "class": "CONFIRMED",
-          "statement": "Google Cloud's status page confirms service issues affecting multiple GCP products beginning June 12, 2025, at 17:51 UTC (10:51 PDT); customer reports describe API errors and console access problems.",
+          "statement": "Google Cloud has an incident affecting multiple products since 17:51 UTC",
           "because": [
-            "S7",
+            "S7"
+          ]
+        },
+        {
+          "stage": 6,
+          "class": "CONFIRMED",
+          "statement": "Merged duplicate outage claim C-002 into C-005; its sources were already included.",
+          "because": [
             "S1",
             "S13",
             "S3",
             "S4",
             "S5",
-            "S6",
-            "S11"
+            "S6"
           ]
         }
       ]
@@ -1196,7 +1139,7 @@
     },
     {
       "id": "C-011",
-      "statement": "Cloudflare reports Access authentication failures and impacted Zero Trust WARP connectivity; its 18:48 update lists Access, WARP, Durable Objects (SQLite-backed only), Workers KV, Realtime, Workers AI, Stream, and parts of the Cloudflare dashboard as impacted.",
+      "statement": "Cloudflare has an outage: Access authentication failing, WARP impacted, Workers KV went offline, and Durable Objects is among impacted services.",
       "subject": "Cloudflare",
       "unknown_kind": null,
       "class": "CONFIRMED",
@@ -1204,84 +1147,64 @@
       "source_ids": [
         "S8",
         "S9",
-        "S11"
+        "S19"
       ],
-      "provider_wording": "Impacted services: Access WARP Durable Objects (SQLite backed Durable Objects only) Workers KV Realtime Workers AI Stream Parts of the Cloudflare dashboard",
+      "provider_wording": "Cloudflare's critical Workers KV service went offline due to an outage of a 3rd party service that is a key dependency.",
       "settled_by": null,
       "estimate": null,
-      "first_seen": "18:51",
+      "first_seen": "18:19",
       "superseded_by": null,
       "contradiction_sides": null,
       "history": [
         {
           "stage": 4,
           "class": "CONFIRMED",
-          "statement": "Cloudflare reports Access authentication failures and impacted Zero Trust WARP connectivity; its 18:48 update lists Access, WARP, Durable Objects (SQLite-backed only), Workers KV, Realtime, Workers AI, Stream, and parts of the Cloudflare dashboard as impacted.",
+          "statement": "Cloudflare has an outage: Access authentication failing, WARP impacted, Workers KV and Durable Objects among impacted services",
           "because": [
             "S8",
-            "S9",
-            "S11"
+            "S9"
+          ]
+        },
+        {
+          "stage": 6,
+          "class": "CONFIRMED",
+          "statement": "Cloudflare has an outage: Access authentication failing, WARP impacted, Workers KV went offline, and Durable Objects is among impacted services.",
+          "because": [
+            "S19"
           ]
         }
       ]
     },
     {
       "id": "C-012",
-      "statement": "Supabase reports connectivity issues on its own status page.",
-      "subject": "Supabase",
-      "unknown_kind": null,
-      "class": "CONFIRMED",
-      "proposed_class": "CONFIRMED",
-      "source_ids": [
-        "S12"
-      ],
-      "provider_wording": "We believe connectivity issues are the result of a broad outage with our upstream provider.",
-      "settled_by": null,
-      "estimate": null,
-      "first_seen": "18:51",
-      "superseded_by": null,
-      "contradiction_sides": null,
-      "history": [
-        {
-          "stage": 4,
-          "class": "CONFIRMED",
-          "statement": "Supabase reports connectivity issues on its own status page.",
-          "because": [
-            "S12"
-          ]
-        }
-      ]
-    },
-    {
-      "id": "C-013",
-      "statement": "Supabase believes its connectivity issues result from a broad outage at an unnamed upstream provider; that cause is not established.",
-      "subject": "Supabase",
+      "statement": "Cloudflare's outage is caused by Google Cloud's outage",
+      "subject": "Cloudflare",
       "unknown_kind": null,
       "class": "UNCONFIRMED",
-      "proposed_class": "UNCONFIRMED",
+      "proposed_class": "REPORTED",
       "source_ids": [
-        "S12"
+        "S10"
       ],
-      "provider_wording": "We believe connectivity issues are the result of a broad outage with our upstream provider.",
-      "settled_by": null,
+      "provider_wording": null,
+      "settled_by": "Google or Cloudflare saying so on the record",
       "estimate": null,
-      "first_seen": "18:51",
+      "first_seen": "18:50",
       "superseded_by": null,
       "contradiction_sides": null,
       "history": [
         {
           "stage": 4,
           "class": "UNCONFIRMED",
-          "statement": "Supabase believes its connectivity issues result from a broad outage at an unnamed upstream provider; that cause is not established.",
+          "statement": "Cloudflare's outage is caused by Google Cloud's outage",
           "because": [
-            "S12"
+            "S10"
           ]
         }
       ]
     },
     {
-      "id": "C-014",
-      "statement": "A single community post alleges AWS is having serious issues.",
+      "id": "C-013",
+      "statement": "AWS and Azure are also down",
       "subject": "AWS",
       "unknown_kind": null,
       "class": "UNCONFIRMED",
@@ -1290,16 +1213,43 @@
         "S11"
       ],
       "provider_wording": null,
-      "settled_by": null,
+      "settled_by": "An AWS or Azure status page declaring an incident",
       "estimate": null,
-      "first_seen": "18:51",
+      "first_seen": "18:48",
       "superseded_by": null,
       "contradiction_sides": null,
       "history": [
         {
           "stage": 4,
           "class": "UNCONFIRMED",
-          "statement": "A single community post alleges AWS is having serious issues.",
+          "statement": "AWS and Azure are also down",
+          "because": [
+            "S11"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "C-014",
+      "statement": "A BGP routing failure is behind the outages",
+      "subject": null,
+      "unknown_kind": null,
+      "class": "UNCONFIRMED",
+      "proposed_class": "UNCONFIRMED",
+      "source_ids": [
+        "S11"
+      ],
+      "provider_wording": null,
+      "settled_by": "The provider's root-cause statement",
+      "estimate": null,
+      "first_seen": "18:48",
+      "superseded_by": null,
+      "contradiction_sides": null,
+      "history": [
+        {
+          "stage": 4,
+          "class": "UNCONFIRMED",
+          "statement": "A BGP routing failure is behind the outages",
           "because": [
             "S11"
           ]
@@ -1308,34 +1258,7 @@
     },
     {
       "id": "C-015",
-      "statement": "A single community post alleges Azure is having serious issues.",
-      "subject": "Azure",
-      "unknown_kind": null,
-      "class": "UNCONFIRMED",
-      "proposed_class": "UNCONFIRMED",
-      "source_ids": [
-        "S11"
-      ],
-      "provider_wording": null,
-      "settled_by": null,
-      "estimate": null,
-      "first_seen": "18:51",
-      "superseded_by": null,
-      "contradiction_sides": null,
-      "history": [
-        {
-          "stage": 4,
-          "class": "UNCONFIRMED",
-          "statement": "A single community post alleges Azure is having serious issues.",
-          "because": [
-            "S11"
-          ]
-        }
-      ]
-    },
-    {
-      "id": "C-016",
-      "statement": "The Downdetector snapshot records a Google Cloud report-count peak of 14,695 at 18:31 UTC.",
+      "statement": "Downdetector: Google Cloud problem reports peaked at 14,695 (18:31); Cloudflare at 3,071 (18:49)",
       "subject": "Google Cloud",
       "unknown_kind": null,
       "class": "REPORTED",
@@ -1344,16 +1267,16 @@
         "M1"
       ],
       "provider_wording": null,
-      "settled_by": null,
+      "settled_by": "Provider statements on scope (crowd counts are a signal, not proof)",
       "estimate": null,
-      "first_seen": "18:51",
+      "first_seen": "18:49",
       "superseded_by": null,
       "contradiction_sides": null,
       "history": [
         {
           "stage": 4,
           "class": "REPORTED",
-          "statement": "The Downdetector snapshot records a Google Cloud report-count peak of 14,695 at 18:31 UTC.",
+          "statement": "Downdetector: Google Cloud problem reports peaked at 14,695 (18:31); Cloudflare at 3,071 (18:49)",
           "because": [
             "M1"
           ]
@@ -1361,101 +1284,251 @@
       ]
     },
     {
-      "id": "C-017",
-      "statement": "The Downdetector snapshot records 3,071 Cloudflare reports at 18:49 UTC.",
-      "subject": "Cloudflare",
-      "unknown_kind": null,
-      "class": "REPORTED",
-      "proposed_class": "REPORTED",
-      "source_ids": [
-        "M1"
-      ],
+      "id": "C-016",
+      "statement": "Which Google Cloud regions are affected",
+      "subject": "Google Cloud",
+      "unknown_kind": "scope",
+      "class": "UNKNOWN",
+      "proposed_class": "UNKNOWN",
+      "source_ids": [],
       "provider_wording": null,
-      "settled_by": null,
+      "settled_by": "The provider's list of affected regions",
       "estimate": null,
       "first_seen": "18:51",
-      "superseded_by": null,
+      "superseded_by": "C-018",
       "contradiction_sides": null,
       "history": [
         {
           "stage": 4,
-          "class": "REPORTED",
-          "statement": "The Downdetector snapshot records 3,071 Cloudflare reports at 18:49 UTC.",
+          "class": "UNKNOWN",
+          "statement": "Which Google Cloud regions are affected",
+          "because": []
+        }
+      ]
+    },
+    {
+      "id": "C-017",
+      "statement": "Google has identified the root cause and applied mitigations, without disclosing the cause",
+      "subject": "Google Cloud",
+      "unknown_kind": null,
+      "class": "CONFIRMED",
+      "proposed_class": "CONFIRMED",
+      "source_ids": [
+        "S16"
+      ],
+      "provider_wording": "Our engineers have identified the root cause and have applied appropriate mitigations… We do not have an ETA for full service recovery.",
+      "settled_by": null,
+      "estimate": null,
+      "first_seen": "19:41",
+      "superseded_by": null,
+      "contradiction_sides": null,
+      "history": [
+        {
+          "stage": 5,
+          "class": "CONFIRMED",
+          "statement": "Google has identified the root cause and applied mitigations, without disclosing the cause",
           "because": [
-            "M1"
+            "S16"
           ]
         }
       ]
     },
     {
       "id": "C-018",
-      "statement": "A community relay attributed to a Cloudflare account manager alleges Google Cloud outages caused the Cloudflare outage.",
-      "subject": "Cloudflare",
+      "statement": "All Google Cloud locations except us-central1 have fully recovered",
+      "subject": "Google Cloud",
       "unknown_kind": null,
-      "class": "UNCONFIRMED",
-      "proposed_class": "UNCONFIRMED",
+      "class": "CONFIRMED",
+      "proposed_class": "CONFIRMED",
       "source_ids": [
-        "S10"
+        "S15"
       ],
-      "provider_wording": null,
+      "provider_wording": "All locations except us-central1 have fully recovered. us-central1 is mostly recovered.",
       "settled_by": null,
       "estimate": null,
-      "first_seen": "18:51",
+      "first_seen": "19:30",
       "superseded_by": null,
       "contradiction_sides": null,
       "history": [
         {
-          "stage": 4,
-          "class": "UNCONFIRMED",
-          "statement": "A community relay attributed to a Cloudflare account manager alleges Google Cloud outages caused the Cloudflare outage.",
+          "stage": 5,
+          "class": "CONFIRMED",
+          "statement": "All Google Cloud locations except us-central1 have fully recovered",
           "because": [
-            "S10"
+            "S15"
           ]
         }
       ]
     },
     {
       "id": "C-019",
-      "statement": "The full affected scope for Northwind remains unknown: beyond observed Firestore and Firebase Auth failures, impact on Cloud Run in us-central1 and on staff tools using Cloudflare Access has not been established.",
-      "subject": "Northwind",
-      "unknown_kind": "scope",
-      "class": "UNKNOWN",
-      "proposed_class": "UNKNOWN",
-      "source_ids": [],
-      "provider_wording": null,
-      "settled_by": "Northwind service and staff-tool monitoring establishing the affected scope",
+      "statement": "us-central1, our region, is still affected (\"mostly recovered\")",
+      "subject": "Google Cloud",
+      "unknown_kind": null,
+      "class": "CONFIRMED",
+      "proposed_class": "CONFIRMED",
+      "source_ids": [
+        "S15"
+      ],
+      "provider_wording": "All locations except us-central1 have fully recovered. us-central1 is mostly recovered.",
+      "settled_by": null,
       "estimate": null,
-      "first_seen": "18:51",
+      "first_seen": "19:30",
       "superseded_by": null,
       "contradiction_sides": null,
       "history": [
         {
-          "stage": 4,
-          "class": "UNKNOWN",
-          "statement": "The full affected scope for Northwind remains unknown: beyond observed Firestore and Firebase Auth failures, impact on Cloud Run in us-central1 and on staff tools using Cloudflare Access has not been established.",
-          "because": []
+          "stage": 5,
+          "class": "CONFIRMED",
+          "statement": "us-central1, our region, is still affected (\"mostly recovered\")",
+          "because": [
+            "S15"
+          ]
         }
       ]
     },
     {
       "id": "C-020",
-      "statement": "Whether the reported incidents caused any loss, corruption, or exposure of Northwind data is unknown.",
-      "subject": "Northwind",
+      "statement": "Cloudflare services are starting to recover",
+      "subject": "Cloudflare",
+      "unknown_kind": null,
+      "class": "CONFIRMED",
+      "proposed_class": "CONFIRMED",
+      "source_ids": [
+        "S14"
+      ],
+      "provider_wording": "We are starting to see services recover. We still expect to see intermittent errors…",
+      "settled_by": null,
+      "estimate": null,
+      "first_seen": "19:12",
+      "superseded_by": null,
+      "contradiction_sides": null,
+      "history": [
+        {
+          "stage": 5,
+          "class": "CONFIRMED",
+          "statement": "Cloudflare services are starting to recover",
+          "because": [
+            "S14"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "C-021",
+      "statement": "Google's support account on X says there are no known service disruptions (contradicts the status page)",
+      "subject": "Google",
+      "unknown_kind": null,
+      "class": "CONFLICTING",
+      "proposed_class": "CONFLICTING",
+      "source_ids": [
+        "S18",
+        "S7"
+      ],
+      "provider_wording": "there aren't any known service disruptions. Can you try clearing cache & cookies",
+      "settled_by": "Google retracting or correcting the post",
+      "estimate": null,
+      "first_seen": "18:46",
+      "superseded_by": null,
+      "contradiction_sides": [
+        {
+          "label": "Support account",
+          "source_ids": [
+            "S18"
+          ]
+        },
+        {
+          "label": "Status page",
+          "source_ids": [
+            "S7"
+          ]
+        }
+      ],
+      "history": [
+        {
+          "stage": 5,
+          "class": "CONFLICTING",
+          "statement": "Google's support account on X says there are no known service disruptions (contradicts the status page)",
+          "because": [
+            "S18",
+            "S7"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "C-022",
+      "statement": "The outage is a result of the ConnectWise compromise",
+      "subject": "Google Cloud",
+      "unknown_kind": null,
+      "class": "UNCONFIRMED",
+      "proposed_class": "UNCONFIRMED",
+      "source_ids": [
+        "S17"
+      ],
+      "provider_wording": null,
+      "settled_by": "The provider's root-cause statement",
+      "estimate": null,
+      "first_seen": "19:37",
+      "superseded_by": null,
+      "contradiction_sides": null,
+      "history": [
+        {
+          "stage": 5,
+          "class": "UNCONFIRMED",
+          "statement": "The outage is a result of the ConnectWise compromise",
+          "because": [
+            "S17"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "C-023",
+      "statement": "Cloudflare attributed the Workers KV outage to an outage of a third-party service that is a key dependency; it did not identify that service.",
+      "subject": "Cloudflare",
+      "unknown_kind": null,
+      "class": "CONFIRMED",
+      "proposed_class": "CONFIRMED",
+      "source_ids": [
+        "S19"
+      ],
+      "provider_wording": "Cloudflare's critical Workers KV service went offline due to an outage of a 3rd party service that is a key dependency.",
+      "settled_by": null,
+      "estimate": null,
+      "first_seen": "19:57",
+      "superseded_by": null,
+      "contradiction_sides": null,
+      "history": [
+        {
+          "stage": 6,
+          "class": "CONFIRMED",
+          "statement": "Cloudflare attributed the Workers KV outage to an outage of a third-party service that is a key dependency; it did not identify that service.",
+          "because": [
+            "S19"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "C-024",
+      "statement": "Whether the Cloudflare Workers KV outage caused data loss is unknown.",
+      "subject": "Cloudflare",
       "unknown_kind": "data",
       "class": "UNKNOWN",
       "proposed_class": "UNKNOWN",
       "source_ids": [],
       "provider_wording": null,
-      "settled_by": "Data-integrity and security checks or authoritative provider findings",
+      "settled_by": null,
       "estimate": null,
-      "first_seen": "18:51",
+      "first_seen": "19:57",
       "superseded_by": null,
       "contradiction_sides": null,
       "history": [
         {
-          "stage": 4,
+          "stage": 6,
           "class": "UNKNOWN",
-          "statement": "Whether the reported incidents caused any loss, corruption, or exposure of Northwind data is unknown.",
+          "statement": "Whether the Cloudflare Workers KV outage caused data loss is unknown.",
           "because": []
         }
       ]
@@ -1465,18 +1538,19 @@
     "executive": {
       "audience": "executive",
       "policy_mode": null,
-      "as_of": "18:51",
+      "as_of": "20:01",
       "source": "astra_saved",
-      "generated_at": "2026-10-06T17:57:07.102Z",
+      "generated_at": "2026-10-06T17:57:53.533Z",
       "sections": [
         {
           "heading": "Situation",
           "sentences": [
             {
-              "text": "Login/API unreliable since 17:51 UTC [C-001].",
+              "text": "Google Cloud's incident continues in our region, us-central1 [C-005][C-019].",
               "type": "fact",
               "claim_ids": [
-                "C-001"
+                "C-005",
+                "C-019"
               ],
               "response_ids": [],
               "verify": null
@@ -1487,10 +1561,20 @@
           "heading": "Impact on us",
           "sentences": [
             {
-              "text": "Firestore/Firebase Auth return 503s [C-006].",
+              "text": "Login/API reliability has been impaired since 17:51 UTC [C-001].",
               "type": "fact",
               "claim_ids": [
-                "C-006"
+                "C-001"
+              ],
+              "response_ids": [],
+              "verify": null
+            },
+            {
+              "text": "Cloudflare's Access outage affects staff's internal-tool access [C-010][C-011].",
+              "type": "fact",
+              "claim_ids": [
+                "C-010",
+                "C-011"
               ],
               "response_ids": [],
               "verify": null
@@ -1501,21 +1585,19 @@
           "heading": "Confirmed",
           "sentences": [
             {
-              "text": "Google Cloud confirms multi-product issues; Cloudflare confirms failures in Access, our staff-access service [C-005] [C-011] [C-010].",
+              "text": "Google applied mitigations [C-017].",
               "type": "fact",
               "claim_ids": [
-                "C-005",
-                "C-011",
-                "C-010"
+                "C-017"
               ],
               "response_ids": [],
               "verify": null
             },
             {
-              "text": "Downdetector reportedly peaked at 14,695 Google Cloud reports [C-016].",
+              "text": "Evidence conflicts: Google's support account denies disruptions; its status page confirms an incident [C-021].",
               "type": "fact",
               "claim_ids": [
-                "C-016"
+                "C-021"
               ],
               "response_ids": [],
               "verify": null
@@ -1526,13 +1608,12 @@
           "heading": "Not yet known",
           "sentences": [
             {
-              "text": "Cause, recovery time, full Northwind scope and data impact remain unknown [C-003] [C-004] [C-019] [C-020].",
+              "text": "The undisclosed cause, recovery time, and Cloudflare KV data-loss status remain unknown [C-003][C-004][C-024].",
               "type": "fact",
               "claim_ids": [
                 "C-003",
                 "C-004",
-                "C-019",
-                "C-020"
+                "C-024"
               ],
               "response_ids": [],
               "verify": null
@@ -1543,13 +1624,11 @@
           "heading": "What we're doing",
           "sentences": [
             {
-              "text": "Deploys frozen; escalating to Google; staff using break-glass access; preparing request replay [R-7] [R-8] [R-11] [R-14].",
+              "text": "We're throttling retries and preparing request replay [R-16][R-14].",
               "type": "commitment",
               "claim_ids": [],
               "response_ids": [
-                "R-7",
-                "R-8",
-                "R-11",
+                "R-16",
                 "R-14"
               ],
               "verify": null
@@ -1560,12 +1639,11 @@
           "heading": "Decisions needed",
           "sentences": [
             {
-              "text": "Approval pending: name Google publicly and adopt 30-minute customer updates [R-12] [R-13].",
+              "text": "Naming is decided: retain “our cloud provider” in live updates [R-12].",
               "type": "commitment",
               "claim_ids": [],
               "response_ids": [
-                "R-12",
-                "R-13"
+                "R-12"
               ],
               "verify": null
             }
@@ -1575,11 +1653,11 @@
           "heading": "Next update",
           "sentences": [
             {
-              "text": "We'll update bridge and customers at 19:20 [R-15].",
+              "text": "We'll update at 20:15 [R-17].",
               "type": "commitment",
               "claim_ids": [],
               "response_ids": [
-                "R-15"
+                "R-17"
               ],
               "verify": null
             }
@@ -1590,56 +1668,43 @@
     "engineering": {
       "audience": "engineering",
       "policy_mode": null,
-      "as_of": "18:51",
+      "as_of": "20:01",
       "source": "astra_saved",
-      "generated_at": "2026-10-06T17:57:06.547Z",
+      "generated_at": "2026-10-06T17:57:51.172Z",
       "sections": [
         {
           "heading": "Confirmed technical facts",
           "sentences": [
             {
-              "text": "Google Cloud confirms multi-product issues; Northwind's Firestore and Firebase Auth calls return 503s [C-005][C-006].",
+              "text": "Google Cloud's incident still affects us-central1, Northwind's only region; Firestore and Firebase Auth calls return 503s [C-005] [C-019] [C-009] [C-006].",
               "type": "fact",
               "claim_ids": [
                 "C-005",
+                "C-019",
+                "C-009",
                 "C-006"
               ],
               "response_ids": [],
               "verify": null
             },
             {
-              "text": "Cloudflare confirms Access authentication failures; staff use Access for internal tools [C-011][C-010].",
+              "text": "Cloudflare's outage affects Access authentication used by staff; services are starting to recover [C-011] [C-010] [C-020].",
               "type": "fact",
               "claim_ids": [
                 "C-011",
-                "C-010"
+                "C-010",
+                "C-020"
               ],
               "response_ids": [],
               "verify": null
             },
             {
-              "text": "Northwind has only us-central1; engineers cannot load the GCP console [C-009][C-008].",
-              "type": "fact",
-              "claim_ids": [
-                "C-009",
-                "C-008"
-              ],
-              "response_ids": [],
-              "verify": null
-            }
-          ]
-        },
-        {
-          "heading": "Not yet known",
-          "sentences": [
-            {
-              "text": "Root cause, recovery time, Cloud Run and staff-tool impact, and data loss, corruption or exposure are not yet known [C-003][C-004][C-019][C-020].",
+              "text": "Root cause, Northwind recovery time, and whether Workers KV lost data remain unknown [C-003] [C-004] [C-024].",
               "type": "fact",
               "claim_ids": [
                 "C-003",
                 "C-004",
-                "C-019",
-                "C-020"
+                "C-024"
               ],
               "response_ids": [],
               "verify": null
@@ -1650,14 +1715,14 @@
           "heading": "What to do",
           "sentences": [
             {
-              "text": "We are checking quota/IAM, escalating by phone/account team, using staff break-glass access, and preparing request replay [R-5][R-8][R-11][R-14].",
+              "text": "Keep deploys frozen and staff on break-glass access; prepare failed-request replay and throttle retries and job restarts [R-7] [R-11] [R-14] [R-16].",
               "type": "commitment",
               "claim_ids": [],
               "response_ids": [
-                "R-5",
-                "R-8",
+                "R-7",
                 "R-11",
-                "R-14"
+                "R-14",
+                "R-16"
               ],
               "verify": null
             }
@@ -1667,22 +1732,22 @@
           "heading": "What NOT to chase",
           "sentences": [
             {
-              "text": "Deploys remain frozen; no rollback until a change is implicated [R-7][R-3].",
-              "type": "commitment",
-              "claim_ids": [],
-              "response_ids": [
-                "R-7",
-                "R-3"
+              "text": "BGP and ConnectWise explanations are unverified and should not be acted on [C-014] [C-022].",
+              "type": "fact",
+              "claim_ids": [
+                "C-014",
+                "C-022"
               ],
+              "response_ids": [],
               "verify": null
             },
             {
-              "text": "Claims Google caused Cloudflare's outage are unverified and should not be acted on [C-018].",
-              "type": "fact",
-              "claim_ids": [
-                "C-018"
+              "text": "Do not roll back until a change is implicated [R-3].",
+              "type": "commitment",
+              "claim_ids": [],
+              "response_ids": [
+                "R-3"
               ],
-              "response_ids": [],
               "verify": null
             }
           ]
@@ -1691,11 +1756,11 @@
           "heading": "Next update",
           "sentences": [
             {
-              "text": "We will update bridge and customers at 19:20 [R-15].",
+              "text": "Next update at 20:15 [R-17].",
               "type": "commitment",
               "claim_ids": [],
               "response_ids": [
-                "R-15"
+                "R-17"
               ],
               "verify": null
             }
@@ -1707,15 +1772,15 @@
       "confirmed_only": {
         "audience": "customer",
         "policy_mode": "confirmed_only",
-        "as_of": "18:51",
+        "as_of": "20:01",
         "source": "astra_saved",
-        "generated_at": "2026-10-06T17:57:02.674Z",
+        "generated_at": "2026-10-06T17:57:48.587Z",
         "sections": [
           {
-            "heading": "Northwind update",
+            "heading": "Northwind service update",
             "sentences": [
               {
-                "text": "We’re sorry customers have been unable to reliably log in or use our API since 17:51 UTC [C-001].",
+                "text": "We're sorry customers have been unable to reliably log in or use our API since 17:51 UTC [C-001].",
                 "type": "fact",
                 "claim_ids": [
                   "C-001"
@@ -1733,30 +1798,31 @@
                 "verify": null
               },
               {
-                "text": "The root cause and recovery time are not yet known [C-003] [C-004].",
+                "text": "The cause remains undisclosed, and recovery time is not yet known [C-003] [C-004] [C-017].",
                 "type": "fact",
                 "claim_ids": [
                   "C-003",
-                  "C-004"
+                  "C-004",
+                  "C-017"
                 ],
                 "response_ids": [],
                 "verify": null
               },
               {
-                "text": "We’re investigating [R-3].",
+                "text": "We're preparing to replay failed requests [R-14].",
                 "type": "commitment",
                 "claim_ids": [],
                 "response_ids": [
-                  "R-3"
+                  "R-14"
                 ],
                 "verify": null
               },
               {
-                "text": "We’ll provide the next update at 19:20 UTC [R-15].",
+                "text": "We'll update you again at 20:15 UTC [R-17].",
                 "type": "commitment",
                 "claim_ids": [],
                 "response_ids": [
-                  "R-15"
+                  "R-17"
                 ],
                 "verify": null
               }
@@ -1775,96 +1841,97 @@
   "timings": [
     {
       "step": "EXTRACT",
-      "stage": 4,
+      "stage": 6,
+      "audience": null,
       "attempt": 1,
-      "seconds": 31.703646874999997,
+      "seconds": 14.689695167,
       "tokens": {
-        "input_tokens": 785,
+        "input_tokens": 1313,
         "input_tokens_details": {
-          "cache_write_tokens": 0,
+          "cache_write_tokens": 1310,
           "cached_tokens": 0
         },
-        "output_tokens": 2009,
+        "output_tokens": 930,
         "output_tokens_details": {
-          "reasoning_tokens": 95
+          "reasoning_tokens": 48
         },
-        "total_tokens": 2794
+        "total_tokens": 2243
       }
     },
     {
       "step": "RECONCILE",
-      "stage": 4,
+      "stage": 6,
       "audience": null,
       "attempt": 1,
-      "seconds": 49.966455625,
+      "seconds": 50.488732916000004,
       "tokens": {
-        "input_tokens": 4311,
+        "input_tokens": 5287,
         "input_tokens_details": {
-          "cache_write_tokens": 4308,
+          "cache_write_tokens": 5284,
           "cached_tokens": 0
         },
-        "output_tokens": 4368,
+        "output_tokens": 3694,
         "output_tokens_details": {
-          "reasoning_tokens": 76
+          "reasoning_tokens": 60
         },
-        "total_tokens": 8679
+        "total_tokens": 8981
       }
     },
     {
       "step": "COMMUNICATE",
-      "stage": 4,
+      "stage": 6,
       "audience": "customer",
       "attempt": 1,
-      "seconds": 5.0737145,
+      "seconds": 5.264950125,
       "tokens": {
-        "input_tokens": 5215,
+        "input_tokens": 5971,
         "input_tokens_details": {
-          "cache_write_tokens": 5212,
+          "cache_write_tokens": 5968,
           "cached_tokens": 0
         },
-        "output_tokens": 207,
+        "output_tokens": 220,
         "output_tokens_details": {
           "reasoning_tokens": 0
         },
-        "total_tokens": 5422
+        "total_tokens": 6191
       }
     },
     {
       "step": "COMMUNICATE",
-      "stage": 4,
+      "stage": 6,
       "audience": "engineering",
       "attempt": 1,
-      "seconds": 8.947174792,
+      "seconds": 7.849696333,
       "tokens": {
-        "input_tokens": 5215,
+        "input_tokens": 5971,
         "input_tokens_details": {
-          "cache_write_tokens": 5212,
+          "cache_write_tokens": 5968,
           "cached_tokens": 0
         },
-        "output_tokens": 477,
+        "output_tokens": 438,
         "output_tokens_details": {
           "reasoning_tokens": 0
         },
-        "total_tokens": 5692
+        "total_tokens": 6409
       }
     },
     {
       "step": "COMMUNICATE",
-      "stage": 4,
+      "stage": 6,
       "audience": "executive",
       "attempt": 1,
-      "seconds": 9.529546416,
+      "seconds": 10.211004208,
       "tokens": {
-        "input_tokens": 5215,
+        "input_tokens": 5971,
         "input_tokens_details": {
-          "cache_write_tokens": 5212,
+          "cache_write_tokens": 5968,
           "cached_tokens": 0
         },
-        "output_tokens": 494,
+        "output_tokens": 472,
         "output_tokens_details": {
           "reasoning_tokens": 28
         },
-        "total_tokens": 5709
+        "total_tokens": 6443
       }
     }
   ],

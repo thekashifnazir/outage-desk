@@ -1,0 +1,1698 @@
+{
+  "stage": 3,
+  "model": "gpt-6-astra",
+  "source": "astra_saved",
+  "generated_at": "2026-10-06T17:56:13.675Z",
+  "extract": {
+    "claims": [
+      {
+        "id": "C1",
+        "statement": "Northwind has made no deploys since 14:00.",
+        "subject": "Northwind",
+        "unknown_kind": null,
+        "region": null,
+        "class": "CONFIRMED",
+        "proposed_class": "CONFIRMED",
+        "source_ids": [
+          "N2"
+        ],
+        "provider_wording": null,
+        "settled_by": null,
+        "estimate": null,
+        "first_seen": "18:05",
+        "superseded_by": null,
+        "contradiction_sides": null,
+        "history": []
+      },
+      {
+        "id": "C2",
+        "statement": "One r/Firebase user reports their database returning \"503: Policy checks are unavailable.\"",
+        "subject": "Google Cloud",
+        "unknown_kind": null,
+        "region": null,
+        "class": "UNCONFIRMED",
+        "proposed_class": "UNCONFIRMED",
+        "source_ids": [
+          "S3"
+        ],
+        "provider_wording": null,
+        "settled_by": null,
+        "estimate": null,
+        "first_seen": "18:07",
+        "superseded_by": null,
+        "contradiction_sides": null,
+        "history": []
+      },
+      {
+        "id": "C3",
+        "statement": "One r/Firebase user reports being unable to access their projects.",
+        "subject": "Google Cloud",
+        "unknown_kind": null,
+        "region": null,
+        "class": "UNCONFIRMED",
+        "proposed_class": "UNCONFIRMED",
+        "source_ids": [
+          "S3"
+        ],
+        "provider_wording": null,
+        "settled_by": null,
+        "estimate": null,
+        "first_seen": "18:07",
+        "superseded_by": null,
+        "contradiction_sides": null,
+        "history": []
+      },
+      {
+        "id": "C4",
+        "statement": "One r/googlecloud user reports Google Cloud 503 errors \"across the board.\"",
+        "subject": "Google Cloud",
+        "unknown_kind": null,
+        "region": null,
+        "class": "UNCONFIRMED",
+        "proposed_class": "UNCONFIRMED",
+        "source_ids": [
+          "S4"
+        ],
+        "provider_wording": null,
+        "settled_by": null,
+        "estimate": null,
+        "first_seen": "18:07",
+        "superseded_by": null,
+        "contradiction_sides": null,
+        "history": []
+      },
+      {
+        "id": "C5",
+        "statement": "Northwind's customer app uses Cloud Run.",
+        "subject": "Northwind",
+        "unknown_kind": null,
+        "region": "us-central1",
+        "class": "CONFIRMED",
+        "proposed_class": "CONFIRMED",
+        "source_ids": [
+          "N6"
+        ],
+        "provider_wording": null,
+        "settled_by": null,
+        "estimate": null,
+        "first_seen": "18:08",
+        "superseded_by": null,
+        "contradiction_sides": null,
+        "history": []
+      },
+      {
+        "id": "C6",
+        "statement": "Northwind's customer app uses Firestore.",
+        "subject": "Northwind",
+        "unknown_kind": null,
+        "region": "us-central1",
+        "class": "CONFIRMED",
+        "proposed_class": "CONFIRMED",
+        "source_ids": [
+          "N6"
+        ],
+        "provider_wording": null,
+        "settled_by": null,
+        "estimate": null,
+        "first_seen": "18:08",
+        "superseded_by": null,
+        "contradiction_sides": null,
+        "history": []
+      },
+      {
+        "id": "C7",
+        "statement": "Northwind's customer app uses Firebase Auth.",
+        "subject": "Northwind",
+        "unknown_kind": null,
+        "region": "us-central1",
+        "class": "CONFIRMED",
+        "proposed_class": "CONFIRMED",
+        "source_ids": [
+          "N6"
+        ],
+        "provider_wording": null,
+        "settled_by": null,
+        "estimate": null,
+        "first_seen": "18:08",
+        "superseded_by": null,
+        "contradiction_sides": null,
+        "history": []
+      },
+      {
+        "id": "C8",
+        "statement": "Northwind's customer app is deployed only in us-central1.",
+        "subject": "Northwind",
+        "unknown_kind": null,
+        "region": "us-central1",
+        "class": "CONFIRMED",
+        "proposed_class": "CONFIRMED",
+        "source_ids": [
+          "N6"
+        ],
+        "provider_wording": null,
+        "settled_by": null,
+        "estimate": null,
+        "first_seen": "18:08",
+        "superseded_by": null,
+        "contradiction_sides": null,
+        "history": []
+      },
+      {
+        "id": "C9",
+        "statement": "Northwind's staff tools are behind Cloudflare Access.",
+        "subject": "Northwind",
+        "unknown_kind": null,
+        "region": null,
+        "class": "CONFIRMED",
+        "proposed_class": "CONFIRMED",
+        "source_ids": [
+          "N6"
+        ],
+        "provider_wording": null,
+        "settled_by": null,
+        "estimate": null,
+        "first_seen": "18:08",
+        "superseded_by": null,
+        "contradiction_sides": null,
+        "history": []
+      },
+      {
+        "id": "C10",
+        "statement": "Northwind engineers observed that the Google Cloud console would not load.",
+        "subject": "Google Cloud",
+        "unknown_kind": null,
+        "region": null,
+        "class": "CONFIRMED",
+        "proposed_class": "CONFIRMED",
+        "source_ids": [
+          "N3"
+        ],
+        "provider_wording": null,
+        "settled_by": null,
+        "estimate": null,
+        "first_seen": "18:09",
+        "superseded_by": null,
+        "contradiction_sides": null,
+        "history": []
+      },
+      {
+        "id": "C11",
+        "statement": "Northwind engineers cannot open a support case through the Google Cloud console.",
+        "subject": "Northwind",
+        "unknown_kind": null,
+        "region": null,
+        "class": "CONFIRMED",
+        "proposed_class": "CONFIRMED",
+        "source_ids": [
+          "N3"
+        ],
+        "provider_wording": null,
+        "settled_by": null,
+        "estimate": null,
+        "first_seen": "18:09",
+        "superseded_by": null,
+        "contradiction_sides": null,
+        "history": []
+      },
+      {
+        "id": "C12",
+        "statement": "Expo's status page suggests a possible Google Cloud outage.",
+        "subject": "Google Cloud",
+        "unknown_kind": null,
+        "region": null,
+        "class": "UNCONFIRMED",
+        "proposed_class": "UNCONFIRMED",
+        "source_ids": [
+          "S6"
+        ],
+        "provider_wording": "possible GCP outage",
+        "settled_by": null,
+        "estimate": null,
+        "first_seen": "18:09",
+        "superseded_by": null,
+        "contradiction_sides": null,
+        "history": []
+      },
+      {
+        "id": "C13",
+        "statement": "Replit reports a wide-ranging outage at its unnamed upstream cloud provider.",
+        "subject": "Replit",
+        "unknown_kind": null,
+        "region": null,
+        "class": "REPORTED",
+        "proposed_class": "REPORTED",
+        "source_ids": [
+          "S5"
+        ],
+        "provider_wording": "Our upstream cloud provider is having a wide-ranging outage.",
+        "settled_by": null,
+        "estimate": null,
+        "first_seen": "18:11",
+        "superseded_by": null,
+        "contradiction_sides": null,
+        "history": []
+      },
+      {
+        "id": "C14",
+        "statement": "The cause of the Google Cloud console loading failure observed by Northwind is unknown.",
+        "subject": "Google Cloud",
+        "unknown_kind": "cause",
+        "region": null,
+        "class": "UNKNOWN",
+        "proposed_class": "UNKNOWN",
+        "source_ids": [
+          "N3"
+        ],
+        "provider_wording": null,
+        "settled_by": null,
+        "estimate": null,
+        "first_seen": "18:11",
+        "superseded_by": null,
+        "contradiction_sides": null,
+        "history": []
+      },
+      {
+        "id": "C15",
+        "statement": "The recovery time for the Google Cloud console access failure observed by Northwind is unknown.",
+        "subject": "Google Cloud",
+        "unknown_kind": "recovery",
+        "region": null,
+        "class": "UNKNOWN",
+        "proposed_class": "UNKNOWN",
+        "source_ids": [
+          "N3"
+        ],
+        "provider_wording": null,
+        "settled_by": null,
+        "estimate": null,
+        "first_seen": "18:11",
+        "superseded_by": null,
+        "contradiction_sides": null,
+        "history": []
+      },
+      {
+        "id": "C16",
+        "statement": "Whether Northwind's customer app is affected by the reported cloud issues is unknown.",
+        "subject": "Northwind",
+        "unknown_kind": "scope",
+        "region": "us-central1",
+        "class": "UNKNOWN",
+        "proposed_class": "UNKNOWN",
+        "source_ids": [
+          "N6",
+          "N3",
+          "S3",
+          "S4",
+          "S6",
+          "S5"
+        ],
+        "provider_wording": null,
+        "settled_by": null,
+        "estimate": null,
+        "first_seen": "18:11",
+        "superseded_by": null,
+        "contradiction_sides": null,
+        "history": []
+      },
+      {
+        "id": "C17",
+        "statement": "Whether the reported cloud issues have affected Northwind's customer data is unknown.",
+        "subject": "Northwind",
+        "unknown_kind": "data",
+        "region": "us-central1",
+        "class": "UNKNOWN",
+        "proposed_class": "UNKNOWN",
+        "source_ids": [
+          "N6",
+          "N3",
+          "S3",
+          "S4",
+          "S6",
+          "S5"
+        ],
+        "provider_wording": null,
+        "settled_by": null,
+        "estimate": null,
+        "first_seen": "18:11",
+        "superseded_by": null,
+        "contradiction_sides": null,
+        "history": []
+      }
+    ]
+  },
+  "reconcile": {
+    "claims": [
+      {
+        "id": "C-001",
+        "statement": "Since 17:51 UTC customers can't reliably log in or use our API",
+        "subject": "Northwind",
+        "unknown_kind": null,
+        "class": "CONFIRMED",
+        "proposed_class": "CONFIRMED",
+        "source_ids": [
+          "N1"
+        ],
+        "provider_wording": null,
+        "settled_by": null,
+        "estimate": null,
+        "first_seen": "17:52",
+        "superseded_by": null,
+        "contradiction_sides": null,
+        "history": [
+          {
+            "stage": 1,
+            "class": "CONFIRMED",
+            "statement": "Since 17:51 UTC customers can't reliably log in or use our API",
+            "because": [
+              "N1"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "C-002",
+        "statement": "Google Cloud console access is failing for Northwind engineers. Community reports also describe Firebase database 503 errors, inaccessible projects and broader Google Cloud 503 errors; Expo describes a possible Google Cloud outage. The broader service impact remains unconfirmed.",
+        "subject": "Google Cloud",
+        "unknown_kind": null,
+        "class": "CONFIRMED",
+        "proposed_class": "CONFIRMED",
+        "source_ids": [
+          "S1",
+          "S13",
+          "S3",
+          "S4",
+          "N3",
+          "S6"
+        ],
+        "provider_wording": null,
+        "settled_by": null,
+        "estimate": null,
+        "first_seen": "17:56",
+        "superseded_by": null,
+        "contradiction_sides": null,
+        "history": [
+          {
+            "stage": 1,
+            "class": "UNCONFIRMED",
+            "statement": "Google Cloud may be having problems (GCP console, us-east1)",
+            "because": [
+              "S1"
+            ]
+          },
+          {
+            "stage": 2,
+            "class": "UNCONFIRMED",
+            "statement": "Google Cloud may be having problems (GCP console, us-east1)",
+            "because": [
+              "S1",
+              "S13"
+            ]
+          },
+          {
+            "stage": 3,
+            "class": "CONFIRMED",
+            "statement": "Google Cloud console access is failing for Northwind engineers. Community reports also describe Firebase database 503 errors, inaccessible projects and broader Google Cloud 503 errors; Expo describes a possible Google Cloud outage. The broader service impact remains unconfirmed.",
+            "because": [
+              "N3",
+              "S3",
+              "S4",
+              "S6"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "C-003",
+        "statement": "Root cause",
+        "subject": "Google Cloud",
+        "unknown_kind": "cause",
+        "class": "UNKNOWN",
+        "proposed_class": "UNKNOWN",
+        "source_ids": [],
+        "provider_wording": null,
+        "settled_by": "The provider stating the cause on the record",
+        "estimate": null,
+        "first_seen": "17:56",
+        "superseded_by": null,
+        "contradiction_sides": null,
+        "history": [
+          {
+            "stage": 1,
+            "class": "UNKNOWN",
+            "statement": "Root cause",
+            "because": []
+          }
+        ]
+      },
+      {
+        "id": "C-004",
+        "statement": "When our service will recover",
+        "subject": "Northwind",
+        "unknown_kind": "recovery",
+        "class": "UNKNOWN",
+        "proposed_class": "UNKNOWN",
+        "source_ids": [],
+        "provider_wording": null,
+        "settled_by": "Our monitoring returning to baseline, or a provider estimate",
+        "estimate": null,
+        "first_seen": "17:56",
+        "superseded_by": null,
+        "contradiction_sides": null,
+        "history": [
+          {
+            "stage": 1,
+            "class": "UNKNOWN",
+            "statement": "When our service will recover",
+            "because": []
+          }
+        ]
+      },
+      {
+        "id": "C-005",
+        "statement": "Google Cloud's status page shows no incident",
+        "subject": "Google Cloud",
+        "unknown_kind": null,
+        "class": "CONFIRMED",
+        "proposed_class": "CONFIRMED",
+        "source_ids": [
+          "S2"
+        ],
+        "provider_wording": "No major incidents",
+        "settled_by": null,
+        "estimate": null,
+        "first_seen": "17:56",
+        "superseded_by": null,
+        "contradiction_sides": null,
+        "history": [
+          {
+            "stage": 1,
+            "class": "CONFIRMED",
+            "statement": "Google Cloud's status page shows no incident",
+            "because": [
+              "S2"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "C-006",
+        "statement": "Our failing requests are Google Cloud API calls (Firestore, Firebase Auth) returning 503",
+        "subject": "Northwind",
+        "unknown_kind": null,
+        "class": "CONFIRMED",
+        "proposed_class": "CONFIRMED",
+        "source_ids": [
+          "N4"
+        ],
+        "provider_wording": null,
+        "settled_by": null,
+        "estimate": null,
+        "first_seen": "18:01",
+        "superseded_by": null,
+        "contradiction_sides": null,
+        "history": [
+          {
+            "stage": 2,
+            "class": "CONFIRMED",
+            "statement": "Our failing requests are Google Cloud API calls (Firestore, Firebase Auth) returning 503",
+            "because": [
+              "N4"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "C-007",
+        "statement": "Northwind has made no deploys since 14:00.",
+        "subject": "Northwind",
+        "unknown_kind": null,
+        "class": "CONFIRMED",
+        "proposed_class": "CONFIRMED",
+        "source_ids": [
+          "N2"
+        ],
+        "provider_wording": null,
+        "settled_by": null,
+        "estimate": null,
+        "first_seen": "18:05",
+        "superseded_by": null,
+        "contradiction_sides": null,
+        "history": [
+          {
+            "stage": 3,
+            "class": "CONFIRMED",
+            "statement": "Northwind has made no deploys since 14:00.",
+            "because": [
+              "N2"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "C-008",
+        "statement": "Northwind's customer app uses Cloud Run.",
+        "subject": "Northwind",
+        "unknown_kind": null,
+        "class": "CONFIRMED",
+        "proposed_class": "CONFIRMED",
+        "source_ids": [
+          "N6"
+        ],
+        "provider_wording": null,
+        "settled_by": null,
+        "estimate": null,
+        "first_seen": "18:08",
+        "superseded_by": null,
+        "contradiction_sides": null,
+        "history": [
+          {
+            "stage": 3,
+            "class": "CONFIRMED",
+            "statement": "Northwind's customer app uses Cloud Run.",
+            "because": [
+              "N6"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "C-009",
+        "statement": "Northwind's customer app uses Firestore.",
+        "subject": "Northwind",
+        "unknown_kind": null,
+        "class": "CONFIRMED",
+        "proposed_class": "CONFIRMED",
+        "source_ids": [
+          "N6"
+        ],
+        "provider_wording": null,
+        "settled_by": null,
+        "estimate": null,
+        "first_seen": "18:08",
+        "superseded_by": null,
+        "contradiction_sides": null,
+        "history": [
+          {
+            "stage": 3,
+            "class": "CONFIRMED",
+            "statement": "Northwind's customer app uses Firestore.",
+            "because": [
+              "N6"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "C-010",
+        "statement": "Northwind's customer app uses Firebase Auth.",
+        "subject": "Northwind",
+        "unknown_kind": null,
+        "class": "CONFIRMED",
+        "proposed_class": "CONFIRMED",
+        "source_ids": [
+          "N6"
+        ],
+        "provider_wording": null,
+        "settled_by": null,
+        "estimate": null,
+        "first_seen": "18:08",
+        "superseded_by": null,
+        "contradiction_sides": null,
+        "history": [
+          {
+            "stage": 3,
+            "class": "CONFIRMED",
+            "statement": "Northwind's customer app uses Firebase Auth.",
+            "because": [
+              "N6"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "C-011",
+        "statement": "Northwind's customer app is deployed only in us-central1.",
+        "subject": "Northwind",
+        "unknown_kind": null,
+        "class": "CONFIRMED",
+        "proposed_class": "CONFIRMED",
+        "source_ids": [
+          "N6"
+        ],
+        "provider_wording": null,
+        "settled_by": null,
+        "estimate": null,
+        "first_seen": "18:08",
+        "superseded_by": null,
+        "contradiction_sides": null,
+        "history": [
+          {
+            "stage": 3,
+            "class": "CONFIRMED",
+            "statement": "Northwind's customer app is deployed only in us-central1.",
+            "because": [
+              "N6"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "C-012",
+        "statement": "Northwind's staff tools are behind Cloudflare Access.",
+        "subject": "Northwind",
+        "unknown_kind": null,
+        "class": "CONFIRMED",
+        "proposed_class": "CONFIRMED",
+        "source_ids": [
+          "N6"
+        ],
+        "provider_wording": null,
+        "settled_by": null,
+        "estimate": null,
+        "first_seen": "18:08",
+        "superseded_by": null,
+        "contradiction_sides": null,
+        "history": [
+          {
+            "stage": 3,
+            "class": "CONFIRMED",
+            "statement": "Northwind's staff tools are behind Cloudflare Access.",
+            "because": [
+              "N6"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "C-013",
+        "statement": "Northwind engineers cannot open a support case through the Google Cloud console.",
+        "subject": "Northwind",
+        "unknown_kind": null,
+        "class": "CONFIRMED",
+        "proposed_class": "CONFIRMED",
+        "source_ids": [
+          "N3"
+        ],
+        "provider_wording": null,
+        "settled_by": null,
+        "estimate": null,
+        "first_seen": "18:09",
+        "superseded_by": null,
+        "contradiction_sides": null,
+        "history": [
+          {
+            "stage": 3,
+            "class": "CONFIRMED",
+            "statement": "Northwind engineers cannot open a support case through the Google Cloud console.",
+            "because": [
+              "N3"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "C-014",
+        "statement": "Replit reports a wide-ranging outage at its unnamed upstream cloud provider.",
+        "subject": "Replit",
+        "unknown_kind": null,
+        "class": "REPORTED",
+        "proposed_class": "REPORTED",
+        "source_ids": [
+          "S5"
+        ],
+        "provider_wording": "Our upstream cloud provider is having a wide-ranging outage.",
+        "settled_by": null,
+        "estimate": null,
+        "first_seen": "18:11",
+        "superseded_by": null,
+        "contradiction_sides": null,
+        "history": [
+          {
+            "stage": 3,
+            "class": "REPORTED",
+            "statement": "Replit reports a wide-ranging outage at its unnamed upstream cloud provider.",
+            "because": [
+              "S5"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "C-015",
+        "statement": "The full affected scope of the reported Google Cloud issues, beyond Northwind's confirmed login, API and console failures, is unknown.",
+        "subject": "Google Cloud",
+        "unknown_kind": "scope",
+        "class": "UNKNOWN",
+        "proposed_class": "UNKNOWN",
+        "source_ids": [],
+        "provider_wording": null,
+        "settled_by": "Provider scope confirmation and Northwind monitoring of affected services",
+        "estimate": null,
+        "first_seen": "18:11",
+        "superseded_by": null,
+        "contradiction_sides": null,
+        "history": [
+          {
+            "stage": 3,
+            "class": "UNKNOWN",
+            "statement": "The full affected scope of the reported Google Cloud issues, beyond Northwind's confirmed login, API and console failures, is unknown.",
+            "because": []
+          }
+        ]
+      },
+      {
+        "id": "C-016",
+        "statement": "Whether the reported cloud issues have affected Northwind's customer data is unknown.",
+        "subject": "Northwind",
+        "unknown_kind": "data",
+        "class": "UNKNOWN",
+        "proposed_class": "UNKNOWN",
+        "source_ids": [],
+        "provider_wording": null,
+        "settled_by": null,
+        "estimate": null,
+        "first_seen": "18:11",
+        "superseded_by": null,
+        "contradiction_sides": null,
+        "history": [
+          {
+            "stage": 3,
+            "class": "UNKNOWN",
+            "statement": "Whether the reported cloud issues have affected Northwind's customer data is unknown.",
+            "because": []
+          }
+        ]
+      }
+    ],
+    "changes": [
+      {
+        "claim_id": "C-002",
+        "change": "UPGRADED",
+        "from": "UNCONFIRMED",
+        "to": "CONFIRMED",
+        "because": [
+          "N3",
+          "S3",
+          "S4",
+          "S6"
+        ]
+      },
+      {
+        "claim_id": "C-007",
+        "change": "NEW",
+        "from": null,
+        "to": "CONFIRMED",
+        "because": [
+          "N2"
+        ]
+      },
+      {
+        "claim_id": "C-008",
+        "change": "NEW",
+        "from": null,
+        "to": "CONFIRMED",
+        "because": [
+          "N6"
+        ]
+      },
+      {
+        "claim_id": "C-009",
+        "change": "NEW",
+        "from": null,
+        "to": "CONFIRMED",
+        "because": [
+          "N6"
+        ]
+      },
+      {
+        "claim_id": "C-010",
+        "change": "NEW",
+        "from": null,
+        "to": "CONFIRMED",
+        "because": [
+          "N6"
+        ]
+      },
+      {
+        "claim_id": "C-011",
+        "change": "NEW",
+        "from": null,
+        "to": "CONFIRMED",
+        "because": [
+          "N6"
+        ]
+      },
+      {
+        "claim_id": "C-012",
+        "change": "NEW",
+        "from": null,
+        "to": "CONFIRMED",
+        "because": [
+          "N6"
+        ]
+      },
+      {
+        "claim_id": "C-013",
+        "change": "NEW",
+        "from": null,
+        "to": "CONFIRMED",
+        "because": [
+          "N3"
+        ]
+      },
+      {
+        "claim_id": "C-014",
+        "change": "NEW",
+        "from": null,
+        "to": "REPORTED",
+        "because": [
+          "S5"
+        ]
+      },
+      {
+        "claim_id": "C-015",
+        "change": "NEW",
+        "from": null,
+        "to": "UNKNOWN",
+        "because": []
+      },
+      {
+        "claim_id": "C-016",
+        "change": "NEW",
+        "from": null,
+        "to": "UNKNOWN",
+        "because": []
+      }
+    ]
+  },
+  "capped_ledger": [
+    {
+      "id": "C-001",
+      "statement": "Since 17:51 UTC customers can't reliably log in or use our API",
+      "subject": "Northwind",
+      "unknown_kind": null,
+      "class": "CONFIRMED",
+      "proposed_class": "CONFIRMED",
+      "source_ids": [
+        "N1"
+      ],
+      "provider_wording": null,
+      "settled_by": null,
+      "estimate": null,
+      "first_seen": "17:52",
+      "superseded_by": null,
+      "contradiction_sides": null,
+      "history": [
+        {
+          "stage": 1,
+          "class": "CONFIRMED",
+          "statement": "Since 17:51 UTC customers can't reliably log in or use our API",
+          "because": [
+            "N1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "C-002",
+      "statement": "Google Cloud console access is failing for Northwind engineers. Community reports also describe Firebase database 503 errors, inaccessible projects and broader Google Cloud 503 errors; Expo describes a possible Google Cloud outage. The broader service impact remains unconfirmed.",
+      "subject": "Google Cloud",
+      "unknown_kind": null,
+      "class": "REPORTED",
+      "proposed_class": "CONFIRMED",
+      "source_ids": [
+        "S1",
+        "S13",
+        "S3",
+        "S4",
+        "N3",
+        "S6"
+      ],
+      "provider_wording": null,
+      "settled_by": null,
+      "estimate": null,
+      "first_seen": "17:56",
+      "superseded_by": null,
+      "contradiction_sides": null,
+      "history": [
+        {
+          "stage": 1,
+          "class": "UNCONFIRMED",
+          "statement": "Google Cloud may be having problems (GCP console, us-east1)",
+          "because": [
+            "S1"
+          ]
+        },
+        {
+          "stage": 2,
+          "class": "UNCONFIRMED",
+          "statement": "Google Cloud may be having problems (GCP console, us-east1)",
+          "because": [
+            "S1",
+            "S13"
+          ]
+        },
+        {
+          "stage": 3,
+          "class": "CONFIRMED",
+          "statement": "Google Cloud console access is failing for Northwind engineers. Community reports also describe Firebase database 503 errors, inaccessible projects and broader Google Cloud 503 errors; Expo describes a possible Google Cloud outage. The broader service impact remains unconfirmed.",
+          "because": [
+            "N3",
+            "S3",
+            "S4",
+            "S6"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "C-003",
+      "statement": "Root cause",
+      "subject": "Google Cloud",
+      "unknown_kind": "cause",
+      "class": "UNKNOWN",
+      "proposed_class": "UNKNOWN",
+      "source_ids": [],
+      "provider_wording": null,
+      "settled_by": "The provider stating the cause on the record",
+      "estimate": null,
+      "first_seen": "17:56",
+      "superseded_by": null,
+      "contradiction_sides": null,
+      "history": [
+        {
+          "stage": 1,
+          "class": "UNKNOWN",
+          "statement": "Root cause",
+          "because": []
+        }
+      ]
+    },
+    {
+      "id": "C-004",
+      "statement": "When our service will recover",
+      "subject": "Northwind",
+      "unknown_kind": "recovery",
+      "class": "UNKNOWN",
+      "proposed_class": "UNKNOWN",
+      "source_ids": [],
+      "provider_wording": null,
+      "settled_by": "Our monitoring returning to baseline, or a provider estimate",
+      "estimate": null,
+      "first_seen": "17:56",
+      "superseded_by": null,
+      "contradiction_sides": null,
+      "history": [
+        {
+          "stage": 1,
+          "class": "UNKNOWN",
+          "statement": "When our service will recover",
+          "because": []
+        }
+      ]
+    },
+    {
+      "id": "C-005",
+      "statement": "Google Cloud's status page shows no incident",
+      "subject": "Google Cloud",
+      "unknown_kind": null,
+      "class": "CONFIRMED",
+      "proposed_class": "CONFIRMED",
+      "source_ids": [
+        "S2"
+      ],
+      "provider_wording": "No major incidents",
+      "settled_by": null,
+      "estimate": null,
+      "first_seen": "17:56",
+      "superseded_by": null,
+      "contradiction_sides": null,
+      "history": [
+        {
+          "stage": 1,
+          "class": "CONFIRMED",
+          "statement": "Google Cloud's status page shows no incident",
+          "because": [
+            "S2"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "C-006",
+      "statement": "Our failing requests are Google Cloud API calls (Firestore, Firebase Auth) returning 503",
+      "subject": "Northwind",
+      "unknown_kind": null,
+      "class": "CONFIRMED",
+      "proposed_class": "CONFIRMED",
+      "source_ids": [
+        "N4"
+      ],
+      "provider_wording": null,
+      "settled_by": null,
+      "estimate": null,
+      "first_seen": "18:01",
+      "superseded_by": null,
+      "contradiction_sides": null,
+      "history": [
+        {
+          "stage": 2,
+          "class": "CONFIRMED",
+          "statement": "Our failing requests are Google Cloud API calls (Firestore, Firebase Auth) returning 503",
+          "because": [
+            "N4"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "C-007",
+      "statement": "Northwind has made no deploys since 14:00.",
+      "subject": "Northwind",
+      "unknown_kind": null,
+      "class": "CONFIRMED",
+      "proposed_class": "CONFIRMED",
+      "source_ids": [
+        "N2"
+      ],
+      "provider_wording": null,
+      "settled_by": null,
+      "estimate": null,
+      "first_seen": "18:05",
+      "superseded_by": null,
+      "contradiction_sides": null,
+      "history": [
+        {
+          "stage": 3,
+          "class": "CONFIRMED",
+          "statement": "Northwind has made no deploys since 14:00.",
+          "because": [
+            "N2"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "C-008",
+      "statement": "Northwind's customer app uses Cloud Run.",
+      "subject": "Northwind",
+      "unknown_kind": null,
+      "class": "CONFIRMED",
+      "proposed_class": "CONFIRMED",
+      "source_ids": [
+        "N6"
+      ],
+      "provider_wording": null,
+      "settled_by": null,
+      "estimate": null,
+      "first_seen": "18:08",
+      "superseded_by": null,
+      "contradiction_sides": null,
+      "history": [
+        {
+          "stage": 3,
+          "class": "CONFIRMED",
+          "statement": "Northwind's customer app uses Cloud Run.",
+          "because": [
+            "N6"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "C-009",
+      "statement": "Northwind's customer app uses Firestore.",
+      "subject": "Northwind",
+      "unknown_kind": null,
+      "class": "CONFIRMED",
+      "proposed_class": "CONFIRMED",
+      "source_ids": [
+        "N6"
+      ],
+      "provider_wording": null,
+      "settled_by": null,
+      "estimate": null,
+      "first_seen": "18:08",
+      "superseded_by": null,
+      "contradiction_sides": null,
+      "history": [
+        {
+          "stage": 3,
+          "class": "CONFIRMED",
+          "statement": "Northwind's customer app uses Firestore.",
+          "because": [
+            "N6"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "C-010",
+      "statement": "Northwind's customer app uses Firebase Auth.",
+      "subject": "Northwind",
+      "unknown_kind": null,
+      "class": "CONFIRMED",
+      "proposed_class": "CONFIRMED",
+      "source_ids": [
+        "N6"
+      ],
+      "provider_wording": null,
+      "settled_by": null,
+      "estimate": null,
+      "first_seen": "18:08",
+      "superseded_by": null,
+      "contradiction_sides": null,
+      "history": [
+        {
+          "stage": 3,
+          "class": "CONFIRMED",
+          "statement": "Northwind's customer app uses Firebase Auth.",
+          "because": [
+            "N6"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "C-011",
+      "statement": "Northwind's customer app is deployed only in us-central1.",
+      "subject": "Northwind",
+      "unknown_kind": null,
+      "class": "CONFIRMED",
+      "proposed_class": "CONFIRMED",
+      "source_ids": [
+        "N6"
+      ],
+      "provider_wording": null,
+      "settled_by": null,
+      "estimate": null,
+      "first_seen": "18:08",
+      "superseded_by": null,
+      "contradiction_sides": null,
+      "history": [
+        {
+          "stage": 3,
+          "class": "CONFIRMED",
+          "statement": "Northwind's customer app is deployed only in us-central1.",
+          "because": [
+            "N6"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "C-012",
+      "statement": "Northwind's staff tools are behind Cloudflare Access.",
+      "subject": "Northwind",
+      "unknown_kind": null,
+      "class": "CONFIRMED",
+      "proposed_class": "CONFIRMED",
+      "source_ids": [
+        "N6"
+      ],
+      "provider_wording": null,
+      "settled_by": null,
+      "estimate": null,
+      "first_seen": "18:08",
+      "superseded_by": null,
+      "contradiction_sides": null,
+      "history": [
+        {
+          "stage": 3,
+          "class": "CONFIRMED",
+          "statement": "Northwind's staff tools are behind Cloudflare Access.",
+          "because": [
+            "N6"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "C-013",
+      "statement": "Northwind engineers cannot open a support case through the Google Cloud console.",
+      "subject": "Northwind",
+      "unknown_kind": null,
+      "class": "CONFIRMED",
+      "proposed_class": "CONFIRMED",
+      "source_ids": [
+        "N3"
+      ],
+      "provider_wording": null,
+      "settled_by": null,
+      "estimate": null,
+      "first_seen": "18:09",
+      "superseded_by": null,
+      "contradiction_sides": null,
+      "history": [
+        {
+          "stage": 3,
+          "class": "CONFIRMED",
+          "statement": "Northwind engineers cannot open a support case through the Google Cloud console.",
+          "because": [
+            "N3"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "C-014",
+      "statement": "Replit reports a wide-ranging outage at its unnamed upstream cloud provider.",
+      "subject": "Replit",
+      "unknown_kind": null,
+      "class": "REPORTED",
+      "proposed_class": "REPORTED",
+      "source_ids": [
+        "S5"
+      ],
+      "provider_wording": "Our upstream cloud provider is having a wide-ranging outage.",
+      "settled_by": null,
+      "estimate": null,
+      "first_seen": "18:11",
+      "superseded_by": null,
+      "contradiction_sides": null,
+      "history": [
+        {
+          "stage": 3,
+          "class": "REPORTED",
+          "statement": "Replit reports a wide-ranging outage at its unnamed upstream cloud provider.",
+          "because": [
+            "S5"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "C-015",
+      "statement": "The full affected scope of the reported Google Cloud issues, beyond Northwind's confirmed login, API and console failures, is unknown.",
+      "subject": "Google Cloud",
+      "unknown_kind": "scope",
+      "class": "UNKNOWN",
+      "proposed_class": "UNKNOWN",
+      "source_ids": [],
+      "provider_wording": null,
+      "settled_by": "Provider scope confirmation and Northwind monitoring of affected services",
+      "estimate": null,
+      "first_seen": "18:11",
+      "superseded_by": null,
+      "contradiction_sides": null,
+      "history": [
+        {
+          "stage": 3,
+          "class": "UNKNOWN",
+          "statement": "The full affected scope of the reported Google Cloud issues, beyond Northwind's confirmed login, API and console failures, is unknown.",
+          "because": []
+        }
+      ]
+    },
+    {
+      "id": "C-016",
+      "statement": "Whether the reported cloud issues have affected Northwind's customer data is unknown.",
+      "subject": "Northwind",
+      "unknown_kind": "data",
+      "class": "UNKNOWN",
+      "proposed_class": "UNKNOWN",
+      "source_ids": [],
+      "provider_wording": null,
+      "settled_by": null,
+      "estimate": null,
+      "first_seen": "18:11",
+      "superseded_by": null,
+      "contradiction_sides": null,
+      "history": [
+        {
+          "stage": 3,
+          "class": "UNKNOWN",
+          "statement": "Whether the reported cloud issues have affected Northwind's customer data is unknown.",
+          "because": []
+        }
+      ]
+    }
+  ],
+  "drafts": {
+    "executive": {
+      "audience": "executive",
+      "policy_mode": null,
+      "as_of": "18:11",
+      "source": "astra_saved",
+      "generated_at": "2026-10-06T17:57:50.807Z",
+      "sections": [
+        {
+          "heading": "Situation",
+          "sentences": [
+            {
+              "text": "Broader Google Cloud disruption is reported, not yet confirmed [C-002].",
+              "type": "fact",
+              "claim_ids": [
+                "C-002"
+              ],
+              "response_ids": [],
+              "verify": null
+            }
+          ]
+        },
+        {
+          "heading": "Impact on us",
+          "sentences": [
+            {
+              "text": "Customer login and API access are unreliable since 17:51 UTC [C-001].",
+              "type": "fact",
+              "claim_ids": [
+                "C-001"
+              ],
+              "response_ids": [],
+              "verify": null
+            }
+          ]
+        },
+        {
+          "heading": "Confirmed",
+          "sentences": [
+            {
+              "text": "Firestore and Firebase Auth calls return 503; Google's status page shows no incident [C-006][C-005].",
+              "type": "fact",
+              "claim_ids": [
+                "C-006",
+                "C-005"
+              ],
+              "response_ids": [],
+              "verify": null
+            }
+          ]
+        },
+        {
+          "heading": "Not yet known",
+          "sentences": [
+            {
+              "text": "Cause, recovery time, broader scope and customer-data impact are not yet known [C-003][C-004][C-015][C-016].",
+              "type": "fact",
+              "claim_ids": [
+                "C-003",
+                "C-004",
+                "C-015",
+                "C-016"
+              ],
+              "response_ids": [],
+              "verify": null
+            }
+          ]
+        },
+        {
+          "heading": "What we're doing",
+          "sentences": [
+            {
+              "text": "Deploys are frozen; we're escalating to Google by phone and account team [R-7][R-8].",
+              "type": "commitment",
+              "claim_ids": [],
+              "response_ids": [
+                "R-7",
+                "R-8"
+              ],
+              "verify": null
+            }
+          ]
+        },
+        {
+          "heading": "Decisions needed",
+          "sentences": [
+            {
+              "text": "Approval is needed for an “investigating” customer update without naming the provider [R-9].",
+              "type": "commitment",
+              "claim_ids": [],
+              "response_ids": [
+                "R-9"
+              ],
+              "verify": null
+            }
+          ]
+        },
+        {
+          "heading": "Next update",
+          "sentences": [
+            {
+              "text": "We'll update the bridge at 18:30 and customers by 18:40 [R-10].",
+              "type": "commitment",
+              "claim_ids": [],
+              "response_ids": [
+                "R-10"
+              ],
+              "verify": null
+            }
+          ]
+        }
+      ]
+    },
+    "engineering": {
+      "audience": "engineering",
+      "policy_mode": null,
+      "as_of": "18:11",
+      "source": "astra_saved",
+      "generated_at": "2026-10-06T17:57:51.092Z",
+      "sections": [
+        {
+          "heading": "Technical facts",
+          "sentences": [
+            {
+              "text": "Login and API access have been unreliable since 17:51 UTC; Firestore and Firebase Auth calls return 503s [C-001] [C-006].",
+              "type": "fact",
+              "claim_ids": [
+                "C-001",
+                "C-006"
+              ],
+              "response_ids": [],
+              "verify": null
+            },
+            {
+              "text": "The app runs only in us-central1; no deploys occurred since 14:00 [C-011] [C-007].",
+              "type": "fact",
+              "claim_ids": [
+                "C-011",
+                "C-007"
+              ],
+              "response_ids": [],
+              "verify": null
+            },
+            {
+              "text": "Console support-case creation is blocked, but Google's status page shows no incident [C-013] [C-005].",
+              "type": "fact",
+              "claim_ids": [
+                "C-013",
+                "C-005"
+              ],
+              "response_ids": [],
+              "verify": null
+            },
+            {
+              "text": "Root cause, recovery time, broader scope and customer-data impact are not yet known [C-003] [C-004] [C-015] [C-016].",
+              "type": "fact",
+              "claim_ids": [
+                "C-003",
+                "C-004",
+                "C-015",
+                "C-016"
+              ],
+              "response_ids": [],
+              "verify": null
+            }
+          ]
+        },
+        {
+          "heading": "Actions and guardrails",
+          "sentences": [
+            {
+              "text": "Deploys are frozen; do not roll back unless a change is implicated [R-7] [R-3].",
+              "type": "commitment",
+              "claim_ids": [],
+              "response_ids": [
+                "R-7",
+                "R-3"
+              ],
+              "verify": null
+            },
+            {
+              "text": "Check quota and IAM, distinguish code failures from Google API failures, and escalate by phone and account team [R-5] [R-3] [R-8].",
+              "type": "commitment",
+              "claim_ids": [],
+              "response_ids": [
+                "R-5",
+                "R-3",
+                "R-8"
+              ],
+              "verify": null
+            }
+          ]
+        },
+        {
+          "heading": "Next update",
+          "sentences": [
+            {
+              "text": "Next bridge update: 18:30; customers by 18:40 [R-10].",
+              "type": "commitment",
+              "claim_ids": [],
+              "response_ids": [
+                "R-10"
+              ],
+              "verify": null
+            }
+          ]
+        }
+      ]
+    },
+    "customer": {
+      "confirmed_only": {
+        "audience": "customer",
+        "policy_mode": "confirmed_only",
+        "as_of": "18:11",
+        "source": "astra_saved",
+        "generated_at": "2026-10-06T17:57:48.647Z",
+        "sections": [
+          {
+            "heading": "Northwind service update",
+            "sentences": [
+              {
+                "text": "We're sorry that customers have been unable to reliably log in or use our API since 17:51 UTC [C-001].",
+                "type": "fact",
+                "claim_ids": [
+                  "C-001"
+                ],
+                "response_ids": [],
+                "verify": null
+              },
+              {
+                "text": "The cause and recovery time are not yet known [C-003] [C-004].",
+                "type": "fact",
+                "claim_ids": [
+                  "C-003",
+                  "C-004"
+                ],
+                "response_ids": [],
+                "verify": null
+              },
+              {
+                "text": "We're investigating the failures [R-3].",
+                "type": "commitment",
+                "claim_ids": [],
+                "response_ids": [
+                  "R-3"
+                ],
+                "verify": null
+              },
+              {
+                "text": "We'll provide the next customer update by 18:40 UTC [R-10].",
+                "type": "commitment",
+                "claim_ids": [],
+                "response_ids": [
+                  "R-10"
+                ],
+                "verify": null
+              }
+            ]
+          }
+        ]
+      },
+      "early_incident": null
+    }
+  },
+  "verify": {
+    "pass": false,
+    "status": "pending",
+    "reason": "Awaiting code verification and Astra support check"
+  },
+  "timings": [
+    {
+      "step": "EXTRACT",
+      "stage": 3,
+      "audience": null,
+      "attempt": 1,
+      "seconds": 27.729158792,
+      "tokens": {
+        "input_tokens": 1476,
+        "input_tokens_details": {
+          "cache_write_tokens": 1473,
+          "cached_tokens": 0
+        },
+        "output_tokens": 1803,
+        "output_tokens_details": {
+          "reasoning_tokens": 104
+        },
+        "total_tokens": 3279
+      }
+    },
+    {
+      "step": "RECONCILE",
+      "stage": 3,
+      "audience": null,
+      "attempt": 1,
+      "seconds": 40.500095625,
+      "tokens": {
+        "input_tokens": 3953,
+        "input_tokens_details": {
+          "cache_write_tokens": 3950,
+          "cached_tokens": 0
+        },
+        "output_tokens": 3633,
+        "output_tokens_details": {
+          "reasoning_tokens": 75
+        },
+        "total_tokens": 7586
+      }
+    },
+    {
+      "step": "COMMUNICATE",
+      "stage": 3,
+      "audience": "customer",
+      "attempt": 1,
+      "seconds": 5.3309950839999996,
+      "tokens": {
+        "input_tokens": 4224,
+        "input_tokens_details": {
+          "cache_write_tokens": 4221,
+          "cached_tokens": 0
+        },
+        "output_tokens": 216,
+        "output_tokens_details": {
+          "reasoning_tokens": 37
+        },
+        "total_tokens": 4440
+      }
+    },
+    {
+      "step": "COMMUNICATE",
+      "stage": 3,
+      "audience": "executive",
+      "attempt": 1,
+      "seconds": 7.491398083,
+      "tokens": {
+        "input_tokens": 4224,
+        "input_tokens_details": {
+          "cache_write_tokens": 4221,
+          "cached_tokens": 0
+        },
+        "output_tokens": 395,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 4619
+      }
+    },
+    {
+      "step": "COMMUNICATE",
+      "stage": 3,
+      "audience": "engineering",
+      "attempt": 1,
+      "seconds": 7.775984375,
+      "tokens": {
+        "input_tokens": 4224,
+        "input_tokens_details": {
+          "cache_write_tokens": 4221,
+          "cached_tokens": 0
+        },
+        "output_tokens": 417,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 4641
+      }
+    }
+  ],
+  "error": null
+}

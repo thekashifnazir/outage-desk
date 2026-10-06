@@ -1,0 +1,955 @@
+{
+  "stage": 1,
+  "model": "gpt-6-astra",
+  "source": "astra_saved",
+  "generated_at": "2026-10-06T17:56:13.674Z",
+  "extract": {
+    "claims": [
+      {
+        "id": "C1",
+        "statement": "Northwind monitoring observed a login-api 5xx rate of 38%, against a baseline of 0.2%.",
+        "subject": "Northwind",
+        "unknown_kind": null,
+        "region": "us-central1",
+        "class": "CONFIRMED",
+        "proposed_class": "CONFIRMED",
+        "source_ids": [
+          "N1"
+        ],
+        "provider_wording": null,
+        "settled_by": null,
+        "estimate": null,
+        "first_seen": "17:52",
+        "superseded_by": null,
+        "contradiction_sides": null,
+        "history": []
+      },
+      {
+        "id": "C2",
+        "statement": "Northwind monitoring observed that the login-api 5xx rate had been rising since 17:51.",
+        "subject": "Northwind",
+        "unknown_kind": null,
+        "region": "us-central1",
+        "class": "CONFIRMED",
+        "proposed_class": "CONFIRMED",
+        "source_ids": [
+          "N1"
+        ],
+        "provider_wording": null,
+        "settled_by": null,
+        "estimate": null,
+        "first_seen": "17:52",
+        "superseded_by": null,
+        "contradiction_sides": null,
+        "history": []
+      },
+      {
+        "id": "C3",
+        "statement": "A single community post questions whether the Google Cloud console is experiencing problems.",
+        "subject": "Google Cloud",
+        "unknown_kind": null,
+        "region": null,
+        "class": "UNCONFIRMED",
+        "proposed_class": "UNCONFIRMED",
+        "source_ids": [
+          "S1"
+        ],
+        "provider_wording": null,
+        "settled_by": null,
+        "estimate": null,
+        "first_seen": "17:56",
+        "superseded_by": null,
+        "contradiction_sides": null,
+        "history": []
+      },
+      {
+        "id": "C4",
+        "statement": "A single community post questions whether Google Cloud is experiencing problems in us-east1.",
+        "subject": "Google Cloud",
+        "unknown_kind": null,
+        "region": "us-east1",
+        "class": "UNCONFIRMED",
+        "proposed_class": "UNCONFIRMED",
+        "source_ids": [
+          "S1"
+        ],
+        "provider_wording": null,
+        "settled_by": null,
+        "estimate": null,
+        "first_seen": "17:56",
+        "superseded_by": null,
+        "contradiction_sides": null,
+        "history": []
+      },
+      {
+        "id": "C5",
+        "statement": "Google Cloud's status page reports no major incidents as of 17:56.",
+        "subject": "Google Cloud",
+        "unknown_kind": null,
+        "region": null,
+        "class": "CONFIRMED",
+        "proposed_class": "CONFIRMED",
+        "source_ids": [
+          "S2"
+        ],
+        "provider_wording": "No major incidents",
+        "settled_by": null,
+        "estimate": null,
+        "first_seen": "17:56",
+        "superseded_by": null,
+        "contradiction_sides": null,
+        "history": []
+      },
+      {
+        "id": "C6",
+        "statement": "The cause of Northwind's elevated login-api 5xx rate is unknown.",
+        "subject": "Northwind",
+        "unknown_kind": "cause",
+        "region": "us-central1",
+        "class": "UNKNOWN",
+        "proposed_class": "UNKNOWN",
+        "source_ids": [
+          "N1"
+        ],
+        "provider_wording": null,
+        "settled_by": null,
+        "estimate": null,
+        "first_seen": "17:56",
+        "superseded_by": null,
+        "contradiction_sides": null,
+        "history": []
+      },
+      {
+        "id": "C7",
+        "statement": "The recovery time for Northwind's login-api is unknown.",
+        "subject": "Northwind",
+        "unknown_kind": "recovery",
+        "region": "us-central1",
+        "class": "UNKNOWN",
+        "proposed_class": "UNKNOWN",
+        "source_ids": [
+          "N1"
+        ],
+        "provider_wording": null,
+        "settled_by": null,
+        "estimate": null,
+        "first_seen": "17:56",
+        "superseded_by": null,
+        "contradiction_sides": null,
+        "history": []
+      },
+      {
+        "id": "C8",
+        "statement": "Whether Northwind's incident affects services beyond login-api is unknown.",
+        "subject": "Northwind",
+        "unknown_kind": "scope",
+        "region": null,
+        "class": "UNKNOWN",
+        "proposed_class": "UNKNOWN",
+        "source_ids": [
+          "N1"
+        ],
+        "provider_wording": null,
+        "settled_by": null,
+        "estimate": null,
+        "first_seen": "17:56",
+        "superseded_by": null,
+        "contradiction_sides": null,
+        "history": []
+      },
+      {
+        "id": "C9",
+        "statement": "Whether Northwind's login-api incident has affected customer data is unknown.",
+        "subject": "Northwind",
+        "unknown_kind": "data",
+        "region": "us-central1",
+        "class": "UNKNOWN",
+        "proposed_class": "UNKNOWN",
+        "source_ids": [
+          "N1"
+        ],
+        "provider_wording": null,
+        "settled_by": null,
+        "estimate": null,
+        "first_seen": "17:56",
+        "superseded_by": null,
+        "contradiction_sides": null,
+        "history": []
+      }
+    ]
+  },
+  "reconcile": {
+    "claims": [
+      {
+        "id": "C-001",
+        "statement": "Northwind monitoring observed a login-api 5xx rate of 38% in us-central1, against a baseline of 0.2%.",
+        "subject": "Northwind",
+        "unknown_kind": null,
+        "class": "CONFIRMED",
+        "proposed_class": "CONFIRMED",
+        "source_ids": [
+          "N1"
+        ],
+        "provider_wording": null,
+        "settled_by": null,
+        "estimate": null,
+        "first_seen": "17:52",
+        "superseded_by": null,
+        "contradiction_sides": null,
+        "history": []
+      },
+      {
+        "id": "C-002",
+        "statement": "Northwind monitoring observed that the login-api 5xx rate in us-central1 had been rising since 17:51.",
+        "subject": "Northwind",
+        "unknown_kind": null,
+        "class": "CONFIRMED",
+        "proposed_class": "CONFIRMED",
+        "source_ids": [
+          "N1"
+        ],
+        "provider_wording": null,
+        "settled_by": null,
+        "estimate": null,
+        "first_seen": "17:52",
+        "superseded_by": null,
+        "contradiction_sides": null,
+        "history": []
+      },
+      {
+        "id": "C-003",
+        "statement": "A single community post questions whether the Google Cloud console is experiencing problems.",
+        "subject": "Google Cloud",
+        "unknown_kind": null,
+        "class": "UNCONFIRMED",
+        "proposed_class": "UNCONFIRMED",
+        "source_ids": [
+          "S1"
+        ],
+        "provider_wording": null,
+        "settled_by": null,
+        "estimate": null,
+        "first_seen": "17:56",
+        "superseded_by": null,
+        "contradiction_sides": null,
+        "history": []
+      },
+      {
+        "id": "C-004",
+        "statement": "A single community post questions whether Google Cloud is experiencing problems in us-east1.",
+        "subject": "Google Cloud",
+        "unknown_kind": null,
+        "class": "UNCONFIRMED",
+        "proposed_class": "UNCONFIRMED",
+        "source_ids": [
+          "S1"
+        ],
+        "provider_wording": null,
+        "settled_by": null,
+        "estimate": null,
+        "first_seen": "17:56",
+        "superseded_by": null,
+        "contradiction_sides": null,
+        "history": []
+      },
+      {
+        "id": "C-005",
+        "statement": "Google Cloud's status page reports no major incidents as of 17:56.",
+        "subject": "Google Cloud",
+        "unknown_kind": null,
+        "class": "CONFIRMED",
+        "proposed_class": "CONFIRMED",
+        "source_ids": [
+          "S2"
+        ],
+        "provider_wording": "No major incidents",
+        "settled_by": null,
+        "estimate": null,
+        "first_seen": "17:56",
+        "superseded_by": null,
+        "contradiction_sides": null,
+        "history": []
+      },
+      {
+        "id": "C-006",
+        "statement": "The cause of Northwind's elevated login-api 5xx rate in us-central1 is unknown.",
+        "subject": "Northwind",
+        "unknown_kind": "cause",
+        "class": "UNKNOWN",
+        "proposed_class": "UNKNOWN",
+        "source_ids": [],
+        "provider_wording": null,
+        "settled_by": null,
+        "estimate": null,
+        "first_seen": "17:56",
+        "superseded_by": null,
+        "contradiction_sides": null,
+        "history": []
+      },
+      {
+        "id": "C-007",
+        "statement": "The recovery time for Northwind's login-api in us-central1 is unknown.",
+        "subject": "Northwind",
+        "unknown_kind": "recovery",
+        "class": "UNKNOWN",
+        "proposed_class": "UNKNOWN",
+        "source_ids": [],
+        "provider_wording": null,
+        "settled_by": null,
+        "estimate": null,
+        "first_seen": "17:56",
+        "superseded_by": null,
+        "contradiction_sides": null,
+        "history": []
+      },
+      {
+        "id": "C-008",
+        "statement": "Whether Northwind's incident affects services beyond login-api is unknown.",
+        "subject": "Northwind",
+        "unknown_kind": "scope",
+        "class": "UNKNOWN",
+        "proposed_class": "UNKNOWN",
+        "source_ids": [],
+        "provider_wording": null,
+        "settled_by": null,
+        "estimate": null,
+        "first_seen": "17:56",
+        "superseded_by": null,
+        "contradiction_sides": null,
+        "history": []
+      },
+      {
+        "id": "C-009",
+        "statement": "Whether Northwind's login-api incident in us-central1 has affected customer data is unknown.",
+        "subject": "Northwind",
+        "unknown_kind": "data",
+        "class": "UNKNOWN",
+        "proposed_class": "UNKNOWN",
+        "source_ids": [],
+        "provider_wording": null,
+        "settled_by": null,
+        "estimate": null,
+        "first_seen": "17:56",
+        "superseded_by": null,
+        "contradiction_sides": null,
+        "history": []
+      }
+    ],
+    "changes": [
+      {
+        "claim_id": "C-001",
+        "change": "NEW",
+        "from": null,
+        "to": "CONFIRMED",
+        "because": [
+          "N1"
+        ]
+      },
+      {
+        "claim_id": "C-002",
+        "change": "NEW",
+        "from": null,
+        "to": "CONFIRMED",
+        "because": [
+          "N1"
+        ]
+      },
+      {
+        "claim_id": "C-003",
+        "change": "NEW",
+        "from": null,
+        "to": "UNCONFIRMED",
+        "because": [
+          "S1"
+        ]
+      },
+      {
+        "claim_id": "C-004",
+        "change": "NEW",
+        "from": null,
+        "to": "UNCONFIRMED",
+        "because": [
+          "S1"
+        ]
+      },
+      {
+        "claim_id": "C-005",
+        "change": "NEW",
+        "from": null,
+        "to": "CONFIRMED",
+        "because": [
+          "S2"
+        ]
+      },
+      {
+        "claim_id": "C-006",
+        "change": "NEW",
+        "from": null,
+        "to": "UNKNOWN",
+        "because": []
+      },
+      {
+        "claim_id": "C-007",
+        "change": "NEW",
+        "from": null,
+        "to": "UNKNOWN",
+        "because": []
+      },
+      {
+        "claim_id": "C-008",
+        "change": "NEW",
+        "from": null,
+        "to": "UNKNOWN",
+        "because": []
+      },
+      {
+        "claim_id": "C-009",
+        "change": "NEW",
+        "from": null,
+        "to": "UNKNOWN",
+        "because": []
+      }
+    ]
+  },
+  "capped_ledger": [
+    {
+      "id": "C-001",
+      "statement": "Northwind monitoring observed a login-api 5xx rate of 38% in us-central1, against a baseline of 0.2%.",
+      "subject": "Northwind",
+      "unknown_kind": null,
+      "class": "CONFIRMED",
+      "proposed_class": "CONFIRMED",
+      "source_ids": [
+        "N1"
+      ],
+      "provider_wording": null,
+      "settled_by": null,
+      "estimate": null,
+      "first_seen": "17:52",
+      "superseded_by": null,
+      "contradiction_sides": null,
+      "history": []
+    },
+    {
+      "id": "C-002",
+      "statement": "Northwind monitoring observed that the login-api 5xx rate in us-central1 had been rising since 17:51.",
+      "subject": "Northwind",
+      "unknown_kind": null,
+      "class": "CONFIRMED",
+      "proposed_class": "CONFIRMED",
+      "source_ids": [
+        "N1"
+      ],
+      "provider_wording": null,
+      "settled_by": null,
+      "estimate": null,
+      "first_seen": "17:52",
+      "superseded_by": null,
+      "contradiction_sides": null,
+      "history": []
+    },
+    {
+      "id": "C-003",
+      "statement": "A single community post questions whether the Google Cloud console is experiencing problems.",
+      "subject": "Google Cloud",
+      "unknown_kind": null,
+      "class": "UNCONFIRMED",
+      "proposed_class": "UNCONFIRMED",
+      "source_ids": [
+        "S1"
+      ],
+      "provider_wording": null,
+      "settled_by": null,
+      "estimate": null,
+      "first_seen": "17:56",
+      "superseded_by": null,
+      "contradiction_sides": null,
+      "history": []
+    },
+    {
+      "id": "C-004",
+      "statement": "A single community post questions whether Google Cloud is experiencing problems in us-east1.",
+      "subject": "Google Cloud",
+      "unknown_kind": null,
+      "class": "UNCONFIRMED",
+      "proposed_class": "UNCONFIRMED",
+      "source_ids": [
+        "S1"
+      ],
+      "provider_wording": null,
+      "settled_by": null,
+      "estimate": null,
+      "first_seen": "17:56",
+      "superseded_by": null,
+      "contradiction_sides": null,
+      "history": []
+    },
+    {
+      "id": "C-005",
+      "statement": "Google Cloud's status page reports no major incidents as of 17:56.",
+      "subject": "Google Cloud",
+      "unknown_kind": null,
+      "class": "CONFIRMED",
+      "proposed_class": "CONFIRMED",
+      "source_ids": [
+        "S2"
+      ],
+      "provider_wording": "No major incidents",
+      "settled_by": null,
+      "estimate": null,
+      "first_seen": "17:56",
+      "superseded_by": null,
+      "contradiction_sides": null,
+      "history": []
+    },
+    {
+      "id": "C-006",
+      "statement": "The cause of Northwind's elevated login-api 5xx rate in us-central1 is unknown.",
+      "subject": "Northwind",
+      "unknown_kind": "cause",
+      "class": "UNKNOWN",
+      "proposed_class": "UNKNOWN",
+      "source_ids": [],
+      "provider_wording": null,
+      "settled_by": null,
+      "estimate": null,
+      "first_seen": "17:56",
+      "superseded_by": null,
+      "contradiction_sides": null,
+      "history": []
+    },
+    {
+      "id": "C-007",
+      "statement": "The recovery time for Northwind's login-api in us-central1 is unknown.",
+      "subject": "Northwind",
+      "unknown_kind": "recovery",
+      "class": "UNKNOWN",
+      "proposed_class": "UNKNOWN",
+      "source_ids": [],
+      "provider_wording": null,
+      "settled_by": null,
+      "estimate": null,
+      "first_seen": "17:56",
+      "superseded_by": null,
+      "contradiction_sides": null,
+      "history": []
+    },
+    {
+      "id": "C-008",
+      "statement": "Whether Northwind's incident affects services beyond login-api is unknown.",
+      "subject": "Northwind",
+      "unknown_kind": "scope",
+      "class": "UNKNOWN",
+      "proposed_class": "UNKNOWN",
+      "source_ids": [],
+      "provider_wording": null,
+      "settled_by": null,
+      "estimate": null,
+      "first_seen": "17:56",
+      "superseded_by": null,
+      "contradiction_sides": null,
+      "history": []
+    },
+    {
+      "id": "C-009",
+      "statement": "Whether Northwind's login-api incident in us-central1 has affected customer data is unknown.",
+      "subject": "Northwind",
+      "unknown_kind": "data",
+      "class": "UNKNOWN",
+      "proposed_class": "UNKNOWN",
+      "source_ids": [],
+      "provider_wording": null,
+      "settled_by": null,
+      "estimate": null,
+      "first_seen": "17:56",
+      "superseded_by": null,
+      "contradiction_sides": null,
+      "history": []
+    }
+  ],
+  "drafts": {
+    "executive": {
+      "audience": "executive",
+      "policy_mode": null,
+      "as_of": "17:56",
+      "source": "astra_saved",
+      "generated_at": "2026-10-06T17:57:50.407Z",
+      "sections": [
+        {
+          "heading": "Situation",
+          "sentences": [
+            {
+              "text": "Login-api errors in us-central1 have risen since 17:51 [C-002].",
+              "type": "fact",
+              "claim_ids": [
+                "C-002"
+              ],
+              "response_ids": [],
+              "verify": null
+            }
+          ]
+        },
+        {
+          "heading": "Impact on us",
+          "sentences": [
+            {
+              "text": "The 5xx rate is 38%, versus 0.2% baseline [C-001].",
+              "type": "fact",
+              "claim_ids": [
+                "C-001"
+              ],
+              "response_ids": [],
+              "verify": null
+            }
+          ]
+        },
+        {
+          "heading": "Confirmed",
+          "sentences": [
+            {
+              "text": "Google Cloud's status page reports no major incidents as of 17:56 [C-005].",
+              "type": "fact",
+              "claim_ids": [
+                "C-005"
+              ],
+              "response_ids": [],
+              "verify": null
+            }
+          ]
+        },
+        {
+          "heading": "Not yet known",
+          "sentences": [
+            {
+              "text": "Cause, recovery time, broader service impact and customer-data impact are not yet known [C-006][C-007][C-008][C-009].",
+              "type": "fact",
+              "claim_ids": [
+                "C-006",
+                "C-007",
+                "C-008",
+                "C-009"
+              ],
+              "response_ids": [],
+              "verify": null
+            }
+          ]
+        },
+        {
+          "heading": "What we're doing",
+          "sentences": [
+            {
+              "text": "We've declared P1, opened the bridge and published a holding statement [R-1][R-2].",
+              "type": "commitment",
+              "claim_ids": [],
+              "response_ids": [
+                "R-1",
+                "R-2"
+              ],
+              "verify": null
+            },
+            {
+              "text": "We're triaging recent changes, code versus Google API calls, and console access [R-3].",
+              "type": "commitment",
+              "claim_ids": [],
+              "response_ids": [
+                "R-3"
+              ],
+              "verify": null
+            }
+          ]
+        },
+        {
+          "heading": "Decisions needed",
+          "sentences": [
+            {
+              "text": "We will not roll back until a change is implicated [R-3].",
+              "type": "commitment",
+              "claim_ids": [],
+              "response_ids": [
+                "R-3"
+              ],
+              "verify": null
+            }
+          ]
+        },
+        {
+          "heading": "Next update",
+          "sentences": [
+            {
+              "text": "We'll update the bridge at 18:10 and customers within 30 minutes [R-4].",
+              "type": "commitment",
+              "claim_ids": [],
+              "response_ids": [
+                "R-4"
+              ],
+              "verify": null
+            }
+          ]
+        }
+      ]
+    },
+    "engineering": {
+      "audience": "engineering",
+      "policy_mode": null,
+      "as_of": "17:56",
+      "source": "astra_saved",
+      "generated_at": "2026-10-06T17:57:52.211Z",
+      "sections": [
+        {
+          "heading": "Confirmed technical facts",
+          "sentences": [
+            {
+              "text": "Northwind login-api 5xx errors in us-central1 reached 38% versus a 0.2% baseline, rising since 17:51 [C-001] [C-002].",
+              "type": "fact",
+              "claim_ids": [
+                "C-001",
+                "C-002"
+              ],
+              "response_ids": [],
+              "verify": null
+            },
+            {
+              "text": "Google Cloud's status page reports no major incidents as of 17:56 [C-005].",
+              "type": "fact",
+              "claim_ids": [
+                "C-005"
+              ],
+              "response_ids": [],
+              "verify": null
+            },
+            {
+              "text": "Cause, recovery time, impact beyond login-api, and customer-data impact are not yet known [C-006] [C-007] [C-008] [C-009].",
+              "type": "fact",
+              "claim_ids": [
+                "C-006",
+                "C-007",
+                "C-008",
+                "C-009"
+              ],
+              "response_ids": [],
+              "verify": null
+            }
+          ]
+        },
+        {
+          "heading": "What to do",
+          "sentences": [
+            {
+              "text": "We have declared P1 and opened the incident bridge [R-1].",
+              "type": "commitment",
+              "claim_ids": [],
+              "response_ids": [
+                "R-1"
+              ],
+              "verify": null
+            },
+            {
+              "text": "Triage recent changes, our code versus Google API calls, and GCP console access [R-3].",
+              "type": "commitment",
+              "claim_ids": [],
+              "response_ids": [
+                "R-3"
+              ],
+              "verify": null
+            }
+          ]
+        },
+        {
+          "heading": "What not to chase",
+          "sentences": [
+            {
+              "text": "Community speculation about Google Cloud console and us-east1 problems is unverified and should not be acted on [C-003] [C-004].",
+              "type": "fact",
+              "claim_ids": [
+                "C-003",
+                "C-004"
+              ],
+              "response_ids": [],
+              "verify": null
+            },
+            {
+              "text": "Do not roll back until a change is implicated [R-3].",
+              "type": "commitment",
+              "claim_ids": [],
+              "response_ids": [
+                "R-3"
+              ],
+              "verify": null
+            }
+          ]
+        },
+        {
+          "heading": "Next update",
+          "sentences": [
+            {
+              "text": "Next bridge update: 18:10; customer update within 30 minutes [R-4].",
+              "type": "commitment",
+              "claim_ids": [],
+              "response_ids": [
+                "R-4"
+              ],
+              "verify": null
+            }
+          ]
+        }
+      ]
+    },
+    "customer": {
+      "confirmed_only": {
+        "audience": "customer",
+        "policy_mode": "confirmed_only",
+        "as_of": "17:56",
+        "source": "astra_saved",
+        "generated_at": "2026-10-06T17:57:48.284Z",
+        "sections": [
+          {
+            "heading": "Northwind login update",
+            "sentences": [
+              {
+                "text": "We're sorry that login requests are experiencing elevated errors [C-001].",
+                "type": "fact",
+                "claim_ids": [
+                  "C-001"
+                ],
+                "response_ids": [],
+                "verify": null
+              },
+              {
+                "text": "The cause and recovery time are not yet known [C-006] [C-007].",
+                "type": "fact",
+                "claim_ids": [
+                  "C-006",
+                  "C-007"
+                ],
+                "response_ids": [],
+                "verify": null
+              },
+              {
+                "text": "We're investigating recent changes and checking where requests are failing [R-3].",
+                "type": "commitment",
+                "claim_ids": [],
+                "response_ids": [
+                  "R-3"
+                ],
+                "verify": null
+              },
+              {
+                "text": "We'll provide the next customer update by 18:26 [R-4].",
+                "type": "commitment",
+                "claim_ids": [],
+                "response_ids": [
+                  "R-4"
+                ],
+                "verify": null
+              }
+            ]
+          }
+        ]
+      },
+      "early_incident": null
+    }
+  },
+  "verify": {
+    "pass": false,
+    "status": "pending",
+    "reason": "Awaiting code verification and Astra support check"
+  },
+  "timings": [
+    {
+      "step": "EXTRACT",
+      "stage": 1,
+      "audience": null,
+      "attempt": 1,
+      "seconds": 21.085105708000004,
+      "tokens": {
+        "input_tokens": 1356,
+        "input_tokens_details": {
+          "cache_write_tokens": 1353,
+          "cached_tokens": 0
+        },
+        "output_tokens": 1333,
+        "output_tokens_details": {
+          "reasoning_tokens": 47
+        },
+        "total_tokens": 2689
+      }
+    },
+    {
+      "step": "RECONCILE",
+      "stage": 1,
+      "audience": null,
+      "attempt": 1,
+      "seconds": 25.777956166,
+      "tokens": {
+        "input_tokens": 2386,
+        "input_tokens_details": {
+          "cache_write_tokens": 2383,
+          "cached_tokens": 0
+        },
+        "output_tokens": 1582,
+        "output_tokens_details": {
+          "reasoning_tokens": 28
+        },
+        "total_tokens": 3968
+      }
+    },
+    {
+      "step": "COMMUNICATE",
+      "stage": 1,
+      "audience": "customer",
+      "attempt": 1,
+      "seconds": 4.983713416,
+      "tokens": {
+        "input_tokens": 2619,
+        "input_tokens_details": {
+          "cache_write_tokens": 2616,
+          "cached_tokens": 0
+        },
+        "output_tokens": 170,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 2789
+      }
+    },
+    {
+      "step": "COMMUNICATE",
+      "stage": 1,
+      "audience": "executive",
+      "attempt": 1,
+      "seconds": 7.135358834,
+      "tokens": {
+        "input_tokens": 2619,
+        "input_tokens_details": {
+          "cache_write_tokens": 2616,
+          "cached_tokens": 0
+        },
+        "output_tokens": 426,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 3045
+      }
+    },
+    {
+      "step": "COMMUNICATE",
+      "stage": 1,
+      "audience": "engineering",
+      "attempt": 1,
+      "seconds": 8.911143166,
+      "tokens": {
+        "input_tokens": 2619,
+        "input_tokens_details": {
+          "cache_write_tokens": 2616,
+          "cached_tokens": 0
+        },
+        "output_tokens": 432,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 3051
+      }
+    }
+  ],
+  "error": null
+}

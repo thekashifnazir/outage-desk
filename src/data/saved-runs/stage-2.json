@@ -1,0 +1,1016 @@
+{
+  "stage": 2,
+  "model": "gpt-6-astra",
+  "source": "astra_saved",
+  "generated_at": "2026-10-06T17:56:13.675Z",
+  "extract": {
+    "claims": [
+      {
+        "id": "C1",
+        "statement": "Northwind logs show requests to Google Cloud's Firestore API returning HTTP 503.",
+        "subject": "Northwind",
+        "unknown_kind": null,
+        "region": "us-central1",
+        "class": "CONFIRMED",
+        "proposed_class": "CONFIRMED",
+        "source_ids": [
+          "N4"
+        ],
+        "provider_wording": null,
+        "settled_by": null,
+        "estimate": null,
+        "first_seen": "18:01",
+        "superseded_by": null,
+        "contradiction_sides": null,
+        "history": []
+      },
+      {
+        "id": "C2",
+        "statement": "Northwind logs show requests to Google Cloud's Firebase Auth API returning HTTP 503.",
+        "subject": "Northwind",
+        "unknown_kind": null,
+        "region": "us-central1",
+        "class": "CONFIRMED",
+        "proposed_class": "CONFIRMED",
+        "source_ids": [
+          "N4"
+        ],
+        "provider_wording": null,
+        "settled_by": null,
+        "estimate": null,
+        "first_seen": "18:01",
+        "superseded_by": null,
+        "contradiction_sides": null,
+        "history": []
+      },
+      {
+        "id": "C3",
+        "statement": "Discord is investigating attachments and embeds not being rendered in its app.",
+        "subject": "Discord",
+        "unknown_kind": null,
+        "region": null,
+        "class": "CONFIRMED",
+        "proposed_class": "CONFIRMED",
+        "source_ids": [
+          "S13"
+        ],
+        "provider_wording": "We are investigating an issue with attachments and embeds not being rendered in the app.",
+        "settled_by": null,
+        "estimate": null,
+        "first_seen": "18:02",
+        "superseded_by": null,
+        "contradiction_sides": null,
+        "history": []
+      },
+      {
+        "id": "C4",
+        "statement": "The cause of Northwind's observed API failures is unknown.",
+        "subject": "Northwind",
+        "unknown_kind": "cause",
+        "region": "us-central1",
+        "class": "UNKNOWN",
+        "proposed_class": "UNKNOWN",
+        "source_ids": [
+          "N4"
+        ],
+        "provider_wording": null,
+        "settled_by": null,
+        "estimate": null,
+        "first_seen": "18:02",
+        "superseded_by": null,
+        "contradiction_sides": null,
+        "history": []
+      },
+      {
+        "id": "C5",
+        "statement": "The recovery time for Northwind's observed API failures is unknown.",
+        "subject": "Northwind",
+        "unknown_kind": "recovery",
+        "region": "us-central1",
+        "class": "UNKNOWN",
+        "proposed_class": "UNKNOWN",
+        "source_ids": [
+          "N4"
+        ],
+        "provider_wording": null,
+        "settled_by": null,
+        "estimate": null,
+        "first_seen": "18:02",
+        "superseded_by": null,
+        "contradiction_sides": null,
+        "history": []
+      },
+      {
+        "id": "C6",
+        "statement": "The extent of customer impact from Northwind's observed API failures is unknown.",
+        "subject": "Northwind",
+        "unknown_kind": "scope",
+        "region": "us-central1",
+        "class": "UNKNOWN",
+        "proposed_class": "UNKNOWN",
+        "source_ids": [
+          "N4"
+        ],
+        "provider_wording": null,
+        "settled_by": null,
+        "estimate": null,
+        "first_seen": "18:02",
+        "superseded_by": null,
+        "contradiction_sides": null,
+        "history": []
+      },
+      {
+        "id": "C7",
+        "statement": "Whether Northwind's observed API failures have affected data integrity is unknown.",
+        "subject": "Northwind",
+        "unknown_kind": "data",
+        "region": "us-central1",
+        "class": "UNKNOWN",
+        "proposed_class": "UNKNOWN",
+        "source_ids": [
+          "N4"
+        ],
+        "provider_wording": null,
+        "settled_by": null,
+        "estimate": null,
+        "first_seen": "18:02",
+        "superseded_by": null,
+        "contradiction_sides": null,
+        "history": []
+      }
+    ]
+  },
+  "reconcile": {
+    "claims": [
+      {
+        "id": "C-001",
+        "statement": "Since 17:51 UTC customers can't reliably log in or use our API",
+        "subject": "Northwind",
+        "unknown_kind": null,
+        "class": "CONFIRMED",
+        "proposed_class": "CONFIRMED",
+        "source_ids": [
+          "N1"
+        ],
+        "provider_wording": null,
+        "settled_by": null,
+        "estimate": null,
+        "first_seen": "17:52",
+        "superseded_by": null,
+        "contradiction_sides": null,
+        "history": [
+          {
+            "stage": 1,
+            "class": "CONFIRMED",
+            "statement": "Since 17:51 UTC customers can't reliably log in or use our API",
+            "because": [
+              "N1"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "C-002",
+        "statement": "Google Cloud may be having problems (GCP console, us-east1)",
+        "subject": "Google Cloud",
+        "unknown_kind": null,
+        "class": "UNCONFIRMED",
+        "proposed_class": "UNCONFIRMED",
+        "source_ids": [
+          "S1"
+        ],
+        "provider_wording": null,
+        "settled_by": "Google Cloud's status page, or more independent reports",
+        "estimate": null,
+        "first_seen": "17:56",
+        "superseded_by": null,
+        "contradiction_sides": null,
+        "history": [
+          {
+            "stage": 1,
+            "class": "UNCONFIRMED",
+            "statement": "Google Cloud may be having problems (GCP console, us-east1)",
+            "because": [
+              "S1"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "C-003",
+        "statement": "Root cause",
+        "subject": "Google Cloud",
+        "unknown_kind": "cause",
+        "class": "UNKNOWN",
+        "proposed_class": "UNKNOWN",
+        "source_ids": [],
+        "provider_wording": null,
+        "settled_by": "The provider stating the cause on the record",
+        "estimate": null,
+        "first_seen": "17:56",
+        "superseded_by": null,
+        "contradiction_sides": null,
+        "history": [
+          {
+            "stage": 1,
+            "class": "UNKNOWN",
+            "statement": "Root cause",
+            "because": []
+          }
+        ]
+      },
+      {
+        "id": "C-004",
+        "statement": "When our service will recover",
+        "subject": "Northwind",
+        "unknown_kind": "recovery",
+        "class": "UNKNOWN",
+        "proposed_class": "UNKNOWN",
+        "source_ids": [],
+        "provider_wording": null,
+        "settled_by": "Our monitoring returning to baseline, or a provider estimate",
+        "estimate": null,
+        "first_seen": "17:56",
+        "superseded_by": null,
+        "contradiction_sides": null,
+        "history": [
+          {
+            "stage": 1,
+            "class": "UNKNOWN",
+            "statement": "When our service will recover",
+            "because": []
+          }
+        ]
+      },
+      {
+        "id": "C-005",
+        "statement": "Google Cloud's status page shows no incident",
+        "subject": "Google Cloud",
+        "unknown_kind": null,
+        "class": "CONFIRMED",
+        "proposed_class": "CONFIRMED",
+        "source_ids": [
+          "S2"
+        ],
+        "provider_wording": "No major incidents",
+        "settled_by": null,
+        "estimate": null,
+        "first_seen": "17:56",
+        "superseded_by": null,
+        "contradiction_sides": null,
+        "history": [
+          {
+            "stage": 1,
+            "class": "CONFIRMED",
+            "statement": "Google Cloud's status page shows no incident",
+            "because": [
+              "S2"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "C-006",
+        "statement": "Northwind logs in us-central1 show requests to Google Cloud's Firestore and Firebase Auth APIs returning HTTP 503.",
+        "subject": "Northwind",
+        "unknown_kind": null,
+        "class": "CONFIRMED",
+        "proposed_class": "CONFIRMED",
+        "source_ids": [
+          "N4"
+        ],
+        "provider_wording": null,
+        "settled_by": null,
+        "estimate": null,
+        "first_seen": "18:01",
+        "superseded_by": null,
+        "contradiction_sides": null,
+        "history": [
+          {
+            "stage": 2,
+            "class": "CONFIRMED",
+            "statement": "Northwind logs in us-central1 show requests to Google Cloud's Firestore and Firebase Auth APIs returning HTTP 503.",
+            "because": [
+              "N4"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "C-007",
+        "statement": "Discord is investigating attachments and embeds not being rendered in its app.",
+        "subject": "Discord",
+        "unknown_kind": null,
+        "class": "CONFIRMED",
+        "proposed_class": "CONFIRMED",
+        "source_ids": [
+          "S13"
+        ],
+        "provider_wording": "We are investigating an issue with attachments and embeds not being rendered in the app.",
+        "settled_by": null,
+        "estimate": null,
+        "first_seen": "18:02",
+        "superseded_by": null,
+        "contradiction_sides": null,
+        "history": [
+          {
+            "stage": 2,
+            "class": "CONFIRMED",
+            "statement": "Discord is investigating attachments and embeds not being rendered in its app.",
+            "because": [
+              "S13"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "C-008",
+        "statement": "The extent of customer impact from Northwind's observed API failures is unknown.",
+        "subject": "Northwind",
+        "unknown_kind": "scope",
+        "class": "UNKNOWN",
+        "proposed_class": "UNKNOWN",
+        "source_ids": [],
+        "provider_wording": null,
+        "settled_by": null,
+        "estimate": null,
+        "first_seen": "18:02",
+        "superseded_by": null,
+        "contradiction_sides": null,
+        "history": [
+          {
+            "stage": 2,
+            "class": "UNKNOWN",
+            "statement": "The extent of customer impact from Northwind's observed API failures is unknown.",
+            "because": []
+          }
+        ]
+      },
+      {
+        "id": "C-009",
+        "statement": "Whether Northwind's observed API failures have affected data integrity is unknown.",
+        "subject": "Northwind",
+        "unknown_kind": "data",
+        "class": "UNKNOWN",
+        "proposed_class": "UNKNOWN",
+        "source_ids": [],
+        "provider_wording": null,
+        "settled_by": null,
+        "estimate": null,
+        "first_seen": "18:02",
+        "superseded_by": null,
+        "contradiction_sides": null,
+        "history": [
+          {
+            "stage": 2,
+            "class": "UNKNOWN",
+            "statement": "Whether Northwind's observed API failures have affected data integrity is unknown.",
+            "because": []
+          }
+        ]
+      }
+    ],
+    "changes": [
+      {
+        "claim_id": "C-006",
+        "change": "NEW",
+        "from": null,
+        "to": "CONFIRMED",
+        "because": [
+          "N4"
+        ]
+      },
+      {
+        "claim_id": "C-007",
+        "change": "NEW",
+        "from": null,
+        "to": "CONFIRMED",
+        "because": [
+          "S13"
+        ]
+      },
+      {
+        "claim_id": "C-008",
+        "change": "NEW",
+        "from": null,
+        "to": "UNKNOWN",
+        "because": []
+      },
+      {
+        "claim_id": "C-009",
+        "change": "NEW",
+        "from": null,
+        "to": "UNKNOWN",
+        "because": []
+      }
+    ]
+  },
+  "capped_ledger": [
+    {
+      "id": "C-001",
+      "statement": "Since 17:51 UTC customers can't reliably log in or use our API",
+      "subject": "Northwind",
+      "unknown_kind": null,
+      "class": "CONFIRMED",
+      "proposed_class": "CONFIRMED",
+      "source_ids": [
+        "N1"
+      ],
+      "provider_wording": null,
+      "settled_by": null,
+      "estimate": null,
+      "first_seen": "17:52",
+      "superseded_by": null,
+      "contradiction_sides": null,
+      "history": [
+        {
+          "stage": 1,
+          "class": "CONFIRMED",
+          "statement": "Since 17:51 UTC customers can't reliably log in or use our API",
+          "because": [
+            "N1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "C-002",
+      "statement": "Google Cloud may be having problems (GCP console, us-east1)",
+      "subject": "Google Cloud",
+      "unknown_kind": null,
+      "class": "UNCONFIRMED",
+      "proposed_class": "UNCONFIRMED",
+      "source_ids": [
+        "S1"
+      ],
+      "provider_wording": null,
+      "settled_by": "Google Cloud's status page, or more independent reports",
+      "estimate": null,
+      "first_seen": "17:56",
+      "superseded_by": null,
+      "contradiction_sides": null,
+      "history": [
+        {
+          "stage": 1,
+          "class": "UNCONFIRMED",
+          "statement": "Google Cloud may be having problems (GCP console, us-east1)",
+          "because": [
+            "S1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "C-003",
+      "statement": "Root cause",
+      "subject": "Google Cloud",
+      "unknown_kind": "cause",
+      "class": "UNKNOWN",
+      "proposed_class": "UNKNOWN",
+      "source_ids": [],
+      "provider_wording": null,
+      "settled_by": "The provider stating the cause on the record",
+      "estimate": null,
+      "first_seen": "17:56",
+      "superseded_by": null,
+      "contradiction_sides": null,
+      "history": [
+        {
+          "stage": 1,
+          "class": "UNKNOWN",
+          "statement": "Root cause",
+          "because": []
+        }
+      ]
+    },
+    {
+      "id": "C-004",
+      "statement": "When our service will recover",
+      "subject": "Northwind",
+      "unknown_kind": "recovery",
+      "class": "UNKNOWN",
+      "proposed_class": "UNKNOWN",
+      "source_ids": [],
+      "provider_wording": null,
+      "settled_by": "Our monitoring returning to baseline, or a provider estimate",
+      "estimate": null,
+      "first_seen": "17:56",
+      "superseded_by": null,
+      "contradiction_sides": null,
+      "history": [
+        {
+          "stage": 1,
+          "class": "UNKNOWN",
+          "statement": "When our service will recover",
+          "because": []
+        }
+      ]
+    },
+    {
+      "id": "C-005",
+      "statement": "Google Cloud's status page shows no incident",
+      "subject": "Google Cloud",
+      "unknown_kind": null,
+      "class": "CONFIRMED",
+      "proposed_class": "CONFIRMED",
+      "source_ids": [
+        "S2"
+      ],
+      "provider_wording": "No major incidents",
+      "settled_by": null,
+      "estimate": null,
+      "first_seen": "17:56",
+      "superseded_by": null,
+      "contradiction_sides": null,
+      "history": [
+        {
+          "stage": 1,
+          "class": "CONFIRMED",
+          "statement": "Google Cloud's status page shows no incident",
+          "because": [
+            "S2"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "C-006",
+      "statement": "Northwind logs in us-central1 show requests to Google Cloud's Firestore and Firebase Auth APIs returning HTTP 503.",
+      "subject": "Northwind",
+      "unknown_kind": null,
+      "class": "CONFIRMED",
+      "proposed_class": "CONFIRMED",
+      "source_ids": [
+        "N4"
+      ],
+      "provider_wording": null,
+      "settled_by": null,
+      "estimate": null,
+      "first_seen": "18:01",
+      "superseded_by": null,
+      "contradiction_sides": null,
+      "history": [
+        {
+          "stage": 2,
+          "class": "CONFIRMED",
+          "statement": "Northwind logs in us-central1 show requests to Google Cloud's Firestore and Firebase Auth APIs returning HTTP 503.",
+          "because": [
+            "N4"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "C-007",
+      "statement": "Discord is investigating attachments and embeds not being rendered in its app.",
+      "subject": "Discord",
+      "unknown_kind": null,
+      "class": "CONFIRMED",
+      "proposed_class": "CONFIRMED",
+      "source_ids": [
+        "S13"
+      ],
+      "provider_wording": "We are investigating an issue with attachments and embeds not being rendered in the app.",
+      "settled_by": null,
+      "estimate": null,
+      "first_seen": "18:02",
+      "superseded_by": null,
+      "contradiction_sides": null,
+      "history": [
+        {
+          "stage": 2,
+          "class": "CONFIRMED",
+          "statement": "Discord is investigating attachments and embeds not being rendered in its app.",
+          "because": [
+            "S13"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "C-008",
+      "statement": "The extent of customer impact from Northwind's observed API failures is unknown.",
+      "subject": "Northwind",
+      "unknown_kind": "scope",
+      "class": "UNKNOWN",
+      "proposed_class": "UNKNOWN",
+      "source_ids": [],
+      "provider_wording": null,
+      "settled_by": null,
+      "estimate": null,
+      "first_seen": "18:02",
+      "superseded_by": null,
+      "contradiction_sides": null,
+      "history": [
+        {
+          "stage": 2,
+          "class": "UNKNOWN",
+          "statement": "The extent of customer impact from Northwind's observed API failures is unknown.",
+          "because": []
+        }
+      ]
+    },
+    {
+      "id": "C-009",
+      "statement": "Whether Northwind's observed API failures have affected data integrity is unknown.",
+      "subject": "Northwind",
+      "unknown_kind": "data",
+      "class": "UNKNOWN",
+      "proposed_class": "UNKNOWN",
+      "source_ids": [],
+      "provider_wording": null,
+      "settled_by": null,
+      "estimate": null,
+      "first_seen": "18:02",
+      "superseded_by": null,
+      "contradiction_sides": null,
+      "history": [
+        {
+          "stage": 2,
+          "class": "UNKNOWN",
+          "statement": "Whether Northwind's observed API failures have affected data integrity is unknown.",
+          "because": []
+        }
+      ]
+    }
+  ],
+  "drafts": {
+    "executive": {
+      "audience": "executive",
+      "policy_mode": null,
+      "as_of": "18:02",
+      "source": "astra_saved",
+      "generated_at": "2026-10-06T17:57:54.028Z",
+      "sections": [
+        {
+          "heading": "Situation",
+          "sentences": [
+            {
+              "text": "Customers cannot reliably log in or use our API since 17:51 UTC [C-001].",
+              "type": "fact",
+              "claim_ids": [
+                "C-001"
+              ],
+              "response_ids": [],
+              "verify": null
+            }
+          ]
+        },
+        {
+          "heading": "Impact on us",
+          "sentences": [
+            {
+              "text": "Our us-central1 logs show Firestore and Firebase Auth HTTP 503s [C-006].",
+              "type": "fact",
+              "claim_ids": [
+                "C-006"
+              ],
+              "response_ids": [],
+              "verify": null
+            }
+          ]
+        },
+        {
+          "heading": "Confirmed",
+          "sentences": [
+            {
+              "text": "Google Cloud’s status page shows no incident [C-005].",
+              "type": "fact",
+              "claim_ids": [
+                "C-005"
+              ],
+              "response_ids": [],
+              "verify": null
+            },
+            {
+              "text": "Discord is investigating attachment and embed rendering failures [C-007].",
+              "type": "fact",
+              "claim_ids": [
+                "C-007"
+              ],
+              "response_ids": [],
+              "verify": null
+            }
+          ]
+        },
+        {
+          "heading": "Not yet known",
+          "sentences": [
+            {
+              "text": "Cause, recovery time, customer-impact extent and data-integrity effects are not yet known [C-003] [C-004] [C-008] [C-009].",
+              "type": "fact",
+              "claim_ids": [
+                "C-003",
+                "C-004",
+                "C-008",
+                "C-009"
+              ],
+              "response_ids": [],
+              "verify": null
+            }
+          ]
+        },
+        {
+          "heading": "What we're doing",
+          "sentences": [
+            {
+              "text": "We declared P1, opened the bridge, and are checking changes, API calls, quotas and IAM [R-1] [R-3] [R-5].",
+              "type": "commitment",
+              "claim_ids": [],
+              "response_ids": [
+                "R-1",
+                "R-3",
+                "R-5"
+              ],
+              "verify": null
+            }
+          ]
+        },
+        {
+          "heading": "Decisions needed",
+          "sentences": [
+            {
+              "text": "We will not roll back unless a change is implicated [R-3].",
+              "type": "commitment",
+              "claim_ids": [],
+              "response_ids": [
+                "R-3"
+              ],
+              "verify": null
+            }
+          ]
+        },
+        {
+          "heading": "Next update",
+          "sentences": [
+            {
+              "text": "We’ll update the bridge at 18:15 and customers by 18:26 [R-6].",
+              "type": "commitment",
+              "claim_ids": [],
+              "response_ids": [
+                "R-6"
+              ],
+              "verify": null
+            }
+          ]
+        }
+      ]
+    },
+    "engineering": {
+      "audience": "engineering",
+      "policy_mode": null,
+      "as_of": "18:02",
+      "source": "astra_saved",
+      "generated_at": "2026-10-06T17:57:49.816Z",
+      "sections": [
+        {
+          "heading": "Confirmed technical facts",
+          "sentences": [
+            {
+              "text": "Customer login and API access have been unreliable since 17:51 UTC [C-001].",
+              "type": "fact",
+              "claim_ids": [
+                "C-001"
+              ],
+              "response_ids": [],
+              "verify": null
+            },
+            {
+              "text": "Northwind's us-central1 logs show HTTP 503 responses from Firestore and Firebase Auth APIs [C-006].",
+              "type": "fact",
+              "claim_ids": [
+                "C-006"
+              ],
+              "response_ids": [],
+              "verify": null
+            },
+            {
+              "text": "Google Cloud's status page shows no incident [C-005].",
+              "type": "fact",
+              "claim_ids": [
+                "C-005"
+              ],
+              "response_ids": [],
+              "verify": null
+            },
+            {
+              "text": "Discord is investigating attachment and embed rendering failures [C-007].",
+              "type": "fact",
+              "claim_ids": [
+                "C-007"
+              ],
+              "response_ids": [],
+              "verify": null
+            },
+            {
+              "text": "Root cause, recovery time, customer-impact extent and data-integrity effects are not yet known [C-003][C-004][C-008][C-009].",
+              "type": "fact",
+              "claim_ids": [
+                "C-003",
+                "C-004",
+                "C-008",
+                "C-009"
+              ],
+              "response_ids": [],
+              "verify": null
+            }
+          ]
+        },
+        {
+          "heading": "What to do / not to chase",
+          "sentences": [
+            {
+              "text": "We're triaging recent changes, code versus Google API calls, and console access; no rollback until a change is implicated [R-3].",
+              "type": "commitment",
+              "claim_ids": [],
+              "response_ids": [
+                "R-3"
+              ],
+              "verify": null
+            },
+            {
+              "text": "We're checking quotas and IAM, with phone support if the console won't load [R-5].",
+              "type": "commitment",
+              "claim_ids": [],
+              "response_ids": [
+                "R-5"
+              ],
+              "verify": null
+            }
+          ]
+        },
+        {
+          "heading": "Next update",
+          "sentences": [
+            {
+              "text": "We'll update the bridge at 18:15 and customers by 18:26 [R-6].",
+              "type": "commitment",
+              "claim_ids": [],
+              "response_ids": [
+                "R-6"
+              ],
+              "verify": null
+            }
+          ]
+        }
+      ]
+    },
+    "customer": {
+      "confirmed_only": {
+        "audience": "customer",
+        "policy_mode": "confirmed_only",
+        "as_of": "18:02",
+        "source": "astra_saved",
+        "generated_at": "2026-10-06T17:57:48.237Z",
+        "sections": [
+          {
+            "heading": "Northwind service update",
+            "sentences": [
+              {
+                "text": "We're sorry that customers have been unable to reliably log in or use our API since 17:51 UTC [C-001].",
+                "type": "fact",
+                "claim_ids": [
+                  "C-001"
+                ],
+                "response_ids": [],
+                "verify": null
+              },
+              {
+                "text": "The cause and recovery time are not yet known [C-003] [C-004].",
+                "type": "fact",
+                "claim_ids": [
+                  "C-003",
+                  "C-004"
+                ],
+                "response_ids": [],
+                "verify": null
+              },
+              {
+                "text": "We're investigating recent changes and service errors [R-3].",
+                "type": "commitment",
+                "claim_ids": [],
+                "response_ids": [
+                  "R-3"
+                ],
+                "verify": null
+              },
+              {
+                "text": "We'll provide another customer update by 18:26 UTC [R-6].",
+                "type": "commitment",
+                "claim_ids": [],
+                "response_ids": [
+                  "R-6"
+                ],
+                "verify": null
+              }
+            ]
+          }
+        ]
+      },
+      "early_incident": null
+    }
+  },
+  "verify": {
+    "pass": false,
+    "status": "pending",
+    "reason": "Awaiting code verification and Astra support check"
+  },
+  "timings": [
+    {
+      "step": "EXTRACT",
+      "stage": 2,
+      "audience": null,
+      "attempt": 1,
+      "seconds": 17.264727667,
+      "tokens": {
+        "input_tokens": 1334,
+        "input_tokens_details": {
+          "cache_write_tokens": 1331,
+          "cached_tokens": 0
+        },
+        "output_tokens": 1068,
+        "output_tokens_details": {
+          "reasoning_tokens": 67
+        },
+        "total_tokens": 2402
+      }
+    },
+    {
+      "step": "RECONCILE",
+      "stage": 2,
+      "audience": null,
+      "attempt": 1,
+      "seconds": 30.145448583,
+      "tokens": {
+        "input_tokens": 2784,
+        "input_tokens_details": {
+          "cache_write_tokens": 2781,
+          "cached_tokens": 0
+        },
+        "output_tokens": 1853,
+        "output_tokens_details": {
+          "reasoning_tokens": 50
+        },
+        "total_tokens": 4637
+      }
+    },
+    {
+      "step": "COMMUNICATE",
+      "stage": 2,
+      "audience": "customer",
+      "attempt": 1,
+      "seconds": 4.917759125000001,
+      "tokens": {
+        "input_tokens": 2991,
+        "input_tokens_details": {
+          "cache_write_tokens": 2988,
+          "cached_tokens": 0
+        },
+        "output_tokens": 179,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 3170
+      }
+    },
+    {
+      "step": "COMMUNICATE",
+      "stage": 2,
+      "audience": "engineering",
+      "attempt": 1,
+      "seconds": 6.496844166,
+      "tokens": {
+        "input_tokens": 2991,
+        "input_tokens_details": {
+          "cache_write_tokens": 2988,
+          "cached_tokens": 0
+        },
+        "output_tokens": 387,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 3378
+      }
+    },
+    {
+      "step": "COMMUNICATE",
+      "stage": 2,
+      "audience": "executive",
+      "attempt": 1,
+      "seconds": 10.709124040999999,
+      "tokens": {
+        "input_tokens": 2991,
+        "input_tokens_details": {
+          "cache_write_tokens": 2988,
+          "cached_tokens": 0
+        },
+        "output_tokens": 467,
+        "output_tokens_details": {
+          "reasoning_tokens": 31
+        },
+        "total_tokens": 3458
+      }
+    }
+  ],
+  "error": null
+}
