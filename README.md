@@ -12,7 +12,7 @@ and runs the same desk on a live incident from this morning.
 
 Built solo by Kashif Nazir at the GPT-6 Astra Hackathon London, 6 October 2026.
 
-**Live app:** <https://outage-desk.kashifnazir.com> · **Demo video (75 s):** <https://www.loom.com/share/4aa306b1fdc0418db0ae3c73bcc4acc6>
+**Live app:** <https://outage-desk.kashifnazir.com> · **Demo video (59 s):** [docs/demo/outage-desk-demo.mp4](docs/demo/outage-desk-demo.mp4)
 
 **Try it in 30 seconds:** open the live app, click the **T+20** marker and then the **Conflicting** pill (Google's status page vs outside reports), then **T+60** and the **Unconfirmed** pill to see a claim GPT-6 Astra proposed being capped by policy. **Post-incident** in the sidebar checks what we said against the provider's report; **Live · ASOS** runs the same ledger on a real incident from this morning.
 
